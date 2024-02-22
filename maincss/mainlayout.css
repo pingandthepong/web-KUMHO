@@ -1,20 +1,17 @@
 @charset "utf-8";
 
-/* 비주얼 영역 */
+/* .visual 영역 */
 .visual {
-  /* width: 100%; */
   position: relative;
   width: 2000px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
-
 .visual img {
   filter: brightness(0.4);
 }
-
-.visual .text-box {
+.visual .slogan {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -22,13 +19,40 @@
   color: var(--main-white);
   text-align: center;
 }
-.visual .text-box .main_slogan-lg {
-  font-size: 4.5rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+.visual .slogan__lg {
+  font-size: 4rem;
+  font-weight: 600;
 }
-.visual .text-box .main_slogan-sm {
+.visual .slogan__sm {
   font-size: 2.25rem;
+  margin-top: 0.8rem;
+}
+.visual .dock {
+  position: absolute;
+  left: 50%;
+  bottom: 240px;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+.visual .dock .mbutton {
+  float: left;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.visual .dock .mbutton:not(:last-of-type) {
+  margin-right: 7px;
+}
+.visual .dock [class*="btn"] {
+  display: block;
+  width: 88px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.visual .dock .mbutton .on {
+  display: block;
+  width: 40%;
+  height: 100%;
+  background: var(--main-red);
 }
 
 /* 본문 콘텐츠 영역 */
