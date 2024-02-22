@@ -72,20 +72,13 @@
 #content .master,
 #content .news,
 #content .recruit,
-#footerArea {
-  width: 100%;
-  margin: 0 auto;
-  background: pink;
-}
-
 #content .business_sector,
 #content .master_container,
 #content .award,
 #content .performance_container,
 #content .news_container,
 #content .investment,
-#content .recruit_container,
-.footer_container {
+#content .recruit_container {
   width: 1400px;
   margin: 0 auto;
   background: gold;
