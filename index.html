@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./common/css/common.css" />
     <link rel="stylesheet" href="./maincss/mainlayout.css" />
-    <script src="./common/js/prefixfree.min.js"></script>
+    <!-- <script src="./common/js/prefixfree.min.js"></script> -->
     <script
       src="https://kit.fontawesome.com/5c48cfd0d4.js"
       crossorigin="anonymous"></script>
@@ -18,89 +18,586 @@
     <div id="wrap">
       <!-- header -->
       <header id="headerArea">
-        <h1 class="logo"><a href="index.html">금호건설</a></h1>
-        <div class="top_menu">
-          <ul>
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
-          </ul>
+        <!-- header .logo -->
+        <div class="header_container">
+          <h1 class="logo"><a href="index.html" tabindex="0">금호건설</a></h1>
+
+          <!-- header #gnb -->
+          <nav id="gnb">
+            <h2 class="hidden">글로벌 네비게이션</h2>
+            <ul>
+              <li>
+                <a href="#"><h3>회사소개</h3></a>
+              </li>
+              <li>
+                <a href="#"><h3>사업분야</h3></a>
+              </li>
+              <li>
+                <a href="#"><h3>기술혁신</h3></a>
+              </li>
+              <li>
+                <a href="#"><h3>지속가능경영</h3></a>
+              </li>
+              <li>
+                <a href="#"><h3>인재채용</h3></a>
+              </li>
+              <li>
+                <a href="#"><h3>홍보센터</h3></a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- header .top_menu -->
+          <div class="top_menu">
+            <ul>
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+            </ul>
+          </div>
         </div>
-        <nav id="gnb">
-          <h2 class="hidden">글로벌 네비게이션</h2>
-          <ul>
-            <li>
-              <a href="#"><h3>회사소개</h3></a>
-            </li>
-            <li>
-              <a href="#"><h3>사업분야</h3></a>
-            </li>
-            <li>
-              <a href="#"><h3>기술혁신</h3></a>
-            </li>
-            <li>
-              <a href="#"><h3>지속가능경영</h3></a>
-            </li>
-            <li>
-              <a href="#"><h3>인재채용</h3></a>
-            </li>
-            <li>
-              <a href="#"><h3>홍보센터</h3></a>
-            </li>
-          </ul>
-        </nav>
       </header>
       <!-- visual -->
       <div class="visual">
         <img src="./mainimages/visual_01.jpg" alt="" />
+        <div class="text-box">
+          <p class="main_slogan-lg">Building a Dream</p>
+          <p class="main_slogan-sm">for the Global Village</p>
+        </div>
       </div>
       <!-- article -->
       <article id="content">
         <h2 class="hidden">본문 콘텐츠 영역</h2>
+        <!-- section.business-sector -->
         <section class="business_sector">
           <h3>사업분야</h3>
+          <span class="section_title_en">Business sector</span>
+          <ul>
+            <li>
+              <img src="./mainimages/business-sector_01.jpg" alt="" />
+              <div class="sector_txt">
+                <h4>건축</h4>
+                <p>빌딩에서 도시까지<br />사람과 자연의 어우러짐</p>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+            <li>
+              <img src="./mainimages/business-sector_02.jpg" alt="" />
+              <div class="sector_txt">
+                <h4>토목</h4>
+                <p>도시와 국토를 잇는<br />금호건설의 공간 예술</p>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+            <li>
+              <img src="./mainimages/business-sector_03.jpg" alt="" />
+              <div class="sector_txt">
+                <h4>주택</h4>
+                <p>친환경, 유비쿼터스<br />스마트한 미래형 첨단 주거 생활</p>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+            <li>
+              <img src="./mainimages/business-sector_04.jpg" alt="" />
+              <div class="sector_txt">
+                <h4>플랜트/환경</h4>
+                <p>
+                  환경경영 실천을 기반으로<br />산업발전을 선도하는<br />글로벌
+                  기술력
+                </p>
+                <a href="#">자세히보기</a>
+              </div>
+            </li>
+          </ul>
         </section>
-        <section class="performance"><h3>대표실적</h3></section>
-        <section class="award"><h3>수상실적</h3></section>
-        <section class="news"><h3>금호뉴스</h3></section>
-        <section class="investment_info"><h3>주가정보</h3></section>
-        <section class="recruit"><h3>인재채용</h3></section>
+        <!-- section.master -->
+        <section class="master">
+          <div class="master_container">
+            <!-- .master_inner -->
+            <div class="master_inner">
+              <ul>
+                <li>
+                  <img src="./mainimages/master_main.jpg" alt="" />
+                  <div class="master_inner_txt">
+                    <h3 class="">대표실적</h3>
+                    <p class="master_slogan_lg">
+                      <span class="strong">글로벌 No.1</span>에
+                      <span class="strong">도전</span>합니다.
+                    </p>
+                    <p class="master_slogan_sm">
+                      전분야에 걸쳐 우수한 기술력을 바탕으로 쾌적한 생활을
+                      이룩합니다.<br />
+                      세계로 뻗어가는 건설 한류의 중심에 금호건설이 있습니다.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./mainimages/master01_abudabi.jpg" alt="" />
+                  <div class="master_inner_txt">
+                    <h4>아부다비 관제탑</h4>
+                    <p>
+                      삼각형의 큰 돞을 단 다우(Dhow)선 모양을 형상화한 독특한
+                      외관
+                    </p>
+                    <a href="#">자세히보기</a>
+                  </div>
+                </li>
+                <li>
+                  <img src="./mainimages/master01_abudabi.jpg" alt="" />
+                  <div class="master_inner_txt">
+                    <h4>두바이 신공항</h4>
+                    <p>
+                      삼각형의 큰 돞을 단 다우(Dhow)선 모양을 형상화한 독특한
+                      외관
+                    </p>
+                    <a href="#">자세히보기</a>
+                  </div>
+                </li>
+                <li>
+                  <img src="./mainimages/master01_abudabi.jpg" alt="" />
+                  <div class="master_inner_txt">
+                    <h4>인천국제공항</h4>
+                    <p>
+                      삼각형의 큰 돞을 단 다우(Dhow)선 모양을 형상화한 독특한
+                      외관
+                    </p>
+                    <a href="#">자세히보기</a>
+                  </div>
+                </li>
+                <li>
+                  <img src="./mainimages/master01_abudabi.jpg" alt="" />
+                  <div class="master_inner_txt">
+                    <h4>신공항 관제탑</h4>
+                    <p>
+                      삼각형의 큰 돞을 단 다우(Dhow)선 모양을 형상화한 독특한
+                      외관
+                    </p>
+                    <a href="#">자세히보기</a>
+                  </div>
+                </li>
+                <li>
+                  <img src="./mainimages/master01_abudabi.jpg" alt="" />
+                  <div class="master_inner_txt">
+                    <h4>어울림</h4>
+                    <p>
+                      삼각형의 큰 돞을 단 다우(Dhow)선 모양을 형상화한 독특한
+                      외관
+                    </p>
+                    <a href="#">자세히보기</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- .master_tab -->
+            <ul class="master_tab">
+              <li><a href="#">아부다비 관제탑</a></li>
+              <li><a href="#">두바이 신공항</a></li>
+              <li><a href="#">인천국제공항</a></li>
+              <li><a href="#">신공항 관제탑</a></li>
+              <li><a href="#">어울림</a></li>
+            </ul>
+          </div>
+        </section>
+        <!-- section.award -->
+        <section class="award">
+          <h3>수상실적</h3>
+          <span class="section_title_en">Award</span>
+          <p>앞으로도 최선을 다하는 금호건설이 되겠습니다.</p>
+          <div class="award_container">
+            <ul class="award_list">
+              <li>
+                <a href="#">
+                  <img src="./mainimages/award_01.jpg" alt="" />
+                  <div class="award_txt">
+                    <h4>'제21회 한국 색채대상' 블루(BLUE)상</h4>
+                    <span class="award_institution">한국색채학회</span>
+                    <span class="date">2023-10-30</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./mainimages/award_02.jpg" alt="" />
+                  <div class="award_txt">
+                    <h4>'살고 싶은 집 2023' 조경 부문 대상</h4>
+                    <span class="award_institution">헤럴드경제</span>
+                    <span class="date">2023-12-08</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./mainimages/award_03.jpg" alt="" />
+                  <div class="award_txt">
+                    <h4>'제 14회 대한민국 그린건설대상' 주거문화대상</h4>
+                    <span class="award_institution">서울신문사/국토교통부</span>
+                    <span class="date">2023-12-06</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./mainimages/award_04.jpg" alt="" />
+                  <div class="award_txt">
+                    <h4>'2023년도 하반기' 주거복지대상</h4>
+                    <span class="award_institution">한국경제/국토교통부</span>
+                    <span class="date">2023-12-05</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- .award .btn_box -->
+          <div class="btn_box">
+            <a href="#">&lt;</a>
+            <a href="#">&gt;</a>
+            <a href="#" class="more-btn">+</a>
+          </div>
+        </section>
+        <!-- section.news -->
+        <section class="news">
+          <div class="news_container">
+            <h3>금호뉴스</h3>
+            <span class="section_title_en">News</span>
+            <p>
+              고객과 함께 아름다운 미래로 비상하는 아름다운 기업이 되겠습니다.
+            </p>
+
+            <!-- news_inner -->
+            <div class="news_inner">
+              <ul>
+                <li class="news_long">
+                  <a href="#">
+                    <img src="./mainimages/news_01.jpg" alt="" />
+                    <h4>
+                      성남시 &middot; 금호건설, 이달 '분당 금호어울림 그린파크'
+                      공공분양
+                    </h4>
+                    <span class="source">한국경제</span>
+                    <span class="date">2024.02.07</span>
+                  </a>
+                </li>
+                <li class="news_short">
+                  <a href="#">
+                    <img src="./mainimages/news_02.jpg" alt="" />
+                    <h4>금호건설, 펄벅재단에 기부금 전달…다문화가정 후원</h4>
+                    <span class="source">연합뉴스</span>
+                    <span class="date">2024.01.22</span>
+                  </a>
+                </li>
+                <li class="news_long">
+                  <a href="#">
+                    <img src="./mainimages/news_03.jpg" alt="" />
+                    <h4>금호건설, 소외 이웃에 겨울 동계 점퍼 111벌 기부</h4>
+                    <span class="source">뉴스1</span>
+                    <span class="date">2023.12.22</span>
+                  </a>
+                </li>
+                <li class="news_short">
+                  <a href="#">
+                    <img src="./mainimages/news_04.jpg" alt="" />
+                    <h4>금호건설, '월곶~판교 복선전철 제9공구 공사' 수주</h4>
+                    <span class="source">조선비즈</span>
+                    <span class="date">2023.12.20</span>
+                  </a>
+                </li>
+                <li class="news_long">
+                  <a href="#">
+                    <img src="./mainimages/news_05.jpg" alt="" />
+                    <h4>금호건설, 한국도로공사와 1210억 규모 공사 계약</h4>
+                    <span class="source">뉴시스</span>
+                    <span class="date">2023.10.31</span>
+                  </a>
+                </li>
+                <li class="short">
+                  <a href="#">
+                    <img src="./mainimages/news_06.jpg" alt="" />
+                    <h4>
+                      "이렇게 많은 쌀 본 게 처음"…금호건설 임직원 울린 손편지
+                    </h4>
+                    <span class="source">한국경제</span>
+                    <span class="date">2023.12.15</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="more_btn">+</a>
+          </div>
+        </section>
+        <!-- section.investment -->
+        <section class="investment">
+          <h3>주가정보</h3>
+          <span class="section_title_en">Investment information</span>
+          <p>소중한 자산, 투명경영으로 보답하겠습니다.</p>
+          <!-- .iframe_box -->
+          <div class="iframe_box">
+            <div class="iframe_head">금호건설<span>002990</span></div>
+
+            <!-- .middle-->
+            <div class="middle">
+              <!-- .last -->
+              <div class="last">
+                <h4 class="hidden">종가</h4>
+                <span class="positive"></span>5,130
+              </div>
+              <!-- .changerate_box -->
+              <ul class="changerate_box">
+                <!-- 전일대비 -->
+                <li>
+                  <h4 class="change_phrase">전일대비</h4>
+                  <div class="change"><span class="positive"></span>30</div>
+                </li>
+                <!-- 등락률 -->
+                <li>
+                  <h4 class="change_phrase">등락률</h4>
+                  <div class="change_per">
+                    <span class="positive"></span>0.59
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- .bottom -->
+            <table class="bottom">
+              <thead>
+                <tr>
+                  <th scope="column" class="label">전날 종가</th>
+                  <th scope="column" class="label">현재가</th>
+                  <th scope="column" class="label">고가</th>
+                  <th scope="column" class="label">저가</th>
+                  <th scope="column" class="label">거래량</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="data prev_close">161,300</td>
+                  <td class="data open">162,200</td>
+                  <td class="data high">165,700</td>
+                  <td class="data low">158,200</td>
+                  <td class="data volumn">503,948</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- .earning-rate -->
+          <div class="earning-rate">
+            <h4>수익률</h4>
+            <div class="earning-rate_inner">
+              <div class="tab_list_wrapper">
+                <div class="tab_list_title">적용기간</div>
+                <ul class="tabs">
+                  <li><a href="#">1주</a></li>
+                  <li><a href="#">1개월</a></li>
+                  <li><a href="#">3개월</a></li>
+                  <li><a href="#">6개월</a></li>
+                  <li><a href="#" class="active">1년</a></li>
+                  <li><a href="#">3년</a></li>
+                  <li><a href="#">연초이후</a></li>
+                  <li><a href="#">상장이후</a></li>
+                </ul>
+              </div>
+              <div class="notice_date">기준일: 24. 2. 23</div>
+              <div class="graph">
+                <div class="chart">(차트영역)</div>
+                <ul class="button_bar">
+                  <li class="checkbox">
+                    <input type="checkbox" checked id="ci2" />
+                    <label for="ci2"
+                      >기준가격(NAV) <small>-2.19%(9,930.47원)</small>
+                    </label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" checked id="ci1" />
+                    <label for="ci1"
+                      >시장가격(종가) <small>-2.19%(9,930.47원)</small>
+                    </label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" checked id="ci1" />
+                    <label for="ci3"
+                      >기초지수 <small>-2.19%(9,930.47원)</small>
+                    </label>
+                  </li>
+                </ul>
+                <p class="notice_des">
+                  수익률 그래프는 상품 유형에 상관없이 분배금 재투자를 가정한
+                  수익률 기준입니다. (수익률 그래프는 상장일 이후로 조회
+                  가능합니다.)
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .more-link -->
+          <ul class="more-link">
+            <li>
+              <a href="#" target="_blank" title="경영정보로 이동">경영정보</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" title="재무정보로 이동">재무정보</a>
+            </li>
+          </ul>
+          <a href="#" class="more-btn">+</a>
+        </section>
+        <!-- section.recruit -->
+        <section class="recruit">
+          <div class="recruit_container">
+            <h3>인재채용</h3>
+            <span class="section_title_en">Recruit</span>
+            <p>
+              패기와 열정, 역량으로 똘똘 뭉친 젊은이에게
+              금호건설의&nbsp;문은&nbsp;활짝&nbsp;열려있습니다.
+            </p>
+          </div>
+          <ul class="recruit_list">
+            <li><a href="#">직무가이드</a></li>
+            <li><a href="#">자세히보기</a></li>
+            <li><a href="#">채용공고</a></li>
+            <li><a href="#">입사지원</a></li>
+          </ul>
+
+          <div class="page_progress">
+            <span class="page">1/3</span>
+            <span class="bars">-----</span>
+            <i>&lt;</i>
+            <i>&gt;</i>
+          </div>
+        </section>
       </article>
       <!-- footer -->
       <footer id="footerArea">
-        <div class="bottom_menu">
-          <ul>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">개인정보 처리방침</a></li>
-            <li><a href="#">이메일 무단수집 거부</a></li>
-          </ul>
+        <div class="footer_container">
+          <!-- footer .bottom_menu-top -->
+          <div class="bottom_menu">
+            <ul>
+              <li><a href="#">이용약관</a></li>
+              <li class="accent"><a href="#">개인정보 처리방침</a></li>
+              <li><a href="#">이메일 무단수집 거부</a></li>
+            </ul>
+          </div>
+          <!-- footer .bottom_menu-bottom -->
+          <div class="bottom_menu-bottom">
+            <ul>
+              <li><a href="#">제보실</a></li>
+              <li><a href="#">OB사랑방</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">방문예약</a></li>
+            </ul>
+          </div>
+          <!-- footer .family -->
+          <div class="site_list">
+            <div class="family">
+              <a class="family_btn" href="#"
+                >Family Site<span class="btn-more">+</span></a
+              >
+              <ul class="family_list">
+                <li>
+                  <a
+                    href="http://www.kumhobuslines.co.kr"
+                    target="_blank"
+                    title="금호고속 사이트 새창열림"
+                    >금호고속</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.usquare.co.kr/kor/index.do"
+                    target="_blank"
+                    title="금호터미널 사이트 새창열림"
+                    >금호터미널</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.kumhoarts.com"
+                    target="_blank"
+                    title="금호문화재단 사이트 새창열림"
+                    >금호문화재단</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://flyasiana.com"
+                    target="_blank"
+                    title="아시아나항공 사이트 새창열림"
+                    >아시아나항공</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.asianaidt.com/kor/"
+                    target="_blank"
+                    title="아시아나IDT 사이트 새창열림"
+                    >아시아나IDT</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.asianaairport.com/"
+                    target="_blank"
+                    title="아시아나 에어포트 사이트 새창열림"
+                    >아시아나 에어포트</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.asianasabre.co.kr/"
+                    target="_blank"
+                    title="아시아나 세이버 사이트 새창열림"
+                    >아시아나 세이버</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.flyairseoul.com/"
+                    target="_blank"
+                    title="에어서울 사이트 새창열림"
+                    >에어서울</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.airbusan.com/AB/airbusan/main_kr.jsp"
+                    target="_blank"
+                    title="에어부산 사이트 새창열림"
+                    >에어부산</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="sns">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UC38v-jiUXWXXVbWgtCD2S9g"
+                    target="_blank"
+                    title="금호건설 유튜브 새창열림"
+                    >youtube</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/kumhoenc/"
+                    target="_blank"
+                    title="금호건설 페이스북 새창열림"
+                    >facebook</a
+                  >
+                </li>
+                <li><a href="#">instagram</a></li>
+                <li><a href="#">twitter(X)</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- footer logo -->
+          <img src="./common/images/header-logo.png" alt="" />
+          <!-- footer address & p -->
+          <address>
+            서울특별시 종로구 우정국로26 센트로폴리스 A동|대표전화 (02)6303-0102
+          </address>
+          <p class="copy">
+            Copyright&copy;2024 <span class="accent">KUMHO E&C.</span> All
+            rights reserved.
+          </p>
         </div>
-        <div class="bottom_menu2">
-          <ul>
-            <li><a href="#">제보실</a></li>
-            <li><a href="#">OB사랑방</a></li>
-            <li><a href="#">고객센터</a></li>
-            <li><a href="#">방문예약</a></li>
-          </ul>
-        </div>
-
-        <div class="family">Family Site <span class="btn-more">+</span></div>
-        <div class="sns">
-          <ul>
-            <li><a href="#">youtube</a></li>
-            <li><a href="#">facebook</a></li>
-            <li><a href="#">instagram</a></li>
-            <li><a href="#">twitter(X)</a></li>
-          </ul>
-        </div>
-        <img src="./common/images/header-logo.png" alt="" />
-        <address>
-          서울특별시 종로구 우정국로26 센트로폴리스 A동|대표전화 (02)6303-0102
-        </address>
-        <p class="copy">
-          Copyright&copy;2024 <span class="accent">KUMHO E&C.</span> All rights
-          reserved.
-        </p>
       </footer>
+      <button class="top-btn">TOP</button>
     </div>
   </body>
 </html>

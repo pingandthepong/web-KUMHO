@@ -2,8 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 /* font-family: "Noto Sans KR", sans-serif; */
 
-/* CSS Reset */
+:root {
+  --main-red: #ef0010;
+  --main-orange: #f65742;
+  --main-white: #fff;
+}
 
+/* CSS Reset */
 html,
 body,
 div,
@@ -145,6 +150,80 @@ img {
   color: #fff;
 }
 
+#wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
 /* header 공통영역 */
+#headerArea {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  /* background: rgba(255, 255, 255, 0.2); */
+}
+
+#headerArea .header_container {
+  width: 1750px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  /* background: rgba(0, 0, 0, 0.2); */
+}
+
+#headerArea a {
+  color: var(--main-white);
+}
+
+/* header .logo */
+#headerArea .logo a {
+  width: 147px;
+  height: 49px;
+  background: url("../images/header-logo.png") no-repeat 0 0;
+  background-size: contain;
+  text-indent: -9999px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* header gnb */
+#headerArea #gnb {
+  flex: 1;
+}
+
+#headerArea #gnb ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 85px;
+}
+
+#headerArea #gnb a {
+  padding: 10px 16px;
+  font-size: 1.1rem;
+}
+#headerArea #gnb a h3 {
+  font-weight: 400;
+}
+
+/* header .top_menu */
+#headerArea .top_menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+#headerArea .top_menu a {
+  padding: 4px 8px;
+}
+#headerArea .top_menu li:nth-of-type(2) a {
+  background: var(--main-red);
+  border-radius: 6px;
+}
 
 /* footer 공통영역 */

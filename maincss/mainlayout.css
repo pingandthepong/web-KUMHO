@@ -1,5 +1,106 @@
 @charset "utf-8";
 
 /* 비주얼 영역 */
+.visual {
+  /* width: 100%; */
+  position: relative;
+  width: 2000px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.visual img {
+  filter: brightness(0.4);
+}
+
+.visual .text-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--main-white);
+  text-align: center;
+}
+.visual .text-box .main_slogan-lg {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.visual .text-box .main_slogan-sm {
+  font-size: 2.25rem;
+}
 
 /* 본문 콘텐츠 영역 */
+#content {
+  width: 100%;
+}
+
+#content section {
+  padding: 100px 0;
+  border: 1px solid #000;
+  position: relative;
+}
+
+#content section [class*="container"] {
+  border: 1px solid #000;
+}
+#content .master,
+#content .news,
+#content .recruit,
+#footerArea {
+  width: 100%;
+  margin: 0 auto;
+  background: pink;
+}
+
+#content .business_sector,
+#content .master_container,
+#content .award,
+#content .performance_container,
+#content .news_container,
+#content .investment,
+#content .recruit_container,
+.footer_container {
+  width: 1400px;
+  margin: 0 auto;
+  background: gold;
+}
+
+/* .award_container */
+#content .award_container {
+  position: relative;
+  background: red;
+  width: 2000px;
+  left: -300px;
+}
+#content .award_container ul {
+  display: flex;
+  gap: 20px;
+}
+#content .award .btn_box {
+  position: absolute;
+  right: 0;
+  top: 130px;
+  display: flex;
+  gap: 15px;
+}
+
+/* .news */
+#content .news {
+}
+
+/* .investment */
+#content .investment {
+}
+
+#content .investment .positive::before {
+  content: "^";
+}
+#content .investment .negative::before {
+  content: "⌄";
+}
+
+/* .recruit */
+.recruit {
+}
