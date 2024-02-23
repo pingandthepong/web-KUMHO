@@ -45,7 +45,7 @@
 .visual .dock [class*="btn"] {
   display: block;
   width: 88px;
-  height: 2px;
+  height: 4px;
   background: rgba(255, 255, 255, 0.5);
 }
 .visual .dock .mbutton .on {
@@ -65,14 +65,13 @@
   border: 1px solid #000;
   position: relative;
 }
-
 #content section [class*="container"] {
   border: 1px solid #000;
 }
 #content .master,
 #content .news,
 #content .recruit,
-#content .business_sector,
+#content .business,
 #content .master_container,
 #content .award,
 #content .performance_container,
@@ -81,9 +80,21 @@
 #content .recruit_container {
   width: 1400px;
   margin: 0 auto;
-  background: gold;
+  /* background: gold; */
+}
+#content section h3 {
+  display: inline-block;
+  font-size: 3.75rem;
+  font-weight: 600;
+}
+#content .section_title_en {
+  font-size: 1.88rem;
+  font-weight: 100;
+  color: var(--main-red);
+  margin-left: 1.56rem;
 }
 
+/* .business */
 /* .award_container */
 #content .award_container {
   position: relative;
