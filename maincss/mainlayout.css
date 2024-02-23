@@ -65,11 +65,6 @@
   box-sizing: border-box;
   position: relative;
 }
-#content .master {
-  width: 2000px;
-  margin: 0 auto;
-}
-
 #content .news,
 #content .recruit,
 #content .business,
@@ -194,6 +189,10 @@
 }
 
 /* section.master */
+#content .master {
+  width: 2000px;
+  margin: 0 auto;
+}
 #content .master__container {
   width: 1748px;
   height: 798px;
@@ -263,23 +262,90 @@
   background: var(--main-red);
 }
 
-/* .award_container */
-#content .award_container {
+/* section.award */
+#content .award p {
+  font-size: 1.88rem;
+  margin: 35px 0 120px;
+}
+#content .award__container {
   position: relative;
-  background: red;
   width: 2000px;
   left: -300px;
 }
-#content .award_container ul {
+#content .award__container .award_list {
+  width: calc(507px * 4 + 30px * 3);
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  margin-left: -59px;
+}
+#content .award__container .award_list li {
+  width: 507px;
+  background: var(--main-white);
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+#content .award__container .award_list li:hover {
+  transform: translateY(5%);
+}
+#content .award__container .img_wrap {
+  width: 507px;
+  height: 215px;
+  overflow: hidden;
+}
+#content .award__container .img_wrap img {
+  transition: all 0.5s ease;
+}
+#content .award__container .award_list li:hover img {
+  transform: scale(1.2);
+  filter: brightness(0.7);
+}
+#content .award__container .award_txt {
+  padding: 20px 0 15px 35px;
+  display: flex;
+  flex-direction: column;
+}
+#content .award__container .award_txt h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  order: 1;
+}
+#content .award__container .award_txt .award_institution {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 7px;
+  order: 0;
+}
+#content .award__container .award_txt .date {
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: #999;
+  order: 2;
 }
 #content .award .btn_box {
   position: absolute;
   right: 0;
-  top: 130px;
+  top: 330px;
   display: flex;
-  gap: 15px;
+  gap: 5px;
+}
+#content .award .btn_box a {
+  padding: 5px 10px;
+}
+#content .award .btn_box a:hover {
+  color: var(--main-red);
+}
+#content .award .btn_box .more-btn {
+  transition: all 0.3s ease-out;
+}
+#content .award .btn_box .more-btn:hover {
+  transform: rotate(360deg);
+  background: var(--main-red);
+  color: var(--main-white);
+  border-radius: 50%;
 }
 
 /* .news */
