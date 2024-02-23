@@ -68,11 +68,14 @@
 #content section [class*="container"] {
   border: 1px solid #000;
 }
-#content .master,
+#content .master {
+  width: 2000px;
+  margin: 0 auto;
+}
+
 #content .news,
 #content .recruit,
 #content .business,
-#content .master_container,
 #content .award,
 #content .performance_container,
 #content .news_container,
@@ -80,7 +83,6 @@
 #content .recruit_container {
   width: 1400px;
   margin: 0 auto;
-  /* background: gold; */
 }
 #content section h3 {
   display: inline-block;
@@ -193,6 +195,43 @@
   padding-top: 100px;
   transition-delay: 0.1s;
 }
+
+/* section.master */
+#content .master .master__inner {
+  width: 1748px;
+  height: 798px;
+  margin: 0 auto;
+  background: url("../mainimages/master_main.jpg") no-repeat 0 0;
+  border-radius: 26px;
+  overflow: hidden;
+}
+#content .master .master_main_txt {
+  width: 800px;
+  padding: 30px 0;
+  margin: 150px auto 0;
+  text-align: center;
+  color: var(--main-white);
+}
+#content .master .master_main_txt h3 {
+  color: var(--main-orange);
+  font-size: 1.88rem;
+  font-weight: 500;
+  margin-bottom: 70px;
+}
+#content .master_slogan_lg {
+  font-size: 3.75rem;
+  font-weight: 100;
+  margin-bottom: 35px;
+}
+#content .master_slogan_lg .strong {
+  font-weight: 700;
+}
+#content .master_slogan_sm {
+  font-size: 1.56rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
 /* .award_container */
 #content .award_container {
   position: relative;
