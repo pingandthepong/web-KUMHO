@@ -62,7 +62,7 @@
 
 #content section {
   padding: 100px 0;
-  border: 1px solid #000;
+  box-sizing: border-box;
   position: relative;
 }
 #content section [class*="container"] {
@@ -95,6 +95,104 @@
 }
 
 /* .business */
+#content .business {
+  height: 1000px;
+}
+#content .business ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 75px;
+}
+#content .business li {
+  width: 340px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+#content .business li img {
+  transition: all 0.75s ease-out;
+}
+#content .business li:hover img {
+  filter: blur(2px) brightness(0.4);
+  transform: scale(1.2);
+}
+#content .business li .sector_txt {
+  width: 340px;
+  height: 570px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--main-white);
+  padding: 0 42px;
+  transition: all 0.3s ease-out;
+}
+#content .business ul .sector_txt h4 {
+  font-size: 2.26rem;
+  margin: 100px 0 80px;
+}
+#content .business ul .sector_txt p {
+  height: 224px;
+  font-size: 1.25rem;
+  line-height: 2;
+  letter-spacing: -0.02rem;
+}
+#content .business ul .sector_txt a {
+  width: 130px;
+  height: calc(48px - 12px * 2);
+  border: 1px solid var(--main-white);
+  border-radius: 6px;
+  color: var(--main-white);
+  margin: auto;
+  padding: 12px 24px;
+  position: relative;
+  transition: all 0.25s linear;
+}
+#content .business ul .sector_txt a:hover {
+  width: 130px;
+  background: var(--main-red);
+  border: 1px solid var(--main-red);
+}
+#content .business ul .sector_txt a span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.55s ease-out;
+}
+#content .business ul .sector_txt a:hover span {
+  left: 25px;
+  transform: translate(0, -50%);
+}
+#content .business ul .sector_txt a::after {
+  content: "";
+  height: 10px;
+  background: url("../mainimages/business_arrow_small.png") no-repeat 0 0;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+#content .business ul .sector_txt a:hover::after {
+  width: 45px;
+  margin: 0 -70px;
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+#content .business ul .sector_txt {
+  top: calc(570px - 100px);
+}
+#content .business ul .sector_txt h4 {
+  margin-top: 20px;
+}
+#content .business li:hover .sector_txt {
+  top: 0;
+  padding-top: 100px;
+  transition-delay: 0.1s;
+}
 /* .award_container */
 #content .award_container {
   position: relative;
