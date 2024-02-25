@@ -6,6 +6,7 @@
   --main-red: #ef0010;
   --main-orange: #f65742;
   --main-white: #fff;
+  --main-blue: #2c44fe;
   --main-bg-black: #111;
   --txt-black: #333;
   --txt-black-second: #666;
@@ -307,11 +308,27 @@ img {
   float: left;
   width: 3.5rem;
   height: 2.5rem;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  transition: all 0.3s ease-out;
 }
 #footerArea .social .sns li:not(:first-child) {
   margin-left: 0.75rem;
+}
+#footerArea .social .sns li a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.9rem;
+  filter: brightness(0.7);
+  transition: all 0.3s ease-out;
+}
+#footerArea .social .sns li:hover {
+  background: var(--main-red);
+}
+#footerArea .social .sns li:hover a {
+  filter: brightness(1);
 }
 /* footer .addcopy */
 #footerArea .addcopy {
@@ -347,7 +364,7 @@ img {
   color: var(--main-white);
   font-size: var(--fz20px);
   position: fixed;
-  right: 10%;
-  bottom: 10%;
+  right: 2.5%;
+  bottom: 5%;
   cursor: pointer;
 }
