@@ -662,7 +662,7 @@
     transform: scale(1.2);
   }
   50% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 #content .investment .more-btn:hover i {
@@ -673,7 +673,6 @@
 #content .recruit {
   height: 1100px;
   background: url("../mainimages/recruit_01.jpg");
-  background-size: cover;
   position: relative;
 }
 #content .recruit__container {

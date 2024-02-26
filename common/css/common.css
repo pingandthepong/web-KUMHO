@@ -164,9 +164,35 @@ img {
   color: #fff;
 }
 
-#wrap {
+/* skipNav 영역 */
+#skipNav {
+  position: relative;
   width: 100%;
   overflow: hidden;
+  z-index: 110;
+}
+#skipNav a {
+  height: 1px;
+  margin-bottom: -1px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+#skipNav a:hover,
+#skipNav a:focus,
+#skipNav a:active {
+  height: auto;
+  padding: 15px 0;
+  background: var(--main-red);
+}
+
+#wrap {
+  width: 2000px;
+  margin: 0 auto;
+  overflow: hidden;
+  overflow-x: scroll;
 }
 
 /* header 공통영역 */
@@ -235,7 +261,6 @@ img {
 /* footer 공통영역 */
 #footerArea {
   width: 100%;
-  margin: 0 auto;
   background: var(--main-bg-black);
 }
 #footerArea .footer__container {
