@@ -56,8 +56,8 @@
 
           <!-- header .top_menu -->
           <ul class="top_menu">
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
+            <li class="signin"><a href="#">로그인</a></li>
+            <li class="signup"><a href="#">회원가입</a></li>
           </ul>
         </div>
       </header>
@@ -280,7 +280,7 @@
             <a href="javascript:void(0)"
               ><i class="fa-solid fa-angles-right"></i
             ></a>
-            <a href="javascript:void(0)" class="more-btn"
+            <a href="javascript:void(0)" class="more_btn"
               ><i class="fa-solid fa-plus"></i
             ></a>
           </div>
@@ -472,8 +472,8 @@
               </div>
             </div>
           </div>
-          <!-- .more-link -->
-          <ul class="more-link">
+          <!-- .more_link -->
+          <ul class="more_link">
             <li>
               <a
                 href="javascript:void(0)"
@@ -491,7 +491,7 @@
               ></a>
             </li>
           </ul>
-          <a href="javascript:void(0)" class="more-btn"
+          <a href="javascript:void(0)" class="more_btn"
             ><i class="fa-solid fa-plus"></i
           ></a>
         </section>
@@ -538,7 +538,10 @@
       </article>
       <!-- footer -->
       <footer id="footerArea">
-        <a class="move_top" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+        <a class="move_top" href="#">
+          <!-- <i class="fa-solid fa-arrow-up"></i> -->
+          <i class="fa-solid fa-angles-up"></i>
+        </a>
         <div class="footer__container">
           <!-- .bottom_menu -->
           <div class="bottom_menu">
@@ -688,41 +691,47 @@
     </div>
 
     <!-- 메인 팝업(광고/이벤트/공지) -->
-    <div
-      id="showimage"
-      style="
-        z-index: 90;
-        position: absolute;
-        width: 322px;
-        left: 50%;
-        top: 200px;
-        margin-left: -900px;
-      ">
+    <div id="showimage">
       <script>
         function closeWin() {
           var chk = document.getElementById("Notice");
           if (chk.checked) {
-            setCookie("Notice", "done", 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+            setCookie("Notice", "done", 0); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
           }
         }
         if (getCookie("Notice") == "done") {
           hidebox();
         }
       </script>
-      <div>
-        <img
+
+      <span class="top">
+        <span class="btn1"></span><span class="btn2"></span
+        ><span class="btn3"></span>
+      </span>
+      <p>
+        본 사이트는 상업적 목적이 아닌<br /><span class="accent"
+          >개인 포트폴리오</span
+        >
+        용도로 만들어졌습니다.<br />홈페이지의 일부 내용과 기타 이미지 등은<br />그
+        출처가 따로 있음을 밝힙니다.
+      </p>
+      <!-- <img
           src="./popup/pop.png"
-          alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다." />
-      </div>
-      <div style="font-size: 12px; text-align: center; color: #666">
+          alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다." /> -->
+      <div class="bottom">
         <input
           type="checkbox"
           name="Notice"
           id="Notice"
           value=""
-          title="오늘은 이창을 열지 않음 선택상자" />
-        <label for="Notice">오늘은 이창을 열지 않음.</label>
-        <a href="#" onclick="closeWin();hidebox();return false;"> [close] </a>
+          title="오늘 하루 열지 않기 선택상자" />
+        <label for="Notice">오늘 하루 열지 않기</label>
+        <!-- <a href="#" onclick="closeWin();hidebox();return false;"
+            ><i class="fa-solid fa-xmark"></i
+          ></a> -->
+        <button type="button" onclick="closeWin();hidebox();return false;">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
     </div>
   </body>

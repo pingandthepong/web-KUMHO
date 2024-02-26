@@ -123,6 +123,7 @@ section {
 }
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Noto Sans KR", sans-serif;
@@ -194,7 +195,7 @@ img {
   height: 60px;
   background: var(--main-bg-black);
   border-radius: 50%;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   color: var(--main-white);
   text-align: center;
   position: fixed;
@@ -210,13 +211,25 @@ img {
   display: block;
   line-height: 60px;
   font-size: 1.8rem;
+  transition: all 2s ease-out;
+}
+@keyframes move_top {
+  0% {
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.move_top:hover i {
+  animation: move_top 1s infinite;
 }
 
 #wrap {
   width: 100%;
-  margin: 0 auto;
   overflow: hidden;
-  overflow-x: scroll;
 }
 
 /* header 공통영역 */
@@ -226,17 +239,14 @@ img {
   left: 0;
   top: 0;
   z-index: 100;
-  cursor: pointer;
-  transition: all 0.5s ease-out;
+  transition: all 0.55s ease-out;
 }
 #headerArea:hover {
-  background: var(--main-white);
-}
-#headerArea:hover a:not(.top_menu li:last-child a) {
-  color: var(--txt-black);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1);
 }
 #headerArea:hover .logo a {
-  background: url("../images/KUMHO_Logo_KJH_black.png");
+  background: url("../images/KUMHO_Logo_KJH_txtblack_pb20.png") no-repeat 0 0;
 }
 #headerArea .header__container {
   width: 1750px;
@@ -245,10 +255,18 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 150px;
 }
 #headerArea a {
   color: var(--main-white);
+}
+#headerArea:hover a {
+  color: var(--txt-black-second);
+}
+
+#headerArea:hover #gnb li a:hover {
+  color: var(--txt-black);
+  font-weight: 500;
 }
 
 /* header .logo */
@@ -265,17 +283,38 @@ img {
 /* header #gnb */
 #headerArea #gnb {
   flex: 1;
+  line-height: 100px;
 }
+
 #headerArea #gnb ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 85px;
+  justify-content: space-between;
+}
+#headerArea #gnb li h3 {
+  position: relative;
 }
 #headerArea #gnb li a {
-  padding: 10px 16px;
+  width: 192px;
   font-size: var(--fz22px);
   font-weight: 400;
+  text-align: center;
+}
+#headerArea #gnb li a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: var(--main-red);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+#headerArea #gnb li a:hover::after {
+  width: 192px;
+}
+#headerArea #gnb li:hover a {
+  color: var(--txt-black-third);
 }
 
 /* header .top_menu */
@@ -286,11 +325,27 @@ img {
   gap: 10px;
 }
 #headerArea .top_menu a {
-  padding: 4px 8px;
+  padding: 6px 8px;
+  line-height: 1;
 }
-#headerArea .top_menu li:nth-of-type(2) a {
+#headerArea .top_menu .signup a {
   background: var(--main-red);
   border-radius: 6px;
+}
+#headerArea .top_menu li a {
+  transition: all 0.35s;
+}
+#headerArea .top_menu .signup:hover a {
+  background: var(--main-blue);
+}
+#headerArea:hover .top_menu .signin a {
+  color: var(--txt-black);
+}
+#headerArea:hover .top_menu .signin:hover a {
+  font-weight: 600;
+}
+#headerArea:hover .top_menu .signup a {
+  color: var(--main-white);
 }
 
 /* footer 공통영역 */
@@ -311,17 +366,23 @@ img {
   flex-direction: row-reverse;
 }
 #footerArea .bottom_menu .family_site a {
-  width: 12rem;
-  line-height: 1.63;
+  width: 192px;
   color: var(--footer-white);
+  transition: all 0.55s ease-out;
+}
+#footerArea .bottom_menu .family_site:hover a {
+  letter-spacing: 5px;
 }
 #footerArea .bottom_menu .family_site a::after {
   content: "+";
-  width: 1.63rem;
-  height: 1.63rem;
-  border-radius: 50%;
-  text-align: center;
+  font-size: 2rem;
+  margin-top: -10px;
   float: right;
+  transition: all 0.5s ease-out;
+}
+#footerArea .bottom_menu .family_site:hover a::after {
+  color: var(--main-red);
+  transform: rotateX(360deg) rotateZ(45deg);
 }
 #footerArea .bottom_menu .family_site ul {
   display: none;
@@ -389,6 +450,12 @@ img {
 }
 #footerArea .social .sns li:hover a {
   filter: brightness(1);
+}
+#footerArea .social .sns li a i {
+  transition: all 0.2s ease-out;
+}
+#footerArea .social .sns li:hover a i {
+  transform: scale(1.2);
 }
 /* footer .addcopy */
 #footerArea .addcopy {
