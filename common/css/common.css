@@ -188,8 +188,32 @@ img {
   background: var(--main-red);
 }
 
+/* top 이동 */
+.move_top {
+  width: 60px;
+  height: 60px;
+  background: var(--main-bg-black);
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  color: var(--main-white);
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  bottom: 50px;
+  margin-left: 800px;
+  transition: background 0.5s ease-out, color 0.5s ease-out;
+}
+.move_top:hover {
+  background: var(--main-red);
+}
+.move_top i {
+  display: block;
+  line-height: 60px;
+  font-size: 1.8rem;
+}
+
 #wrap {
-  width: 2000px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   overflow-x: scroll;
@@ -202,6 +226,17 @@ img {
   left: 0;
   top: 0;
   z-index: 100;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+#headerArea:hover {
+  background: var(--main-white);
+}
+#headerArea:hover a:not(.top_menu li:last-child a) {
+  color: var(--txt-black);
+}
+#headerArea:hover .logo a {
+  background: url("../images/KUMHO_Logo_KJH_black.png");
 }
 #headerArea .header__container {
   width: 1750px;
@@ -376,20 +411,4 @@ img {
 }
 #footerArea .copy .accent {
   color: var(--main-red);
-}
-
-/* .top-btn */
-.top-btn {
-  width: 3.13rem;
-  height: 3.13rem;
-  background: var(--main-bg-black);
-  border-radius: 50%;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-  border: none;
-  color: var(--main-white);
-  font-size: var(--fz20px);
-  position: fixed;
-  right: 2.5%;
-  bottom: 5%;
-  cursor: pointer;
 }
