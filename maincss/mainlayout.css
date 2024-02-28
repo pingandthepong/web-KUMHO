@@ -129,7 +129,7 @@
 }
 #content .business li .sector_txt p {
   height: 224px;
-  font-size: 1.25rem;
+  font-size: 1.24rem;
   line-height: 2;
   letter-spacing: -0.02rem;
 }
@@ -685,8 +685,10 @@
   margin-top: 200px;
 }
 #content .recruit__container .section_title_en + p {
+  width: 33ch;
   margin-top: 175px;
 }
+
 #content .recruit .recruit_list {
   width: 670px;
   display: flex;
