@@ -190,7 +190,8 @@ img {
 }
 
 /* top 이동 */
-.move_top {
+.move_top,
+.move_bottom {
   width: 60px;
   height: 60px;
   background: var(--main-bg-black);
@@ -200,14 +201,21 @@ img {
   text-align: center;
   position: fixed;
   left: 50%;
-  bottom: 50px;
   margin-left: 800px;
   transition: background 0.5s ease-out, color 0.5s ease-out;
 }
-.move_top:hover {
+.move_top {
+  bottom: 120px;
+}
+.move_bottom {
+  bottom: 50px;
+}
+.move_top:hover,
+.move_bottom:hover {
   background: var(--main-red);
 }
-.move_top i {
+.move_top i,
+.move_bottom i {
   display: block;
   line-height: 60px;
   font-size: 1.8rem;
@@ -225,6 +233,19 @@ img {
 }
 .move_top:hover i {
   animation: move_top 1s infinite;
+}
+@keyframes move_bottom {
+  0% {
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.move_bottom:hover i {
+  animation: move_bottom 1s infinite;
 }
 
 #wrap {
