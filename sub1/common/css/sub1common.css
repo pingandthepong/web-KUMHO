@@ -69,10 +69,12 @@
 
 /* #content */
 #content {
-  width: 1400px;
+  width: 100%;
   margin: 0 auto;
 }
 #content .title_area {
+  width: 1400px;
+  margin: 0 auto;
   height: 532px;
   position: relative;
   overflow: hidden;
