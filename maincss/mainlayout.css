@@ -379,7 +379,10 @@
 #content .news__inner li:hover img {
   transform: scale(0.94);
 }
-#content .news__inner li h4 {
+#content .news__inner li dl {
+  overflow: hidden;
+}
+#content .news__inner li dl dt {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -388,15 +391,18 @@
   margin-top: 25px;
   font-weight: 600;
 }
-#content .news__inner li .source {
+#content .news__inner li dl .source {
   font-size: 1.25em;
   font-weight: 300;
   margin-right: 15px;
+  float: left;
 }
-#content .news__inner li .date {
+#content .news__inner li dl .date {
   font-size: 1rem;
   font-weight: 100;
+  margin-top: 5px;
   color: var(--txt-black-second);
+  float: left;
 }
 #content .news .more_btn {
   position: absolute;
