@@ -16,7 +16,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  color: var(--main-white);
+  color: #fff;
   text-align: center;
 }
 .visual .slogan__lg {
@@ -52,7 +52,7 @@
   display: block;
   width: 40%;
   height: 100%;
-  background: var(--main-red);
+  background: #ef0010;
 }
 
 /* 본문 콘텐츠 영역 */
@@ -80,7 +80,7 @@
 #content .section_title_en {
   font-size: 1.88rem;
   font-weight: 200;
-  color: var(--main-red);
+  color: #ef0010;
   margin-left: 1.56rem;
 }
 #content .section_title_en + p {
@@ -118,7 +118,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--main-white);
+  color: #fff;
   padding: 0 42px;
   transition: all 0.3s ease-out;
 }
@@ -138,7 +138,7 @@
   width: 74px;
   height: calc(48px - 12px * 2);
   border-radius: 6px;
-  color: var(--main-white);
+  color: #fff;
   padding: 12px 24px;
   position: absolute;
   left: 50%;
@@ -147,7 +147,7 @@
 }
 #content .business li:hover .more {
   width: 124px;
-  background: var(--main-red);
+  background:#ef0010;
   transition: all 0.55s ease-out;
   transition-delay: 0.2s;
 }
@@ -204,10 +204,10 @@
   padding: 30px 0;
   margin: 150px auto 0;
   text-align: center;
-  color: var(--main-white);
+  color: #fff;
 }
 #content .master .master_main_txt h3 {
-  color: var(--main-orange);
+  color: #f65742;
   font-size: 1.88rem;
   font-weight: 500;
   margin-bottom: 70px;
@@ -246,13 +246,13 @@
 }
 #content .master_tab li a {
   font-size: 1.35em;
-  color: var(--main-white);
+  color: #fff;
   line-height: 100px;
   background: rgba(0, 0, 0, 0.4);
   transition: all 0.5s linear;
 }
 #content .master_tab li:hover a {
-  background: var(--main-red);
+  background: #ef0010;
 }
 
 /* section.award */
@@ -273,7 +273,7 @@
 }
 #content .award__container .award_list li {
   width: 507px;
-  background: var(--main-white);
+  background: #fff;
   border-radius: 20px;
   box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
   overflow: hidden;
@@ -328,19 +328,19 @@
 #content .award .btn_box a {
   padding: 5px 10px;
   font-size: 1.2rem;
-  color: var(--txt-black-third);
+  color: #999;
   border-radius: 50%;
 }
 #content .award .btn_box a:hover {
-  color: var(--main-red);
+  color:#ef0010;
 }
 #content .award .btn_box .more_btn {
   transition: all 0.25s ease-out;
 }
 #content .award .btn_box .more_btn:hover {
   transform: rotate(180deg);
-  background: var(--main-red);
-  color: var(--main-white);
+  background: #ef0010;
+  color: #fff;
 }
 
 /* .news */
@@ -368,7 +368,7 @@
   height: 215px;
   border-radius: 16px;
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2), 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--txt-black-third);
+  border: 1px solid #999;
   overflow: hidden;
 }
 #content .news__inner li img {
@@ -401,14 +401,14 @@
   font-size: 1rem;
   font-weight: 100;
   margin-top: 5px;
-  color: var(--txt-black-second);
+  color: #666;
   float: left;
 }
 #content .news .more_btn {
   position: absolute;
   right: 0;
   top: 200px;
-  color: var(--main-red);
+  color:#ef0010;
   padding: 10px;
   perspective: 100px;
   border-radius: 50%;
@@ -450,7 +450,7 @@
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: var(--main-red)
+  background: #ef0010
     url("../common/images/KUMHO_Logo_KJH_icon_fff.png") no-repeat 10px 13px;
   background-size: 26px;
   border-radius: 50%;
@@ -468,10 +468,10 @@
   font-weight: 400;
 }
 #content .iframe_box .positive {
-  color: var(--main-red);
+  color: #ef0010;
 }
 #content .iframe_box .negative {
-  color: var(--main-blue);
+  color: #2c44fe;
 }
 /* .iframe_box .middle */
 #content .iframe_box .middle {
@@ -534,10 +534,10 @@
   font-weight: 700;
 }
 #content .iframe_box .bottom td.open {
-  color: var(--main-red);
+  color: #ef0010;
 }
 #content .iframe_box .bottom td.high {
-  color: var(--main-blue);
+  color: #2c44fe;
 }
 /* .investment .earning-rate */
 #content .investment .earning-rate {
@@ -582,7 +582,7 @@
   right: 0;
   top: 70px;
   font-size: 0.8rem;
-  color: var(--txt-black-second);
+  color: #666;
 }
 #content .investment .graph {
   clear: both;
@@ -591,7 +591,7 @@
   height: 325px;
   display: grid;
   place-items: center;
-  color: var(--txt-black-third);
+  color: #999;
 }
 #content .investment .graph .button_bar {
   display: flex;
@@ -618,11 +618,11 @@
 #content .investment .graph .notice_des {
   font-size: 0.8rem;
   margin-top: 10px;
-  color: var(--txt-black-third);
+  color: #999;
   font-weight: 300;
 }
 #ci2 {
-  accent-color: var(--main-orange);
+  accent-color: #f65742;
 }
 #ci1 {
   accent-color: #3ffffc;
@@ -643,8 +643,8 @@
 }
 #content .investment .more_link li a {
   font-size: 1.5rem;
-  color: var(--main-orange);
-  border: 1px solid var(--main-orange);
+  color: #f65742;
+  border: 1px solid #f65742;
   padding: 12px 24px;
   /* width: 160px;
   height: 60px; */
@@ -658,15 +658,15 @@
 }
 #content .investment .more_link li:hover a,
 #content .investment .more_link li:hover a i {
-  background: var(--main-orange);
-  color: var(--main-white);
+  background: #f65742;
+  color: #fff;
 }
 #content .investment .more_link li:active a {
   transform: translateY(2px);
 }
 #content .investment .more_btn {
   font-size: 2rem;
-  color: var(--main-orange);
+  color: #f65742;
   position: absolute;
   right: 10px;
   top: 230px;
@@ -685,7 +685,7 @@
   position: relative;
 }
 #content .recruit__container {
-  color: var(--main-white);
+  color: #fff;
 }
 #content .recruit__container h3 {
   margin-top: 200px;
@@ -708,7 +708,7 @@
   width: 335px;
   height: 550px;
   font-size: 2rem;
-  color: var(--main-white);
+  color:#fff;
   font-weight: 500;
   box-sizing: border-box;
   display: flex;
@@ -746,7 +746,7 @@
   display: block;
   width: 100px;
   height: 2px;
-  background: var(--main-white);
+  background: #fff;
 }
 #content .recruit__container .page_progress .play_btn {
   display: flex;
@@ -754,7 +754,7 @@
 }
 #content .recruit__container .page_progress .play_btn a {
   padding: 5px 10px;
-  color: var(--main-white);
+  color: #fff;
 }
 #content .recruit__container .page_progress .play_btn a i {
   font-size: 2rem;
@@ -795,7 +795,7 @@
   display: block;
   width: 80%;
   height: 1px;
-  background: var(--main-red);
+  background: #ef0010;
   background: #e5e5e5;
   position: absolute;
   left: 50%;
@@ -807,7 +807,7 @@
   padding: 115px 0 50px;
 }
 #showimage p .accent {
-  color: var(--main-red);
+  color: #ef0010;
   font-weight: 600;
 }
 #showimage .close_box {
@@ -815,11 +815,11 @@
   border-top: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
-  color: var(--txt-black-second);
+  color: #666;
   padding: 0 10px 0 20px;
 }
 #showimage .close_box input {
-  accent-color: var(--main-red);
+  accent-color: #ef0010;
 }
 #showimage .close_box label {
   flex: 1;
@@ -827,5 +827,5 @@
 }
 #showimage .close_box a {
   padding: 15px;
-  color: var(--txt-black-second);
+  color: #666;
 }
