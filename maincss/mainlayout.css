@@ -299,7 +299,7 @@
   display: flex;
   flex-direction: column;
 }
-#content .award__container .award_txt h4 {
+#content .award__container .award_txt dt {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 10px;
