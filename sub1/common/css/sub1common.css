@@ -78,6 +78,24 @@
   height: 532px;
   position: relative;
   overflow: hidden;
+  position: relative;
+}
+#content .title_area::before,
+#content .title_area::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 1px;
+  background: var(--sub-beige);
+  position: absolute;
+  left: 50%;
+  bottom: 23.5%;
+}
+#content .title_area::before {
+  transform: translateX(-120%);
+}
+#content .title_area::after {
+  transform: translateX(20%);
 }
 #content .title_area .line_map {
   position: absolute;
@@ -95,22 +113,32 @@
   text-align: center;
   position: relative;
 }
-#content .title_area h2::before,
-#content .title_area h2::after {
+#content .title_area h2::before {
   content: "";
   display: block;
   width: 150px;
-  height: 1px;
-  background: var(--sub-beige);
+  height: 150px;
+  border-radius: 50%;
   position: absolute;
   left: 50%;
-  top: 250%;
-}
-#content .title_area h2::before {
-  transform: translateX(-120%);
+  bottom: -15%;
+  transform: translateX(-125%);
+  opacity: 0.2;
+  z-index: -100;
+  background: var(--sub-beige);
 }
 #content .title_area h2::after {
-  transform: translateX(20%);
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: url("../../../common/images/header-logo-pb20.png") no-repeat right
+    5px top 5px;
+  position: absolute;
+  left: 50%;
+  top: -5%;
+  transform: translateX(280%);
 }
 #content .title_area p {
   display: block;
