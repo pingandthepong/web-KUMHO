@@ -67,11 +67,44 @@
 #content .vision__overview li:nth-child(even) .overview_txt_list li {
   margin-left: 70px;
 }
-
 #content .overview_txt_info h4 {
   font-size: 2.06rem;
   font-weight: 600;
   color: var(--main-orange);
+  display: inline-block;
+  position: relative;
+}
+#content .vision__overview > li h4::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--sub-beige);
+  position: absolute;
+  bottom: 7px;
+  left: calc(105% + 110px);
+}
+#content .vision__overview > li:hover h4::before {
+  width: 7px;
+  transition: all 0.2s ease-out;
+  transition-delay: 0.25s;
+}
+#content .vision__overview > li h4::after {
+  content: "";
+  display: block;
+  width: 100px;
+  width: 0;
+  height: 1px;
+  background: var(--main-orange);
+  background: var(--sub-beige);
+  position: absolute;
+  left: 105%;
+  bottom: 10px;
+  transition: all 0.2s ease-out;
+}
+#content .vision__overview > li:hover h4::after {
+  width: 100px;
 }
 #content .overview_txt .main_des {
   font-size: 1.3rem;
@@ -106,6 +139,7 @@
   border-radius: 50%;
   background: var(--main-orange);
 }
+
 /* .vision__business */
 #content .vision_business {
   width: 100%;
