@@ -104,9 +104,10 @@
   color: #999;
 }
 #content .title_area .line_map .home {
-  background: url('../images/home.svg') no-repeat center;
+  background: url("../images/home.svg") no-repeat center;
   display: inline-block;
-  width: 23px; height: 23px;
+  width: 23px;
+  height: 23px;
   text-indent: -9999px;
 }
 #content .title_area .line_map strong {

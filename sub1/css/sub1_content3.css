@@ -1,0 +1,359 @@
+/* VISION의 실제 본문 내용 css */
+/* .content_area */
+/* .invest */
+#content section {
+  width: 1400px;
+  margin: 0 auto;
+}
+/* .invest_sub_nav */
+#content .invest .invest_sub_nav {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #c5c5c5;
+  margin-bottom: 100px;
+}
+#content .invest .invest_sub_nav li a {
+  width: calc(1400px / 3);
+  text-align: center;
+  line-height: 60px;
+  font-size: 1.25rem;
+  transition: all 0.25s ease-out;
+}
+#content .invest .invest_sub_nav li:not(:last-of-type) {
+  border-right: 1px solid #c5c5c5;
+}
+#content .invest .invest_sub_nav li a.current,
+#content .invest .invest_sub_nav li a:hover {
+  background: #f65742;
+  color: #fff;
+}
+
+/* section.invest__wrap */
+#content .invest__wrap section:not(:first-of-type) {
+  padding: 100px 0;
+}
+#content .invest__wrap h4 {
+  font-size: 2.3rem;
+  margin-bottom: 50px;
+}
+#content .invest__wrap h4 + * {
+  width: 100%;
+  border-top: 2px solid #222;
+}
+#content .invest__wrap .invest__container h4 + * {
+  border: none;
+}
+
+/* section.invest__wrap section.invest__container */
+#content .invest__wrap .invest__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+/* .iframe_box */
+#content .invest__wrap .invest__container .iframe_box {
+  width: 685px;
+  height: 450px;
+  background: #f8f8f8;
+  border-radius: 50px;
+  padding: 55px 75px 85px;
+  box-sizing: border-box;
+}
+#content .invest__wrap .invest__container .iframe_box .iframe_head::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #ef0010 url("../../common/images/KUMHO_Logo_KJH_icon_fff.png")
+    no-repeat 10px 13px;
+  background-size: 26px;
+  border-radius: 50%;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+#content .invest__wrap .invest__container .iframe_box .iframe_head {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+#content .invest__wrap .invest__container .iframe_box .iframe_head span {
+  font-size: 1.25rem;
+  margin-left: 15px;
+  font-weight: 400;
+}
+#content .iframe_box .positive {
+  color: #ef0010;
+}
+#content .iframe_box .negative {
+  color: #2c44fe;
+}
+/* .iframe_box .middle */
+#content .iframe_box .middle {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 75px;
+}
+#content .iframe_box .middle .last {
+  font-size: 4.38rem;
+  font-weight: 700;
+  line-height: 1;
+}
+#content .iframe_box .middle .changerate_box {
+  display: flex;
+  gap: 20px;
+}
+#content .iframe_box .middle .changerate_box li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#content .iframe_box .middle .changerate_box li h5 {
+  font-size: 1.56rem;
+  font-weight: 600;
+}
+#content .iframe_box .middle .changerate_box li div {
+  font-size: 1.25rem;
+}
+#content .iframe_box .middle .changerate_box .positive {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+#content .iframe_box .middle .changerate_box .positive::before {
+  content: "";
+  display: inline-block;
+  background: url("../../mainimages/investment_positive.png");
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+}
+#content .iframe_box .middle .changerate_box .negative::before {
+  content: "";
+  display: inline-block;
+  background: url("../../mainimages/investment_negaitive.png");
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+}
+/* .iframe_box bottom */
+#content .iframe_box .bottom {
+  width: 100%;
+  font-size: 1.25rem;
+  text-align: center;
+}
+#content .iframe_box .bottom th {
+  font-weight: 700;
+}
+#content .iframe_box .bottom td.open {
+  color: #ef0010;
+}
+#content .iframe_box .bottom td.high {
+  color: #2c44fe;
+}
+/* .earning-rate */
+#content .invest__wrap .invest__container .earning-rate {
+  width: 680px;
+  height: 657px;
+  background: #fff;
+  border: 2px solid #c5c5c5;
+  border-radius: 50px;
+  padding: 53px 58px 60px;
+  box-sizing: border-box;
+}
+#content .invest__wrap .invest__container .earning-rate h5 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+#content .invest__wrap .invest__container .earning-rate_inner {
+  border-top: 1px solid #c5c5c5;
+  border-bottom: 1px solid #c5c5c5;
+  padding: 12px 0 30px;
+  position: relative;
+}
+#content .earning-rate .tab_list_wrapper {
+  letter-spacing: -1.2px;
+  font-weight: 500;
+}
+#content .earning-rate .tab_list_wrapper .tab_list_title {
+  float: left;
+  margin-right: 10px;
+}
+#content .earning-rate .tab_list_wrapper .tabs {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+#content .earning-rate .tab_list_wrapper .tabs a {
+  padding: 0 10px;
+}
+#content .earning-rate .notice_date {
+  position: absolute;
+  right: 0;
+  top: 70px;
+  font-size: 0.8rem;
+  color: #666;
+}
+#content .earning-rate .graph {
+  clear: both;
+}
+#content .earning-rate .graph .chart {
+  height: 325px;
+  display: grid;
+  place-items: center;
+  color: #999;
+}
+#content .earning-rate .graph .button_bar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #f2f3f8;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 26px;
+}
+#content .earning-rate .graph .button_bar .checkbox {
+  display: flex;
+  align-items: center;
+}
+#content .earning-rate .graph .button_bar label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+#content .earning-rate .graph .button_bar label small {
+  font-weight: 300;
+}
+#content .earning-rate .graph .notice_des {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  color: #999;
+  font-weight: 300;
+}
+#ci2 {
+  accent-color: #f65742;
+}
+#ci1 {
+  accent-color: #3ffffc;
+}
+#ci3 {
+  accent-color: #8afcaa;
+}
+
+/* section.invest__wrap table */
+#content .invest__wrap :not(:first-of-type) table thead,
+#content .invest__wrap table tfoot tr > * {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 76px;
+  text-align: center;
+}
+#content .invest__wrap :not(:first-of-type) table tbody {
+  line-height: 80px;
+}
+#content .invest__wrap :not(:first-of-type) table tr {
+  border-bottom: 1px solid #e5e5e5;
+}
+#content .invest__wrap .invest_info tr > *:not(:last-child),
+#content .invest__wrap .invest_stockholder_lg table tr > *:not(:last-child) {
+  border-right: 1px solid #e5e5e5;
+}
+#content .invest__wrap table tbody th {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+#content .invest__wrap table tbody td {
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+}
+#content .invest__wrap table caption {
+  caption-side: bottom;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: right;
+  font-size: 0.94rem;
+  font-weight: 300;
+  letter-spacing: -0.63px;
+  color: #999;
+}
+#content .invest_stockholder_lg td:last-child::after {
+  content: "%";
+}
+#content .invest_stockholder_lg {
+  position: relative;
+}
+#content .invest_stockholder_lg .table-des {
+  position: absolute;
+  left: 0;
+  bottom: 80px;
+}
+#content .invest_stockholder_lg .table-des p::before {
+  content: "※ ";
+}
+#content .invest_stockholder_lg .table-des p {
+  font-size: 0.94rem;
+  font-weight: 300;
+  letter-spacing: -0.63px;
+  color: #999;
+  line-height: 2;
+}
+
+/* .invest__wrap2 */
+#content .invest__wrap2 .invest_info table th {
+  border-top: 4px solid #f65742;
+  border-bottom: 1px solid #f65742;
+}
+#content .invest__wrap2 .invest_info table tr {
+  border-bottom: 1px solid #ddd;
+  color: #999;
+  font-weight: 300;
+}
+#content .invest__wrap2 .invest_info table th {
+  color: #222;
+}
+#content .invest_info table tr > *:not(:last-child) {
+  border-right: none;
+}
+#content .invest__wrap2 .invest_info table i {
+  width: 100%;
+  cursor: pointer;
+  line-height: 80px;
+}
+#content .paging {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content .paging button {
+  border: none;
+  background: none;
+}
+#content .paging button,
+#content .paging a {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+  color: #999;
+  cursor: pointer;
+}
+#content .paging a.active {
+  background: #f65742;
+  color: #fff;
+}
+#content .paging button:disabled {
+  color: #ddd;
+}
+
+/* .invest__wrap3 .financial */
+#content .financial {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
