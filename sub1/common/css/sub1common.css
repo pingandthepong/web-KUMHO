@@ -89,7 +89,7 @@
   background: #bfb1a3;
   position: absolute;
   left: 50%;
-  bottom: 23.5%;
+  bottom: 126px;
 }
 #content .title_area::before {
   transform: translateX(-120%);
@@ -163,6 +163,6 @@
   background: #bfb1a3;
   position: absolute;
   left: 50%;
-  top: 315%;
+  top: 123px;
   transform: translateX(-50%);
 }
