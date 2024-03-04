@@ -101,10 +101,17 @@
   position: absolute;
   right: 0;
   top: 30px;
-  color: #666;
+  color: #999;
+}
+#content .title_area .line_map .home {
+  background: url('../images/home.svg') no-repeat center;
+  display: inline-block;
+  width: 23px; height: 23px;
+  text-indent: -9999px;
 }
 #content .title_area .line_map strong {
   font-weight: 600;
+  color: #666;
 }
 #content .title_area h2 {
   margin-top: 191px;
