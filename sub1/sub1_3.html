@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회사소개-VISION</title>
-    <link rel="stylesheet" href="../common/css/common.css" />
-    <link rel="stylesheet" href="./common/css/sub1common.css" />
-    <link rel="stylesheet" href="./css/sub1_content3.css" />
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content3.css">
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script
       src="https://kit.fontawesome.com/5c48cfd0d4.js"
       crossorigin="anonymous"></script>
-    <!-- <script src="./common/js/prefixfree.min.js"></script> -->
+    <script src="./common/js/prefixfree.min.js"></script>
   </head>
   <body>
     <!-- skipNav -->
@@ -97,14 +97,16 @@
             <h3 class="hidden">투자정보 개요</h3>
 
             <!-- .section__visual -->
-            <dl class="section__visual">
-              <dt>A Secure Investment</dt>
-              <dd>
-                소중한 자산, 투명경영으로 보답하겠습니다.<br />
-                <strong>투명한 경영</strong>으로 고객님의 수익을
-                <strong>최우선</strong> 하겠습니다.
-              </dd>
-            </dl>
+            <div class="section__visual">
+              <dl>
+                <dt>A Secure Investment</dt>
+                <dd>
+                  소중한 자산, 투명경영으로 보답하겠습니다.<br>
+                  <strong>투명한 경영</strong>으로 고객님의 수익을
+                  <strong>최우선</strong> 하겠습니다.
+                </dd>
+              </dl>
+            </div>
 
             <ul class="invest_sub_nav">
               <li><a href="javascript:void(0)" class="current">주가정보</a></li>
@@ -193,19 +195,19 @@
                       <div class="chart">(차트영역)</div>
                       <ul class="button_bar">
                         <li class="checkbox">
-                          <input type="checkbox" checked id="ci2" />
+                          <input type="checkbox" checked id="ci2">
                           <label for="ci2"
                             >기준가격(NAV) <small>-2.19%(9,930.47원)</small>
                           </label>
                         </li>
                         <li class="checkbox">
-                          <input type="checkbox" checked id="ci1" />
+                          <input type="checkbox" checked id="ci1">
                           <label for="ci1"
                             >시장가격(종가) <small>-2.19%(9,930.47원)</small>
                           </label>
                         </li>
                         <li class="checkbox">
-                          <input type="checkbox" checked id="ci3" />
+                          <input type="checkbox" checked id="ci3">
                           <label for="ci3"
                             >기초지수 <small>-2.19%(9,930.47원)</small>
                           </label>
@@ -282,7 +284,7 @@
 
               <!-- .invest_stockholder_lg -->
               <section class="invest_stockholder_lg">
-                <h4>최대주주 및<br />그 특수관계인의 주식소유 현황</h4>
+                <h4>최대주주 및<br>그 특수관계인의 주식소유 현황</h4>
                 <table>
                   <caption>
                     <span class="hidden">금호건설 투자정보 - 기본정보</span>
@@ -297,13 +299,6 @@
                       <th scope="col">비율</th>
                     </tr>
                   </thead>
-                  <tfoot>
-                    <tr>
-                      <th scope="col" colspan="3">합계</th>
-                      <td>62,961,758</td>
-                      <td>33.6</td>
-                    </tr>
-                  </tfoot>
                   <tbody>
                     <tr>
                       <td>금호고속</td>
@@ -341,6 +336,13 @@
                       <td>0.00</td>
                     </tr>
                   </tbody>
+                  <tfoot>
+                    <tr>
+                      <th scope="col" colspan="3">합계</th>
+                      <td>62,961,758</td>
+                      <td>33.6</td>
+                    </tr>
+                  </tfoot>
                 </table>
                 <div class="table-des">
                   <p>상기 지분율은 발행주식총수(우선주 포함) 대비 기준임</p>
@@ -364,12 +366,8 @@
                 <iframe
                   src="https://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=002990"
                   name="IR"
-                  scrolling="yes"
-                  frameborder="0"
                   width="750"
-                  height="720"
-                  marginheight="0"
-                  marginwidth="0"></iframe>
+                  height="720"></iframe>
               </section>
 
               <section class="invest_info">
@@ -458,10 +456,38 @@
                 <h4>요약재무제표(K-IFRS 연결 기준)</h4>
 
                 <div class="financial financial_position">
-                  <h5>재무상태표 [전체]</h5>
+                  <p>(단위: 십억원)</p>
+                  <div class="chart-inner">
+                    <h5>재무상태표 [전체]</h5>
+                    <div
+                      id="graph1"
+                      class="chart_item"
+                      data-highcharts-chart="0">
+                      <ul>
+                        <li>자산</li>
+                        <li>부채</li>
+                        <li>자본</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <div class="financial income_statement">
-                  <h5>손익계산서</h5>
+                  <p>(단위: 십억원)</p>
+                  <div class="chart-inner">
+                    <h5>손익계산서</h5>
+                    <div
+                      id="graph2"
+                      class="chart_item"
+                      data-highcharts-chart="0">
+                      <ul>
+                        <li>매출</li>
+                        <li>매출총이익</li>
+                        <li>영업이익</li>
+                        <li>세전이익</li>
+                        <li>순이익</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </section>
             </div>
@@ -613,8 +639,7 @@
 
           <div class="addcopy">
             <a href="javascript:void(0)" class="footer_logo"
-              ><img src="../common/images/header-logo-pb20.png" alt=""
-            /></a>
+              ><img src="../common/images/header-logo-pb20.png" alt=""></a>
             <address>
               서울특별시 종로구 우정국로26 센트로폴리스 A동 | 대표전화
               (02)6303-0102

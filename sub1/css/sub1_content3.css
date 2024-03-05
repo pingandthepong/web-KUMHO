@@ -29,9 +29,6 @@
 }
 
 /* section.invest__wrap */
-/* #content .invest__wrap section:not(:first-of-type) {
-  padding: 100px 0;
-} */
 #content section section:not(:first-of-type) {
   padding: 100px 0;
 }
@@ -368,7 +365,66 @@
 }
 
 /* .invest__wrap3 .financial */
-#content .financial {
-  width: 100%;
-  aspect-ratio: 16/9;
+#content .invest__wrap3 .invest_financial .financial {
+  padding: 50px 0;
+}
+#content .invest__wrap3 .invest_financial .financial h5 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 40px 0;
+  font-weight: 400;
+}
+#content .invest__wrap3 .invest_financial .financial p {
+  text-align: right;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 2;
+  color: #999;
+}
+#content .invest__wrap3 .invest_financial .financial .chart-inner {
+  height: 660px;
+  border: 1px solid #c5c5c5;
+}
+#content .invest__wrap3 .invest_financial .financial .chart-inner ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 17px;
+  margin-right: 45px;
+}
+#content .invest__wrap3 .invest_financial .financial #graph2 ul {
+  justify-content: center;
+  margin-right: 0;
+}
+#content .invest__wrap3 .invest_financial .financial .chart-inner li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #555;
+}
+#content .invest__wrap3 .invest_financial .financial .chart-inner li::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: #f65742;
+}
+#content #graph1 li:nth-child(2):before {
+  background: #bfb1a3;
+}
+#content #graph1 li:nth-child(3):before {
+  background: #f0cc89;
+}
+#content #graph2 li:nth-child(2):before {
+  background: #56423e;
+}
+#content #graph2 li:nth-child(3):before {
+  background: #bfb1a3;
+}
+#content #graph2 li:nth-child(4):before {
+  background: #00aacb;
+}
+#content #graph2 li:nth-child(5):before {
+  background: #f0cc89;
 }
