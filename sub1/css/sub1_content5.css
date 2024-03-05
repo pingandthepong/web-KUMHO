@@ -1,0 +1,138 @@
+/* VISION의 실제 본문 내용 css */
+/* .content_area */
+#content .content_area {
+  background: #f8f8f8;
+  padding: 100px 0;
+}
+#content .contact {
+  margin-bottom: 100px;
+}
+#map {
+  width: 1400px;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+  border: 1px solid #999;
+}
+
+/* .contact_us */
+#content .contact_us {
+  width: 1400px;
+  margin: 0 auto;
+}
+#content .contact_us h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #2C44F2;
+  margin-bottom: 30px;
+}
+#content .contact_us h3 + p {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 106px;
+}
+#content .contact_us .phone,
+#content .contact_us .public {
+  background: #fff;
+  padding: 100px 100px 100px 0;
+  position: relative;
+}
+#content .contact_us .phone {
+  border-radius: 30px 30px 0 0;
+  margin-bottom: 2px;
+}
+#content .contact_us .public {
+  border-radius: 0 0 30px 30px;
+}
+#content .contact_us .contactus_title {
+  width: 426px;
+  text-align: center;
+  font-size: 2rem;
+  color: #2C44F2;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  line-height: 1;
+}
+#content .contact_us .phone dd,
+#content .contact_us .public table {
+  margin-left: 430px;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+#content .contact_us .phone .title {
+  font-weight: 600;
+  margin-right: 30px;
+}
+#content .contact_us .phone dd:first-of-type,
+#content .contact_us .phone dd:nth-of-type(3) {
+  margin-bottom: 50px;
+}
+#content .contact_us .phone dd:nth-of-type(4) .title:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 1.6rem;
+  vertical-align: middle;
+  background: #333;
+  margin: 0 20px;
+}
+#content .contact_us .phone .caution {
+  font-size: 1.2rem;
+  margin-top: 100px;
+}
+#content .contact_us .phone .caution::before {
+  content: "※ ";
+}
+#content .contact_us .phone .caution a {
+  display: inline-block;
+  background: #2C44F2;
+  color: #fff;
+  padding: 6px 24px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+#content .contact_us .public table tr:first-of-type {
+  height: 130px;
+}
+#content .contact_us .public table tr:nth-of-type(2) {
+  height: 180px;
+}
+#content .contact_us .public table th {
+  width: 150px;
+  text-align: left;
+  vertical-align: top;
+}
+#content .contact_us .public table td {
+  vertical-align: top;
+}
+#content .contact_us .public .blue_bus {
+  color: #397CC8;
+  font-weight: 500;
+}
+#content .contact_us .public .green_bus {
+  color: #67C54B;
+  font-weight: 500;
+}
+#content .contact_us .public .subway_1::before {
+  content: "1";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #0d347f;
+  color: #fff;
+  margin-right: 5px;
+}
+#content .contact_us .print {
+  width: 300px;
+  font-size: 1.25rem;
+  background: #252525;
+  color: #fff;
+  text-align: center;
+  line-height: 75px;
+  border-radius: 16px;
+  margin: 75px auto ;
+
+}
