@@ -177,25 +177,23 @@
   transform: translateX(-50%);
 }
 
-/* section__visual */
-#content .content_area .section__visual {
+/* .intro */
+#content .content_area .intro {
+  width: 1400px;
   text-align: center;
-  margin-bottom: 170px;
+  margin: 0 auto 170px;
 }
-#content .content_area .section__visual {
-  
-}
-#content .content_area .section__visual dt {
+#content .content_area .intro h3 {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 25px;
 }
-#content .content_area .section__visual dd {
+#content .content_area .intro .slogan {
   font-size: 1.2rem;
   font-weight: 200;
   line-height: 1.5;
 }
-#content .content_area .section__visual dd strong {
+#content .content_area .slogan strong {
   font-size: 1.3rem;
   font-weight: 400;
 }
