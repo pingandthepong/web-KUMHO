@@ -183,12 +183,15 @@
   text-align: center;
   margin: 0 auto 170px;
 }
-#content .content_area .intro h3 {
+#content .content_area .intro__title {
+  margin-bottom: 170px;
+}
+#content .content_area .intro__title h3 {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 25px;
 }
-#content .content_area .intro .slogan {
+#content .content_area .intro__title .slogan {
   font-size: 1.2rem;
   font-weight: 200;
   line-height: 1.5;
