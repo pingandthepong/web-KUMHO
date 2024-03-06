@@ -181,7 +181,7 @@
 #content .content_area .intro {
   width: 1400px;
   text-align: center;
-  margin: 0 auto 170px;
+  margin: 0 auto;
 }
 #content .content_area .intro__title {
   margin-bottom: 170px;
