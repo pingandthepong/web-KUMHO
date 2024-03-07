@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회사소개-VISION</title>
+    <title>회사소개-투자정보</title>
     <link rel="stylesheet" href="../common/css/common.css">
     <link rel="stylesheet" href="./common/css/sub1common.css">
     <link rel="stylesheet" href="./css/sub1_content3.css">
@@ -13,7 +13,7 @@
     <script
       src="https://kit.fontawesome.com/5c48cfd0d4.js"
       crossorigin="anonymous"></script>
-    <script src="./common/js/prefixfree.min.js"></script>
+    <!-- <script src="../common/js/prefixfree.min.js"></script> -->
   </head>
   <body>
     <!-- skipNav -->
@@ -93,285 +93,275 @@
 
         <!-- .content_area -->
         <div class="content_area">
-          <section class="invest">
-            <h3 class="hidden">투자정보 개요</h3>
-
-            <!-- .section__visual -->
-            <div class="section__visual">
-              <dl>
-                <dt>A Secure Investment</dt>
-                <dd>
-                  소중한 자산, 투명경영으로 보답하겠습니다.<br>
-                  <strong>투명한 경영</strong>으로 고객님의 수익을
-                  <strong>최우선</strong> 하겠습니다.
-                </dd>
-              </dl>
+          <section class="intro">
+            <div class="intro__title">
+              <h3>A Secure Investment</h3>
+              <p class="slogan">
+                소중한 자산, 투명경영으로 보답하겠습니다.<br>
+                <strong>투명한 경영</strong>으로 고객님의 수익을
+                <strong>최우선</strong> 하겠습니다.
+              </p>
             </div>
-
-            <ul class="invest_sub_nav">
-              <li><a href="javascript:void(0)" class="current">주가정보</a></li>
-              <li><a href="javascript:void(0)">경영정보</a></li>
-              <li><a href="javascript:void(0)">재무정보</a></li>
+            
+            <ul class="sub_list">
+              <li class="current"><a href="#">주가정보</a></li>
+              <li><a href="#">경영정보</a></li>
+              <li><a href="#">재무정보</a></li>
             </ul>
-          </section>
 
-          <!-- .invest__wrap -->
-          <section class="invest__wrap">
-            <h3 class="hidden">주가정보</h3>
+            <ul class="tab">
+              
+              <li class="tab_com tab1">
+                <h4 class="hidden">주가정보</h4>
+                  
+                  <!-- .invest1 (주가현황 & 수익률) -->
+                  <div class="invest1">
+                    <div class="iframe_box">
+                      <div class="iframe_head">금호건설<span>002990</span></div>
 
-            <div class="invest__wrap_inner">
-              <section class="invest__container">
-                <h4 class="hidden">주가현황 & 수익률</h4>
-
-                <!-- .iframe_box -->
-                <div class="iframe_box">
-                  <div class="iframe_head">금호건설<span>002990</span></div>
-
-                  <div class="middle">
-                    <div class="last">
-                      <h5 class="hidden">종가</h5>
-                      <span class="positive">5,130</span>
+                      <div class="middle">
+                        <dl class="last">
+                          <dt class="hidden">종가</dt>
+                          <dd class="positive">5,130</dd>
+                        </dl>
+                        <ul class="changerate">
+                          <li>
+                            <dl>
+                              <dt class="change_phrase">전일대비</dt>
+                              <dd class="change positive">30</dd>
+                            </dl>
+                          </li>
+                          <li>
+                            <dl>
+                              <dt class="change_phrase">등락률</dt>
+                              <dd class="change_per positive">0.59</dd>
+                            </dl>
+                          </li>
+                        </ul>
+                      </div>
+                      <table class="bottom">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="label">전날 종가</th>
+                            <th scope="col" class="label">현재가</th>
+                            <th scope="col" class="label">고가</th>
+                            <th scope="col" class="label">저가</th>
+                            <th scope="col" class="label">거래량</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="data prev_close">161,300</td>
+                            <td class="data open">162,200</td>
+                            <td class="data high">165,700</td>
+                            <td class="data low">158,200</td>
+                            <td class="data volumn">503,948</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
 
-                    <ul class="changerate_box">
-                      <!-- 전일대비 -->
-                      <li>
-                        <h5 class="change_phrase">전일대비</h5>
-                        <div class="change">
-                          <span class="positive">30</span>
+                    <!-- .earning-rate -->
+                    <div class="earning-rate">
+                      <div class="earning-rate_head">수익률</div>
+                      <div class="earning-rate_container">
+                        <div class="tab_list">
+                          <div class="tab_list_title">적용기간</div>
+                          <ul class="tabs">
+                            <li><a href="javascript:void(0)">1주</a></li>
+                            <li><a href="javascript:void(0)">1개월</a></li>
+                            <li><a href="javascript:void(0)">3개월</a></li>
+                            <li><a href="javascript:void(0)">6개월</a></li>
+                            <li>
+                              <a href="javascript:void(0)" class="active">1년</a>
+                            </li>
+                            <li><a href="javascript:void(0)">3년</a></li>
+                          </ul>
                         </div>
-                      </li>
-                      <!-- 등락률 -->
-                      <li>
-                        <h5 class="change_phrase">등락률</h5>
-                        <div class="change_per">
-                          <span class="positive">0.59</span>
+                        <div class="notice_date">기준일: 24. 2. 23</div>
+                        <div class="graph">
+                          <div class="chart">(차트영역)</div>
+                          <ul class="button_bar">
+                            <li class="checkbox">
+                              <input type="checkbox" checked id="ci1">
+                              <label for="ci1"
+                                >기준가격(NAV) <small>-2.19%(9,930.47원)</small>
+                              </label>
+                            </li>
+                            <li class="checkbox">
+                              <input type="checkbox" checked id="ci2">
+                              <label for="ci2"
+                                >시장가격(종가) <small>-2.19%(9,930.47원)</small>
+                              </label>
+                            </li>
+                            <li class="checkbox">
+                              <input type="checkbox" checked id="ci3">
+                              <label for="ci3"
+                                >기초지수 <small>-2.19%(9,930.47원)</small>
+                              </label>
+                            </li>
+                          </ul>
+                          <p class="notice_des">
+                            수익률 그래프는 상품 유형에 상관없이 분배금 재투자를
+                            가정한 수익률 기준입니다. (수익률 그래프는 상장일 이후로
+                            조회 가능합니다.)
+                          </p>
                         </div>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
 
-                  <table class="bottom">
-                    <thead>
-                      <tr>
-                        <th scope="col" class="label">전날 종가</th>
-                        <th scope="col" class="label">현재가</th>
-                        <th scope="col" class="label">고가</th>
-                        <th scope="col" class="label">저가</th>
-                        <th scope="col" class="label">거래량</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="data prev_close">161,300</td>
-                        <td class="data open">162,200</td>
-                        <td class="data high">165,700</td>
-                        <td class="data low">158,200</td>
-                        <td class="data volumn">503,948</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                  <!-- .invest2 (기본정보) -->
+                  <div class="invest2">
+                    <div class="title">기본정보</div>
+                    <table>
+                      <caption>
+                        <span class="hidden">금호건설 투자정보 - 기본정보</span>
+                        '23년 9월 30일 기준
+                      </caption>
+                      <thead>
+                        <tr>
+                          <th scope="col" colspan="2">구분</th>
+                          <th scope="col">내용</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th rowspan="3">발행주식수</th>
+                          <th>총계</th>
+                          <td>37,245,861</td>
+                        </tr>
+                        <tr>
+                          <th>보통주 (주)</th>
+                          <td>36,953,595</td>
+                        </tr>
+                        <tr>
+                          <th>우선주 (주)</th>
+                          <td>292,266</td>
+                        </tr>
+                        <tr>
+                          <th colspan="2">자본금 (원)</th>
+                          <td>186,200,000,000</td>
+                        </tr>
+                        <tr>
+                          <th colspan="2">액면가 (원)</th>
+                          <td>5,000</td>
+                        </tr>
+                        <tr>
+                          <th colspan="2">상장일</th>
+                          <td>1976년 06월 26일</td>
+                        </tr>
+                        <tr>
+                          <th rowspan="2">종목코드</th>
+                          <th>보통주</th>
+                          <td>002990</td>
+                        </tr>
+                        <tr>
+                          <th>우선주</th>
+                          <td>002995</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
 
-                <!-- .earning-rate -->
-                <div class="earning-rate">
-                  <h5>수익률</h5>
-                  <div class="earning-rate_inner">
-                    <div class="tab_list_wrapper">
-                      <div class="tab_list_title">적용기간</div>
-                      <ul class="tabs">
-                        <li><a href="javascript:void(0)">1주</a></li>
-                        <li><a href="javascript:void(0)">1개월</a></li>
-                        <li><a href="javascript:void(0)">3개월</a></li>
-                        <li><a href="javascript:void(0)">6개월</a></li>
-                        <li>
-                          <a href="javascript:void(0)" class="active">1년</a>
-                        </li>
-                        <li><a href="javascript:void(0)">3년</a></li>
-                      </ul>
-                    </div>
-                    <div class="notice_date">기준일: 24. 2. 23</div>
-                    <div class="graph">
-                      <div class="chart">(차트영역)</div>
-                      <ul class="button_bar">
-                        <li class="checkbox">
-                          <input type="checkbox" checked id="ci2">
-                          <label for="ci2"
-                            >기준가격(NAV) <small>-2.19%(9,930.47원)</small>
-                          </label>
-                        </li>
-                        <li class="checkbox">
-                          <input type="checkbox" checked id="ci1">
-                          <label for="ci1"
-                            >시장가격(종가) <small>-2.19%(9,930.47원)</small>
-                          </label>
-                        </li>
-                        <li class="checkbox">
-                          <input type="checkbox" checked id="ci3">
-                          <label for="ci3"
-                            >기초지수 <small>-2.19%(9,930.47원)</small>
-                          </label>
-                        </li>
-                      </ul>
-                      <p class="notice_des">
-                        수익률 그래프는 상품 유형에 상관없이 분배금 재투자를
-                        가정한 수익률 기준입니다. (수익률 그래프는 상장일 이후로
-                        조회 가능합니다.)
+                  <!-- .invest3 (주주구성) -->
+                  <div class="invest3">
+                    <div class="title">주주구성</div>
+                    <div class="graph">(그래프 영역)</div>
+                  </div>
+
+                  <!-- .invest4 (최대주주) -->
+                  <div class="invest4">
+                    <div class="title">최대주주 및<br>그 특수관계인의 주식소유 현황</div>
+                    <table>
+                      <caption>
+                        <span class="hidden">금호건설 투자정보 - 기본정보</span>
+                        '23년 9월 30일 기준
+                      </caption>
+                      <thead>
+                        <tr>
+                          <th scope="col">성명</th>
+                          <th scope="col">관계</th>
+                          <th scope="col">주식의 종류</th>
+                          <th scope="col">주식수</th>
+                          <th scope="col">비율</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>금호고속</td>
+                          <td>본인</td>
+                          <td>보통주</td>
+                          <td>16,325,327</td>
+                          <td>44.18</td>
+                        </tr>
+                        <tr>
+                          <td>CJ대한통운</td>
+                          <td>공동보유자</td>
+                          <td>보통주</td>
+                          <td>1,213,209</td>
+                          <td>3.28</td>
+                        </tr>
+                        <tr>
+                          <td>박삼구</td>
+                          <td>특수관계인</td>
+                          <td>보통주</td>
+                          <td>10,000</td>
+                          <td>0.03</td>
+                        </tr>
+                        <tr>
+                          <td>금호아시아나문화재단</td>
+                          <td>특수관계인</td>
+                          <td>보통주</td>
+                          <td>8,352</td>
+                          <td>0.02</td>
+                        </tr>
+                        <tr>
+                          <td>이계영</td>
+                          <td>특수관계인</td>
+                          <td>보통주</td>
+                          <td>1,031</td>
+                          <td>0.00</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th scope="col" colspan="3">합계</th>
+                          <td>62,961,758</td>
+                          <td>33.6</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                    <div class="table_des">
+                      <p>상기 지분율은 발행주식총수(우선주 포함) 대비 기준임</p>
+                      <p>
+                        '23년 9월 30일 현재 발행주식 총수는 187,219,095주(보통주
+                        185,591,670주/우선주 1,627,425주) 임
                       </p>
                     </div>
                   </div>
-                </div>
-              </section>
+              </li>
 
-              <!-- .invest_info -->
-              <section class="invest_info">
-                <h4>기본정보</h4>
-                <table>
-                  <caption>
-                    <span class="hidden">금호건설 투자정보 - 기본정보</span>
-                    '23년 9월 30일 기준
-                  </caption>
-                  <thead>
-                    <tr>
-                      <th scope="col" colspan="2">구분</th>
-                      <th scope="col">내용</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th rowspan="3">발행주식수</th>
-                      <th>총계</th>
-                      <td>37,245,861</td>
-                    </tr>
-                    <tr>
-                      <th>보통주 (주)</th>
-                      <td>36,953,595</td>
-                    </tr>
-                    <tr>
-                      <th>우선주 (주)</th>
-                      <td>292,266</td>
-                    </tr>
-                    <tr>
-                      <th colspan="2">자본금 (원)</th>
-                      <td>186,200,000,000</td>
-                    </tr>
-                    <tr>
-                      <th colspan="2">액면가 (원)</th>
-                      <td>5,000</td>
-                    </tr>
-                    <tr>
-                      <th colspan="2">상장일</th>
-                      <td>1976년 06월 26일</td>
-                    </tr>
-                    <tr>
-                      <th rowspan="2">종목코드</th>
-                      <th>보통주</th>
-                      <td>002990</td>
-                    </tr>
-                    <tr>
-                      <th>우선주</th>
-                      <td>002995</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </section>
-
-              <!-- .invest_stockholder -->
-              <section class="invest_stockholder">
-                <h4>주주구성</h4>
-                <div class="graph">(그래프 영역)</div>
-              </section>
-
-              <!-- .invest_stockholder_lg -->
-              <section class="invest_stockholder_lg">
-                <h4>최대주주 및<br>그 특수관계인의 주식소유 현황</h4>
-                <table>
-                  <caption>
-                    <span class="hidden">금호건설 투자정보 - 기본정보</span>
-                    '23년 9월 30일 기준
-                  </caption>
-                  <thead>
-                    <tr>
-                      <th scope="col">성명</th>
-                      <th scope="col">관계</th>
-                      <th scope="col">주식의 종류</th>
-                      <th scope="col">주식수</th>
-                      <th scope="col">비율</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>금호고속</td>
-                      <td>본인</td>
-                      <td>보통주</td>
-                      <td>16,325,327</td>
-                      <td>44.18</td>
-                    </tr>
-                    <tr>
-                      <td>CJ대한통운</td>
-                      <td>공동보유자</td>
-                      <td>보통주</td>
-                      <td>1,213,209</td>
-                      <td>3.28</td>
-                    </tr>
-                    <tr>
-                      <td>박삼구</td>
-                      <td>특수관계인</td>
-                      <td>보통주</td>
-                      <td>10,000</td>
-                      <td>0.03</td>
-                    </tr>
-                    <tr>
-                      <td>금호아시아나문화재단</td>
-                      <td>특수관계인</td>
-                      <td>보통주</td>
-                      <td>8,352</td>
-                      <td>0.02</td>
-                    </tr>
-                    <tr>
-                      <td>이계영</td>
-                      <td>특수관계인</td>
-                      <td>보통주</td>
-                      <td>1,031</td>
-                      <td>0.00</td>
-                    </tr>
-                  </tbody>
-                  <tfoot>
-                    <tr>
-                      <th scope="col" colspan="3">합계</th>
-                      <td>62,961,758</td>
-                      <td>33.6</td>
-                    </tr>
-                  </tfoot>
-                </table>
-                <div class="table-des">
-                  <p>상기 지분율은 발행주식총수(우선주 포함) 대비 기준임</p>
-                  <p>
-                    '23년 9월 30일 현재 발행주식 총수는 187,219,095주(보통주
-                    185,591,670주/우선주 1,627,425주) 임
-                  </p>
-                </div>
-              </section>
-            </div>
-          </section>
-
-          <!-- .invest__wrap2 -->
+              <!-- tab2.data -->
+              <li class="tab_com tab2">
+                <h4 class="hidden">경영정보</h4>
+                <!-- .invest__wrap2 -->
           <section class="invest__wrap2">
-            <h3 class="hidden">경영정보</h3>
+            
 
             <div class="invest__wrap_inner">
               <!-- .data -->
-              <section class="data">
-                <h4 class="hidden">공시자료</h4>
+              <div class="data">
+                <div class="title hidden">공시자료</div>
                 <iframe
                   src="https://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=002990"
                   name="IR"
                   width="750"
                   height="720"></iframe>
-              </section>
+              </div>
 
-              <section class="invest_info">
-                <h4>공고</h4>
+              <div class="invest_info">
+                <div class="title">공고</div>
                 <table>
                   <caption>
                     <span class="hidden">금호건설 경영 정보 - 공고</span>
@@ -442,18 +432,21 @@
                     <span class="hidden">맨끝</span>
                   </button>
                 </div>
-              </section>
+              </div>
             </div>
           </section>
+              </li>
 
-          <!-- .invest__wrap3 -->
+              <!-- tab3.financial -->
+              <li class="tab_com tab3">
+                <!-- .invest__wrap3 -->
           <section class="invest__wrap3">
-            <h3 class="hidden">재무정보</h3>
+            <h4 class="hidden">재무정보</h4>
 
             <div class="invest__wrap_inner">
               <!-- .invest_financial -->
-              <section class="invest_financial">
-                <h4>요약재무제표(K-IFRS 연결 기준)</h4>
+              <div class="invest_financial">
+                <div class="title">요약재무제표(K-IFRS 연결 기준)</div>
 
                 <div class="financial financial_position">
                   <p>(단위: 십억원)</p>
@@ -489,10 +482,12 @@
                     </div>
                   </div>
                 </div>
-              </section>
+              </div>
             </div>
           </section>
-          <!-- end -->
+              </li>
+            </ul>
+          </section>
         </div>
       </article>
 
