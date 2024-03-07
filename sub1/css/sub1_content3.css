@@ -30,11 +30,11 @@
 #content .intro .tab_com > div > .title {
   font-size: 2.3rem;
   font-weight: 700;
-  margin-bottom: 50px;
+  border-bottom: 2px solid #222;
+  padding-bottom: 50px;
 }
 #content .intro .tab_com > div > .title + * {
   width: 100%;
-  border-top: 2px solid #222;
 }
 
 /* .invest1 */
@@ -240,7 +240,10 @@
 #ci3 {
   accent-color: #8afcaa;
 }
-
+/* sub1_3 table 공통 */
+#content .tab table :is(th, td) {
+  text-align: center;
+}
 /* .invest2 */
 /* .invest2 table */
 #content .tab1 :is(.invest2, .invest4) thead,
@@ -248,7 +251,6 @@
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 76px;
-  text-align: center;
 }
 #content .tab1 :is(.invest2, .invest4) tbody {
   line-height: 80px;
@@ -305,35 +307,28 @@
   line-height: 2;
 }
 
-/*  */
-/* .invest__wrap2 */
-#content section.invest__wrap2 h4 + * {
-  border: none;
-}
-#content .invest__wrap2 .data {
+/* .tab2 */
+#content .data1 {
   width: 750px;
+  margin: 0 auto;
 }
-#content .invest__wrap2 .data iframe {
-  width: 100%;
+#content .data1 iframe {
   height: 950px;
 }
-
-#content .invest__wrap2 .invest2 table th {
+/* .data2 */
+#content .intro .tab_com .data2 .title {
+  border-bottom: none;
+}
+#content .data2 table th {
   border-top: 4px solid #f65742;
   border-bottom: 1px solid #f65742;
 }
-#content .invest__wrap2 .invest2 table tr {
+#content .data2 table tr {
   border-bottom: 1px solid #ddd;
   font-weight: 300;
   line-height: 70px;
 }
-#content .invest__wrap2 .invest2 table td {
-  text-align: center;
-}
-#content .invest__wrap2 .invest2 table tr > *:not(:last-child) {
-  border-right: none;
-}
-#content .invest__wrap2 .invest2 table i {
+#content .data2 table i {
   width: 100%;
   cursor: pointer;
   line-height: 70px;
@@ -348,8 +343,7 @@
   border: none;
   background: none;
 }
-#content .paging button,
-#content .paging a {
+#content .paging :is(button, a) {
   width: 30px;
   height: 30px;
   text-align: center;
@@ -366,46 +360,51 @@
   color: #ddd;
 }
 
-/* .invest__wrap3 .financial */
-#content .invest__wrap3 .invest_financial .financial {
-  padding: 50px 0;
+/* .tab3 */
+#content .tab3 {  
 }
-#content .invest__wrap3 .invest_financial .financial h5 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 40px 0;
-  font-weight: 400;
+#content .tab3 .financial :is(.financial_position, .financial_income) {
+  margin: 80px auto;
 }
-#content .invest__wrap3 .invest_financial .financial p {
-  text-align: right;
-  font-size: 0.9rem;
-  font-weight: 300;
-  line-height: 2;
-  color: #999;
-}
-#content .invest__wrap3 .invest_financial .financial .chart-inner {
+#content .financial .chart_inner {
   height: 660px;
   border: 1px solid #c5c5c5;
+  position: relative;
 }
-#content .invest__wrap3 .invest_financial .financial .chart-inner ul {
+#content .tab3 .financial .chart_inner_title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 40px 0;
+}
+#content .tab3 .financial .chart_inner_title + p {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #999;
+}
+#content .tab3 .financial .chart_item ul {
+  width: 90%;
+  margin: auto;
   display: flex;
-  justify-content: end;
-  align-items: center;
   gap: 17px;
-  margin-right: 45px;
 }
-#content .invest__wrap3 .invest_financial .financial #graph2 ul {
+#content .tab3 .financial #graph1 ul {
+  justify-content: end;
+}
+#content .tab3 .financial #graph2 ul {
   justify-content: center;
-  margin-right: 0;
 }
-#content .invest__wrap3 .invest_financial .financial .chart-inner li {
+#content .tab3 .financial .chart_item ul li {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 0.88rem;
   color: #555;
 }
-#content .invest__wrap3 .invest_financial .financial .chart-inner li::before {
+#content .tab3 .financial .chart_item ul li::before {
   content: "";
   display: block;
   width: 24px;

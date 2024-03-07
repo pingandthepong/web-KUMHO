@@ -110,7 +110,7 @@
             </ul>
 
             <ul class="tab">
-              
+              <!-- .tab1 <주가정보> -->
               <li class="tab_com tab1">
                 <h4 class="hidden">주가정보</h4>
                   
@@ -342,149 +342,136 @@
                   </div>
               </li>
 
-              <!-- tab2.data -->
+              <!-- .tab2 <경영정보> -->
               <li class="tab_com tab2">
                 <h4 class="hidden">경영정보</h4>
-                <!-- .invest__wrap2 -->
-          <section class="invest__wrap2">
-            
-
-            <div class="invest__wrap_inner">
-              <!-- .data -->
-              <div class="data">
-                <div class="title hidden">공시자료</div>
-                <iframe
-                  src="https://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=002990"
-                  name="IR"
-                  width="750"
-                  height="720"></iframe>
-              </div>
-
-              <div class="invest_info">
-                <div class="title">공고</div>
-                <table>
-                  <caption>
-                    <span class="hidden">금호건설 경영 정보 - 공고</span>
-                  </caption>
-                  <thead>
-                    <tr>
-                      <th>번호</th>
-                      <th>제목</th>
-                      <th>다운로드</th>
-                      <th>게시일</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>9</td>
-                      <td>제 51기 결산공고</td>
-                      <td><i class="fa-solid fa-link"></i></td>
-                      <td>2023.03.28</td>
-                    </tr>
-                    <tr>
-                      <td>8</td>
-                      <td>외부감사인 선임 공고</td>
-                      <td><i class="fa-solid fa-link"></i></td>
-                      <td>2023.02.16</td>
-                    </tr>
-                    <tr>
-                      <td>7</td>
-                      <td>제 50기 결산공고</td>
-                      <td><i class="fa-solid fa-link"></i></td>
-                      <td>2022.03.30</td>
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>제 49기 결산공고</td>
-                      <td><i class="fa-solid fa-link"></i></td>
-                      <td>2021.03.26</td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>제 48기 결산공고</td>
-                      <td><i class="fa-solid fa-link"></i></td>
-                      <td>2020.03.27</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="paging">
-                  <button type="button" class="paging_first" disabled>
-                    <i class="fa-solid fa-angles-left"></i>
-                    <span class="hidden">처음</span>
-                  </button>
-                  <button type="button" class="paging_prev" disabled>
-                    <i class="fa-solid fa-angle-left"></i>
-                    <span class="hidden">이전</span>
-                  </button>
-                  <a
-                    href="javascript:void(0)"
-                    class="active"
-                    aria-current="page"
-                    >1</a
-                  >
-                  <a href="javascript:void(0)">2</a>
-                  <button type="button" class="paging_next">
-                    <i class="fa-solid fa-angle-right"></i>
-                    <span class="hidden">다음</span>
-                  </button>
-                  <button type="button" class="paging_last">
-                    <i class="fa-solid fa-angles-right"></i>
-                    <span class="hidden">맨끝</span>
-                  </button>
+                <!-- .data1 -->
+                <dl class="data1">
+                  <dt class="title hidden">공시자료</dt>
+                  <dd>
+                    <iframe
+                      src="https://dart.fss.or.kr/html/search/SearchCompanyIR3_M.html?textCrpNM=002990"
+                      name="IR"
+                      width="750"
+                      height="720"></iframe>
+                  </dd>
+                </dl>
+                <!-- .data2 -->
+                <div class="data2">
+                  <div class="title">공고</div>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>다운로드</th>
+                        <th>게시일</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>9</td>
+                        <td>제 51기 결산공고</td>
+                        <td><i class="fa-solid fa-link"></i></td>
+                        <td>2023.03.28</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>외부감사인 선임 공고</td>
+                        <td><i class="fa-solid fa-link"></i></td>
+                        <td>2023.02.16</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>제 50기 결산공고</td>
+                        <td><i class="fa-solid fa-link"></i></td>
+                        <td>2022.03.30</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>제 49기 결산공고</td>
+                        <td><i class="fa-solid fa-link"></i></td>
+                        <td>2021.03.26</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>제 48기 결산공고</td>
+                        <td><i class="fa-solid fa-link"></i></td>
+                        <td>2020.03.27</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="paging">
+                    <button type="button" class="paging_first" disabled>
+                      <i class="fa-solid fa-angles-left"></i>
+                      <span class="hidden">처음</span>
+                    </button>
+                    <button type="button" class="paging_prev" disabled>
+                      <i class="fa-solid fa-angle-left"></i>
+                      <span class="hidden">이전</span>
+                    </button>
+                    <a
+                      href="javascript:void(0)"
+                      class="active"
+                      aria-current="page"
+                      >1</a
+                    >
+                    <a href="javascript:void(0)">2</a>
+                    <button type="button" class="paging_next">
+                      <i class="fa-solid fa-angle-right"></i>
+                      <span class="hidden">다음</span>
+                    </button>
+                    <button type="button" class="paging_last">
+                      <i class="fa-solid fa-angles-right"></i>
+                      <span class="hidden">맨끝</span>
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </section>
               </li>
 
-              <!-- tab3.financial -->
+              <!-- .tab3 <재무정보> -->
               <li class="tab_com tab3">
-                <!-- .invest__wrap3 -->
-          <section class="invest__wrap3">
-            <h4 class="hidden">재무정보</h4>
+                <h4 class="hidden">재무정보</h4>
+                <!-- .financial -->
+                <div class="financial">
+                  <div class="title">요약재무제표(K-IFRS 연결 기준)</div>
 
-            <div class="invest__wrap_inner">
-              <!-- .invest_financial -->
-              <div class="invest_financial">
-                <div class="title">요약재무제표(K-IFRS 연결 기준)</div>
-
-                <div class="financial financial_position">
-                  <p>(단위: 십억원)</p>
-                  <div class="chart-inner">
-                    <h5>재무상태표 [전체]</h5>
-                    <div
-                      id="graph1"
-                      class="chart_item"
-                      data-highcharts-chart="0">
-                      <ul>
-                        <li>자산</li>
-                        <li>부채</li>
-                        <li>자본</li>
-                      </ul>
+                  <div class="financial_position">
+                    <div class="chart_inner">
+                      <div class="chart_inner_title">재무상태표 [전체]</div>
+                      <p>(단위: 십억원)</p>
+                      <div
+                        id="graph1"
+                        class="chart_item"
+                        data-highcharts-chart="0">
+                        <ul>
+                          <li>자산</li>
+                          <li>부채</li>
+                          <li>자본</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="financial income_statement">
-                  <p>(단위: 십억원)</p>
-                  <div class="chart-inner">
-                    <h5>손익계산서</h5>
-                    <div
-                      id="graph2"
-                      class="chart_item"
-                      data-highcharts-chart="0">
-                      <ul>
-                        <li>매출</li>
-                        <li>매출총이익</li>
-                        <li>영업이익</li>
-                        <li>세전이익</li>
-                        <li>순이익</li>
-                      </ul>
+                  <div class="financial_income">
+                    <div class="chart_inner">
+                      <div class="chart_inner_title">손익계산서</div>
+                      <p>(단위: 십억원)</p>
+                      <div
+                        id="graph2"
+                        class="chart_item"
+                        data-highcharts-chart="0">
+                        <ul>
+                          <li>매출</li>
+                          <li>매출총이익</li>
+                          <li>영업이익</li>
+                          <li>세전이익</li>
+                          <li>순이익</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
+
                 </div>
-              </div>
-            </div>
-          </section>
               </li>
             </ul>
           </section>
