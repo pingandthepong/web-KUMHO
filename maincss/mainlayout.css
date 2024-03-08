@@ -13,12 +13,34 @@
   overflow: hidden;
   position: relative;
 }
-@keyframes visual_img {
+/* @keyframes visual_img {
   0% {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(1.12);
+  }
+} */
+@keyframes visual_img {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    filter: brightness(1);
+  }
+  25% {
+    transform: scale(1.12);
+    opacity: 1;
+    filter: brightness(1);
+  }
+  30% {
+    transform: scale(1.12);
+    opacity: 0;
+    filter: brightness(0);
+  }
+  100% {
+    transform: scale(1.12);
+    opacity: 0;
+    filter: brightness(0);
   }
 }
 .visual img {
@@ -26,30 +48,27 @@
   height: 1000px;
   position: absolute;
   left: 0; top: 0;
-  animation: visual_img 3.5s infinite ease-out;
-  
+  /* animation: visual_img 3.5s infinite ease-out; */
 }
 .visual img:nth-child(1) {
   z-index: -1;
-  
+  animation: visual_img 14s infinite ease-out;
 }
 .visual img:nth-child(2) {
   z-index: -2;
+  animation: visual_img 14s infinite ease-out;
+  animation-delay: 3.5s;
 }
 .visual img:nth-child(3) {
   z-index: -3;
+  animation: visual_img 14s infinite ease-out;
+  animation-delay: 7s;
 }
 .visual img:nth-child(4) {
   z-index: -4;
+  animation: visual_img 14s infinite ease-out;
+  animation-delay: 10.5s;
 }
-.visual img:nth-child(5) {
-  z-index: -5; 
-}
-.visual img:nth-child(6) {
-  z-index: -6;
-}
-
-
 .visual .slogan {
   position: absolute;
   left: 50%;
@@ -57,7 +76,7 @@
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
-  text-shadow: 0px 4px 15px rgba(0,0,0,1);
+  text-shadow: 0px 4px 15px rgba(0,0,0,.75);
 }
 .visual .slogan__lg {
   font-size: 4rem;
@@ -71,7 +90,9 @@
   position: absolute;
   left: 50%;
   bottom: 240px;
+  bottom: 100px;
   transform: translateX(-50%);
+  transform: translateX(-300%);
   overflow: hidden;
 }
 .visual .dock .mbutton {
@@ -91,15 +112,19 @@
 @keyframes dock_on {
   0% {
     width: 0%;
+    background: #ef0010;
   }  
   33.3% {
     width: 100%;
+    background: #ef0010;
+  }
+  100% {
+    background: #ef0010;
   }
 }
 .visual .dock .mbutton .on {
   display: block;
   height: 100%;
-  background: #ef0010;
   animation: dock_on 10.5s infinite;
 }
 .visual .dock .btn2 .on {
@@ -107,6 +132,33 @@
 }
 .visual .dock .btn3 .on {
   animation-delay: 7s;
+}
+@keyframes scroll_btn {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
+}
+.scroll_btn {
+  width: 50px;
+  height: 100px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 2rem;
+  color: #f65742;
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  transform: translateX(-50%);
+  background: #fff;
+  box-shadow: 0 4px 15px 0 rgba(0,0,0,.3);
+}
+.scroll_btn i {
+  animation: scroll_btn .65s infinite alternate-reverse ease-out;
+
 }
 /* 본문 콘텐츠 영역 */
 #content {
