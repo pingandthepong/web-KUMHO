@@ -3,14 +3,53 @@
 /* .visual 영역 */
 .visual {
   position: relative;
-  width: 2000px;
-  top: 0;
   left: 50%;
+  top: 0;
   transform: translateX(-50%);
 }
-.visual img {
-  filter: brightness(0.4);
+.visual_container {
+  width: 2000px;
+  height: 1000px;
+  overflow: hidden;
+  position: relative;
 }
+@keyframes visual_img {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.visual img {
+  width: 2000px;
+  height: 1000px;
+  position: absolute;
+  left: 0; top: 0;
+  animation: visual_img 3.5s infinite ease-out;
+  
+}
+.visual img:nth-child(1) {
+  z-index: -1;
+  
+}
+.visual img:nth-child(2) {
+  z-index: -2;
+}
+.visual img:nth-child(3) {
+  z-index: -3;
+}
+.visual img:nth-child(4) {
+  z-index: -4;
+}
+.visual img:nth-child(5) {
+  z-index: -5; 
+}
+.visual img:nth-child(6) {
+  z-index: -6;
+}
+
+
 .visual .slogan {
   position: absolute;
   left: 50%;
@@ -18,6 +57,7 @@
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
+  text-shadow: 0px 4px 15px rgba(0,0,0,1);
 }
 .visual .slogan__lg {
   font-size: 4rem;
@@ -48,13 +88,26 @@
   height: 4px;
   background: rgba(255, 255, 255, 0.5);
 }
+@keyframes dock_on {
+  0% {
+    width: 0%;
+  }  
+  33.3% {
+    width: 100%;
+  }
+}
 .visual .dock .mbutton .on {
   display: block;
-  width: 40%;
   height: 100%;
   background: #ef0010;
+  animation: dock_on 10.5s infinite;
 }
-
+.visual .dock .btn2 .on {
+  animation-delay: 3.5s;
+}
+.visual .dock .btn3 .on {
+  animation-delay: 7s;
+}
 /* 본문 콘텐츠 영역 */
 #content {
   width: 100%;
