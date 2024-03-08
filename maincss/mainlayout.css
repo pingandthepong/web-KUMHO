@@ -106,7 +106,7 @@
 .visual .dock [class*="btn"] {
   display: block;
   width: 88px;
-  height: 4px;
+  height: 3px;
   background: rgba(255, 255, 255, 0.5);
 }
 @keyframes dock_on {
