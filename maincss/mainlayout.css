@@ -2,13 +2,13 @@
 
 /* .visual 영역 */
 .visual {
+  width: 2000px;
   position: relative;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
 }
 .visual_container {
-  width: 2000px;
   height: 1000px;
   overflow: hidden;
   position: relative;
@@ -147,21 +147,12 @@
   }
 }
 .scroll_btn {
-  width: 50px;
-  height: 100px;
-  border-radius: 30px;
-  text-align: center;
-  line-height: 100px;
-  font-size: 2rem;
-  color: #f65742;
   position: absolute;
   left: 50%;
   bottom: 70px;
   transform: translateX(-50%);
-  background: #fff;
-  box-shadow: 0 4px 15px 0 rgba(0,0,0,.3);
 }
-.scroll_btn i {
+.scroll_btn svg {
   animation: scroll_btn .65s infinite alternate-reverse ease-out;
 
 }
