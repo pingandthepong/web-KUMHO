@@ -863,70 +863,65 @@
 
 /* popup */
 #showimage {
-  width: 20rem;
-  background: #fff;
-  border-radius: 8px;
+  width: 32rem;
+  height: 21rem;
+  border-radius: 30px;
   overflow: hidden;
-  padding-top: 30px;
-  position: absolute;
+  background: rgba(255,255,255,.3);
+  backdrop-filter: blur(5px);
+  border: 1px solid #fff;
+  position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-250%, -70%);
-  font-size: 0.9rem;
+  transform: translate(-170%, -75%);
+  display: flex;
+}
+#showimage .img_box {
+  width: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#showimage .text_box {
+  width: calc(32rem - 12.5rem);
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8;
+}
+#showimage .text_box .qrcode {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+}
+#showimage .text_box p {
   line-height: 1.5;
-  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3);
-}
-#showimage::before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 50px;
-  background: #ef0010 url("../common/images/KUMHO_Logo_KJH_icon_fff.png")
-    no-repeat left 6px bottom 8px;
-  background-size: 63%;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 30px;
-  transform: translate(-50%, 0);
-  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
-}
-#showimage::after {
-  content: "";
-  display: block;
-  width: 80%;
-  height: 1px;
-  background: #ef0010;
-  background: #e5e5e5;
-  position: absolute;
-  left: 50%;
-  top: 105px;
-  transform: translate(-50%, 0);
-}
-#showimage p {
   text-align: center;
-  padding: 115px 0 50px;
 }
-#showimage p .accent {
-  color: #ef0010;
-  font-weight: 600;
+#showimage .text_box p .accent {
+  font-weight: 700;
 }
-#showimage .close_box {
-  box-sizing: border-box;
+#showimage .text_box .close_box {
+  width: 100%;
   border-top: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   color: #666;
-  padding: 0 10px 0 20px;
 }
-#showimage .close_box input {
-  accent-color: #ef0010;
-}
-#showimage .close_box label {
+#showimage .text_box .close_box label {
   flex: 1;
-  margin-left: 5px;
+  text-align: left;
+  padding-left: 10px;
+  cursor: pointer;
 }
-#showimage .close_box a {
-  padding: 15px;
+#showimage .text_box .close_box input {
+  accent-color: #f65742;
+  margin-right: 10px;
+}
+#showimage .text_box .close_box a {
   color: #666;
+  padding: 15px;
+  margin-right: 10px;
 }

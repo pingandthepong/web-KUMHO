@@ -750,22 +750,23 @@
           hidebox();
         }
       </script>
-      <p>
-        본 사이트는 상업적 목적이 아닌<br ><span class="accent"
-          >개인 포트폴리오</span
-        >
-        용도로 만들어졌습니다.<br >홈페이지의 일부 내용과 기타 이미지 등은<br >그
-        출처가 따로 있음을 밝힙니다.
-      </p>
-      <div class="close_box">
-        <input
-          type="checkbox"
-          name="Notice"
-          id="Notice"
-          value=""
-          title="오늘 하루 열지 않기 선택상자" >
-        <label for="Notice">오늘 하루 열지 않기</label>
-        <a href="#" onclick="closeWin();hidebox();return false;">닫기</a>
+      <div class="img_box"><img src="./common/images/KUMHO_Logo_KJH_txtblack_pb20.png" alt=""></div>
+      <div class="text_box">
+        <div class="qrcode"></div>
+        <p>
+          본 사이트는 상업적 목적이 아닌<br><span class="accent">개인 포트폴리오</span>용도로 만들어졌습니다.<br>홈페이지의 일부 내용과 기타 이미지 등은<br>그 출처가 따로 있음을 밝힙니다.
+        </p>
+        <div class="close_box">
+          <label for="Notice">
+            <input
+              type="checkbox"
+              name="Notice"
+              id="Notice"
+              value=""
+              title="오늘 하루 열지 않기 선택상자" >오늘 하루 열지 않기</label>
+          <!-- <a href="#" onclick="closeWin();hidebox();return false;">닫기</a> -->
+          <a href="#" onclick="closeWin(); hidebox(); return false;">닫기</a>
+        </div>
       </div>
     </div>
   </body>
