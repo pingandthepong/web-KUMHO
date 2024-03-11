@@ -773,9 +773,28 @@
 #content .recruit {
   width: 100%;
   height: 1000px;
-  background: url("../mainimages/recruit_01.jpg");
+  position: relative;
+  overflow: hidden;
+  
+}
+@keyframes fadeIn {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+#content .recruit__bg {
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("../mainimages/recruit_01.jpg") no-repeat 0 0;
   background-size: cover;
-  /* position: relative; */
+  z-index: -1;
+  animation: fadeIn 7s infinite alternate;
 }
 #content .recruit__container {
   color: #fff;
