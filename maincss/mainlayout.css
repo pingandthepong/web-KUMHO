@@ -13,14 +13,6 @@
   overflow: hidden;
   position: relative;
 }
-/* @keyframes visual_img {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.12);
-  }
-} */
 @keyframes visual_img {
   0% {
     transform: scale(1);

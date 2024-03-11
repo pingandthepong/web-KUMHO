@@ -1,0 +1,69 @@
+#content .history_scroll_wrap {
+
+}
+#content .navBox  {
+  height: 60px;
+  margin-bottom: 150px;
+}
+#content .navBox .content_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content .navBox li a {
+  width: 180px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 1.13rem;
+  font-weight: 500;
+  color: #999;
+  border-radius: 16px;
+  transition: all .2s ease-out;
+  background: #fff;
+}
+#content .navBox li a:is(:hover, .current) {
+  background: #f65742;
+  color: #fff;
+}
+
+/* section.y_now_2010 */
+#content .history_list {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+#content .history_list .img_container {
+  width: 700px;
+  overflow: hidden;
+}
+#content .history_list .img_container img {
+  width: 100%;
+  float: right;
+  border-radius: 30px;
+}
+#content .history_list:nth-of-type(2) .img_container img {
+  width: 80%;
+  margin-bottom: 50px;
+}
+#content .history_list .year {
+  width: 630px;
+
+}
+#content .history_list .year dl {
+  margin-bottom: 80px;
+}
+#content .history_list .year dt {
+  font-size: 3.13rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 40px;
+}
+#content .history_list .year dd {
+  font-size: 1.25rem;
+  color: #111;
+}
+#content .history_list .year dd .month {
+  font-weight: 700;
+  margin-right: 15px;
+}
