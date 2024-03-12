@@ -180,8 +180,8 @@
 #content .content_area .more_btn {
   width: 175px;
   background: #fff;
-  border: 1px solid #f65742;
-  color: #f65742;
+  border: 1px solid #2C44F2;
+  color: #2C44F2;
   text-align: center;
   border-radius: 10px;
   padding: 10px 0;
@@ -189,7 +189,7 @@
   transition: all .25s ease-out;
 }
 #content .content_area .more_btn:hover {
-  background: #f65742;
+  background: #2C44F2;
   color: #fff;
 }
 
