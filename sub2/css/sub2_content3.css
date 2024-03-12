@@ -1,0 +1,13 @@
+/* .intro */
+#content .content_area .intro .intro__title {
+  width: 750px;
+  padding-left: calc(1400px - 650px);
+}
+#content .content_area .intro__title h3 {
+  letter-spacing: -.1rem;
+}
+/* .intro3 */
+#content .content_area .intro3 {
+  background: url('../images/content3/intro3_bg.jpg') no-repeat 0 0;
+  background-size: cover;
+}

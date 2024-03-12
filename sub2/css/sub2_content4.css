@@ -1,0 +1,9 @@
+/* .intro */
+#content .content_area .intro .intro__title {
+  width: 680px;
+  padding-left: calc(1400px - 600px);
+}
+#content .content_area .intro3 {
+  background: url('../images/content4/intro3_bg.jpg') no-repeat 0 0;
+  background-size: cover;
+}

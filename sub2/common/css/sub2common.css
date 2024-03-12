@@ -196,12 +196,20 @@
 /* .intro */
 #content .content_area .intro {
   width: 100%;
-  aspect-ratio: 2/1;
+  aspect-ratio: 16/9;
   display: flex;
   justify-content: end;
   align-items: center;
   overflow: hidden;
   position: relative;
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
 #content .content_area .intro img {
   width: 100%;
@@ -210,6 +218,7 @@
   top: 0;
   z-index: -1;
   filter: brightness(.6);
+  animation: zoomIn 5s ease-out infinite alternate-reverse;
 }
 @keyframes slideup {
   from {
