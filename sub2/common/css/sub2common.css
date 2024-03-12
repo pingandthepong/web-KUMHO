@@ -177,6 +177,22 @@
   transform: translateX(-50%);
 }
 
+#content .content_area .more_btn {
+  width: 175px;
+  background: #fff;
+  border: 1px solid #f65742;
+  color: #f65742;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-size: 1.13rem;
+  transition: all .25s ease-out;
+}
+#content .content_area .more_btn:hover {
+  background: #f65742;
+  color: #fff;
+}
+
 /* .intro */
 #content .content_area .intro {
   width: 100%;
@@ -243,17 +259,17 @@
 
 /* .intro2 */
 #content .content_area .intro2 {
-  width: 2000px;
+  width: 1920px;
   height: 1080px;
   margin: 0 auto;
-  padding: 200px 0 0 125px;
+  padding: 200px 0 0 45px;
   box-sizing: border-box;
   overflow: hidden;
 }
 #content .content_area .intro2__title {
   width: 175px;
   margin-right: 100px;
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative;
   float: left;
 }
@@ -267,23 +283,10 @@
   letter-spacing: -.1rem;
   margin-top: 10px;
 }
-#content .content_area .intro2__title a {
-  width: 175px;
-  background: #fff;
-  border: 1px solid #f65742;
-  color: #f65742;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px 0;
-  font-size: 1.13rem;
+#content .content_area .intro2 .more_btn {
   position: absolute;
   left: 0;
   bottom: -100px;
-  transition: all .25s ease-out;
-}
-#content .content_area .intro2__title a:hover {
-  background: #f65742;
-  color: #fff;
 }
 #content .content_area .intro2__container:hover li {
    animation: slideup 1.5s ease-out;
@@ -328,7 +331,79 @@
 /* .intro3 */
 #content .content_area .intro3 {
   width: 2400px;
-  height: 1080px;
+  height: 1000px;
   margin: 0 auto;
   color: #fff;
+  padding: 200px 150px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 116px;
+}
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#content .content_area .intro3:hover :is(.intro3_txt, .intro3_content) {
+  animation: slideLeft 1.5s ease-out;
+}
+#content .content_area .intro3:hover .intro3_content {
+  animation-delay: .2s;
+}
+#content .content_area .intro3_txt {
+  width: 726px;
+}
+#content .content_area .intro3_txt h3 {
+  font-size: 2.25rem;
+  margin-bottom: 80px;
+}
+#content .content_area .intro3_txt p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+#content .content_area .intro3_txt p:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+#content .content_area .intro3 .more_btn {
+  width: 200px;
+  padding: 12px 28px;
+  margin-top: 50px;
+}
+#content .content_area .intro3_content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#content .content_area .intro3_content li {
+  width: 400px;
+  text-align: center;
+}
+#content .content_area .intro3_content li .img_container {
+  width: 100%;
+  height: 240px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #d9d9d9;
+}
+#content .content_area .intro3_content li img {
+  width: 100%;
+}
+#content .content_area .intro3_content dl {
+  font-size: 1.25rem;
+  
+
+}
+#content .content_area .intro3_content dt {
+  font-weight: 700;
+
+}
+#content .content_area .intro3_content dd {
+  font-weight: 300;
+  margin: 20px 0 10px;
+
 }
