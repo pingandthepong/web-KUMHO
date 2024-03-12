@@ -12,3 +12,6 @@
   background: url('../images/content3/intro3_bg.jpg') no-repeat 0 0;
   background-size: cover;
 }
+#content .content_area .intro3 .img_container img {
+  height: 100%;
+}
