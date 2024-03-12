@@ -1,5 +1,3 @@
-/* 회사소개의 공통 css */
-
 /* .visual */
 .visual {
   width: 2000px;
@@ -261,7 +259,7 @@
   margin-bottom: 60px;
 }
 #content .content_area .intro__title .sector {
-  font-size: 1;
+  font-size: 1rem;
   font-weight: 400;
   opacity: .8;
 }
@@ -420,13 +418,13 @@
 #content .content_area .intro3_content dl {
   font-size: 1.25rem;
   text-shadow: 1px 1px 3px rgba(0,0,0,.6);
+  display: flex;
+  flex-direction: column-reverse;
 }
 #content .content_area .intro3_content dt {
   font-weight: 700;
-
 }
 #content .content_area .intro3_content dd {
   font-weight: 300;
   margin: 20px 0 10px;
-
 }
