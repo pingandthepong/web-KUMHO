@@ -285,6 +285,7 @@
 #content .content_area .intro2__title h3 {
   font-size: 1.2rem;
   font-weight: 500;
+  position: relative;
 }
 #content .content_area .intro2__title h3 .accent {
   display: block;
@@ -292,18 +293,22 @@
   font-weight: 700;
   letter-spacing: -.1rem;
   margin-top: 10px;
-  position: relative;
+  /* position: relative; */
 }
 #content .content_area .intro2__title h3 .accent::after {
   content: "";
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: #f65742;
   position: absolute;
-  right: 0;
-  bottom: 50px;
+  left: -15px; top: 0px;
+  z-index: -1;
+  transition: all .65s ease-out;
+}
+#content .content_area .intro2:hover .intro2__title h3 .accent::after {
+  transform: translate(10px, 5px) scale(5);
 }
 #content .content_area .intro2 .more_btn {
   position: absolute;
