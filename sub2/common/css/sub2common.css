@@ -211,6 +211,7 @@
 }
 #content .content_area .intro img {
   width: 100%;
+  aspect-ratio: 16/9;
   position: absolute;
   left: 0;
   top: 0;
