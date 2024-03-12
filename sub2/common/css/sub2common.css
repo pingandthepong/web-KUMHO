@@ -279,9 +279,15 @@
   position: absolute;
   left: 0;
   bottom: -100px;
+  transition: all .25s ease-out;
+}
+#content .content_area .intro2__title a:hover {
+  background: #f65742;
+  color: #fff;
 }
 #content .content_area .intro2__container:hover li {
    animation: slideup 1.5s ease-out;
+   animation-delay: .05s;
 }
 #content .content_area .intro2__container {
   float: right;
