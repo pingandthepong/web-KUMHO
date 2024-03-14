@@ -1,5 +1,5 @@
 /* .intro */
-#content .content_area .intro {
+#content .content_area :is(.intro, section) {
   width: 1400px;
   aspect-ratio: unset;
   margin: 0 auto;
@@ -66,4 +66,55 @@
   border-radius: 12px;
   border: none;
   background: #f65742;
+}
+
+/*  */
+#content .content_area .performance_content {
+  margin-bottom: 100px;
+}
+#content .content_area .performance_content h3 {
+  font-size: 2.06rem;
+  margin-bottom: 50px;
+}
+#content .content_area .performance_content ul {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+#content .content_area .landmark ul {
+  gap: 20px;
+}
+#content .content_area .landmark li {
+  position: relative;
+  width: calc((100% - 4rem) / 6);
+  height: 536px;
+  transition: width .5s;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #000;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+#content .content_area .landmark li.active {
+  width: calc(((100% - 4rem) / 6) * 4);
+}
+#content .content_area .landmark li .badge {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  background: #2C44F2;
+  color: #fff;
+  border-radius: 6px;
+}
+#content .content_area .landmark li .name {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
 }
