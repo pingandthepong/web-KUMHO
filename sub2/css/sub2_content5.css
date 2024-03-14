@@ -1,0 +1,69 @@
+/* .intro */
+#content .content_area .intro {
+  width: 1400px;
+  aspect-ratio: unset;
+  margin: 0 auto;
+  display: block;
+  position: static;
+}
+#content .content_area .intro .intro__title {
+  width: auto;
+  margin: 0 0 120px 0;
+  color: #333;
+  text-shadow: none;
+  padding-left: 0;
+  text-align: center;
+}
+#content .content_area .intro__title_container:hover .intro__title {
+  animation: none;
+}
+#content .content_area .intro__title h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+#content .content_area .intro__title .slogan {
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.5;
+}
+#content .content_area .slogan strong {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+/* .search */
+#content .content_area .search form {
+  max-width: 500px;
+  margin: 0 auto 120px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#content .content_area .search .keyword_search {
+  flex: 1;
+}
+#content .content_area .search input#performance {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #d2d2d2;
+  border-radius: 12px;
+  padding: 15px 22px;
+  box-sizing: border-box;
+  font-size: 1.13rem;
+  font-weight: 300; 
+}
+#content .content_area .search input#performance:focus {
+  outline: none;
+  border: 1px solid #f65742;
+}
+#content .content_area input[type="submit"] {
+  width: 90px;
+  height: 50px;
+  color: #fff;
+  font-size: 1.13rem;
+  border-radius: 12px;
+  border: none;
+  background: #f65742;
+}
