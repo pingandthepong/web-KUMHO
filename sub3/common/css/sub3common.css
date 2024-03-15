@@ -20,6 +20,7 @@
   position: absolute;
   left: 0;
   top: 200px;
+  text-shadow: 0 2px 3px rgba(0,0,0,.75);
 }
 
 /* .sub_nav */
@@ -35,7 +36,7 @@
   align-items: center;
 }
 .sub_nav li {
-  width: calc(1400px / 5);
+  width: calc(1400px / 4);
   text-align: center;
   position: relative;
 }
@@ -124,19 +125,6 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-}
-#content .title_area h2::before {
-  content: "";
-  display: block;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  position: absolute;
-  left: -90px;
-  bottom: 0;
-  opacity: 0.2;
-  z-index: -100;
-  background: #bfb1a3;
 }
 #content .title_area p {
   display: block;
