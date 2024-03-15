@@ -196,9 +196,25 @@
 #content .content_area .intro__title .des {
   font-size: 1.25rem;
   line-height: 1.5;
+  margin-bottom: 100px;
 }
 #content .content_area .intro__title .des .accent {
   color: #f65742;
   font-weight: 600;
-
+}
+#content .content_area .intro__title .list::before {
+  content: "";
+  display: block;
+  width: 2.5%;
+  height: 1px;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -2000%);
+}
+#content .content_area .intro__title .list {
+  color: #dedede;
+  line-height: 1.5;
+  position: relative;
 }
