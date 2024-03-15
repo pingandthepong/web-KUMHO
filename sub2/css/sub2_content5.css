@@ -33,41 +33,6 @@
   font-weight: 400;
 }
 
-/* .search */
-#content .content_area .search form {
-  max-width: 500px;
-  margin: 0 auto 120px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-#content .content_area .search .keyword_search {
-  flex: 1;
-}
-#content .content_area .search input#performance {
-  width: 100%;
-  height: 52px;
-  border: 1px solid #d2d2d2;
-  border-radius: 12px;
-  padding: 15px 22px;
-  box-sizing: border-box;
-  font-size: 1.13rem;
-  font-weight: 300; 
-}
-#content .content_area .search input#performance:focus {
-  outline: none;
-  border: 1px solid #f65742;
-}
-#content .content_area input[type="submit"] {
-  width: 90px;
-  height: 50px;
-  color: #fff;
-  font-size: 1.13rem;
-  border-radius: 12px;
-  border: none;
-  background: #f65742;
-}
-
 /* section.performance_content */
 #content .content_area .performance_content {
   width: 100%;
@@ -88,6 +53,9 @@
 }
 
 /* .landmark */
+#content .content_area .performance_content.landmark {
+  padding: 50px 0 100px;
+}
 #content .content_area .landmark ul {
   gap: 20px;
 }
@@ -132,10 +100,45 @@
   color: #fff;
 }
 /* .all */
+/* .search */
+#content .content_area .search form {
+  max-width: 700px;
+  margin: 0 auto 120px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#content .content_area .search .keyword_search {
+  flex: 1;
+}
+#content .content_area .search input#performance {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #d2d2d2;
+  border-radius: 12px;
+  padding: 15px 22px;
+  box-sizing: border-box;
+  font-size: 1.13rem;
+  font-weight: 300; 
+}
+#content .content_area .search input#performance:focus {
+  outline: none;
+  border: 1px solid #f65742;
+}
+#content .content_area input[type="submit"] {
+  width: 90px;
+  height: 50px;
+  color: #fff;
+  font-size: 1.13rem;
+  border-radius: 12px;
+  border: none;
+  background: #f65742;
+}
 #content .content_area .all {
   background: #f8f8f8;
   background: url('../images/content5/bg.svg') no-repeat;
   background-size: cover;
+  padding-bottom: 200px;
 }
 #content .content_area .all ul {
   flex-wrap: wrap;
