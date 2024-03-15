@@ -160,16 +160,18 @@
 }
 /* section.intro */
 #content .content_area .intro__title {
-  text-align: center;
-  text-shadow: 0px 2px 4px rgba(0,0,0,.5);
+  width: 100%;
   aspect-ratio: 16/9;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  text-shadow: 0px 2px 4px rgba(0,0,0,.5);
   position: relative;
 }
 #content .intro__title img {
+  width: 100%;
   position: absolute;
   left: 0;
   top: 0;
