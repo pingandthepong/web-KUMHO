@@ -159,7 +159,9 @@
   aspect-ratio: 16 / 9;
 }
 /* section.intro */
-#content .intro_bg {
+#content .content_area .intro__title {
+  text-align: center;
+  text-shadow: 0px 2px 4px rgba(0,0,0,.5);
   aspect-ratio: 16/9;
   color: #fff;
   display: flex;
@@ -167,15 +169,11 @@
   justify-content: center;
   position: relative;
 }
-#content .intro_bg img {
+#content .intro__title img {
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
-}
-#content .content_area .intro__title {
-  text-align: center;
-  text-shadow: 0px 2px 4px rgba(0,0,0,.5);
 }
 #content .content_area .intro__title h3 {
   font-size: 1.75rem;
