@@ -240,3 +240,52 @@
 #content .content_area .intro__title .des .accent {
   font-weight: 500;
 }
+
+/* .history */
+#content .content_area .history {
+  height: 775px;
+  background: #f1f1f1;
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+#content .content_area .history h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 80px;
+}
+#content .content_area .history .year {
+  width: 1400px;
+  height: 96px;
+  margin: 0 auto;
+  border-bottom: 1px solid #d6d6d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content .content_area .history .year li a {
+  font-size: 3.12rem;
+  font-weight: 600;
+  padding: 0 40px 24px;
+  color: #c8c7c7;
+  
+}
+#content .content_area .history .year li :is(.active a, :hover) {
+  color: #f65742;
+}
+#content .content_area .history .year li a {
+  position: relative;
+  transition: all .5s ease-out;
+}
+#content .content_area .history .year li.active a::before,
+#content .content_area .history .year li:hover a::before {
+  content: "";
+  display: block;
+  width: calc(100% + 40px);
+  height: 3px;
+  background: #f65742;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
