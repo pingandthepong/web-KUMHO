@@ -1,3 +1,5 @@
-#content .intro__title img {
-  filter: brightness(.8);
+#content .content_area .intro {
+  background: url('../images/content1/intro_bg.jpg') no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
 }
