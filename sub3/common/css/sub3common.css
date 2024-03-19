@@ -20,7 +20,7 @@
   position: absolute;
   left: 0;
   top: 200px;
-  text-shadow: 0 2px 3px rgba(0,0,0,.75);
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.75);
 }
 
 /* .sub_nav */
@@ -176,7 +176,7 @@
   width: 1400px;
   margin: 0 auto;
   color: #fff;
-  text-shadow: 0px 2px 4px rgba(0,0,0,.2);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   position: relative;
   left: 0;
   top: 50%;
@@ -268,14 +268,13 @@
   font-weight: 600;
   padding: 0 40px 24px;
   color: #c8c7c7;
-  
 }
 #content .content_area .history .year li :is(.active a, :hover) {
   color: #f65742;
 }
 #content .content_area .history .year li a {
   position: relative;
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
 }
 #content .content_area .history .year li.active a::before,
 #content .content_area .history .year li:hover a::before {
@@ -288,4 +287,115 @@
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
+}
+#content .content_area .history_contents {
+  width: 1400px;
+  margin: 100px auto;
+}
+#content .content_area .history_contents ul {
+  display: flex;
+  justify-content: center;
+}
+#content .content_area .history_contents ul li {
+  width: auto;
+  box-sizing: border-box;
+}
+#content .content_area .history_contents ul li:not(:last-child) {
+  margin-right: 100px;
+
+}
+#content .content_area .history_contents dt {
+  font-size: 1.88rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#content .content_area .history_contents dd {
+  color: #666;
+  font-weight: 300;
+  display: flex;
+  margin-bottom: 10px;
+}
+#content .content_area .history_contents dd .month {
+  color: #111;
+  display: inline-block;
+  margin-right: 8px;
+}
+#content .content_area .history :is(#y2000, #y1990, #y1980) {
+  display: none;
+}
+
+/* .research */
+#content .content_area .research {
+  width: 1920px;
+  margin: 0 auto;
+  
+}
+#content .content_area .research ul {
+  counter-reset: counter;
+}
+#content .content_area .research li {
+  display: flex;
+  
+}
+#content .content_area .research li:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+#content .content_area .research li :is(.txt_container, .img_container){
+  width: 50%;
+  height: 1000px;
+}
+#content .content_area .research li .txt_container{
+  padding: 130px 0;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  
+}
+#content .content_area .research li .txt_container .sub_title {
+  display: block;
+  font-size: 1.06rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  
+}
+#content .content_area .research li .txt_container .sub_title::after {
+  counter-increment: counter;
+  content: " 0" counter(counter);
+  display: block;
+}
+#content .content_area .research li .txt_container dl {
+  height: 100%;
+  
+  
+}
+#content .content_area .research li .txt_container dt {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -50px;
+  font-size: 2.31rem;
+  font-weight: 600;
+}
+#content .content_area .research li .txt_container dd {
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 300;
+  position: absolute;
+  left: 50%;
+  bottom: 130px;
+  transform: translateX(-50%);
+}
+#content .content_area .research li .img_container{
+  overflow: hidden;
+  transition: all .35s ease-out;
+}
+#content .content_area .research li .img_container:hover {
+  border-radius: 50%;
+}
+#content .content_area .research li .img_container img {
+  object-fit: cover;
+  
+  
 }
