@@ -11,63 +11,15 @@
 }
 
 /* .research */
-#content .content_area .research {
-  width: 1920px;
-  margin: 0 auto;
-  
-}
-#content .content_area .research ul {
-  counter-reset: counter;
-}
-#content .content_area .research li {
-  display: flex;
-  
-}
-#content .content_area .research li:nth-of-type(even) {
-  flex-direction: row-reverse;
-}
 #content .content_area .research li :is(.txt_container, .img_container){
-  width: 50%;
   height: 1000px;
 }
 #content .content_area .research li .txt_container{
   padding: 130px 0;
-  box-sizing: border-box;
   text-align: center;
-  position: relative; 
-}
-#content .content_area .research ul li .txt_container {
-  color: #fff;
-}
-#content .content_area .research ul li:nth-child(2) .txt_container {
-  color: #2C44F2;
-}
-#content .content_area .research ul li:nth-child(1) .txt_container {
-  background: #2C44F2;
-}
-#content .content_area .research ul li:nth-child(2) .txt_container {
-  background: #f8f8f8;
-}
-#content .content_area .research ul li:nth-child(3) .txt_container {
-  background: #4E55F1;
-}
-#content .content_area .research ul li:nth-child(4) .txt_container {
-  background: #2C44F2;
-  background: #f65742;
-}
-#content .content_area .research li .txt_container .sub_title {
-  display: block;
-  font-size: 1.06rem;
-  font-weight: 500;
-  text-transform: capitalize;
 }
 #content .content_area .research li .txt_container .sub_title::after {
-  counter-increment: counter;
-  content: " 0" counter(counter);
   display: block;
-}
-#content .content_area .research li .txt_container dl {
-  height: 100%;
 }
 #content .content_area .research li .txt_container dt {
   width: 100%;
@@ -75,26 +27,14 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  margin-top: -50px;
-  font-size: 2.31rem;
-  font-weight: 600;
 }
 #content .content_area .research li .txt_container dd {
   width: 100%;
-  font-size: 1.1rem;
-  font-weight: 300;
   position: absolute;
   left: 50%;
   bottom: 130px;
   transform: translateX(-50%);
 }
-#content .content_area .research li .img_container{
-  overflow: hidden;
-  transition: all .35s ease-out;
-}
 #content .content_area .research li .img_container:hover {
   border-radius: 50%;
-}
-#content .content_area .research li .img_container img {
-  object-fit: cover;
 }
