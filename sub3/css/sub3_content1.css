@@ -35,6 +35,6 @@
   bottom: 130px;
   transform: translateX(-50%);
 }
-#content .content_area .research li .img_container:hover {
+#content .content_area .research li:hover .img_container {
   border-radius: 50%;
 }
