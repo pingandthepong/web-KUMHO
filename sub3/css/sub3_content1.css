@@ -40,12 +40,6 @@
 }
 
 /* .project */
-#content .content_area .project {
-  background: #f2f2f2;
-  text-align: center;
-  /* margin 병합을 위한 ov:h 코드 */
-  overflow: hidden;
-}
 #content .content_area .project h3::before {
   content: "A dream of a technologically advanced country";
   display: block;
@@ -56,27 +50,10 @@
   letter-spacing: 2px;
   text-transform: capitalize;
 }
-#content .content_area .project h3 {
-  font-size: 4.1rem;
-  font-weight: 600;
-  margin-bottom: 40px;
-}
-#content .content_area .project .accent {
-  color: #f65742;
-}
-#content .content_area .project p {
-  font-size: 1.1rem;
-  font-weight: 300;
-  color: #666;
-}
-#content .content_area .project .icon_container {
-  margin: 100px auto 130px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#content .content_area .project .img_container {
   gap: 100px;
 }
-#content .content_area .project .icon_container li img {
+#content .content_area .project .img_container li img {
   width: 150px;
   height: 150px;
   filter: contrast(30%);
