@@ -71,7 +71,7 @@
 }
 #content .content_area .project .icon_container {
   width: 1050px;
-  margin: 110px auto;
+  margin: 110px auto 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
