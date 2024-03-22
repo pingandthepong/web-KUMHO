@@ -70,11 +70,11 @@
   color: #666;
 }
 #content .content_area .project .icon_container {
-  width: 1000px;
-  margin: 110px auto 130px;
+  margin: 100px auto 130px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 #content .content_area .project .icon_container li img {
   width: 150px;
