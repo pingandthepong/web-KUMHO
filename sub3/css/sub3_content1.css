@@ -70,15 +70,15 @@
   color: #666;
 }
 #content .content_area .project .icon_container {
-  width: 1050px;
+  width: 1000px;
   margin: 110px auto 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #content .content_area .project .icon_container li img {
-  width: 180px;
-  height: 180px;
-  filter: contrast(40%);
+  width: 150px;
+  height: 150px;
+  filter: contrast(30%);
   transition: all .35s ease-out;
 }
