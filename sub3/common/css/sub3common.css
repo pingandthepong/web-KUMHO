@@ -416,9 +416,3 @@
   font-weight: 300;
   color: #666;
 }
-#content .content_area .project .img_container {
-  margin: 100px auto 130px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

@@ -51,6 +51,10 @@
   text-transform: capitalize;
 }
 #content .content_area .project .img_container {
+  margin: 100px auto 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 100px;
 }
 #content .content_area .project .img_container li img {
