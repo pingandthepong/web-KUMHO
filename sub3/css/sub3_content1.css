@@ -14,6 +14,17 @@
 #content .content_area .research li :is(.txt_container, .img_container){
   height: 1000px;
 }
+#content .content_area .research ul li:nth-child(2) .txt_container {
+  background: #bfb1a3;
+  color: #fff;
+}
+#content .content_area .research li img {
+  transform: scale(1.03);
+  transition: all .55s ease-out;
+}
+#content .content_area .research li:hover img {
+  transform: scale(1);
+}
 #content .content_area .research li .txt_container{
   padding: 130px 0;
   text-align: center;
@@ -35,9 +46,8 @@
   bottom: 130px;
   transform: translateX(-50%);
 }
-#content .content_area .research li:hover .img_container {
-  border-radius: 50%;
-}
+
+
 
 /* .project */
 #content .content_area .project h3::before {
