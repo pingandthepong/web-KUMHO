@@ -35,15 +35,6 @@
 #content .content_area .research li:nth-of-type(even) .img_container {
   border-radius: 50% 0 0 0;
 }
-#content .content_area .research li:nth-of-type(odd):hover .img_container {
-  border-radius: 50px 50% 50px 50px;
-}
-#content .content_area .research li:nth-of-type(even):hover .img_container {
-  border-radius: 50% 50px 50px 50px;
-}
-#content .content_area .research li:hover .txt_container {
-  border-radius: 50px;
-}
 
 /* .project */
 #content .content_area .project h3 {
