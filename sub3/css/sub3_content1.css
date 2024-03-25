@@ -37,23 +37,30 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -250%);
 }
 #content .content_area .research li .txt_container dd.progress {
-  width: 100%;
+  width: 90%;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, 30%);
+  transform: translate(-50%, 10%);
   counter-reset: progress;
 }
+#content .content_area .research li:nth-child(3) .txt_container dd.progress {
+  width: 35%;
+}
+#content .content_area .research li:nth-child(4) .txt_container dd.progress {
+  width: 20%;
+}
 #content .content_area .research li .txt_container dd.progress span {
-  background: #f5f5f5;
-  color: #2c44f2;
+  display: inline-block;
+  color: #fff;
   padding: 8px 16px;
-  border-radius: 6px;
+  font-size: 1rem;
   font-weight: 600;
   position: relative;
+  margin-bottom: 56px;
 }
 #content .content_area .research li .txt_container dd.progress span:not(:last-child) {
   margin-right: 16px;
@@ -66,22 +73,33 @@
   left: 10%;
   top: 50%;
   transform: translateY(-230%);
-  color: #fff;
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 300;
 }
-#content .content_area .research li .txt_container dd.progress span:not(:last-child)::after {
+#content .content_area .research li .txt_container dd.progress::before {
   content: "";
   display: block;
-  width: 100px;
+  width: 85%;
   height: 1px;
   background: #fff;
   position: absolute;
-  right: -100px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -10;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0px);
 }
+#content .content_area .research li:nth-child(2) .txt_container dd.progress::after {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 96px);
+}
+
+
 #content .content_area .research li .txt_container dd {
   width: 100%;
   position: absolute;
