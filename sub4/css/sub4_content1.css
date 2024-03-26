@@ -1,13 +1,3 @@
-#content .content_area p .fa-solid[class*="left"] {
-  left: -50px;
-  top: -10px;
-}
-#content .content_area p .fa-solid[class*="right"] {
-  left: 100%;
-  top: -10px;
-  transform: translateX(50%);
-}
-
 /* .content_wrap */
 #content .content_area .content_wrap {
 }
