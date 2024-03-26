@@ -1,0 +1,5 @@
+/* .intro3 */
+#content .content_area .intro3 {
+  background: url('../images/content2/intro3_bg.jpg') no-repeat 0 0;
+  background-size: cover;
+}
