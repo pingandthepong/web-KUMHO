@@ -1,5 +1,10 @@
-/* .intro3 */
-#content .content_area .intro3 {
-  background: url('../images/content2/intro3_bg.jpg') no-repeat 0 0;
-  background-size: cover;
+#content .content_area p .fa-solid[class*="left"] {
+  left: 50%;
+  top: -80px;
+  transform: translateX(-50%);
+}
+#content .content_area p .fa-solid[class*="right"] {
+  left: 50%;
+  bottom: -85px;
+  transform: translateX(-50%);
 }
