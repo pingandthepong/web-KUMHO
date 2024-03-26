@@ -51,14 +51,14 @@
   padding: 100px 200px;
   box-sizing: border-box;
   overflow: hidden;
-  position: relative
+  position: relative;
+  background: #f8f8f8;
 }
 #content .content_area .content_wrap .content li::before {
   content: "";
   display: block;
   width: 50px;
   height: 100px;
-  background: #ddd;
   background: #f65742;
   box-shadow: 4px 4px 5px 0 rgba(0,0,0,.2);
   position: absolute;
@@ -67,7 +67,6 @@
 }
 /* li:nth-of-type(1) */
 #content .content_area .content_wrap .content li:nth-of-type(1) {
-  background: #f8f8f8;
 }
 #content .content_area .content_wrap .content li:nth-of-type(1) p {
   width: 80%;
@@ -87,8 +86,55 @@
   transition: all .5s ease-out;
 }
 /* li:nth-of-type(2) */
-#content .content_area .content_wrap .content li:nth-of-type(2) {}
+#content .content_area .content_wrap .content li:nth-of-type(2) {
+  height: 700px;
+}
+#content .content_area .content_wrap .content li:nth-of-type(2) dl {
+  counter-reset: rule;
+}
+#content .content_area .content_wrap .content li:nth-of-type(2) dl:first-of-type {
+  border-top: 2px solid #111;
+}
+#content .content_area .content_wrap .content li:nth-of-type(2) dt {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 30px 80px 30px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  transition: all .1s ease-out;
+}
+#content .content_area .content_wrap .content li:nth-of-type(2) dt i {
+  float: right;
+  font-size: 1.8rem;
+}
+#content .content_area .content_wrap .content li:nth-of-type(2) dt:hover {
+  color: #f65742;
+  cursor: pointer;
+}
+#content .content_area .content_wrap .content li:nth-of-type(2) dd::before {
+  counter-increment: rule;
+  content: "" counter(rule)". ";
+}
+#content .content_area .content_wrap .content li:nth-of-type(2) dd {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding-left: 20px;
+  line-height: 2;
+  color: #666;
+  font-weight: 100;
+  display: none;
+}
+#content .content_area .content_wrap .content li:nth-of-type(2) dd:first-of-type {
+  padding-top: 30px;
+}
+#content .content_area .content_wrap .content li:nth-of-type(2) dd:last-of-type {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e5e5e5;
+}
 /* li:nth-of-type(3) */
-#content .content_area .content_wrap .content li:nth-of-type(3) {}
+#content .content_area .content_wrap .content li:nth-of-type(3) {
+  display: none;
+}
 /* li:nth-of-type(4) */
-#content .content_area .content_wrap .content li:nth-of-type(4) {}
+#content .content_area .content_wrap .content li:nth-of-type(4) {
+  display: none;
+}
