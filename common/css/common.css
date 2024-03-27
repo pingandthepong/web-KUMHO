@@ -214,118 +214,109 @@ img {
 /* header 공통영역 */
 #headerArea {
   width: 100%;
+  height: 100px;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 100;
-  transition: all 0.55s ease-out;
 }
-#headerArea:hover {
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1);
+#headerArea::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  left: 0;
+  top: 100px;
 }
-#headerArea:hover .logo a {
-  background: url("../images/KUMHO_Logo_KJH_txtblack_pb20.png") no-repeat 0 0;
-}
-#headerArea .header__container {
+#headerArea .headerInner {
   width: 1750px;
-  height: 100px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 150px;
 }
 #headerArea a {
   color: var(--main-white);
 }
-#headerArea:hover a {
-  color: var(--txt-black-second);
-}
-
-#headerArea:hover #gnb li a:hover {
-  color: var(--txt-black);
-  font-weight: 500;
-}
 
 /* header .logo */
 #headerArea .logo a {
-  width: 147px;
+  width: 149px;
   height: 69px;
+  margin-right: 150px;
   background: url("../images/header-logo-pb20.png") no-repeat 0 0;
   text-indent: -9999px;
   overflow: hidden;
-  padding: 10px;
-  box-sizing: border-box;
 }
 
 /* header #gnb */
 #headerArea #gnb {
-  flex: 1;
-  line-height: 100px;
+  /* 1152px */
+  width: calc(192px * 6);
 }
-
-#headerArea #gnb ul {
+#headerArea #gnb .dropdownmenu {
   display: flex;
-  justify-content: space-between;
 }
-#headerArea #gnb li h3 {
+#headerArea #gnb .dropdownmenu .menu {
   position: relative;
+  width: calc(100% / 6);
+  height: 100px;
 }
-#headerArea #gnb li a {
-  width: 192px;
+#headerArea #gnb .menu h3 .depth1 {
   font-size: 1.38rem;
   font-weight: 400;
   text-align: center;
+  line-height: 100px;
+  position: relative;
 }
-#headerArea #gnb li a::after {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 2px;
-  background: var(--main-red);
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
+#headerArea #gnb .menu h3 .depth1.active {
+  border-bottom: 2px solid #f65742;
 }
-#headerArea #gnb li a:hover::after {
-  width: 192px;
-}
-#headerArea #gnb li:hover a {
-  color: var(--txt-black-third);
+#headerArea #gnb .dropdownmenu .menu ul a.active {
+  color: #f65742;
 }
 
 /* header .top_menu */
 #headerArea .top_menu {
+  width: 299px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+  justify-content: end;
+  gap: 10px; 
 }
 #headerArea .top_menu a {
   padding: 6px 8px;
-  line-height: 1;
+  transition: all 0.35s;
 }
 #headerArea .top_menu .signup a {
-  background: var(--main-red);
+  background: #ef0010;
   border-radius: 6px;
-}
-#headerArea .top_menu li a {
-  transition: all 0.35s;
 }
 #headerArea .top_menu .signup:hover a {
   background: var(--main-blue);
 }
-#headerArea:hover .top_menu .signin a {
-  color: var(--txt-black);
+
+/* 2depth */
+#gnb ul.dropdownmenu .menu ul {
+  width: 100%;
+  height: 210px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  padding: 15px 0;
+  line-height: 2.5rem;
+  display: none;
+  
 }
-#headerArea:hover .top_menu .signin:hover a {
-  font-weight: 600;
+#gnb ul.dropdownmenu li ul li a {
+  display: block;
+  text-align: center;
+  color: #333;
+  transition: all 0.25s ease-out;
 }
-#headerArea:hover .top_menu .signup a {
-  color: var(--main-white);
+#gnb ul.dropdownmenu li ul li:hover a {
+  color: #f65742;
 }
+
 
 /* footer 공통영역 */
 #footerArea {
