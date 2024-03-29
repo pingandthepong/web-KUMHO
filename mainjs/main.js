@@ -8,7 +8,7 @@ $(document).ready(function() {
   var onoff=true; // true=>타이머 동작중 , false=>동작하지 않을때
   
   $('.btn1').css('background','#fff'); //첫번째 불켜
-  $('.btn1').css('width','88px'); // 버튼의 너비 증가
+  $('.btn1').css('width','100px'); // 버튼의 너비 증가
   
   $('.gallery .link1').fadeIn('slow'); //첫번째 이미지 보인다..
   $('.gallery .link1 span').delay(1500).animate({top:170, opacity:1},'slow');
@@ -32,9 +32,9 @@ $(document).ready(function() {
   //   }
     
     $('.mbutton').css('background','rgba(255,255,255,.5)'); //버튼불다꺼!!
-    $('.mbutton').css('width','33px'); // 버튼 원래의 너비
+    $('.mbutton').css('width','20px'); // 버튼 원래의 너비
     $('.btn'+cnt).css('background','#fff');//자신만 불켜
-    $('.btn'+cnt).css('width','88px');    
+    $('.btn'+cnt).css('width','100px');    
 
     $('.gallery li span').css('top',210).css('opacity',0);
     $('.gallery .link'+cnt).find('span').delay(1000).animate({top:170, opacity:1},'slow');
@@ -75,9 +75,9 @@ $(document).ready(function() {
     //   $('.btn'+i).css('width','16');
     // }
     $('.mbutton').css('background','rgba(255,255,255,.5'); //버튼 모두불꺼
-    $('.mbutton').css('width','33px');
+    $('.mbutton').css('width','20px');
     $('.btn'+cnt).css('background','#fff');//자신 버튼만 불켜 
-    $('.btn'+cnt).css('width','88px');
+    $('.btn'+cnt).css('width','100px');
     
     $('.gallery li span').css('top',210).css('opacity',0);
     $('.gallery .link'+cnt).find('span').delay(1000).animate({top:170, opacity:1},'slow');
@@ -128,9 +128,9 @@ $('.ps').click(function(){
   $('.gallery .link'+cnt).fadeIn('slow'); //자신만 이미지가 보인다..
                       
   $('.mbutton').css('background','rgba(255,255,255,.5)'); //버튼 모두불꺼
-  $('.mbutton').css('width','33');
+  $('.mbutton').css('width','20');
   $('.btn'+cnt).css('background','#fff');//자신 버튼만 불켜 
-  $('.btn'+cnt).css('width','88px');
+  $('.btn'+cnt).css('width','100px');
 
   $('.gallery li span').css('top',210).css('opacity',0);
   $('.gallery .link'+cnt).find('span').delay(1000).animate({top:170, opacity:1},'slow');

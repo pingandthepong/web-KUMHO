@@ -55,30 +55,34 @@
   align-items: center;
   gap: 8px;
   position: absolute;
-  left: 50%;
-  bottom: 50%;
-  transform: translate(-50%, 630%);
+  left: 125px;
+  bottom: 70px;
 }
 .visual .dock .mbutton {
   display: block;
-  width: 88px;
-  height: 3px;
+  width: 100px;
+  height: 4px;
   background: rgba(255, 255, 255, 0.5);
   float: left;
   cursor: pointer;
   transition: all .5s;
 }
 .dock .ps {
-  display:block;
-  cursor:pointer;
-  margin-left: 3px;
+  display: block;
+  cursor: pointer;
+  margin-right: 10px;
 }
 .dock .ps i{
-  font-size: 18px;
+  font-size: 26px;
   color: #fff;
 }
 .visual .btn_wrap {
   background: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(50%, 50%);
+  
 } 
 .visual .btn {
   display: block;
@@ -86,10 +90,6 @@
   height: 30px;
   background: #fff;
   background: red;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(50%, 50%);
   cursor:pointer;
   }
 .visual .btnLeft {
