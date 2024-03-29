@@ -60,7 +60,7 @@
 }
 .visual .dock .mbutton {
   display: block;
-  width: 100px;
+  width: 24px;
   height: 4px;
   background: rgba(255, 255, 255, 0.5);
   float: left;
@@ -69,36 +69,36 @@
 }
 .dock .ps {
   display: block;
+  width: 70px;
+  height: 70px;
+  background: #ef0010 url("../mainimages/stop_icon.png") no-repeat center;
+  border-radius: 50%;
   cursor: pointer;
-  margin-right: 10px;
+  margin: 0 10px;
+  box-sizing: border-box;
 }
 .dock .ps i{
-  font-size: 26px;
+  font-size: 24px;
   color: #fff;
 }
-.visual .btn_wrap {
-  background: #000;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(50%, 50%);
-  
-} 
 .visual .btn {
   display: block;
-  width: 30px;
-  height: 30px;
-  background: #fff;
-  background: red;
-  cursor:pointer;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  left: 450px;
+  bottom: 100px;
+  width: 31px;
+  height: 7px;
+}
+.visual .btn.btnLeft {
+  background: url("../mainimages/slide_arrow_prev.png") 0 50% no-repeat;
+  left: 450px;
   }
-.visual .btnLeft {
-  /* transform: translate(770%, 300%); */
+.visual .btn.btnRight {
+  background: url("../mainimages/slide_arrow_next.png") 0 50% no-repeat;
+  left: 500px;
 }
-.visual .btnRight {
-  /* transform: translate(900%, 300%); */
-}
-
 @keyframes scroll_btn {
   0% {
     transform: translateY(0%);

@@ -11,7 +11,7 @@ $(document).ready(function() {
   $('.btn1').css('width','100px'); // 버튼의 너비 증가
   
   $('.gallery .link1').fadeIn('slow'); //첫번째 이미지 보인다..
-  $('.gallery .link1 span').delay(1500).animate({top:170, opacity:1},'slow');
+  // $('.gallery .link1 span').delay(1500).animate({top:170, opacity:1},'slow');
 
   function moveg(){
     if(cnt==imageCount+1)cnt=1;
@@ -31,18 +31,19 @@ $(document).ready(function() {
   //      $('.btn'+i).css('width','16'); // 버튼 원래의 너비
   //   }
     
-    $('.mbutton').css('background','rgba(255,255,255,.5)'); //버튼불다꺼!!
-    $('.mbutton').css('width','20px'); // 버튼 원래의 너비
+    // $('.mbutton').css('background','rgba(255,255,255,.5)'); //버튼불다꺼!!
+    $('.mbutton').css('background','rgba(255, 255, 255, 0.5)'); //버튼불다꺼!!
+    $('.mbutton').css('width','24px'); // 버튼 원래의 너비
     $('.btn'+cnt).css('background','#fff');//자신만 불켜
     $('.btn'+cnt).css('width','100px');    
 
-    $('.gallery li span').css('top',210).css('opacity',0);
-    $('.gallery .link'+cnt).find('span').delay(1000).animate({top:170, opacity:1},'slow');
+    // $('.gallery li span').css('top',210).css('opacity',0);
+    // $('.gallery .link'+cnt).find('span').delay(1000).animate({top:170, opacity:1},'slow');
 
      if(cnt==imageCount)cnt=0;  //카운트의 초기화 0
    }
    
-  timeonoff= setInterval( moveg , 6000);// 타이머를 동작 1~5이미지를 순서대로 자동 처리
+  timeonoff= setInterval( moveg , 5000);// 타이머를 동작 1~5이미지를 순서대로 자동 처리
     //var 변수 = setInterval( function(){처리코드} , 4000);  //홍길동의 정보를 담아놓는다
     //clearInterval(변수); -> 살인마/사이코패스/살인청부업자
 
@@ -74,8 +75,8 @@ $(document).ready(function() {
     //   $('.btn'+i).css('background','#00f'); //버튼 모두불꺼
     //   $('.btn'+i).css('width','16');
     // }
-    $('.mbutton').css('background','rgba(255,255,255,.5'); //버튼 모두불꺼
-    $('.mbutton').css('width','20px');
+    $('.mbutton').css('background','rgba(255, 255, 255, 0.5)'); //버튼 모두불꺼
+    $('.mbutton').css('width','24px');
     $('.btn'+cnt).css('background','#fff');//자신 버튼만 불켜 
     $('.btn'+cnt).css('width','100px');
     
@@ -84,11 +85,12 @@ $(document).ready(function() {
 
     if(cnt==imageCount)cnt=0;  //카운트 초기화
    
-    timeonoff= setInterval( moveg , 6000); //타이머의 부활!!!
+    timeonoff= setInterval( moveg , 5000); //타이머의 부활!!!
    
     if(onoff==false){ //중지상태냐??
           onoff=true; //동작~~
-          $('.ps').html('<span class="hidden">stop</span><i class="fa-solid fa-pause"></i>');
+      // $('.ps').html('<span class="hidden">stop</span><i class="fa-solid fa-pause"></i>');
+      $(".ps").css({"background": '#ef0010 url("../mainimages/stop_icon.png") no-repeat center'});
     }
     
   });
@@ -97,11 +99,19 @@ $(document).ready(function() {
 $('.ps').click(function(){ 
    if(onoff==true){ // 타이머가 동작 중이냐??
        clearInterval(timeonoff);   //살인마 고용 stop버튼 클릭시
-       $(this).html('<span class="hidden">play</span><i class="fa-solid fa-play"></i>'); //js파일에서는 경로의 기준이 html파일이 기준!!
+    //  $(this).html('<span class="hidden">play</span><i class="fa-solid fa-play"></i>'); //js파일에서는 경로의 기준이 html파일이 기준!!
+     $(this).css({
+       "background": 'rgba(255,255,255,.2) url("../mainimages/play_icon.png") no-repeat center',
+       "border": "1px solid #fff",
+     });
        onoff=false;   
    }else{  // false 타이머가 중지 상태냐??
-     timeonoff= setInterval( moveg , 6000); //play버튼 클릭시  부활
-     $(this).html('<span class="hidden">stop</span><i class="fa-solid fa-pause"></i>');
+     timeonoff= setInterval( moveg , 5000); //play버튼 클릭시  부활
+     //  $(this).html('<span class="hidden">stop</span><i class="fa-solid fa-pause"></i>');
+     $(this).css({
+       "background": '#ef0010 url("../mainimages/stop_icon.png") no-repeat center',
+       "border": "none",
+     });
      onoff=true; 
    }
 });	
@@ -127,8 +137,8 @@ $('.ps').click(function(){
   $('.gallery li').hide(); //모든 이미지를 보이지 않게.
   $('.gallery .link'+cnt).fadeIn('slow'); //자신만 이미지가 보인다..
                       
-  $('.mbutton').css('background','rgba(255,255,255,.5)'); //버튼 모두불꺼
-  $('.mbutton').css('width','20');
+  $('.mbutton').css('background','rgba(255, 255, 255, 0.5))'); //버튼 모두불꺼
+  $('.mbutton').css('width','24px');
   $('.btn'+cnt).css('background','#fff');//자신 버튼만 불켜 
   $('.btn'+cnt).css('width','100px');
 
@@ -141,11 +151,12 @@ $('.ps').click(function(){
   //   if(cnt==1)cnt=imageCount+1;
   // }
 
-  timeonoff= setInterval( moveg , 6000); //부활
+  timeonoff= setInterval( moveg , 5000); //부활
 
   if(onoff==false){
     onoff=true;
-    $('.ps').html('<span class="hidden">stop</span><i class="fa-regular fa-circle-stop"></i>');
+    // $('.ps').html('<span class="hidden">stop</span><i class="fa-regular fa-circle-stop"></i>');
+    $(".ps").css({"background": '#ef0010 url("../mainimages/play_icon.png") no-repeat center'});
   }
 });
 
