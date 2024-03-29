@@ -3,64 +3,35 @@
 /* .visual 영역 */
 .visual {
   width: 2000px;
+  height: 1000px;
   position: relative;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-}
-.visual_container {
-  height: 1000px;
   overflow: hidden;
-  position: relative;
 }
-@keyframes visual_img {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-    filter: brightness(1);
-  }
-  25% {
-    transform: scale(1.12);
-    opacity: 1;
-    filter: brightness(1);
-  }
-  30% {
-    transform: scale(1.12);
-    opacity: 0;
-    filter: brightness(0);
-  }
-  100% {
-    transform: scale(1.12);
-    opacity: 0;
-    filter: brightness(0);
-  }
-}
-.visual img {
+.visual .gallery {
   width: 2000px;
   height: 1000px;
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
-  /* animation: visual_img 3.5s infinite ease-out; */
+  overflow: hidden;
 }
-.visual img:nth-child(1) {
-  z-index: -1;
-  animation: visual_img 14s infinite ease-out;
+.visual .gallery li {
+  display: none;
+  position: relative;
 }
-.visual img:nth-child(2) {
-  z-index: -2;
-  animation: visual_img 14s infinite ease-out;
-  animation-delay: 3.5s;
+@keyframes ani {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
 }
-.visual img:nth-child(3) {
-  z-index: -3;
-  animation: visual_img 14s infinite ease-out;
-  animation-delay: 7s;
-}
-.visual img:nth-child(4) {
-  z-index: -4;
-  animation: visual_img 14s infinite ease-out;
-  animation-delay: 10.5s;
+.visual .gallery img {
+  animation: ani 30s ease-out infinite;
 }
 .visual .slogan {
   position: absolute;
@@ -80,57 +51,54 @@
   margin-top: 0.8rem;
 }
 .visual .dock {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   position: absolute;
   left: 50%;
-  bottom: 240px;
   bottom: 50%;
-  transform: translateX(-50%);
-  transform: translate(-50%, 430%);
-  overflow: hidden;
+  transform: translate(-50%, 630%);
 }
 .visual .dock .mbutton {
-  float: left;
-  padding: 15px 0;
-  cursor: pointer;
-}
-.visual .dock .mbutton:not(:last-of-type) {
-  margin-right: 7px;
-}
-.visual .dock [class*="btn"] {
   display: block;
   width: 88px;
   height: 3px;
   background: rgba(255, 255, 255, 0.5);
+  float: left;
+  cursor: pointer;
+  transition: all .5s;
 }
-@keyframes dock_on {
-  0% {
-    width: 0%;
-    background: #ef0010;
-    background: #fff;
-  }
-  33.3% {
-    width: 100%;
-    background: #ef0010;
-    background: #f65742;
-    background: #fff;
-  }
-  100% {
-    background: #ef0010;
-    background: #f65742;
-    background: #fff;
-  }
+.dock .ps {
+  display:block;
+  cursor:pointer;
+  margin-left: 3px;
 }
-.visual .dock .mbutton .on {
+.dock .ps i{
+  font-size: 18px;
+  color: #fff;
+}
+.visual .btn_wrap {
+  background: #000;
+} 
+.visual .btn {
   display: block;
-  height: 100%;
-  animation: dock_on 10.5s infinite;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  background: red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(50%, 50%);
+  cursor:pointer;
+  }
+.visual .btnLeft {
+  /* transform: translate(770%, 300%); */
 }
-.visual .dock .btn2 .on {
-  animation-delay: 3.5s;
+.visual .btnRight {
+  /* transform: translate(900%, 300%); */
 }
-.visual .dock .btn3 .on {
-  animation-delay: 7s;
-}
+
 @keyframes scroll_btn {
   0% {
     transform: translateY(0%);
