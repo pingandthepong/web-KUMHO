@@ -9,6 +9,7 @@
   top: 0;
   transform: translateX(-50%);
   overflow: hidden;
+  background: #000;
 }
 .visual .gallery {
   width: 2000px;
