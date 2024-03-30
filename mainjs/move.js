@@ -23,10 +23,8 @@ $(document).ready(function () {
     if (cnt == imageCount) cnt = 0;
     cnt++;
 
-    
     $('.gallery li').hide();
     $(`.gallery .link${cnt}`).fadeIn('normal');
-    
     
     $('.mbutton').css({
       background: 'rgba(255, 255, 255, 0.5)',
@@ -81,7 +79,6 @@ $(document).ready(function () {
     $(`.gallery .link${cnt} .slogan__lg .up`).delay(350).animate({top: 0, opacity: 1},'slow');
 
     if (cnt == imageCount) cnt = 0;
-
     timeonoff = setInterval(moveg, 4000);
 
     if (onoff == false) {
@@ -91,6 +88,11 @@ $(document).ready(function () {
           '#ef0010 url("../mainimages/stop_icon.png") no-repeat center',
         backdropFilter: 'none',
         border: '1px solid #ef0010',
+      });
+      $('.btn_wrap').css({
+        background: 'rgba(255,255,255,.2)',
+        backdropFilter: 'blur(5px)',
+        border: '1px solid #fff',
       });
     }
   });
