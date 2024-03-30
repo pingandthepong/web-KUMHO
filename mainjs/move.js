@@ -38,8 +38,9 @@ $(document).ready(function () {
       width: '100px',
     });
     
-    $('.dock_progress .num').text(`${cnt}`);
+    $('.gallery li .slogan__lg .up').css({ top: "30px", opacity: 0 });
     $(`.gallery .link${cnt} .slogan__lg .up`).delay(350).animate({top: 0, opacity: 1},'slow');
+    $('.dock_progress .num').text(`${cnt}`);
 
     if (cnt == imageCount) cnt = 0;
   }
@@ -47,13 +48,13 @@ $(document).ready(function () {
   timeonoff = setInterval(moveg, 4000);
 
   $('.mbutton').click(function (event) {
-    var $target = $(event.target); //클릭한 버튼 $target == $(this)
+    var $target = $(event.target); // 클릭한 버튼 $target == $(this)
     clearInterval(timeonoff);
+
     $('.gallery li').hide();
 
-    if ($target.is(''.btn1')) {
-      //첫번째 버튼 클릭??
-      cnt = 1; //클릭한 해당 카운트를 담아놓는다
+    if ($target.is('.btn1')) {
+      cnt = 1;
     } else if ($target.is('.btn2')) {
       cnt = 2;
     } else if ($target.is('.btn3')) {
@@ -62,9 +63,9 @@ $(document).ready(function () {
       cnt = 4;
     }
 
-    $('.dock_progress .num').text(`${cnt}`);
-
     $(`.gallery .link${cnt}`).fadeIn('normal');
+
+    $('.dock_progress .num').text(`${cnt}`);
 
     $('.mbutton').css({
       background: 'rgba(255, 255, 255, 0.5)',
@@ -76,7 +77,7 @@ $(document).ready(function () {
       width: '100px',
     });
 
-    $(`.gallery li .slogan__lg .up`).css({top: '50px', opacity: 0,});
+    $(`.gallery li .slogan__lg .up`).css({top: '30px', opacity: 0,});
     $(`.gallery .link${cnt} .slogan__lg .up`).delay(350).animate({top: 0, opacity: 1},'slow');
 
     if (cnt == imageCount) cnt = 0;
@@ -94,10 +95,9 @@ $(document).ready(function () {
     }
   });
 
-  //stop/play 버튼 클릭시 타이머 동작/중지
-  $(".ps").click(function () {
+  // stop/play 버튼 클릭시 타이머 동작/중지
+  $('.ps').click(function () {
     if (onoff == true) {
-      // 타이머가 동작 중이라면
       clearInterval(timeonoff);
       $(this).css({
         background:
@@ -141,7 +141,7 @@ $(document).ready(function () {
         border: '1px solid #fff',
       });
     } else if ($(this).is('.btnLeft')) {
-      if (cnt == 1) cnt = imageCount + 1; // 1->5  최초..
+      if (cnt == 1) cnt = imageCount + 1;
       if (cnt == 0) cnt = imageCount;
       cnt--;
       $('.dock_progress .num').text(`${cnt}`);
@@ -165,7 +165,7 @@ $(document).ready(function () {
       width:'100px',
     });
 
-    $(`.gallery li .slogan__lg .up`).css({top: '50px', opacity: 0,});
+    $(`.gallery li .slogan__lg .up`).css({top: '30px', opacity: 0,});
     $(`.gallery .link${cnt} .slogan__lg .up`).delay(350).animate({top: 0, opacity: 1},'slow');
 
     timeonoff = setInterval(moveg, 4000);
