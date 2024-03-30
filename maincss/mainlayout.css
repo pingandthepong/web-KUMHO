@@ -80,6 +80,7 @@
   width: 70px;
   height: 70px;
   background: #ef0010 url("../mainimages/stop_icon.png") no-repeat center;
+  border: 1px solid #ef0010;
   border-radius: 50%;
   cursor: pointer;
   margin: 0 10px;
