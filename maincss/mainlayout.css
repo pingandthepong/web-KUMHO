@@ -72,6 +72,22 @@
   background: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   transition: all .5s;
+  position: relative;
+}
+.visual .dock .mbutton::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.visual .dock .mbutton.on::after {
+  content: "";
+  width: 100%;
+  transition: all 3s ease-in-out;
 }
 .visual .dock_btn {
   display: flex;

@@ -6,8 +6,8 @@ $(document).ready(function () {
   var cnt = 1; //이미지 순서
   var onoff = true; // true:타이머 동작중 , false:동작하지 않을 때
 
-  $('.btn1').css({
-    background: '#fff',
+  $('.btn1').addClass('on').css({
+    background: 'rgba(255, 255, 255, 0.5)',
     width: '100px',
   });
 
@@ -29,12 +29,12 @@ $(document).ready(function () {
     $('.mbutton').css({
       background: 'rgba(255, 255, 255, 0.5)',
       width: '24px',
-    });
+    }).removeClass('on');
     
     $(`.btn${cnt}`).css({
-      background: '#fff',
+      background: 'rgba(255, 255, 255, 0.5)',
       width: '100px',
-    });
+    }).addClass('on');
     
     $('.gallery li .slogan__lg .up').css({ top: "30px", opacity: 0 });
     $(`.gallery .link${cnt} .slogan__lg .up`).delay(350).animate({top: 0, opacity: 1},'slow');
@@ -68,12 +68,12 @@ $(document).ready(function () {
     $('.mbutton').css({
       background: 'rgba(255, 255, 255, 0.5)',
       width: '24px',
-    });
+    }).removeClass('on');
 
     $(`.btn${cnt}`).css({
-      background: '#fff',
+      background: 'rgba(255, 255, 255, 0.5)',
       width: '100px',
-    });
+    }).addClass('on');
 
     $(`.gallery li .slogan__lg .up`).css({top: '30px', opacity: 0,});
     $(`.gallery .link${cnt} .slogan__lg .up`).delay(350).animate({top: 0, opacity: 1},'slow');
@@ -160,12 +160,12 @@ $(document).ready(function () {
     $('.mbutton').css({
       background: 'rgba(255, 255, 255, 0.5)',
       width: '24px',
-    });
+    }).removeClass('on');
 
     $(`.btn${cnt}`).css({
-      background: '#fff',
+      background: 'rgba(255, 255, 255, 0.5)',
       width:'100px',
-    });
+    }).addClass('on');
 
     $(`.gallery li .slogan__lg .up`).css({top: '30px', opacity: 0,});
     $(`.gallery .link${cnt} .slogan__lg .up`).delay(350).animate({top: 0, opacity: 1},'slow');
