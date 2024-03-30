@@ -46,6 +46,11 @@
   font-size: 4rem;
   font-weight: 600;
 }
+.visual .slogan__lg .up {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+}
 .visual .slogan__sm {
   font-size: 2.25rem;
   margin-top: 0.8rem;

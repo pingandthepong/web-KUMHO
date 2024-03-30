@@ -12,7 +12,7 @@ $(document).ready(function () {
   });
 
   $(".gallery .link1").fadeIn("slow"); //첫번째 이미지 보인다..
-  // $('.gallery .link1 .slogan').delay(500).animate({"top":500, opacity:1},'slow');
+  $('.gallery .link1 .slogan__lg .up').delay(650).animate({"top":0, opacity:1},'slow');
 
   $(".dock_progress .num").text(`${cnt}`);
   $(".dock_progress .max").text(`${imageCount}`);
@@ -37,9 +37,8 @@ $(document).ready(function () {
       background: "#fff",
       width: "100px",
     });
-
-    // $('.gallery li span').css('top',210).css('opacity',0);
-    // $('.gallery .link'+cnt).find('span').delay(1000).animate({top:170, opacity:1},'slow');
+    
+    $(`.gallery .link${cnt} .slogan__lg .up`).delay(650).animate({"top":0, opacity:1},'slow');
 
     if (cnt == imageCount) cnt = 0;
   }
@@ -76,8 +75,8 @@ $(document).ready(function () {
       width: "100px",
     });
 
-    // $('.gallery li span').css('top',210).css('opacity',0);
-    // $('.gallery .link'+cnt).find('span').delay(1000).animate({top:170, opacity:1},'slow');
+    $(`.gallery li .slogan__lg .up`).css({'top': '50px', 'opacity': 0,});
+    $(`.gallery .link${cnt} .slogan__lg .up`).delay(650).animate({"top":0, opacity:1},'slow');
 
     if (cnt == imageCount) cnt = 0;
 
@@ -165,8 +164,8 @@ $(document).ready(function () {
       width: "100px",
     });
 
-    // $('.gallery li span').css('top',210).css('opacity',0);
-    // $('.gallery .link'+cnt).find('span').delay(1000).animate({top:170, opacity:1},'slow');
+    $(`.gallery li .slogan__lg .up`).css({'top': '50px', 'opacity': 0,});
+    $(`.gallery .link${cnt} .slogan__lg .up`).delay(650).animate({"top":0, opacity:1},'slow');
 
     timeonoff = setInterval(moveg, 5000);
 
