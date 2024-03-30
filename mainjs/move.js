@@ -11,7 +11,7 @@ $(document).ready(function () {
     width: '100px',
   });
 
-  $('.gallery .link1').fadeIn('normal');
+  $('.gallery .link1').fadeIn('fast');
   $('.gallery .link1 .slogan__lg .up').delay(350).animate({top: 0, opacity: 1},'slow');
 
   $('.dock_progress .num').text(`${cnt}`);
@@ -24,7 +24,7 @@ $(document).ready(function () {
     cnt++;
 
     $('.gallery li').hide();
-    $(`.gallery .link${cnt}`).fadeIn('normal');
+    $(`.gallery .link${cnt}`).fadeIn('fast');
     
     $('.mbutton').css({
       background: 'rgba(255, 255, 255, 0.5)',
@@ -61,7 +61,7 @@ $(document).ready(function () {
       cnt = 4;
     }
 
-    $(`.gallery .link${cnt}`).fadeIn('normal');
+    $(`.gallery .link${cnt}`).fadeIn('fast');
 
     $('.dock_progress .num').text(`${cnt}`);
 
@@ -155,7 +155,7 @@ $(document).ready(function () {
     }
 
     $('.gallery li').hide();
-    $(`.gallery .link${cnt}`).fadeIn('normal');
+    $(`.gallery .link${cnt}`).fadeIn('fast');
 
     $('.mbutton').css({
       background: 'rgba(255, 255, 255, 0.5)',
