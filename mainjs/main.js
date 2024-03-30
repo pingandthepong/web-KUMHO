@@ -102,6 +102,7 @@ $('.ps').click(function(){
     //  $(this).html('<span class="hidden">play</span><i class="fa-solid fa-play"></i>'); //js파일에서는 경로의 기준이 html파일이 기준!!
      $(this).css({
        "background": 'rgba(255,255,255,.2) url("../mainimages/play_icon.png") no-repeat center',
+       "backdropFilter": "blur(2px)",
        "border": "1px solid #fff",
      });
        onoff=false;   
@@ -160,6 +161,30 @@ $('.ps').click(function(){
   }
 });
 
+  // .dock_progress
+  let pageNum = 1;
+  
+  $(".dock_progress .num").text(`${pageNum}`);
+  $(".dock_progress .max").text(`${imageCount}`);
+
+  $(".btnLeft").click(function () {
+    if (pageNum == 1) {
+      pageNum = 4;
+    } else {
+      pageNum--;
+    }
+    $(".dock_progress .num").text(`${pageNum}`);
+    $(".dock_progress .max").text(`${imageCount}`);
+  });
+  $(".btnRight").click(function () {
+    if (pageNum == 4) {
+      pageNum = 1;
+    } else {
+      pageNum++;
+    }
+    $(".dock_progress .num").text(`${pageNum}`);
+    $(".dock_progress .max").text(`${imageCount}`);
+  });
 
 });
 

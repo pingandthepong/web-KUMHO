@@ -55,19 +55,27 @@
   align-items: center;
   gap: 8px;
   position: absolute;
-  left: 125px;
-  bottom: 70px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 3500%);
 }
 .visual .dock .mbutton {
   display: block;
   width: 24px;
   height: 4px;
   background: rgba(255, 255, 255, 0.5);
-  float: left;
   cursor: pointer;
   transition: all .5s;
 }
-.dock .ps {
+.visual .dock_btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  left: 125px;
+  bottom: 70px;
+}
+.visual .dock_btn .ps {
   display: block;
   width: 70px;
   height: 70px;
@@ -77,28 +85,68 @@
   margin: 0 10px;
   box-sizing: border-box;
 }
-.dock .ps i{
+.visual .dock_btn .ps i{
   font-size: 24px;
   color: #fff;
 }
-.visual .btn {
+.visual .dock_btn .btn_wrap {
+  width: 240px;
+  height: 70px;
+  background: rgba(255,255,255,.2);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.visual .dock_btn .btn {
   display: block;
-  color: #fff;
-  cursor: pointer;
-  position: absolute;
-  left: 450px;
-  bottom: 100px;
   width: 31px;
   height: 7px;
+  padding: 30px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
-.visual .btn.btnLeft {
-  background: url("../mainimages/slide_arrow_prev.png") 0 50% no-repeat;
-  left: 450px;
+.visual .dock_btn .btn.btnLeft {
+  background: url("../mainimages/slide_arrow_prev.png") center no-repeat;
   }
-.visual .btn.btnRight {
-  background: url("../mainimages/slide_arrow_next.png") 0 50% no-repeat;
-  left: 500px;
+  .visual .dock_btn .btn.btnRight {
+  background: url("../mainimages/slide_arrow_next.png") center no-repeat;
 }
+.visual .dock_btn .btn_wrap .dock_progress {
+  width: 70px;
+  height: 50px;
+  position: relative;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.visual .dock_btn .btn_wrap .dock_progress::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 50px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: .5;
+}
+.visual .dock_btn .btn_wrap .dock_progress .num {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.visual .dock_btn .btn_wrap .dock_progress .max {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+
 @keyframes scroll_btn {
   0% {
     transform: translateY(0%);
