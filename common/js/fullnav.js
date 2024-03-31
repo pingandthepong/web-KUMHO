@@ -193,19 +193,16 @@ $(document).ready(function () {
   // footer family site
   $('.family_site .arrow').toggle(
     function () {
-      $('.family_site ul').stop().slideDown();	
-      $(this).children('span').html('<i class="fa-solid fa-chevron-down"></i>'); },
+      $('.family_site ul').stop().slideDown();
+      $(this).find('i').delay(150).animate({rotate: '-180deg'}, 1);
+    },
     function () {
-      $('.family_site ul').stop().slideUp('fast');	
-      $(this).children('span').html('<i class="fa-solid fa-chevron-up"></i>');	
-	});
+      $('.family_site ul').stop().slideUp('fast');
+      $(this).find('i').animate({ rotate: '0deg' }, 100);
+    });
 
 	// footer family site - tab 처리
-  $('.family_site .arrow').focus(function () {        
-    $('.family_site ul').slideDown();
-  });
-  $('.family_site ul li:last a').blur(function () {        
-    $('.family_site ul').slideUp('fast');
-  });
+  $('.family_site .arrow').focus(function () {$('.family_site ul').slideDown();});
+  $('.family_site ul li:last a').blur(function () {$('.family_site ul').slideUp('fast');});
  
 });
