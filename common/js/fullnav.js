@@ -11,8 +11,7 @@ $(document).ready(function () {
         "0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)",
     });
     $("#headerArea .logo a").css({
-      "background":
-        "url('./common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
+      "background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
     });
     $(".depth1, .signin a").css({ "color": "#111" });
     on_off = true;
@@ -29,7 +28,7 @@ $(document).ready(function () {
         "boxShadow": "none",
       });
       $("#headerArea .logo a").css({
-        "background": "url('./common/images/header-logo-pb20.png') no-repeat 0 0",
+        "background": "url('https://pingandthepong.mycafe24.com/common/images/header-logo-pb20.png') no-repeat 0 0",
       });
       $(".depth1, .signin a").css({ "color": "#fff" });
     } else {
@@ -53,8 +52,7 @@ $(document).ready(function () {
           "0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)",
       });
       $("#headerArea .logo a").css({
-        "background":
-          "url('./common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
+        "background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
       });
       $(".depth1, .signin a").css({ "color": "#111" });
     } else {
@@ -64,8 +62,7 @@ $(document).ready(function () {
           "boxShadow": "none",
         });
         $("#headerArea .logo a").css({
-          "background":
-            "url('./common/images/header-logo-pb20.png') no-repeat 0 0",
+          "background": "url('https://pingandthepong.mycafe24.com/common/images/header-logo-pb20.png') no-repeat 0 0",
         });
         $(".depth1, .signin a").css({ "color": "#fff" });
       }
@@ -108,8 +105,7 @@ $(document).ready(function () {
         "0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)",
     });
     $("#headerArea .logo a").css({
-      "background":
-        "url('./common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
+      "background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
     });
     $(".depth1, .signin a").css({ "color": "#111" });
   });
@@ -121,7 +117,7 @@ $(document).ready(function () {
       "boxShadow": "none",
     });
     $("#headerArea .logo a").css({
-      "background": "url('./common/images/header-logo-pb20.png') no-repeat 0 0",
+      "background": "url('https://pingandthepong.mycafe24.com/common/images/header-logo-pb20.png') no-repeat 0 0",
     });
     $(".depth1, .signin a").css({ "color": "#fff" });
   });
@@ -141,8 +137,7 @@ $(document).ready(function () {
         "0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)",
     });
     $("#headerArea .logo a").css({
-      "background":
-        "url('./common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
+      "background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
     });
     $(".signin a").css({ "color": "#111" });
   });
@@ -175,8 +170,7 @@ $(document).ready(function () {
         "0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)",
     });
     $("#headerArea .logo a").css({
-      "background":
-        "url('./common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
+      "background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
     });
     $(".depth1, .signin a").css({ "color": "#111" });
     $(".depth1:last").removeClass("active");
