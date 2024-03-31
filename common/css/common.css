@@ -270,10 +270,22 @@ img {
   text-align: center;
   line-height: 100px;
   position: relative;
-  transition: all .25s ease-out;
 }
-#headerArea #gnb .menu h3 .depth1.active {
-  border-bottom: 2px solid #f65742;
+#headerArea #gnb .menu h3 .depth1::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f65742;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1px;
+}
+#headerArea #gnb .menu h3 .depth1.active::before {
+  content: "";
+  width: 100%;
+  transition: all .25s ease-out;
 }
 #headerArea #gnb .dropdownmenu .menu ul a.active {
   color: #f65742;
