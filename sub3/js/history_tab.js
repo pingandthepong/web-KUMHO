@@ -8,13 +8,7 @@ $('.tab').click(function (e) {
 
   $(this).css({ color: '#f65742', }).addClass('active');
   $(this).parent().siblings().find('.tab').css({ color: '#c8c7c7' }).removeClass('active');
-    
-  // $(this).parent().siblings().find('.tab').css({
-  //   color: '#c8c7c7',
-  // });
-  // $(this).parent().siblings().removeClass('active');
-  // $(this).addClass('active');
 
   $('.history_contents').hide();
-  $(`.history_contents${hisInd}`).show();
+  $(`.history_contents:eq(${hisInd})`).fadeIn('fast');
 });
