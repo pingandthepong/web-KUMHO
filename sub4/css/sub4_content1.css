@@ -1,18 +1,18 @@
 /* .content_wrap */
 #content .content_area .content_wrap {
 }
-#content .content_area .content_wrap .tab {
+#content .content_area .content_wrap .tab_menu {
   display: flex;
   justify-content: center;
 }
-#content .content_area .content_wrap .tab li {
+#content .content_area .content_wrap .tab_menu li {
   padding: 16px 36px;
   position: relative;
 }
-#content .content_area .content_wrap .tab li.active::before {
+#content .content_area .content_wrap .tab_menu li::before {
   content: "";
   display: block;
-  width: 100%;
+  width: 0;
   height: 2px;
   background: #f65742;
   position: absolute;
@@ -20,18 +20,23 @@
   bottom: 0;
   transform: translateX(-50%);
 }
-#content .content_area .content_wrap .tab li a {
+#content .content_area .content_wrap .tab_menu li.active::before {
+  content: "";
+  width: 100%;
+}
+#content .content_area .content_wrap .tab_menu .tab {
   font-size: 2.25rem;
   font-weight: 100;
   color: #999;
   padding: 0 12px;
   transition: all .3s ease-out;
+  position: relative;
 }
-#content .content_area .content_wrap .tab li:is(.active, :hover) a {
+#content .content_area .content_wrap .tab_menu .tab:hover {
   color: #f65742;
   position: relative;
 }
-#content .content_area .content_wrap .tab li.active a::after {
+#content .content_area .content_wrap .tab_menu .tab.active::after {
   content: "";
   display: block;
   width: 8px;
@@ -53,6 +58,7 @@
   overflow: hidden;
   position: relative;
   background: #f8f8f8;
+  display: none;
 }
 #content .content_area .content_wrap .content > li::before {
   content: "";
@@ -183,8 +189,7 @@
 }
 /* .list4 */
 #content .content_area .content_wrap .content .list4 {
-  height: 950px;
-  height: 1500px;
+  height: 1400px;
 }
 #content .content_area .content_wrap .content .list4 h3 {
   font-size: 2.5rem;
@@ -212,7 +217,7 @@
   padding-left: 200px;
   background: #fff;
   margin-bottom: 2px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 300;
   padding: 50px 60px 50px 160px;
 }
