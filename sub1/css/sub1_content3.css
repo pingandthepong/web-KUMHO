@@ -23,6 +23,7 @@
 /* .tab_com 공통 */
 #content .tab_com {
   margin: 100px 0;
+  display: none;
 }
 #content .tab_com > div {
   margin-bottom: 200px;
