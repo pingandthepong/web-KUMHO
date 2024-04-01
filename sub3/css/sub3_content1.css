@@ -3,9 +3,6 @@
   background-attachment: fixed;
   background-size: cover;
 }
-#content .content_area .history_contents:hover {
-  cursor: url('../images/content1/history_cursor.cur'), auto;
-}
 #content .content_area .history #y1990 ul {
   width: 2300px;
 }

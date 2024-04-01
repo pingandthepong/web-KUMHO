@@ -269,18 +269,18 @@
   padding: 0 40px 24px;
   color: #c8c7c7;
 }
-#content .content_area .history .year li :is(.active a, :hover) {
+#content .content_area .history .year li:hover a {
   color: #f65742;
 }
 #content .content_area .history .year li a {
   position: relative;
   transition: all 0.5s ease-out;
 }
-#content .content_area .history .year li.active a::before,
-#content .content_area .history .year li:hover a::before {
+#content .content_area .history .year li a::before {
   content: "";
   display: block;
-  width: calc(100% + 40px);
+  /* width: calc(100% + 40px); */
+  width: 0;
   height: 3px;
   background: #f65742;
   position: absolute;
@@ -288,9 +288,14 @@
   bottom: 0;
   transform: translateX(-50%);
 }
+#content .content_area .history .year li a.active::before {
+  content: "";
+  width: calc(100% + 40px);
+}
 #content .content_area .history_contents {
   width: 1400px;
   margin: 100px auto;
+  display: none;
 }
 #content .content_area .history_contents ul {
   display: flex;
