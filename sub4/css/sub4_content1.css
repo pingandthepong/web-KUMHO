@@ -72,9 +72,6 @@
   top: 0;
 }
 /* .list1 */
-#content .content_area .content_wrap .content .list1 {
-  /* display: none; */
-}
 #content .content_area .content_wrap .content .list1 p {
   width: 80%;
   margin-left: 0;
@@ -95,8 +92,7 @@
 }
 /* .list2 */
 #content .content_area .content_wrap .content .list2 {
-  height: 700px;
-  /* display: none; */
+  height: 900px;
 }
 #content .content_area .content_wrap .content :is(.list2, .list3 .conduct) dl {
   counter-reset: rule;
@@ -104,7 +100,7 @@
 #content .content_area .content_wrap .content :is(.list2, .list3 .conduct) dl:first-of-type {
   border-top: 2px solid #111;
 }
-#content .content_area .content_wrap .content :is(.list2, .list3) dt a {
+#content .content_area .content_wrap .content :is(.list2, .list3) dt .trigger {
   font-size: 1.5rem;
   font-weight: 500;
   padding: 30px 80px 30px 20px;
@@ -115,13 +111,17 @@
   float: right;
   font-size: 1.8rem;
 }
-#content .content_area .content_wrap .content :is(.list2, .list3 .conduct) dt:hover a {
+#content .content_area .content_wrap .content :is(.list2, .list3 .conduct) dt:hover .trigger {
   color: #f65742;
   cursor: pointer;
 }
 #content .content_area .content_wrap .content :is(.list2, .list3 .conduct) dd::before {
   counter-increment: rule;
   content: "" counter(rule)". ";
+}
+#content .content_area .content_wrap .content .list2 dl:last-of-type dd:before {
+  couter-increment: rule;
+  content: "" counter(rule)") ";
 }
 #content .content_area .content_wrap .content :is(.list2, .list3 .conduct) dd {
   font-size: 1.2rem;
@@ -140,7 +140,7 @@
 }
 /* .list3 */
 #content .content_area .content_wrap .content .list3 {
-  height: 1400px;
+  height: 1900px;
 }
 #content .content_area .content_wrap .content .list3 .ethics_regulation {
   background: #fff;
