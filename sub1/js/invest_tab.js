@@ -1,4 +1,4 @@
-$('.tab_com:first').show();
+$('.tab_com:eq(0)').show();
 
 $('.sub_list a').click(function (e) {
   e.preventDefault();
