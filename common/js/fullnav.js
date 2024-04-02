@@ -254,19 +254,30 @@ $('.family_site ul li:last a').blur(function () {$('.family_site ul').slideUp('f
 
 
 // move_top
-$(window).on('scroll',function(){
-  var scroll = $(window).scrollTop();
-  
-  if (scroll > 300) {
-    $('.move_top').css('opacity', '1');
-  } else {
-    $('.move_top').css('opacity','0');
+var lastScrollTop = 0; // 이전에 스크롤한 위치
+var moveTopVisible = false; // 초기 상태는 보이지 않는 상태이기 때문에 false
+
+function handleScroll() {
+  var scroll = $(window).scrollTop(); // 현재 스크롤 위치
+
+  if (scroll > lastScrollTop && scroll > 300 && !moveTopVisible) {
+    $('.move_top').stop().animate({ opacity: 1 }, 100);
+    moveTopVisible = true;
+  } else if (scroll <= 300 && moveTopVisible) {
+    $('.move_top').stop().animate({ opacity: 0 }, 100);
+    moveTopVisible = false;
   }
+
+  // 현재 스크롤 위치 저장
+  lastScrollTop = scroll;
+}
+
+$(window).on('scroll', function() {
+  // 사용자가 스크롤할 때마다 호출되는 scroll 이벤트 핸들러의 특성상 성능에 부담일 줄 수 있어, 최적화하기 위해 requestAnimationFrame 사용
+  requestAnimationFrame(handleScroll);
 });
 
-$('.move_top').click(function(e){
+$('.move_top').click(function(e) {
   e.preventDefault();
-  $("html,body").stop().animate({"scrollTop":0}, 1000);
+  $("html,body").stop().animate({ scrollTop: 0 }, 500);
 });
-
-
