@@ -57,34 +57,25 @@
   padding: 50px 0 100px;
 }
 #content .content_area .landmark ul {
+  justify-content: center;
   gap: 20px;
 }
 #content .content_area .landmark li {
+  /* width: (1400px - 40) / 6 = 226.666px */
   width: calc((100% - 40px) / 6);
   height: 536px;
-  flex-shrink: 0;
   overflow: hidden;
   background: #000;
   border-radius: 20px;
   position: relative;
-  cursor: pointer;
-  transition: all .35s ease-out;
-}
-#content .content_area .landmark li.active {
-  width: calc(((100% - 40px) / 6) * 4);
 }
 #content .content_area .landmark li :is(a, .img_badge) {
   width: 100%;
   height: 100%;
 }
-#content .content_area .landmark li:hover {
-  width: calc(((100% - 40px) / 6) * 4);
-}
-#content .content_area .landmark ul:hover li:not(:hover) {
-  width: calc((100% - 40px) / 6);
-}
 #content .content_area .landmark li .img_badge {
-  background: #000 url('../../common/images/header-logo-pb20.png') no-repeat center;
+  background: #000 url("../../common/images/header-logo-pb20.png") no-repeat
+    center;
 }
 #content .content_area .performance_content li .badge {
   display: block;
@@ -92,10 +83,11 @@
   top: 20px;
   right: 20px;
   padding: 5px 10px;
-  background: #2C44F2;
+  background: #2c44f2;
   color: #fff;
   border-radius: 6px;
   z-index: 1;
+  display: none;
 }
 #content .content_area .landmark li .name {
   position: absolute;
@@ -126,7 +118,7 @@
   padding: 15px 22px;
   box-sizing: border-box;
   font-size: 1.13rem;
-  font-weight: 300; 
+  font-weight: 300;
 }
 #content .content_area .search input#performance:focus {
   outline: none;
@@ -143,7 +135,7 @@
 }
 #content .content_area .all {
   background: #f8f8f8;
-  background: url('../images/content5/bg.svg') no-repeat;
+  background: url("../images/content5/bg.svg") no-repeat;
   background-size: cover;
   padding-bottom: 200px;
 }
@@ -157,7 +149,8 @@
 #content .content_area .all li .all_img_container {
   height: 262px;
   border-radius: 20px;
-  background: #000 url('../../common/images/header-logo-pb20.png') no-repeat center;
+  background: #000 url("../../common/images/header-logo-pb20.png") no-repeat
+    center;
   position: relative;
 }
 #content .content_area .all .badge_list {
