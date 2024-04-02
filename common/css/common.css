@@ -222,8 +222,10 @@ img {
   left: 0;
   top: 0;
   z-index: 100;
-  transition: background 0.5s;
+  /* transition: background 0.5s; */
+  transition: top 0.5s;
 }
+
 #headerArea .on {
   display: block;
   width: 100%;
@@ -240,6 +242,7 @@ img {
   display: flex;
   align-items: center;
 }
+
 #headerArea a {
   color: var(--main-white);
 }

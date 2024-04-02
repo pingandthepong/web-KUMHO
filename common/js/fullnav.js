@@ -2,8 +2,6 @@ var smh = $(".visual").height();
 var on_off = false; // true(오버) false(오버X)
 
 $("#headerArea").mouseenter(function () {
-  // var scroll = $(window).scrollTop();
-  $(this).children(".on").show();
   $(this).css({
     "background": "#fff",
     "boxShadow":
@@ -13,13 +11,13 @@ $("#headerArea").mouseenter(function () {
     "background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
   });
   $(".depth1, .signin a").css({ "color": "#111" });
+  
   on_off = true;
 });
 
 $("#headerArea").mouseleave(function () {
-  $(this).children(".on").hide();
   
-  var scroll = $(window).scrollTop();
+  var scroll = $(window).scrollTop(); // 현재 스크롤 위치
 
   if (scroll < smh - 105) {
     $(this).css({
@@ -41,44 +39,11 @@ $("#headerArea").mouseleave(function () {
   on_off = false;
 });
 
-// $(window).scroll(function(event) {
-//   var scroll = $(window).scrollTop();
-
-//   if (scroll > smh - 105) {
-//     $("#headerArea").css({
-//       "background": "#fff",
-//       "boxShadow":
-//         "0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)",
-//     });
-//     $("#headerArea .logo a").css({
-//       "background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
-//     });
-//     $(".depth1, .signin a").css({ "color": "#111" });
-//   } else {
-//     if (on_off == false) {
-//       $("#headerArea").css({
-//         "background": "transparent",
-//         "boxShadow": "none",
-//       });
-//       $("#headerArea .logo a").css({
-//         "background": "url('https://pingandthepong.mycafe24.com/common/images/header-logo-pb20.png') no-repeat 0 0",
-//       });
-//       $(".depth1, .signin a").css({ "color": "#fff" });
-//     }
-//   }
-// });
-
-// 스크롤에 따라 헤더 숨기고, 보이기
-var lastScrollTop = 0;
-var delta = 100;
-var headerHeight = $('#headerArea').outerHeight();
-
 $(window).scroll(function(event) {
-  var st = $(this).scrollTop();
+  var scroll = $(window).scrollTop();
 
-  // 스크롤 방향 체크
-  if (Math.abs(lastScrollTop - st) <= delta) {
-        $("#headerArea").css({
+  if (scroll > smh - 105) {
+    $("#headerArea").css({
       "background": "#fff",
       "boxShadow":
         "0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)",
@@ -87,30 +52,30 @@ $(window).scroll(function(event) {
       "background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
     });
     $(".depth1, .signin a").css({ "color": "#111" });
-
-    return;
-  }
-
-  if (st > lastScrollTop && st > headerHeight){
-    // 아래로 스크롤 시 헤더 숨기기
-    // $('#headerArea').css('top', '-' + headerHeight + 'px');
-    $('#headerArea').slideUp(300);
   } else {
-    // 위로 스크롤 시 헤더 다시 표시
-    // $('#headerArea').css('top', 0);
-    $('#headerArea').slideDown(300);
+    if (on_off == false) {
+      $("#headerArea").css({
+        "background": "transparent",
+        "boxShadow": "none",
+      });
+      $("#headerArea .logo a").css({
+        "background": "url('https://pingandthepong.mycafe24.com/common/images/header-logo-pb20.png') no-repeat 0 0",
+      });
+      $(".depth1, .signin a").css({ "color": "#fff" });
+    }
   }
-  
-  lastScrollTop = st;
 });
+
 
 //2depth 열기/닫기
 $(".dropdownmenu").hover(
   function () {
+    $('#headerArea').children(".on").show();
     $(".dropdownmenu .menu ul").fadeIn("normal", function () { $(this).stop(); });
     $("#headerArea").animate({ height: 340 }, "fast").clearQueue();
   },
   function () {
+    $('#headerArea').children(".on").hide();
     $(".dropdownmenu .menu ul").hide();
     $("#headerArea").animate({ height: 105 }, "fast").clearQueue();
   }
@@ -130,6 +95,7 @@ $(".dropdownmenu .menu").hover(
     $(".depth1", this).css("color", "#111").removeClass("active");
   }
 );
+
 
 // tab 처리 (logo에 포커스 시)
 $("#headerArea .logo a").focus(function () {
@@ -226,10 +192,12 @@ $('.family_site .arrow').click(function (e) {
   var famOnOff = $(this).data('famOnOff');
 
   if (!famOnOff) {
+    // 닫혀있다면 열기
     $('.family_site ul').stop().slideDown();
     $(this).find('i').animate({rotate: '-180deg'}, 100);
     $(this).data('famOnOff', true);
   } else {
+    // 열려있다면 닫기
     $('.family_site ul').stop().slideUp('fast');
     $(this).find('i').animate({ rotate: '0deg' }, 100);
     $(this).data('famOnOff', false);
