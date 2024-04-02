@@ -92,7 +92,7 @@
 #content .content_area .landmark li .name {
   position: absolute;
   left: 50%;
-  bottom: 20px;
+  bottom: 30px;
   transform: translateX(-50%);
   font-size: 2rem;
   font-weight: 700;
