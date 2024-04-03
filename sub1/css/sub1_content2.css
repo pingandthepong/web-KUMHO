@@ -28,15 +28,17 @@
 
 /* section.history_list */
 #content .history_list {
-  display: none;
-}
-#content .history_list.on {
   margin-bottom: 100px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  
 }
+/* #content .history_list.on {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+} */
 #content .history_list .img_container {
   width: 700px;
   overflow: hidden;
