@@ -229,9 +229,11 @@ function handleScroll() {
   var scroll = $(window).scrollTop(); // 현재 스크롤 위치
 
   if (scroll > lastScrollTop && scroll > 300 && !moveTopVisible) {
+    // 스크롤의 방향이 아래로 이동했을 때 && 현재 스크롤의 위치가 300 이상일 때 && 버튼이 보이는 상태일 때
     $('.move_top').stop().animate({ opacity: 1 }, 100);
     moveTopVisible = true;
   } else if (scroll <= 300 && moveTopVisible) {
+    // 현재 스크롤의 위치가 300 이하일 때 && 버튼이 보이지 않는 상태일 때
     $('.move_top').stop().animate({ opacity: 0 }, 100);
     moveTopVisible = false;
   }

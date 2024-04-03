@@ -26,70 +26,33 @@ var tabMemo = [
   }
 ];
 
-var tab = $('.master_tab_menu .tab');
-var cnt = tab.size(); // 5
+$('.tab').on('mouseenter focus', function () {
+  const index = $(this).parent().index();
+  const tabInfo = tabMemo[index];
 
-// tab에 hover 시
-tab.hover(
-  function () {
-    var ind = $(this).index('.master_tab_menu .tab'); // 0 1 2 3 4
-    
-    tab.css({ background: 'rgba(0,0,0,.4' });
-    $(this).css({ background: '#ef0010', });
-    
-    $('.master__inner').hide();
-    $('.master__inner').show().css({
-      background: `url("./mainimages/${tabMemo[ind].bgUrl}") no-repeat 0 0`,
-      transition: 'all .1s',
-    });
+  $('.tab').removeClass('active');
+  $(this).addClass('active');
 
-    $('.master_main_txt').hide();
-      
-    $('.master_tab_conlist h4').html(tabMemo[ind].title);
-    $('.master_tab_conlist p').html(tabMemo[ind].desc);
-  
-    $('.master_tab_conlist').css({'opacity': 0, left: 0}).stop().animate({'opacity': 1, left: '150px'});
-  },
-  function () {
-    $(this).css({ background: 'rgba(0,0,0,.4)' });
-
-    $('.master__inner').css({
-      background: 'url("./mainimages/master0.jpg") no-repeat 0 0',
-      transition: 'all .1s',
-    });
-
-    $('.master_main_txt').show();
-    
-    $('.master_tab_conlist').css({'opacity': 0, left: 0}).stop().animate({'opacity': 0, left: '150px'});
-  }  
-);
-
-// tab에 focus 시
-tab.focus(function () {
-  var ind = $(this).index('.master_tab_menu .tab'); // 0 1 2 3 4
-  
-  tab.css({ background: 'rgba(0,0,0,.4' });
-  $(this).css({ background: '#ef0010', });
-  
   $('.master_main_txt').hide();
   $('.master__inner').css({
-    background: `url("./mainimages/${tabMemo[ind].bgUrl}") no-repeat 0 0`,
-    transition: 'all .1s ease-out',
+    background: `url("./mainimages/${tabInfo.bgUrl}") no-repeat 0 0`,
+    transition: 'all .1s',
   });
-  $('.master_tab_conlist h4').text(`${tabMemo[ind].title}`);
-  $('.master_tab_conlist p').text(`${tabMemo[ind].desc}`);
 
-  $('.master_tab_conlist').show().animate({ left: '150px', opacity: 1, });
+  $('.tab_title').text(tabInfo.title);
+  $('.tab_desc').text(tabInfo.desc);
+
+  $('.master_tab_conlist').css({'opacity': 0, left: 0}).stop().animate({'opacity': 1, left: '150px'});
 });
 
-// tab:last blur 시
-$('.master_tab_menu .tab:last').blur(function () {
-  $(this).css({ background: 'rgba(0, 0, 0, 0.4)', });
-  
+$('.tab').on('mouseleave blur', function() {
+  $('.tab').removeClass('active');
+
   $('.master_main_txt').show();
   $('.master__inner').css({
-    background: 'url("./mainimages/master0.jpg") no-repeat 0 0',
+    background: `url("./mainimages/master0.jpg") no-repeat 0 0`,
+    transition: 'all .1s',
   });
-  $('.master_tab_conlist').hide();
-});
 
+  $('.master_tab_conlist').css({'opacity': 0, left: 0}).stop().animate({'opacity': 0, left: '150px'});
+})
