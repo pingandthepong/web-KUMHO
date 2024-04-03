@@ -1,18 +1,18 @@
-$('.content li:first').show();
-$('.tab_menu li:first').addClass('active');
-$('.tab:first').css({color: '#f65742'}).addClass('active');
+$('.contlist:eq(0)').show();
+$('.tab_menu li:eq(0)').addClass('on');
+$('.tab:eq(0)').addClass('on');
 
 $('.tab').click(function (e) {
   e.preventDefault();
 
-  var managInd = $(this).index('.tab'); // 0 1 2 3
+  var manageInd = $(this).index('.tab');
 
-  $(this).parent().siblings().removeClass('active');
-  $(this).parent().addClass('active');
+  $('.tab_menu li').removeClass('on');
+  $(this).parent('li').addClass('on');
 
-  $(this).parent().siblings().find('.tab').css({ color: '#999' }).removeClass('active');
-  $(this).css({color: '#f65742'}).addClass('active')
-  
-  $('.content > li').hide();
-  $(`.content li:eq(${managInd})`).show();
+  $('.tab').removeClass('on');
+  $(this).addClass('on');
+
+  $('.contlist').hide();
+  $(`.contlist:eq(${manageInd})`).show();
 });
