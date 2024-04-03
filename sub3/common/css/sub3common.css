@@ -254,7 +254,7 @@
   text-align: center;
   margin-bottom: 80px;
 }
-#content .content_area .history .year {
+#content .content_area .history .tab_menu {
   width: 1400px;
   height: 96px;
   margin: 0 auto;
@@ -263,20 +263,21 @@
   justify-content: center;
   align-items: center;
 }
-#content .content_area .history .year li a {
+#content .content_area .history .tab_menu .tab {
   font-size: 3.12rem;
   font-weight: 600;
   padding: 0 40px 24px;
   color: #c8c7c7;
 }
-#content .content_area .history .year li:hover a {
+#content .content_area .history .tab_menu .tab.on,
+#content .content_area .history .tab_menu .tab:hover {
   color: #f65742;
 }
-#content .content_area .history .year li a {
+#content .content_area .history .tab_menu li .tab {
   position: relative;
   transition: all 0.5s ease-out;
 }
-#content .content_area .history .year li a::before {
+#content .content_area .history .tab_menu li .tab::before {
   content: "";
   display: block;
   /* width: calc(100% + 40px); */
@@ -288,38 +289,38 @@
   bottom: 0;
   transform: translateX(-50%);
 }
-#content .content_area .history .year li a.active::before {
+#content .content_area .history .tab_menu li .tab.on::before {
   content: "";
   width: calc(100% + 40px);
 }
-#content .content_area .history_contents {
+#content .content_area .contlist {
   width: 1400px;
   margin: 100px auto;
   display: none;
 }
-#content .content_area .history_contents ul {
+#content .content_area .contlist ul {
   display: flex;
   justify-content: center;
 }
-#content .content_area .history_contents ul li {
+#content .content_area .contlist ul li {
   width: auto;
   box-sizing: border-box;
 }
-#content .content_area .history_contents ul li:not(:last-child) {
+#content .content_area .contlist ul li:not(:last-child) {
   margin-right: 100px;
 }
-#content .content_area .history_contents dt {
+#content .content_area .contlist dt {
   font-size: 1.88rem;
   font-weight: 600;
   margin-bottom: 20px;
 }
-#content .content_area .history_contents dd {
+#content .content_area .contlist dd {
   color: #666;
   font-weight: 300;
   display: flex;
   margin-bottom: 10px;
 }
-#content .content_area .history_contents dd .month {
+#content .content_area .contlist dd .month {
   color: #111;
   display: inline-block;
   margin-right: 8px;

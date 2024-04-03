@@ -59,15 +59,15 @@
               </p>
             </div>
             
-            <ul class="sub_list">
-              <li class="current"><a href="#">주가정보</a></li>
-              <li><a href="#">경영정보</a></li>
-              <li><a href="#">재무정보</a></li>
+            <ul class="tab_menu">
+              <li><a href="#" class="tab">주가정보</a></li>
+              <li><a href="#" class="tab">경영정보</a></li>
+              <li><a href="#" class="tab">재무정보</a></li>
             </ul>
 
-            <ul class="tab">
+            <ul class="tabs">
               <!-- .tab1 <주가정보> -->
-              <li class="tab_com tab1">
+              <li class="contlist tab1">
                 <h4 class="hidden">주가정보</h4>
                   
                   <!-- .invest1 (주가현황 & 수익률) -->
@@ -299,7 +299,7 @@
               </li>
 
               <!-- .tab2 <경영정보> -->
-              <li class="tab_com tab2">
+              <li class="contlist tab2">
                 <h4 class="hidden">경영정보</h4>
                 <!-- .data1 -->
                 <dl class="data1">
@@ -386,7 +386,7 @@
               </li>
 
               <!-- .tab3 <재무정보> -->
-              <li class="tab_com tab3">
+              <li class="contlist tab3">
                 <h4 class="hidden">재무정보</h4>
                 <!-- .financial -->
                 <div class="financial">
@@ -435,6 +435,6 @@
       </article>
 
       <? include '../common/sub_footer.html' ?>
-      <script src="./js/invest_tab.js"></script>
+      <script src="../common/js/tab.js"></script>
   </body>
 </html>

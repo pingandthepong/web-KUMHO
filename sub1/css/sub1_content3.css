@@ -1,51 +1,51 @@
-#content .intro .sub_list {
+#content .intro .tab_menu {
   display: flex;
   justify-content: center;
   border: 1px solid #c5c5c5;
   margin-bottom: 100px;
 }
-#content .intro .sub_list li a {
+#content .intro .tab_menu li .tab {
   width: calc(1400px / 3);
   text-align: center;
   line-height: 60px;
   font-size: 1.25rem;
   transition: all 0.25s ease-out;
 }
-#content .intro .sub_list li:not(:last-of-type) {
+#content .intro .tab_menu li:not(:last-of-type) {
   border-right: 1px solid #c5c5c5;
 }
-#content .intro .sub_list li.current a,
-#content .intro .sub_list li:hover a {
+#content .intro .tab_menu li .tab.on,
+#content .intro .tab_menu li .tab:hover {
   background: #f65742;
   color: #fff;
 }
 
-/* .tab_com 공통 */
-#content .tab_com {
+/* .contlist 공통 */
+#content .contlist {
   margin: 100px 0;
   display: none;
 }
-#content .tab_com > div {
+#content .contlist > div {
   margin-bottom: 200px;
 }
-#content .intro .tab_com > div > .title {
+#content .intro .contlist > div > .title {
   font-size: 2.3rem;
   font-weight: 700;
   border-bottom: 2px solid #222;
   padding-bottom: 50px;
 }
-#content .intro .tab_com > div > .title + * {
+#content .intro .contlist > div > .title + * {
   width: 100%;
 }
 
 /* .invest1 */
-#content .tab_com .invest1 {
+#content .contlist.tab1 .invest1 {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
 /* .invest1 .iframe_box */
-#content .tab_com .invest1 .iframe_box {
+#content .contlist.tab1 .invest1 .iframe_box {
   width: 685px;
   height: 450px;
   background: #f8f8f8;
@@ -53,7 +53,7 @@
   padding: 55px 75px 85px;
   box-sizing: border-box;
 }
-#content .iframe_box .iframe_head::before {
+#content .contlist.tab1 .iframe_box .iframe_head::before {
   content: "";
   display: inline-block;
   width: 50px;
@@ -65,24 +65,24 @@
   vertical-align: bottom;
   margin-right: 10px;
 }
-#content .iframe_box .iframe_head {
+#content .contlist.tab1 .iframe_box .iframe_head {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 70px;
 }
-#content .iframe_box .iframe_head span {
+#content .contlist.tab1 .iframe_box .iframe_head span {
   font-size: 1.25rem;
   font-weight: 400;
   margin-left: 15px;
 }
-#content .iframe_box .positive {
+#content .contlist.tab1 .iframe_box .positive {
   color: #ef0010;
 }
-#content .iframe_box .negative {
+#content .contlist.tab1 .iframe_box .negative {
   color: #2c44fe;
 }
 /* .iframe_box .middle */
-#content .iframe_box .middle {
+#content .contlist.tab1 .iframe_box .middle {
   width: 100%;
   height: 70px;
   display: flex;
@@ -90,35 +90,35 @@
   align-items: center;
   margin-bottom: 75px;
 }
-#content .iframe_box .middle .last {
+#content .contlist.tab1 .iframe_box .middle .last {
   font-size: 4.38rem;
   font-weight: 700;
   line-height: 1;
 }
-#content .iframe_box .middle .changerate {
+#content .contlist.tab1 .iframe_box .middle .changerate {
   display: flex;
   gap: 20px;
   
 }
-#content .iframe_box .middle .changerate li:first-of-type {
+#content .contlist.tab1 .iframe_box .middle .changerate li:first-of-type {
   margin-right: 5px;
 }
-#content .iframe_box .middle .changerate li dl {
+#content .contlist.tab1 .iframe_box .middle .changerate li dl {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-#content .iframe_box .middle .changerate li dt {
+#content .contlist.tab1 .iframe_box .middle .changerate li dt {
   font-size: 1.56rem;
   font-weight: 600;
 }
-#content .iframe_box .middle .changerate li dd {
+#content .contlist.tab1 .iframe_box .middle .changerate li dd {
   font-size: 1.25rem;
   display: flex;
   align-items: center;
   gap: 3px;
 }
-#content .iframe_box .middle .changerate .positive::before {
+#content .contlist.tab1 .iframe_box .middle .changerate .positive::before {
   content: "";
   display: inline-block;
   background: url("../../mainimages/investment_positive.png");
@@ -126,7 +126,7 @@
   width: 10px;
   height: 10px;
 }
-#content .iframe_box .middle .changerate .negative::before {
+#content .contlist.tab1 .iframe_box .middle .changerate .negative::before {
   content: "";
   display: inline-block;
   background: url("../../mainimages/investment_negaitive.png");
@@ -135,22 +135,22 @@
   height: 10px;
 }
 /* .iframe_box bottom */
-#content .iframe_box .bottom {
+#content .contlist.tab1 .iframe_box .bottom {
   width: 100%;
   font-size: 1.25rem;
   text-align: center;
 }
-#content .iframe_box .bottom th {
+#content .contlist.tab1 .iframe_box .bottom th {
   font-weight: 700;
 }
-#content .iframe_box .bottom td.open {
+#content .contlist.tab1 .iframe_box .bottom td.open {
   color: #ef0010;
 }
-#content .iframe_box .bottom td.high {
+#content .contlist.tab1 .iframe_box .bottom td.high {
   color: #2c44fe;
 }
 /* .invest1 .earning-rate */
-#content .earning-rate {
+#content .contlist.tab1 .earning-rate {
   width: 680px;
   height: 657px;
   background: #fff;
@@ -159,51 +159,51 @@
   padding: 53px 58px 60px;
   box-sizing: border-box;
 }
-#content .earning-rate_head {
+#content .contlist.tab1 .earning-rate_head {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 40px;
 }
-#content .earning-rate_container {
+#content .contlist.tab1 .earning-rate_container {
   border-top: 1px solid #c5c5c5;
   border-bottom: 1px solid #c5c5c5;
   padding: 12px 0 30px;
   position: relative;
 }
-#content .earning-rate .tab_list {
+#content .contlist.tab1 .earning-rate .tab_list {
   letter-spacing: -1.2px;
   font-weight: 500;
 }
-#content .earning-rate .tab_list .tab_list_title {
+#content .contlist.tab1 .earning-rate .tab_list .tab_list_title {
   float: left;
   margin-right: 10px;
 }
-#content .earning-rate .tab_list .tabs {
+#content .contlist.tab1 .earning-rate .tab_list .tabs {
   float: right;
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-#content .earning-rate .tab_list .tabs a {
+#content .contlist.tab1 .earning-rate .tab_list .tabs a {
   padding: 0 10px;
 }
-#content .earning-rate .notice_date {
+#content .contlist.tab1 .earning-rate .notice_date {
   position: absolute;
   right: 0;
   top: 70px;
   font-size: 0.8rem;
   color: #666;
 }
-#content .earning-rate .graph {
+#content .contlist.tab1 .earning-rate .graph {
   clear: both;
 }
-#content .earning-rate .graph .chart {
+#content .contlist.tab1 .earning-rate .graph .chart {
   height: 325px;
   display: grid;
   place-items: center;
   color: #999;
 }
-#content .earning-rate .graph .button_bar {
+#content .contlist.tab1 .earning-rate .graph .button_bar {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -212,21 +212,21 @@
   box-sizing: border-box;
   height: 26px;
 }
-#content .earning-rate .graph .button_bar .checkbox {
+#content .contlist.tab1 .earning-rate .graph .button_bar .checkbox {
   display: flex;
   align-items: center;
 }
-#content .earning-rate .graph .button_bar label {
+#content .contlist.tab1 .earning-rate .graph .button_bar label {
   font-size: 0.7rem;
   font-weight: 600;
   display: flex;
   align-items: center;
 }
-#content .earning-rate .graph .button_bar label small {
+#content .contlist.tab1 .earning-rate .graph .button_bar label small {
   font-weight: 300;
   margin-left: 5px;
 }
-#content .earning-rate .graph .notice_des {
+#content .contlist.tab1 .earning-rate .graph .notice_des {
   font-size: 0.8rem;
   font-weight: 300;
   color: #999;
@@ -242,43 +242,43 @@
   accent-color: #8afcaa;
 }
 /* sub1_3 table 공통 */
-#content .tab table :is(th, td) {
+#content .tabs table :is(th, td) {
   text-align: center;
 }
-/* .invest2 */
+
 /* .invest2 table */
-#content .tab1 :is(.invest2, .invest4) thead,
-#content .tab1 .invest4 tfoot tr > * {
+#content .contlist.tab1 :is(.invest2, .invest4) thead,
+#content .contlist.tab1 .invest4 tfoot tr > * {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 76px;
 }
-#content .tab1 :is(.invest2, .invest4) tbody {
+#content .contlist.tab1 :is(.invest2, .invest4) tbody {
   line-height: 80px;
 }
-#content .tab1 :is(.invest2, .invest4) table tbody :is(th, td) {
+#content .contlist.tab1 :is(.invest2, .invest4) table tbody :is(th, td) {
   font-size: 1.25rem;
   text-align: center;
 }
-#content .tab table tbody th {
+#content .tabs table tbody th {
   font-weight: 400;
 }
-#content .tab table tbody td {
+#content .tabs table tbody td {
   font-weight: 300;
 }
-#content .tab1 :is(.invest2, .invest4) tr {
+#content .contlist.tab1 :is(.invest2, .invest4) tr {
   border-bottom: 1px solid #e5e5e5;
 }
-#content .tab1 :is(.invest2, .invest4) tr > *:not(:last-child) {
+#content .contlist.tab1 :is(.invest2, .invest4) tr > *:not(:last-child) {
   border-right: 1px solid #e5e5e5;
 }
-#content .tab table caption {
+#content .tabs table caption {
   caption-side: bottom;
   margin-top: 15px;
   padding: 10px;
   text-align: right;
 }
-#content :is(.tab table caption, .invest4 .table_des p) {
+#content :is(.tabs table caption, .invest4 .table_des p) {
   font-size: 0.94rem;
   font-weight: 300;
   letter-spacing: -0.63px;
@@ -286,65 +286,65 @@
 }
 
 /* .invest3 */
-#content .tab_com .invest3 {
+#content .contlist.tab1 .invest3 {
   
 }
 
 /* .invest4 */
-#content .invest4 {
+#content .contlist.tab1 .invest4 {
 }
-#content .invest4 td:last-child::after {
+#content .contlist.tab1 .invest4 td:last-child::after {
   content: "%";
 }
-#content .invest4 .table_des {
+#content .contlist.tab1 .invest4 .table_des {
   position: relative;
   left: 0;
   top: -30px;
 }
-#content .invest4 .table_des p::before {
+#content .contlist.tab1 .invest4 .table_des p::before {
   content: "※ ";
 }
-#content .invest4 .table_des p {
+#content .contlist.tab1 .invest4 .table_des p {
   line-height: 2;
 }
 
 /* .tab2 */
-#content .data1 {
+#content .contlist.tab2 .data1 {
   width: 750px;
   margin: 0 auto;
 }
-#content .data1 iframe {
+#content .contlist.tab2 .data1 iframe {
   height: 950px;
 }
 /* .data2 */
-#content .intro .tab_com .data2 .title {
+#content .contlist.tab2 .data2 .title {
   border-bottom: none;
 }
-#content .data2 table th {
+#content .contlist.tab2 .data2 table th {
   border-top: 4px solid #f65742;
   border-bottom: 1px solid #f65742;
 }
-#content .data2 table tr {
+#content .contlist.tab2 .data2 table tr {
   border-bottom: 1px solid #ddd;
   font-weight: 300;
   line-height: 70px;
 }
-#content .data2 table i {
+#content .contlist.tab2 .data2 table i {
   width: 100%;
   cursor: pointer;
   line-height: 70px;
 }
-#content .paging {
+#content .contlist.tab2 .paging {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 50px 0;
 }
-#content .paging button {
+#content .contlist.tab2 .paging button {
   border: none;
   background: none;
 }
-#content .paging :is(button, a) {
+#content .contlist.tab2 .paging :is(button, a) {
   width: 30px;
   height: 30px;
   text-align: center;
@@ -353,32 +353,32 @@
   color: #999;
   cursor: pointer;
 }
-#content .paging a.active {
+#content .contlist.tab2 .paging a.active {
   background: #f65742;
   color: #fff;
 }
-#content .paging button:disabled {
+#content .contlist.tab2 .paging button:disabled {
   color: #ddd;
 }
 
 /* .tab3 */
-#content .tab3 {  
+#content .contlist.tab3 {  
 }
-#content .tab3 .financial :is(.financial_position, .financial_income) {
+#content .contlist.tab3 .financial :is(.financial_position, .financial_income) {
   margin: 80px auto;
 }
-#content .financial .chart_inner {
+#content .contlist.tab3 .financial .chart_inner {
   height: 660px;
   border: 1px solid #c5c5c5;
   position: relative;
 }
-#content .tab3 .financial .chart_inner_title {
+#content .contlist.tab3 .financial .chart_inner_title {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
   margin: 40px 0;
 }
-#content .tab3 .financial .chart_inner_title + p {
+#content .contlist.tab3 .financial .chart_inner_title + p {
   position: absolute;
   right: 0;
   top: -30px;
@@ -386,26 +386,26 @@
   font-weight: 300;
   color: #999;
 }
-#content .tab3 .financial .chart_item ul {
+#content .contlist.tab3 .financial .chart_item ul {
   width: 90%;
   margin: auto;
   display: flex;
   gap: 17px;
 }
-#content .tab3 .financial #graph1 ul {
+#content .contlist.tab3 .financial #graph1 ul {
   justify-content: end;
 }
-#content .tab3 .financial #graph2 ul {
+#content .contlist.tab3 .financial #graph2 ul {
   justify-content: center;
 }
-#content .tab3 .financial .chart_item ul li {
+#content .contlist.tab3 .financial .chart_item ul li {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 0.88rem;
   color: #555;
 }
-#content .tab3 .financial .chart_item ul li::before {
+#content .contlist.tab3 .financial .chart_item ul li::before {
   content: "";
   display: block;
   width: 24px;
