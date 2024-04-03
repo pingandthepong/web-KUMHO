@@ -2,11 +2,8 @@ var smh = $(".visual").height();
 var on_off = false; // true(오버) false(오버X)
 
 $("#headerArea").mouseenter(function () {
-  $(this).css({
-    "background": "#fff",
-    "boxShadow":
-      "0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)",
-  });
+  $(this).addClass('white');
+
   $("#headerArea .logo a").css({
     "background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
   });
@@ -20,20 +17,14 @@ $("#headerArea").mouseleave(function () {
   var scroll = $(window).scrollTop(); // 현재 스크롤 위치
 
   if (scroll < smh - 105) {
-    $(this).css({
-      "background": "transparent",
-      "boxShadow": "none",
-    });
+    $(this).removeClass('white');
     $("#headerArea .logo a").css({
       "background": "url('https://pingandthepong.mycafe24.com/common/images/header-logo-pb20.png') no-repeat 0 0",
     });
     $(".depth1, .signin a").css({ "color": "#fff" });
+  
   } else {
-    $(this).css({
-      "background": "#fff",
-      "boxShadow":
-        "0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)",
-    });
+    $(this).addClass('white');
     $(".depth1, .signin a").css({ "color": "#111" });
   }
   on_off = false;
@@ -43,21 +34,15 @@ $(window).scroll(function(event) {
   var scroll = $(window).scrollTop();
 
   if (scroll > smh - 105) {
-    $("#headerArea").css({
-      "background": "#fff",
-      "boxShadow":
-        "0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)",
-    });
+    $('#headerArea').addClass('white');
     $("#headerArea .logo a").css({
       "background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
     });
     $(".depth1, .signin a").css({ "color": "#111" });
+  
   } else {
     if (on_off == false) {
-      $("#headerArea").css({
-        "background": "transparent",
-        "boxShadow": "none",
-      });
+      $('#headerArea').removeClass('white');
       $("#headerArea .logo a").css({
         "background": "url('https://pingandthepong.mycafe24.com/common/images/header-logo-pb20.png') no-repeat 0 0",
       });
@@ -100,11 +85,7 @@ $(".dropdownmenu .menu").hover(
 // tab 처리 (logo에 포커스 시)
 $("#headerArea .logo a").focus(function () {
   $("#headerArea").children(".on").show();
-  $("#headerArea").css({
-    "background": "#fff",
-    "boxShadow":
-      "0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)",
-  });
+  $('#headerArea').addClass('white');
   $("#headerArea .logo a").css({
     "background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
   });
@@ -113,10 +94,7 @@ $("#headerArea .logo a").focus(function () {
 
 $("#headerArea .logo a").blur(function () {
   $("#headerArea").children(".on").hide();
-  $("#headerArea").css({
-    "background": "transparent",
-    "boxShadow": "none",
-  });
+  $('#headerArea').removeClass('white');
   $("#headerArea .logo a").css({
     "background": "url('https://pingandthepong.mycafe24.com/common/images/header-logo-pb20.png') no-repeat 0 0",
   });
@@ -132,11 +110,7 @@ $(".dropdownmenu .menu .depth1").focus(function () {
   $(this).css({ "color": "#f65742" }).addClass("active");
   $(this).parents(".menu").siblings().find(".depth1").css({ "color": "#111" }).removeClass("active");
 
-  $("#headerArea").css({
-    "background": "#fff",
-    "boxShadow":
-      "0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)",
-  });
+  $('#headerArea').addClass('white');
   $("#headerArea .logo a").css({
     "background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
   });
@@ -165,11 +139,7 @@ $(".dropdownmenu .m6 li:last a").blur(function () {
 
 // tab 처리 (top_menu 에 포커스 시)
 $(".top_menu a").focus(function () {
-  $("#headerArea").css({
-    "background": "#fff",
-    "boxShadow":
-      "0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)",
-  });
+  $('#headerArea').addClass('white');
   $("#headerArea .logo a").css({
     "background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",
   });
