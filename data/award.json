@@ -1,0 +1,48 @@
+{
+  "li": [
+    {
+      "href": "javascript:void(0)",
+      "imgsrc": "./mainimages/award_01.jpg",
+      "title": "'제21회 한국 색채대상' 블루(BLUE)상",
+      "institution": "한국색채학회",
+      "date": "2023-10-30"
+    },
+    {
+      "href": "javascript:void(0)",
+      "imgsrc": "./mainimages/award_02.jpg",
+      "title": "'살고 싶은 집 2023' 조경 부문 대상",
+      "institution": "헤럴드경제",
+      "date": "2023-12-08"
+    },
+    {
+      "href": "javascript:void(0)",
+      "imgsrc": "./mainimages/award_03.jpg",
+      "title": "'제 14회 대한민국 그린건설대상' 주거문화대상",
+      "institution": "서울신문사/국토교통부",
+      "date": "2023-12-06"
+    },
+    {
+      "href": "javascript:void(0)",
+      "imgsrc": "./mainimages/award_04.jpg",
+      "title": "'2023년도 하반기' 주거복지대상",
+      "institution": "한국경제/국토교통부한국색채학회",
+      "date": "2023-12-05"
+    },
+    {
+      "href": "javascript:void(0)",
+      "imgsrc": "./mainimages/award_04.jpg",
+      "title": "Title",
+      "institution": "institution",
+      "date": "Date"
+    },
+    {
+      "href": "javascript:void(0)",
+      "imgsrc": "./mainimages/award_04.jpg",
+      "title": "Title",
+      "institution": "institution",
+      "date": "Date"
+    }
+ 
+   
+  ]
+}
