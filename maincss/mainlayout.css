@@ -487,26 +487,18 @@
 #content .award .btn_box {
   position: absolute;
   right: 0;
-  top: 320px;
-  display: flex;
-  gap: 5px;
+  top: calc(100px + (3.75rem + 1.88rem + 35px) / 2);
 }
 #content .award .btn_box a {
-  padding: 5px 10px;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   color: #999;
-  border-radius: 50%;
-}
-#content .award .btn_box a:hover {
-  color: #ef0010;
 }
 #content .award .btn_box .more_btn {
   transition: all 0.25s ease-out;
 }
 #content .award .btn_box .more_btn:hover {
   transform: rotate(180deg);
-  background: #ef0010;
-  color: #fff;
+  color: #ef0010;
 }
 
 /* .news */
