@@ -1,3 +1,5 @@
+export function awardSlide() {
+
 const movesize = 2;
 let position = 0;
 let timeonoff;
@@ -51,3 +53,4 @@ timeonoff = setInterval(awardMove, 100);
 //   }
 // );
 
+}
