@@ -489,14 +489,15 @@
   right: 0;
   top: calc(100px + (3.75rem + 1.88rem + 35px) / 2);
 }
-#content .award .btn_box a {
+#content .award .btn_box .more_btn {
   font-size: 2.2rem;
   color: #999;
+  perspective: 100px;
 }
-#content .award .btn_box .more_btn {
-  transition: all 0.25s ease-out;
+#content .award .btn_box .more_btn i {
+  transition: all .5s ease-out;
 }
-#content .award .btn_box .more_btn:hover {
+#content .award .btn_box .more_btn:hover i {
   transform: rotate(180deg);
   color: #ef0010;
 }
