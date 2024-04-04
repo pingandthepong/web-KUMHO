@@ -38,8 +38,8 @@ function awardMove () {
 timeonoff = setInterval(awardMove, 100);
 
 
-
-$('.award_list').hover(
+// .award_list & 좌우버튼 호버시 자동 슬라이드 멈춤
+$('.award_list, .btn_box a:not(:last)').hover(
   function() {
     clearInterval(timeonoff);
     
@@ -49,3 +49,4 @@ $('.award_list').hover(
     
   }
 );
+
