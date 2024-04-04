@@ -5,6 +5,17 @@
   height: 60px;
   margin-bottom: 150px;
 }
+/* 추가코드 start */
+#content .slideMenu.navOn {
+  position: fixed;
+  width: 100%;
+  z-index: 60;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  background: #fff;
+}
+/* 추가코드 end */
 #content .slideMenu ul {
   display: flex;
   justify-content: center;
@@ -17,13 +28,13 @@
   font-size: 1.13rem;
   font-weight: 500;
   color: #999;
-  border-radius: 16px;
+  /* border-radius: 16px; */
   transition: all .1s;
-  /* background: #fff; */
 }
-#content .slideMenu ul li a:is(:hover, .on) {
+#content .slideMenu ul li a:is(:hover, .spy) {
   background: #f65742;
   color: #fff;
+  border-radius: 16px;
 }
 
 /* section.history_list */

@@ -1,14 +1,14 @@
 var smh = $(".visual").height();
 var on_off = false; // true(오버) false(오버X)
 
-$("#headerArea").mouseenter(function () {
+$("#headerArea").on('mouseenter', function () {
   $(this).addClass('white');
-  $("#headerArea .logo a").css({"background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",});
-  $(".depth1, .signin a").css({ "color": "#111" });
+  $("#headerArea .logo a").css("background", "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0");
+  $(".depth1, .signin a").css("color", "#111");
   on_off = true;
 });
 
-$("#headerArea").mouseleave(function () {
+$("#headerArea").on('mouseleave', function () {
   var scroll = $(window).scrollTop(); // 현재 스크롤 위치
 
   if (scroll < smh - 105) {
@@ -23,7 +23,8 @@ $("#headerArea").mouseleave(function () {
   on_off = false;
 });
 
-$(window).scroll(function(event) {
+
+$(window).on('scroll', function(event) {
   var scroll = $(window).scrollTop();
 
   if (scroll > smh - 105) {
@@ -41,7 +42,7 @@ $(window).scroll(function(event) {
 });
 
 
-//2depth 열기/닫기
+// 2depth 열기/닫기
 $(".dropdownmenu").hover(
   function () {
     $('#headerArea').children(".on").show();
@@ -60,7 +61,7 @@ $(".dropdownmenu ul a ").hover(
   function () { $(this).css({ "color": "#111" }) }
 );
 
-//1depth 효과
+// 1depth 효과
 $(".dropdownmenu .menu").hover(
   function () {
     $(".depth1", this).css("color", "#ef0010").addClass("active");
@@ -72,14 +73,14 @@ $(".dropdownmenu .menu").hover(
 
 
 // tab 처리 (logo에 포커스 시)
-$("#headerArea .logo a").focus(function () {
+$("#headerArea .logo a").on('focus', function () {
   $("#headerArea").children(".on").show();
   $('#headerArea').addClass('white');
   $("#headerArea .logo a").css({"background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",});
   $(".depth1, .signin a").css({ "color": "#111" });
 });
 
-$("#headerArea .logo a").blur(function () {
+$("#headerArea .logo a").on('blur', function () {
   $("#headerArea").children(".on").hide();
   $('#headerArea').removeClass('white');
   $("#headerArea .logo a").css({"background": "url('https://pingandthepong.mycafe24.com/common/images/header-logo-pb20.png') no-repeat 0 0",});
@@ -172,7 +173,7 @@ $('.family_site ul li:last a').blur(function () {$('.family_site ul').slideUp('f
 var lastScrollTop = 0; // 이전에 스크롤한 위치
 var moveTopVisible = false; // 초기 상태는 보이지 않는 상태이기 때문에 false
 
-function handleScroll() {
+function moveTop() {
   var scroll = $(window).scrollTop(); // 현재 스크롤 위치
 
   if (scroll > lastScrollTop && scroll > 300 && !moveTopVisible) {
@@ -191,7 +192,7 @@ function handleScroll() {
 
 $(window).on('scroll', function() {
   // 사용자가 스크롤할 때마다 호출되는 scroll 이벤트 핸들러의 특성상 성능에 부담일 줄 수 있어, 최적화하기 위해 requestAnimationFrame 사용
-  requestAnimationFrame(handleScroll);
+  requestAnimationFrame(moveTop);
 });
 
 $('.move_top').click(function(e) {

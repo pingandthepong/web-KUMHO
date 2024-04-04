@@ -417,27 +417,41 @@
 
 /* section.award */
 #content .award__container {
-  width: 2000px;
-  margin: 0 auto;
+  width: 1920px;
   position: relative;
-  left: -300px;
+  /* left: 모니터 너비(1920px) - .award 너비(1400px) / 2(양쪽마진 감안) = -260px */
+  left: -260px;
   top: 0;
+  overflow: hidden;
+  clear: both;
+  
 }
 #content .award__container .award_list {
-  width: calc(507px * 4 + 30px * 3);
-  display: flex;
-  gap: 30px;
-  margin-left: -59px;
-  /* width: 100%;시 ml -25% */
-  /* margin-left: -25%; */
+  /* width: (ul 한 덩어리의 너비) */
+  width: calc((507px + 30px) * 6 * 2);
+  position: relative;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+
+  padding-bottom: 25px;
+  box-sizing: border-box;
+
+}
+#content .award__container .award_list ul {
+  float: left;
 }
 #content .award__container .award_list li {
+  /* li.outerWidth(true) = 537px */
   width: 507px;
+  margin: 0 15px;
   background: #fff;
   border-radius: 20px;
   box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
   overflow: hidden;
   transition: all 0.55s ease;
+
+  float: left;
 }
 #content .award__container .award_list li:hover {
   transform: translateY(5%);
