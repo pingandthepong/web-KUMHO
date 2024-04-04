@@ -434,6 +434,7 @@
 }
 #content .award__container .award_list ul {
   display: flex;
+  padding-bottom: 25px;
 }
 #content .award__container .award_list li {
   width: 507px;
