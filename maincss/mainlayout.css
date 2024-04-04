@@ -430,8 +430,6 @@
   left: 0;
   top: 0;
   display: flex;
-  padding-bottom: 25px;
-  box-sizing: border-box;
 }
 #content .award__container .award_list ul {
   display: flex;
