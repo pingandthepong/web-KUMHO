@@ -431,6 +431,7 @@
   left: 0;
   top: 0;
   display: flex;
+  transition: all .1s;
 }
 #content .award__container .award_list ul {
   display: flex;

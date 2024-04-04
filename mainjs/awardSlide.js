@@ -1,4 +1,4 @@
-const movesize = 1.5;
+const movesize = 2;
 let position = 0;
 let timeonoff;
 
@@ -22,6 +22,7 @@ $('.award_list ul').after($('.award_list ul').clone());
 // 자동 슬라이드 함수
 function awardMove () {
   position -= movesize;
+
   $('.award_list').css({left: position});
   
   
@@ -29,23 +30,22 @@ function awardMove () {
   const range = ulWidth + (ulWidth - slideContainer); // 4524
   
   if(position < -range ) {
-    $('.award_list').css({ left : 'slideContainer - ulWidth'});
+    $('.award_list').css({ left : slideContainer - ulWidth});
     position = slideContainer - ulWidth;
   }
 }
 
-timeonoff = setInterval(awardMove,100);
+timeonoff = setInterval(awardMove, 100);
 
 
 
-// .award_
-// $('.award_list').hover(
-//   function() {
-//     clearInterval(awardMove);
+$('.award_list').hover(
+  function() {
+    clearInterval(timeonoff);
     
-//   },
-//   function() {
-//     timeonoff = setInterval(awardMove, 100);
+  },
+  function() {
+    timeonoff = setInterval(awardMove, 100);
     
-//   }
-// );
+  }
+);
