@@ -50,3 +50,4 @@ $('.award_list, .btn_box a:not(:last)').hover(
   }
 );
 
+// 좌우버튼 클릭시 넘기기
