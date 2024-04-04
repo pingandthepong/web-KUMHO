@@ -422,6 +422,7 @@
   /* left: 모니터 너비(1920px) - .award 너비(1400px) / 2(양쪽마진 감안) = -260px */
   left: -260px;
   top: 0;
+  overflow: hidden;
 }
 #content .award__container .award_list {
   /* width: (ul 한 덩어리의 너비) */
