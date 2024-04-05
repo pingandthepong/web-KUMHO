@@ -9,20 +9,21 @@ $(function () {
     // 매개변수 안에 자동으로 연결한 객체 배열이 들어감
     success: function (data) {
       var useData = data.li; // 전체 객체배열이 저장됨 (정확히는 객체인 것 같음)
-      console.log(useData); // Array(20)
+      // console.log(useData); // Array(20)
 
-      function dataPrint() {
+      // 검색 기능을 위한 매개변수 arr
+      function dataPrint(arr) {
         var txt = `<ul class="award_list">`;
 
-        for (var i in useData) {
+        for (var i in arr) {
 
           txt += "<li>";
-          txt += `<a href="${useData[i].href}">`;
-          txt += `<div class="img_wrap"><img src="${useData[i].imgsrc}" alt=""></div>`;
+          txt += `<a href="${arr[i].href}">`;
+          txt += `<div class="img_wrap"><img src="${arr[i].imgsrc}" alt=""></div>`;
           txt += `<dl class="award_txt">`;
-          txt += `<dt>${useData[i].title}</dt>`;
-          txt += `<dd class="award_institution">${useData[i].institution}</dd>`;
-          txt += `<dd class="date">${useData[i].date}</dd>`;
+          txt += `<dt>${arr[i].title}</dt>`;
+          txt += `<dd class="award_institution">${arr[i].institution}</dd>`;
+          txt += `<dd class="date">${arr[i].date}</dd>`;
           txt += `</dl>`;
           txt += `</a>`;
           txt += "</li>";
@@ -33,8 +34,28 @@ $(function () {
         $(".award__contents").html(txt);
       }
 
-      //초기실행, 함수호출
-      dataPrint();
+      // 초기실행 함수 호출
+      dataPrint(useData);
+
+
+      // 검색 버튼 클릭 시
+      $('#searchBtn').click(function() {
+        var newArray = useData.filter(function(element) {
+          console.log($('#award').val());
+
+          return element.title.includes($('#award').val());
+          
+        });
+        dataPrint(newArray);
+      });
+
+      // 검색어 입력 후 엔터를 누르면 검색 버튼이 클릭되도록
+      $('#award').keypress(function(e) {
+        if (e.keyCode === 13) {
+          $('#searchBtn').click();
+        }
+      });
+      dataPrint(newArray);
     },
   });
 });
