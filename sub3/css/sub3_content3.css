@@ -23,7 +23,7 @@ font-weight: 500;
 }
 
 /* .search */
-#content .award__container .search form {
+#content .award__container .search {
   width: 550px;
   margin: 0 auto 100px;
   background: #fff;
@@ -31,6 +31,7 @@ font-weight: 500;
   border-radius: 30px;
   overflow: hidden;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 24px;
   padding: 0 24px;
