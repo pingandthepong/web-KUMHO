@@ -43,7 +43,9 @@ $(function () {
         var value = $('#award').val();
 
         var newArray = useData.filter(function(element) {
-          return element.title.includes(value);
+          
+          return element.title.includes(value) || element.institution.includes(value) || element.date.includes(value);
+            
         });
       
         // 없는 값 검색 시 에러 문구
@@ -61,11 +63,6 @@ $(function () {
           $('#searchBtn').click();
         }
       });
-
-     
-      
-      
-
 
     },
   });
