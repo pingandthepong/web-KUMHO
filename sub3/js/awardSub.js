@@ -54,8 +54,10 @@ $(function () {
         if (e.keyCode === 13) {
           $('#searchBtn').click();
         }
+        dataPrint(newArray);
       });
-      dataPrint(newArray);
+
+
     },
   });
 });
