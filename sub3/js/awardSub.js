@@ -40,22 +40,31 @@ $(function () {
 
       // 검색 버튼 클릭 시
       $('#searchBtn').click(function() {
-        var newArray = useData.filter(function(element) {
-          console.log($('#award').val());
+        var value = $('#award').val();
 
-          return element.title.includes($('#award').val());
-          
+        var newArray = useData.filter(function(element) {
+          return element.title.includes(value);
         });
-        dataPrint(newArray);
+      
+        // 없는 값 검색 시 에러 문구
+        if (newArray.length === 0) {
+          $('.award__contents').html('<p>검색 결과가 없습니다.</p>');
+        } else {
+          dataPrint(newArray);
+        };
       });
+
 
       // 검색어 입력 후 엔터를 누르면 검색 버튼이 클릭되도록
       $('#award').keypress(function(e) {
         if (e.keyCode === 13) {
           $('#searchBtn').click();
         }
-        dataPrint(newArray);
       });
+
+     
+      
+      
 
 
     },
