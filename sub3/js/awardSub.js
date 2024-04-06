@@ -1,5 +1,7 @@
 $(function () {
 
+  $('#award').focus();
+
   $.ajax({
     url: "../data/awardSub.json",
 
