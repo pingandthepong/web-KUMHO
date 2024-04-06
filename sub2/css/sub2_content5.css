@@ -101,7 +101,7 @@
 }
 /* .all */
 /* .search */
-#content .content_area .search form {
+#content .content_area .search {
   max-width: 700px;
   margin: 0 auto 120px;
   display: flex;
@@ -125,7 +125,7 @@
   outline: none;
   border: 1px solid #f65742;
 }
-#content .content_area input[type="submit"] {
+#content .content_area #searchBtn {
   width: 90px;
   height: 50px;
   color: #fff;
@@ -133,6 +133,10 @@
   border-radius: 12px;
   border: none;
   background: #f65742;
+  cursor: pointer;
+}
+#content .content_area #searchBtn:focus {
+  outline: 2px solid #000;
 }
 #content .content_area .all {
   background: #f8f8f8;

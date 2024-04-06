@@ -90,166 +90,19 @@
             </div>
           </section>
           <section class="performance_content all">
+            <!-- 검색 -->
             <div class="search">
-              <form method="get">
                 <div class="keyword_search">
                   <label for="performance" class="hidden">실적 검색</label>
-                  <input type="text" id="performance" name="keyword" value placeholder="검색어를 입력해주세요.">
+                  <input type="text" id="performance" name="keyword" value placeholder="제목, 태그(화력/국내/해외) 등의 검색어를 입력해주세요.">
                 </div>
-                <input type="submit" value="검색">
-              </form>
+                <button type="button" id="searchBtn">검색</button>
             </div>
+
+            <!-- 콘텐츠 -->
             <div class="performance__container">
               <h3>전체</h3>
-              <ul>
-                <li>
-                  <a href="javascript:void(0)">
-                    <div class="all_img_container">
-                      <span class="badge">LANDMARK</span>
-                        <img src="" alt="">
-                    </div>
-                    <div class="badge_list">
-                      <span class="state01">화력</span>
-                      <span class="state02">국내</span>
-                    </div>
-                    <p class="name">NAME</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">
-                    <div class="all_img_container">
-                      <span class="badge">LANDMARK</span>
-                        <img src="" alt="">
-                    </div>
-                    <div class="badge_list">
-                      <span class="state02">국내</span>
-                    </div>
-                    <p class="name">NAME</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">
-                    <div class="all_img_container">
-                      <span class="badge">LANDMARK</span>
-                        <img src="" alt="">
-                    </div>
-                    <div class="badge_list">
-                      <span class="state02">국내</span>
-                    </div>
-                    <p class="name">NAME</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">
-                    <div class="all_img_container">
-                      <span class="badge">LANDMARK</span>
-                        <img src="" alt="">
-                    </div>
-                    <div class="badge_list">
-                      <span class="state02">국내</span>
-                    </div>
-                    <p class="name">NAME</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">
-                    <div class="all_img_container">
-                      <span class="badge">LANDMARK</span>
-                        <img src="" alt="">
-                    </div>
-                    <div class="badge_list">
-                      <span class="state02">국내</span>
-                    </div>
-                    <p class="name">NAME</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">
-                    <div class="all_img_container">
-                      <span class="badge">LANDMARK</span>
-                        <img src="" alt="">
-                    </div>
-                    <div class="badge_list">
-                      <span class="state02">국내</span>
-                    </div>
-                    <p class="name">NAME</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">
-                    <div class="all_img_container">
-                      <span class="badge">LANDMARK</span>
-                        <img src="" alt="">
-                    </div>
-                    <div class="badge_list">
-                      <span class="state02">국내</span>
-                    </div>
-                    <p class="name">NAME</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">
-                    <div class="all_img_container">
-                      <span class="badge">LANDMARK</span>
-                        <img src="" alt="">
-                    </div>
-                    <div class="badge_list">
-                      <span class="state02">국내</span>
-                    </div>
-                    <p class="name">NAME</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">
-                    <div class="all_img_container">
-                      <span class="badge">LANDMARK</span>
-                        <img src="" alt="">
-                    </div>
-                    <div class="badge_list">
-                      <span class="state02">국내</span>
-                    </div>
-                    <p class="name">NAME</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">
-                    <div class="all_img_container">
-                      <span class="badge">LANDMARK</span>
-                        <img src="" alt="">
-                    </div>
-                    <div class="badge_list">
-                      <span class="state02">국내</span>
-                    </div>
-                    <p class="name">NAME</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">
-                    <div class="all_img_container">
-                      <span class="badge">LANDMARK</span>
-                        <img src="" alt="">
-                    </div>
-                    <div class="badge_list">
-                      <span class="state02">국내</span>
-                    </div>
-                    <p class="name">NAME</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">
-                    <div class="all_img_container">
-                      <span class="badge">LANDMARK</span>
-                        <img src="" alt="">
-                    </div>
-                    <div class="badge_list">
-                      <span class="state02">국내</span>
-                    </div>
-                    <p class="name">NAME</p>
-                  </a>
-                </li>
-              
-              
-              </ul>
+              <div class="performance_list"></div>
             </div>
           </section>
         </div>
@@ -257,5 +110,6 @@
 
       <? include '../common/sub_footer.html' ?>
       <script src="./js/accordion.js"></script>
+      <script src="./js/performance.js"></script>
   </body>
 </html>
