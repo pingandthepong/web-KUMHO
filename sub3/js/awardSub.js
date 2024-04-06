@@ -1,6 +1,13 @@
 $(function () {
 
-  $('#award').focus();
+  
+  $(window).scroll(function() {
+    
+    var contentTop = $('#content').offset().top;
+    var scrollTop = $(window).scrollTop();
+
+    if (scrollTop >= contentTop) {$('#award').focus();}
+  });
 
   $.ajax({
     url: "../data/awardSub.json",
