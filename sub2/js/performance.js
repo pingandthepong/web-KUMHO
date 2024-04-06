@@ -48,8 +48,8 @@ $(function() {
       dataPrint(useData);
       
 
-      // 배경 사진
-      $('.performance_list ul li').each(function(idx, list) {
+      // 배경 사진 설정
+      $('.performance_list ul li').each(function(idx) {
         // console.log(idx); // 0 ~ 14
 
         $(this).find($('.all_img_container')).css({
@@ -71,15 +71,23 @@ $(function() {
           $('.performance_list').html('<p>검색 결과가 없습니다.</p>');
         } else {
           dataPrint(newArray);
+
+          $('.performance_list ul li').each(function(idx) {
+            // console.log(idx); // 0 ~ 14
+    
+            $(this).find($('.all_img_container')).css({
+              background: `url(${newArray[idx].bgUrl}) no-repeat center`,
+            });
+          });
         }
-      });
-      
+        });
+
       // 검색어 입력 후 엔터를 누르면 검색 버튼이 클릭되도록
       $('#performance').keypress(function(e) {
         if (e.keyCode === 13) {
           $('#searchBtn').click();
         }
-      })
-    }
+      });
+      }
+    });
   });
-});

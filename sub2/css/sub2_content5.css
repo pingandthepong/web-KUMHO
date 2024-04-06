@@ -103,7 +103,7 @@
 /* .search */
 #content .content_area .search {
   max-width: 700px;
-  margin: 0 auto 120px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -144,6 +144,10 @@
   background-size: cover;
   padding-bottom: 200px;
 }
+#content .content_area .all .suggestion {
+  margin: 30px 0 120px;
+  text-align: center;
+}
 #content .content_area .all ul {
   flex-wrap: wrap;
   gap: 100px 20px;
@@ -165,14 +169,16 @@
   gap: 8px;
   margin-top: 32px;
 }
-#content .content_area .all .badge_list span[class*="state"] {
+
+
+#content .content_area .all :is(.suggestion, .badge_list) span[class*="state"] {
   background: #fff;
   border: 1px solid #e9e9e9;
   color: #f65742;
   padding: 5px 16px;
   border-radius: 8px;
 }
-#content .content_area .all .badge_list span.state01 {
+#content .content_area .all :is(.suggestion, .badge_list) span.state01 {
   background: #ffe6e3;
 }
 #content .content_area .all li .name {
