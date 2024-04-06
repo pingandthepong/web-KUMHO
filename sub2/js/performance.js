@@ -13,7 +13,6 @@ $(function() {
   $.ajax({
     url: "../data/performanceSub.json",
     dataType: "json",
-
     // 매개변수로 연결한 객체 배열 전달
     success: function(data) {
       // 전체 배열 안 객체 저장
@@ -25,7 +24,6 @@ $(function() {
         var txt = `<ul>`;
 
         for (var i in arr) {
-
           txt += `<li>`;
           txt += `<a href="${arr[i].href}">`;
           txt += `<div class="all_img_container"></div>`;
@@ -36,7 +34,6 @@ $(function() {
           txt += `<p class="name">${arr[i].name}</p>`;
           txt += `</a>`;
           txt += `</li>`;
-
         }
 
         txt += `</ul>`;
@@ -44,24 +41,37 @@ $(function() {
         $('.performance_list').html(txt);
       }
 
+      // 배경 사진 설정 함수
+      function setBackgroundImage (arr) {
+        $('.performance_list ul li').each(function(idx) {
+          $(this).find($('.all_img_container')).css({
+            background: `url(${arr[idx].bgUrl}) no-repeat center`,
+          });
+        });
+      }
+  
       // 초기실행 함수 호출
       dataPrint(useData);
+      setBackgroundImage(useData);
+
+
+
       
-
-      // 배경 사진 설정
-      $('.performance_list ul li').each(function(idx) {
-        // console.log(idx); // 0 ~ 14
-
-        $(this).find($('.all_img_container')).css({
-          background: `url(${useData[idx].bgUrl}) no-repeat center`,
+      // .suggestion span 클릭 시 검색
+      $('.suggestion a').click(function(e) {
+        e.preventDefault();
+        var txtVal = $(this).find('span').text();
+        var newArray = useData.filter(function(element) {
+          return element.state01.includes(txtVal) || element.state02.includes(txtVal) || element.name.includes(txtVal);
         });
-      });
+        dataPrint(newArray);
+        setBackgroundImage(newArray);
+      })
 
 
       // 검색 버튼 클릭 시
       $('#searchBtn').click(function() {
         var value = $('#performance').val();
-
         var newArray = useData.filter(function(element) {
           return element.state01.includes(value) || element.state02.includes(value) || element.name.includes(value);
         });
@@ -71,16 +81,9 @@ $(function() {
           $('.performance_list').html('<p>검색 결과가 없습니다.</p>');
         } else {
           dataPrint(newArray);
-
-          $('.performance_list ul li').each(function(idx) {
-            // console.log(idx); // 0 ~ 14
-    
-            $(this).find($('.all_img_container')).css({
-              background: `url(${newArray[idx].bgUrl}) no-repeat center`,
-            });
-          });
+          setBackgroundImage(newArray);
         }
-        });
+      });
 
       // 검색어 입력 후 엔터를 누르면 검색 버튼이 클릭되도록
       $('#performance').keypress(function(e) {
@@ -88,6 +91,7 @@ $(function() {
           $('#searchBtn').click();
         }
       });
+      
       }
     });
   });
