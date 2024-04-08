@@ -203,6 +203,9 @@
   place-items: center;
   color: #999;
 }
+#content .contlist.tab1 .earning-rate .graph .chart #chart {
+  width: 300px;
+}
 #content .contlist.tab1 .earning-rate .graph .button_bar {
   display: flex;
   justify-content: center;
@@ -505,6 +508,28 @@
 #content .contlist.tab3 .financial #graph1 ul {
   justify-content: end;
 }
+/* .highcharts-figure start */
+#content .contlist.tab3 .financial #graph1 .highcharts-figure {
+}
+.highcharts-axis-labels.highcharts-xaxis-labels {
+  font-size: 1.5rem;
+}
+#content .contlist.tab3 .financial #graph1 .highcharts-figure,
+.highcharts-data-table table {
+    width: 1200px;
+    height: 500px;
+    margin: 100px auto 50px;
+}
+#content .highcharts-credits {
+  display: none;
+}
+.highcharts-exporting-group {
+  display: none;
+}
+
+/* .highcharts-figure end */
+
+
 #content .contlist.tab3 .financial #graph2 ul {
   justify-content: center;
 }
@@ -515,19 +540,7 @@
   font-size: 0.88rem;
   color: #555;
 }
-#content .contlist.tab3 .financial .chart_item ul li::before {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 24px;
-  background: #f65742;
-}
-#content #graph1 li:nth-child(2):before {
-  background: #bfb1a3;
-}
-#content #graph1 li:nth-child(3):before {
-  background: #f0cc89;
-}
+
 #content #graph2 li:nth-child(2):before {
   background: #56423e;
 }

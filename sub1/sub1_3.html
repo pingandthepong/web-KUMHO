@@ -16,6 +16,12 @@
       crossorigin="anonymous"></script>
     <script src="../common/js/prefixfree.min.js"></script>
     <script src="./js/chart.js"></script>
+    <!-- highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
   </head>
   <body>
      <? include '../common/sub_header.html' ?>
@@ -137,7 +143,9 @@
                         </div>
                         <div class="notice_date">기준일: 24. 2. 23</div>
                         <div class="graph">
-                          <div class="chart">(차트영역)</div>
+                          <div class="chart">
+                            <canvas id="chart"></canvas>
+                          </div>
                           <ul class="button_bar">
                             <li class="checkbox">
                               <input type="checkbox" checked id="ci1">
@@ -410,11 +418,10 @@
                         id="graph1"
                         class="chart_item"
                         data-highcharts-chart="0">
-                        <ul>
-                          <li>자산</li>
-                          <li>부채</li>
-                          <li>자본</li>
-                        </ul>
+                        <!-- fPosition -->
+                        <figure class="highcharts-figure">
+                          <div id="fPosition"></div>
+                      </figure>
                       </div>
                     </div>
                   </div>
@@ -447,5 +454,6 @@
       <? include '../common/sub_footer.html' ?>
       <script src="../common/js/tab.js"></script>
       <script src="./js/invest3Graph.js"></script>
+      <script src="./js/fPosition.js"></script>
   </body>
 </html>
