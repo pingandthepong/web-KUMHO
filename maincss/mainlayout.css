@@ -423,8 +423,6 @@
   left: -15px;
   top: 0;
   /* overflow: hidden; */
-  border: 1px solid #000;
-  box-sizing: border-box;
 }
 #content .award__container .award_list {
   /* width: (ul 한 덩어리의 너비) */
