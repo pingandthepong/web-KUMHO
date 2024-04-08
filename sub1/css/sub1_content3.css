@@ -508,26 +508,23 @@
 #content .contlist.tab3 .financial #graph1 ul {
   justify-content: end;
 }
-/* .highcharts-figure start */
+/* ===== .highcharts-figure start ===== */
 #content .contlist.tab3 .financial #graph1 .highcharts-figure {
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 60px;
 }
-.highcharts-axis-labels.highcharts-xaxis-labels {
-  font-size: 1.5rem;
-}
-#content .contlist.tab3 .financial #graph1 .highcharts-figure,
-.highcharts-data-table table {
-    width: 1200px;
-    height: 500px;
-    margin: 100px auto 50px;
-}
-#content .highcharts-credits {
+/* highcharts-point-hover 시 배경색 제거 */
+.highcharts-crosshair.highcharts-crosshair-category {
   display: none;
 }
+/* 햄버거메뉴 제거 */
 .highcharts-exporting-group {
   display: none;
 }
 
-/* .highcharts-figure end */
+
+/* ===== .highcharts-figure end ===== */
 
 
 #content .contlist.tab3 .financial #graph2 ul {
