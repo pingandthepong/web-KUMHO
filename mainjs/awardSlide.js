@@ -23,7 +23,7 @@ let position = 0;
 let timeonoff;
 
 
-$('.award_list ul').after($('.award_list ul').clone());
+// $('.award_list ul').after($('.award_list ul').clone());
 
 
 // 자동 슬라이드 함수
@@ -42,15 +42,18 @@ timeonoff = setInterval(awardMove, 4000);
 
 
 // .award_list & 좌우버튼 호버시 자동 슬라이드 멈춤
-$('.award_list, .btn_box a:not(:last)').hover(
+$('.award_list, .btn_box .btn').hover(
   function() {
-    clearInterval(timeonoff);
-    
+    clearInterval(timeonoff); 
   },
   function() {
     timeonoff = setInterval(awardMove, 4000);
-    
   }
 );
+
+$('.award_list, .btn_box .btn').on('click', function(e) {
+  e.preventDefault();
+  clearInterval(timeonoff);
+});
 
 }

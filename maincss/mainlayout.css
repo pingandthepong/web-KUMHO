@@ -420,10 +420,11 @@
   /* w2080 */
   width: calc((500px + 20px) * 4);
   position: relative;
-  /* left: 모니터 너비(1920px) - .award 너비(1400px) / 2(양쪽마진 감안) = -260px */
-  left: -260px;
+  left: -15px;
   top: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+  border: 1px solid #000;
+  box-sizing: border-box;
 }
 #content .award__container .award_list {
   /* width: (ul 한 덩어리의 너비) */
