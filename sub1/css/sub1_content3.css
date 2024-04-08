@@ -509,10 +509,10 @@
   justify-content: end;
 }
 /* ===== .highcharts-figure start ===== */
-#content .contlist.tab3 .financial #graph1 .highcharts-figure {
+#content .contlist.tab3 .financial :is(#graph1, #graph2) .highcharts-figure {
     width: 1300px;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 /* highcharts-point-hover 시 배경색 제거 */
 .highcharts-crosshair.highcharts-crosshair-category {

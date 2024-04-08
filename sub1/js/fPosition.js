@@ -34,13 +34,19 @@ Highcharts.chart('fPosition', {
   credits: {
     enabled: false
   },
+  tooltip: {
+    style: {
+      fontSize: '19px',
+      padding: '10px'
+    }
+  },
   plotOptions: {
       column: {
           series: {
             borderWidth: 0,
             groupPadding: 0.1,
           },
-          pointPadding: 0.2,
+          pointPadding: 0.25,
           dataLabels: {
             enabled: true,
             inside: false, // 레이블을 열 안쪽에 표시
@@ -56,13 +62,6 @@ Highcharts.chart('fPosition', {
         }
       },
   },
-  tooltip: {
-    style: {
-      fontSize: '19px',
-      padding: '10px'
-    }
-  },
-  // 범례 설정
   legend: {
     align: 'right',
     verticalAlign: 'top',
@@ -70,13 +69,13 @@ Highcharts.chart('fPosition', {
     x: 0,
     y: 0,
     symbolRadius: 1,
-    symbolWidth: 24,
-    symbolHeight: 24,
+    symbolWidth: 18,
+    symbolHeight: 18,
     symbol: function() {
       return 'rect';
     },
     itemStyle: {
-      fontSize: '19px'
+      fontSize: '16px'
     },
     itemMarginTop: 0,
     itemMarginBottom: 50,
