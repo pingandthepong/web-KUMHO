@@ -244,11 +244,6 @@
 #ci3 {
   accent-color: #8afcaa;
 }
-/* ===== chartjs start ===== */
-#invest3Graph .chartjs-render-monitor .chartjs-chart-labels {
-  display: none;
-}
-/* ===== chartjs end ===== */
 
 /* sub1_3 table 공통 */
 #content .tabs table :is(th, td) {
@@ -404,9 +399,21 @@
 #content .contlist.tab1 .invest3 .date {
   position: absolute;
   right: 0;
-  bottom: -100px;
+  bottom: 0;
   color: #999;
 }
+/* ===== chartjs start ===== */
+#invest3Graph .chartjs-render-monitor .chartjs-chart-labels {
+  display: none;
+}
+#content .contlist.tab1 .invest3 .graph .chart2 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* ===== chartjs end ===== */
 
 
 /* .invest4 */
