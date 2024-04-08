@@ -481,7 +481,7 @@
   margin: 80px auto;
 }
 #content .contlist.tab3 .financial .chart_inner {
-  height: 660px;
+  height: 560px;
   border: 1px solid #c5c5c5;
   position: relative;
 }
@@ -499,20 +499,11 @@
   font-weight: 300;
   color: #999;
 }
-#content .contlist.tab3 .financial .chart_item ul {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  gap: 17px;
-}
-#content .contlist.tab3 .financial #graph1 ul {
-  justify-content: end;
-}
 /* ===== .highcharts-figure start ===== */
 #content .contlist.tab3 .financial :is(#graph1, #graph2) .highcharts-figure {
     width: 1300px;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 20px;
 }
 /* highcharts-point-hover 시 배경색 제거 */
 .highcharts-crosshair.highcharts-crosshair-category {
@@ -522,31 +513,4 @@
 .highcharts-exporting-group {
   display: none;
 }
-
-
 /* ===== .highcharts-figure end ===== */
-
-
-#content .contlist.tab3 .financial #graph2 ul {
-  justify-content: center;
-}
-#content .contlist.tab3 .financial .chart_item ul li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.88rem;
-  color: #555;
-}
-
-#content #graph2 li:nth-child(2):before {
-  background: #56423e;
-}
-#content #graph2 li:nth-child(3):before {
-  background: #bfb1a3;
-}
-#content #graph2 li:nth-child(4):before {
-  background: #00aacb;
-}
-#content #graph2 li:nth-child(5):before {
-  background: #f0cc89;
-}
