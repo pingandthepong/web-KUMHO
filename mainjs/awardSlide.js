@@ -1,26 +1,26 @@
 export function awardSlide() {
 
-const movesize = 2;
-let position = 0;
-let timeonoff;
-
 // 전체를 감싸는 고정된 .award__container 너비
-const slideContainer = $('.award__container').width(); // 1920
+const slideContainer = $('.award__container').width(); // 2080
 
 // ul 한 덩이의 너비
-const ulWidth = $('.award_list ul').width(); // 3222
+const ulWidth = $('.award_list ul').width(); //2600
 
 // li 개수
-const listLength = $('.award_list li').length; // 6
+const listLength = $('.award_list li').length; // 5
 
 // li 개당 너비(margin 포함)
-const listOuterWidth = $('.award_list li').outerWidth(true); // 537
+const listOuterWidth = $('.award_list li').outerWidth(true); // 520
 
 // 전체를 감싸는 고정된 .award__container에서 빠져나간 .award_list를 더한 좌표값
 const range = ulWidth + (ulWidth - slideContainer); // 4524
 // 전체를 감싸는 고정된 .award__container에서 빠져나간 부분
 const remaining = ulWidth - slideContainer; // 1302
 
+
+const movesize = listOuterWidth;
+let position = 0;
+let timeonoff;
 
 
 $('.award_list ul').after($('.award_list ul').clone());
@@ -38,19 +38,19 @@ function awardMove () {
   }
 }
 
-timeonoff = setInterval(awardMove, 100);
+timeonoff = setInterval(awardMove, 4000);
 
 
 // .award_list & 좌우버튼 호버시 자동 슬라이드 멈춤
-// $('.award_list, .btn_box a:not(:last)').hover(
-//   function() {
-//     clearInterval(timeonoff);
+$('.award_list, .btn_box a:not(:last)').hover(
+  function() {
+    clearInterval(timeonoff);
     
-//   },
-//   function() {
-//     timeonoff = setInterval(awardMove, 100);
+  },
+  function() {
+    timeonoff = setInterval(awardMove, 4000);
     
-//   }
-// );
+  }
+);
 
 }

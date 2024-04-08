@@ -129,7 +129,7 @@
 #content .contlist.tab1 .iframe_box .middle .changerate .negative::before {
   content: "";
   display: inline-block;
-  background: url("../../mainimages/investment_negaitive.png");
+  background: url("../../mainimages/investment_negative.png");
   background-size: cover;
   width: 10px;
   height: 10px;
@@ -287,8 +287,118 @@
 
 /* .invest3 */
 #content .contlist.tab1 .invest3 {
-  
+  position: relative;
 }
+#content .contlist.tab1 .invest3 .category {
+  position: absolute;
+  left: 0;
+  top: 120px;
+  font-size: 1.5rem;
+}
+#content .contlist.tab1 .invest3 .graph {
+  width: 400px;
+  margin: 150px auto 300px;
+  position: relative;
+}
+#content .contlist.tab1 .invest3 .graph .label {
+  width: 400px;
+  font-size: 1.35rem;
+  position: absolute;
+  left: -500px; 
+}
+#content .contlist.tab1 .invest3 .graph :is(.label1, .label5) {
+  text-align: right;
+  left: 500px;
+  top: 200px;
+}
+#content .contlist.tab1 .invest3 .graph .label5 {
+  top: 50px;
+}
+#content .contlist.tab1 .invest3 .graph .label2 {
+  top: 300px;
+}
+#content .contlist.tab1 .invest3 .graph .label3 {
+  top: 150px;
+}
+#content .contlist.tab1 .invest3 .graph .label4 {
+  top: 0px;
+}
+
+#content .contlist.tab1 .invest3 .graph .label .per {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+}
+#content .contlist.tab1 .invest3 .graph .label .per::after {
+  content: "%";
+}
+
+#content .contlist.tab1 .invest3 .graph .label1 .per {
+  color: #ef0010;
+}
+#content .contlist.tab1 .invest3 .graph .label2 .per {
+  color: #56423D;
+}
+#content .contlist.tab1 .invest3 .graph .label3 .per {
+  color: #BEA6A0;
+}
+#content .contlist.tab1 .invest3 .graph .label4 .per {
+  color: #0097D7;
+}
+#content .contlist.tab1 .invest3 .graph .label5 .per {
+  color: #00D0FF;
+}
+
+#content .contlist.tab1 .invest3 .graph .label::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 10;
+}
+#content .contlist.tab1 .invest3 .graph .label1::before {
+  content: "";
+  background: #ef0010;
+  left: 0;
+}
+#content .contlist.tab1 .invest3 .graph .label2::before {
+  content: "";
+  background: #56423D;
+}
+#content .contlist.tab1 .invest3 .graph .label3::before {
+  content: "";
+  background: #BEA6A0;
+}
+#content .contlist.tab1 .invest3 .graph .label4::before {
+  content: "";
+  background: #0097D7;
+}
+#content .contlist.tab1 .invest3 .graph .label5::before {
+  content: "";
+  background: #00D0FF;
+  left: 0;
+}
+#content .contlist.tab1 .invest3 .graph .label::after {
+  content: "";
+  display: block;
+  width: 400px;
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  left: 0;
+  top: 65%;
+}
+#content .contlist.tab1 .invest3 .date {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  color: #999;
+}
+
 
 /* .invest4 */
 #content .contlist.tab1 .invest4 {

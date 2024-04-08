@@ -15,6 +15,7 @@
       src="https://kit.fontawesome.com/5c48cfd0d4.js"
       crossorigin="anonymous"></script>
     <script src="../common/js/prefixfree.min.js"></script>
+    <script src="./js/chart.js"></script>
   </head>
   <body>
      <? include '../common/sub_header.html' ?>
@@ -78,19 +79,19 @@
                       <div class="middle">
                         <dl class="last">
                           <dt class="hidden">종가</dt>
-                          <dd class="positive">5,130</dd>
+                          <dd class="positive">4,330</dd>
                         </dl>
                         <ul class="changerate">
                           <li>
                             <dl>
                               <dt class="change_phrase">전일대비</dt>
-                              <dd class="change positive">30</dd>
+                              <dd class="change negative">55</dd>
                             </dl>
                           </li>
                           <li>
                             <dl>
                               <dt class="change_phrase">등락률</dt>
-                              <dd class="change_per positive">0.59</dd>
+                              <dd class="change_per negative">1.2</dd>
                             </dl>
                           </li>
                         </ul>
@@ -107,11 +108,11 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td class="data prev_close">161,300</td>
-                            <td class="data open">162,200</td>
-                            <td class="data high">165,700</td>
-                            <td class="data low">158,200</td>
-                            <td class="data volumn">503,948</td>
+                            <td class="data prev_close">4,330</td>
+                            <td class="data open">4,330</td>
+                            <td class="data high">6,730</td>
+                            <td class="data low">4,315</td>
+                            <td class="data volumn">46,383</td>
                           </tr>
                         </tbody>
                       </table>
@@ -223,7 +224,16 @@
                   <!-- .invest3 (주주구성) -->
                   <div class="invest3">
                     <div class="title">주주구성</div>
-                    <div class="graph">(그래프 영역)</div>
+                    <span class="category">보통주</span>
+                    <div class="graph">
+                      <canvas id="invest3Graph"></canvas>
+                      <span class="label label1"><span class="per">47.51</span>최대주주 및 그 특수관계인</span>
+                      <span class="label label2"><span class="per">13</span>국내기관</span>
+                      <span class="label label3"><span class="per">2.86</span>자사주</span>
+                      <span class="label label4"><span class="per">3.96</span>외국인</span>
+                      <span class="label label5"><span class="per">1</span>국내개인 및 기타</span>
+                    </div>
+                    <span class="date">'23년 12월 31일 기준</span>
                   </div>
 
                   <!-- .invest4 (최대주주) -->
@@ -436,5 +446,6 @@
 
       <? include '../common/sub_footer.html' ?>
       <script src="../common/js/tab.js"></script>
+      <script src="./js/invest3Graph.js"></script>
   </body>
 </html>
