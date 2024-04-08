@@ -496,6 +496,10 @@
   font-size: 1.2rem;
   color: #999;
 }
+#content .award .btn_box a.disabled {
+  pointer-events: none;
+  opacity: .5;
+}
 #content .award .btn_box .more_btn {
   transition: all .5s ease-out;
   perspective: 100px;
