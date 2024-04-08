@@ -244,6 +244,12 @@
 #ci3 {
   accent-color: #8afcaa;
 }
+/* ===== chartjs start ===== */
+#invest3Graph .chartjs-render-monitor .chartjs-chart-labels {
+  display: none;
+}
+/* ===== chartjs end ===== */
+
 /* sub1_3 table 공통 */
 #content .tabs table :is(th, td) {
   text-align: center;
