@@ -229,7 +229,6 @@ img {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.1)
 }
 #headerArea.hide {
-  position: fixed;
   transform: translate3d(0, -100%, 0);
 }
 #headerArea.show {
