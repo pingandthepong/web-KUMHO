@@ -215,7 +215,7 @@
   color: #ef0010;
   margin-left: 1.56rem;
 }
-#content .section_title_en + p {
+#content .section_title_wrap + p {
   font-size: 1.88rem;
   margin: 35px 0 120px;
 }
@@ -879,7 +879,7 @@
 #content .recruit__container h3 {
   margin-top: 170px;
 }
-#content .recruit__container .section_title_en + p {
+#content .recruit__container .section_title_wrap + p {
   width: 33ch;
   margin-top: 130px;
   line-height: 1.7;
