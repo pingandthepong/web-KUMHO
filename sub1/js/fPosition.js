@@ -25,10 +25,14 @@ Highcharts.chart("fPosition", {
       text: "",
     },
     labels: {
-      format: "{value:,.0f}",
+      // 데이터 값 포맷팅
+      formatter: function () {
+        return Highcharts.numberFormat(this.value, 0, "", ",");
+      },
       style: {
         fontSize: "15px",
       },
+      
     },
   },
   credits: {
@@ -38,6 +42,10 @@ Highcharts.chart("fPosition", {
     style: {
       fontSize: "19px",
       padding: "10px",
+    },
+    // tooltip의 formatter 함수 수정
+    formatter: function () {
+      return `<span style="font-size: 19px">${this.x}</span><br/><span style="color:${this.series.color}">\u25CF</span>${this.series.name}: <b>${Highcharts.numberFormat(this.y, 0, "'", ",")}</b>`;
     },
   },
   plotOptions: {
@@ -56,8 +64,9 @@ Highcharts.chart("fPosition", {
           fontWeight: "600",
           textOutline: "none", // 텍스트 외곽선 제거
         },
+        // 데이터 값 포맷팅
         formatter: function () {
-          return Highcharts.numberFormat(this.y, 0, "", ","); // 데이터 값 포맷팅
+          return Highcharts.numberFormat(this.y, 0, "", ",");
         },
       },
     },

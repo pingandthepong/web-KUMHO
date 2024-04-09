@@ -25,7 +25,9 @@ Highcharts.chart("fIncome", {
       text: "",
     },
     labels: {
-      format: "{value:,.0f}",
+      formatter: function() {
+        return Highcharts.numberFormat(this.value, 0, "", ",");
+      },
       style: {
         fontSize: "15px",
       },
@@ -38,6 +40,10 @@ Highcharts.chart("fIncome", {
     style: {
       fontSize: "19px",
       padding: "10px",
+    },
+    // tooltip의 formatter 함수 수정
+    formatter: function () {
+      return `<span style="font-size: 19px">${this.x}</span><br/><span style="color:${this.series.color}">\u25CF</span>${this.series.name}: <b>${Highcharts.numberFormat(this.y, 0, "'", ",")}</b>`;
     },
   },
   plotOptions: {
