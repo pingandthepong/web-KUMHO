@@ -230,7 +230,7 @@
   align-items: center;
   margin-top: 115px;
 }
-#content .business li {
+#content .business li a {
   width: 340px;
   border-radius: 30px;
   overflow: hidden;
