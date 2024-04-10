@@ -1,12 +1,16 @@
 // 초기 상태
-$(".tabs .tab:eq(1)").addClass("on");
-$(".tabs .contlist:eq(1)").show();
+$(".tabs .tab:eq(2)").addClass("on");
+$(".tabs .contlist:eq(2)").show();
 
 // .tab 클릭시 addClass('on')
 $(".tab").on("click", function (e) {
   e.preventDefault();
   $(".tab").removeClass("on");
   $(this).addClass("on");
+
+  var index = $(this).index('.tab');
+  $('.contlist').hide();
+  $(`.contlist:eq(${index})`).show();
 });
 
 // tab2
