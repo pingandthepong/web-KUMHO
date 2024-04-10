@@ -31,16 +31,13 @@
   transition: all .25s ease-out;
 }
 #content .content_area .quality .tabs .tab1 {
-  left: 360px;
+  left: 510px;
 }
 #content .content_area .quality .tabs .tab2 {
-  left: 660px;
+  left: 810px;
 }
 #content .content_area .quality .tabs .tab3 {
-  left: 960px;
-}
-#content .content_area .quality .tabs .tab4 {
-  left: 1260px;
+  left: 1110px;
 }
 #content .content_area .quality .tabs .tab:is(.on, :hover) {
   background: #f65742;
@@ -255,8 +252,4 @@
 #content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .des .des_details span::before {
   content: "\2022";
   margin-right: 8px;
-}
-/* .tab4 */
-#content .content_area .quality .tabs .contlist:nth-of-type(4) {
-  
 }
