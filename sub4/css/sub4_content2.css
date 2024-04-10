@@ -126,6 +126,51 @@
 #content .content_area .quality .tabs .contlist:nth-of-type(2) {
   
 }
+#content .content_area .quality .tabs .contlist:nth-of-type(2) .highcharts-figure {
+  width: 1200px;
+  margin: 50px auto 150px;
+  font-size: 24px;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(2) .highcharts-figure .highcharts-exporting-group {
+  display: none;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(2) .system_list {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(2) .system_list dl {
+  width: calc((1200px - 40px) / 3);
+  text-align: center;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(2) .system_list dt {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f65742;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  background: #ffebe8;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(2) .system_list dd {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.75;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(2) .system_list dd:nth-of-type(1) {
+  margin-top: 20px;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(2) .system_list dd:last-of-type {
+  margin-bottom: 20px;
+}
+
 /* .tab3 */
 #content .content_area .quality .tabs .contlist:nth-of-type(3) {
   
