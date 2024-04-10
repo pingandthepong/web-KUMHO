@@ -63,15 +63,13 @@
   width: 80%;
 }
 #content .content_area .quality .tabs .contlist {
-  margin-top: 72px;
+  margin: 72px auto 0;
   padding: 78px 100px 150px;
   display: none;
 }
 
 /* .tab1 */
 #content .content_area .quality .tabs .contlist:nth-of-type(1) {
-  
-  
 }
 #content .content_area .quality .tabs .contlist:nth-of-type(1) ul {
   counter-reset: policy;
@@ -125,8 +123,6 @@
 /* .tab2 */
 #content .content_area .quality .tabs .contlist:nth-of-type(2) {
   width: 1600px;
-  margin: 72px auto 0;
-  
 }
 #content .content_area .quality .tabs .contlist:nth-of-type(2) .highcharts-figure {
   margin: 50px auto 150px;
@@ -173,18 +169,92 @@
 /* .tab3 */
 #content .content_area .quality .tabs .contlist:nth-of-type(3) {
   width: 1400px;
-  margin: 72px auto 0;
-  
 }
-#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .all {}
-#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity ul {}
-#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity li {}
-#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .title {}
-#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .title .trigger {}
-#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .title span {}
-#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .des {}
-#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .des .des_details {}
-#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .des .des_details span {}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity {
+  position: relative;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .all {
+  font-size: 1.25rem;
+  position: absolute;
+  right: 0;
+  top: -50px;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .all i {
+  margin-left: 8px;
+  transform: rotate(0);
+  transition: all .25s ease-out;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity ul {
+  margin-top: 30px;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity li {
+  border-top: 1px solid #f65742;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity li:last-of-type {
+  border-bottom: 1px solid #f65742;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .title {
+  position: relative;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .title .trigger {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 10px 30px;
+  background: #ffebe8;
+  color: #f65742;
+  transition: all .25s ease-out;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .hide .trigger {
+  background: none;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .title .trigger .sm {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-left: 8px;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .title:is(:hover, :active, :focus) .trigger {
+  background: #f65742;
+  color: #fff;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .title > span i {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.7rem;
+  color: #f65742;
+  transition: all .25s ease-out;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .title:is(:hover, :active, :focus) > span i {
+  color: #fff;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .des {
+  font-size: 1.35rem;
+  letter-spacing: -1px;
+  padding: 10px 20px 30px;
+  display: none;
+
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .des::before {
+  font-family: "Font Awesome 5 Free";
+   content: "\f00c";
+   display: inline-block;
+   margin-right: 8px;
+   font-weight: 900;
+   color: #f65742;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .des .des_details {
+  display: block;
+  margin-top: 30px;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .des .des_details span {
+  display: block;
+  font-size: 1.2rem;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(3) .activity .des .des_details span::before {
+  content: "\2022";
+  margin-right: 8px;
+}
 /* .tab4 */
 #content .content_area .quality .tabs .contlist:nth-of-type(4) {
   
