@@ -141,6 +141,10 @@
   box-sizing: border-box;
   border-radius: 20px;
   overflow: hidden;
+  transition: all .25s ease-out;
+}
+#content .content_area .quality .tabs .contlist:nth-of-type(2) .system_list dl:hover {
+  transform: scale(1.05);
 }
 #content .content_area .quality .tabs .contlist:nth-of-type(2) .system_list dt {
   font-size: 1.5rem;
