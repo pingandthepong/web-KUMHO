@@ -8,4 +8,9 @@ $('.tab').on('click', function(e) {
 
   $('.policy .tab').removeClass('on');
   $(this).addClass('on');
-})
+
+  var ind = $(this).index('.tab');
+
+  $('.policy .contlist').hide();
+  $(`.policy .contlist:eq(${ind})`).show();
+});
