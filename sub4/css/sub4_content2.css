@@ -1,14 +1,3 @@
-#content .content_area p .fa-solid[class*="left"] {
-  left: 50%;
-  top: -80px;
-  transform: translateX(-50%);
-}
-#content .content_area p .fa-solid[class*="right"] {
-  left: 50%;
-  bottom: -85px;
-  transform: translateX(-50%);
-}
-
 /* section.quality */
 #content .content_area .quality {
   width: 1920px;
