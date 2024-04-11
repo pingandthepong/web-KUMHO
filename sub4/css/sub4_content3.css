@@ -71,10 +71,10 @@
 
 /* .contlist1 */
 #content .content_area .policy .tabs .contlist:nth-of-type(1) {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) dl {
+#content .content_area .policy .tabs .contlist:nth-of-type(1) > div {
   margin-bottom: 50px;
 }
-#content .content_area .policy .tabs .contlist:nth-of-type(1) dt {
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .rule dt {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
@@ -178,25 +178,64 @@
 }
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .bg1 {
   transform: translateX(-50%) rotate(25deg);
-
 }
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .bg2 {
   transform: translateX(-50%) rotate(-25deg);
 }
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .golas {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .golas dl {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .golas dt {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .golas dt span {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .golas dd {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .golas dd .accent {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign .management_goals {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign .date {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign .pos {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign .name {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign .name span {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign .name img {}
 
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .goals {
+  width: 50%;
+  margin: 0 auto 150px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 30px 0;
+  text-align: center;
+  position: relative;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .goals::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  position: absolute;
+  top: -10px;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .goals::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  position: absolute;
+  bottom: -10px;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .goals p {
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .goals p .accent {
+  color: #f65742;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign {
+  text-align: center;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign .management_goals {
+  margin-bottom: 100px;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign :is(.pos, .date) {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign .name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-top: 50px;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign .name span {
+  display: inline-block;
+  margin: 20px 30px 0 0;
+}
 
 /* .contlist2 */
 #content .content_area .policy .tabs .contlist:nth-of-type(2) {}
