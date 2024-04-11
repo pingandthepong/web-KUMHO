@@ -70,7 +70,6 @@
 }
 
 /* .contlist1 */
-#content .content_area .policy .tabs .contlist:nth-of-type(1) {}
 #content .content_area .policy .tabs .contlist:nth-of-type(1) > div {
   margin-bottom: 50px;
 }
@@ -238,21 +237,114 @@
 }
 
 /* .contlist2 */
-#content .content_area .policy .tabs .contlist:nth-of-type(2) {}
-#content .content_area .policy .tabs .contlist:nth-of-type(2) h4 {}
-#content .content_area .policy .tabs .contlist:nth-of-type(2) h4 .en{}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) > div {
+  margin-bottom: 100px;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity {
+  overflow: hidden;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity .dl_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity dl {
+  width: calc((100% - 40px) / 2);
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity dt {
+  font-size: 1.5rem;
+  font-weight: 500;
+  background: #f8f8f8;
+  color: #f65742;
+  padding: 20px 30px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity dt .en {
+  font-size: 1.25rem;
+  font-weight: 100;
+  margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity dd {
+  font-size: 1.25rem;
+  line-height: 1.75;
+  color: #444;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity dd:first-of-type {
+  padding-top: 20px;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity dd:last-of-type {
+  padding-bottom: 30px;
+}
 
-#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity {}
-#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity dl {}
-#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity dt {}
-#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity dt .en {}
-#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity dd {}
-#content .content_area .policy .tabs .contlist:nth-of-type(2) .activity dd .sm {}
 #content .content_area .policy .tabs .contlist:nth-of-type(2) .system {}
 #content .content_area .policy .tabs .contlist:nth-of-type(2) .system .des {}
-#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .sys {}
-#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .sys .title {}
-#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .sys p {}
-#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .sys p b {}
-#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .sys img {}
-
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .des .accent {
+  font-weight: 400;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .sys {
+  height: 350px;
+  margin: 100px 0;
+  position: relative;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .sys .title::before {
+  content: '\f00c';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .sys .title {
+  font-size: 1.65rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .sys p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .sys p b {
+  font-weight: 500;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .sys img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .sys .big {
+  width: 1280px;
+  position: fixed;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: none;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .sys .big img {
+  width: 100%;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system .darkbg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: none;
+}
