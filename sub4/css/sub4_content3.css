@@ -67,6 +67,7 @@
 #content .content_area .policy .tabs .contlist {
   margin-top: 72px;
   padding-top: 100px;
+  display: none;
 }
 
 /* .contlist1 */
