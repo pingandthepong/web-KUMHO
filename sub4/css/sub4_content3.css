@@ -11,9 +11,9 @@
 
 /* .tab */
 #content .content_area .policy .tabs .tab {
-  width: 300px;
-  font-size: 1.5rem;
-  font-weight: 500;
+  width: 400px;
+  font-size: 2rem;
+  font-weight: 100;
   line-height: 3;
   text-align: center;
   color: #999;
@@ -23,7 +23,7 @@
   transition: all .25s ease-out;
 }
 #content .content_area .policy .tabs .tab.tab1 {
-  margin-left: 400px;
+  margin-left: 300px;
 }
 #content .content_area .policy .tabs .tab.tab2 {
   margin-left: 700px;
