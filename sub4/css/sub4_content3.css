@@ -111,22 +111,19 @@
   position: relative;
 }
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .venn span {
-  display: block;
-  position: relative;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 150px;
-  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f8f8f8;
-  font-size: 1.25rem;
-  font-weight: 500;
   padding: 0 30px;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn :is(.val1, .val2) {
+  border: 1px solid #ddd;
   box-shadow: -5px -5px 1px 0 rgba(255,255,255,.5), 1px 1px 5px 0 rgba(0,0,0,.2);
+  transition: all .35s ease-out;
 }
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val1 {
   width: 250px;
@@ -136,18 +133,17 @@
   color: #fff;
   font-size: 1.5rem;
   font-weight: 600;
-  
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val1:hover {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2 {
-  position: absolute;
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2::before {
-  content: '';
-  display: block;
-  width: 1px;
-  height: 100px;
-  background: #333;
-  position: absolute;
+  width: 300px;
+  height: 150px;
+  background: #f8f8f8;
+  border-radius: 30px;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_1 {
   transform: translate(-150%, -150%);
@@ -161,25 +157,31 @@
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_4 {
   transform: translate(50%, 50%);
 }
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_1::before {
-  right: 0;
-  bottom: 0;
-  transform: rotate(-45deg) translate(-30px, 50px);
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_1:hover {
+  transform: translate(-150%, -150%) scale(1.1);
 }
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_2::before {
-  left: 0;
-  bottom: 0;
-  transform: rotate(45deg) translate(30px, 50px);
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_2:hover {
+  transform: translate(50%, -150%) scale(1.1);
 }
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_3::before {
-  right: 0;
-  top: 0;
-  transform: rotate(45deg) translate(-30px, -50px);
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_3:hover {
+  transform: translate(-150%, 50%) scale(1.1);
 }
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_4::before {
-  left: 0;
-  top: 0;
-  transform: rotate(-45deg) translate(30px, -50px);
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_4:hover {
+  transform: translate(50%, 50%) scale(1.1);
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .bg {
+  display: block;
+  width: 500px;
+  height: 1px;
+  background: #ddd;
+  z-index: -10;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .bg1 {
+  transform: translateX(-50%) rotate(25deg);
+
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .bg2 {
+  transform: translateX(-50%) rotate(-25deg);
 }
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .golas {}
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .golas dl {}
