@@ -121,7 +121,7 @@
   content: "" counter(rule)". ";
 }
 #content .content_area .content_wrap .tabs .list2 dl:last-of-type dd:before {
-  couter-increment: rule;
+  counter-increment: rule;
   content: "" counter(rule)") ";
 }
 #content .content_area .content_wrap .tabs :is(.list2, .list3 .conduct) dd {
