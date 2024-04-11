@@ -33,21 +33,6 @@
   color: #fff;
   border-radius: 24px;
 }
-#content .content_area .quality .tabs .tab::before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #f65742;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  transition: all .25s ease-out;
-}
-#content .content_area .quality .tabs .tab.on::before {
-  width: 80%;
-}
 #content .content_area .quality .tabs .contlist {
   margin: 72px auto 0;
   padding: 78px 100px 150px;
