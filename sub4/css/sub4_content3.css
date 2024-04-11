@@ -3,7 +3,7 @@
   
 }
 #content .content_area .policy .tabs {
-  width: 1400px;
+  width: 1280px;
   margin: 0 auto 150px;
   position: relative;
   overflow: hidden;
@@ -23,10 +23,10 @@
   transition: all .25s ease-out;
 }
 #content .content_area .policy .tabs .tab.tab1 {
-  margin-left: 300px;
+  margin-left: 240px;
 }
 #content .content_area .policy .tabs .tab.tab2 {
-  margin-left: 700px;
+  margin-left: 640px;
 }
 #content .content_area .policy .tabs .tab:is(.on, :hover) {
   color: #f65742;
@@ -71,17 +71,116 @@
 
 /* .contlist1 */
 #content .content_area .policy .tabs .contlist:nth-of-type(1) {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) dl {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) dt {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) dd {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) dd .accent {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val1 {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2 {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_1 {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_2 {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_3 {}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_4 {}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) dl {
+  margin-bottom: 50px;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) dt {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 50px 0;
+  position: relative;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .rule dt::before {
+  content: '';
+  display: block;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .rule dt::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100px;
+  background: #333;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+}
+
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .rule dd {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 200px;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .rule dd .accent {
+  color: #f65742;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn {
+  height: 500px;
+  margin: 100px auto;
+  position: relative;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn span {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 150px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0 30px;
+  box-shadow: -5px -5px 1px 0 rgba(255,255,255,.5), 1px 1px 5px 0 rgba(0,0,0,.2);
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val1 {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background: #f65742;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2 {
+  position: absolute;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100px;
+  background: #333;
+  position: absolute;
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_1 {
+  transform: translate(-150%, -150%);
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_2 {
+  transform: translate(50%, -150%);
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_3 {
+  transform: translate(-150%, 50%);
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_4 {
+  transform: translate(50%, 50%);
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_1::before {
+  right: 0;
+  bottom: 0;
+  transform: rotate(-45deg) translate(-30px, 50px);
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_2::before {
+  left: 0;
+  bottom: 0;
+  transform: rotate(45deg) translate(30px, 50px);
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_3::before {
+  right: 0;
+  top: 0;
+  transform: rotate(45deg) translate(-30px, -50px);
+}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_4::before {
+  left: 0;
+  top: 0;
+  transform: rotate(-45deg) translate(30px, -50px);
+}
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .golas {}
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .golas dl {}
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .golas dt {}
