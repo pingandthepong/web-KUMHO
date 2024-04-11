@@ -33,9 +33,6 @@
       text-align: center;
       position: relative;
     }
-    #content .title_area .line_map {
-      font-size: 1rem;
-    }
     #content .title_area h2 {
       font-size: 3.75rem;
       font-family: "Noto Sans KR", sans-serif;
@@ -58,7 +55,7 @@
 <body>
   <!-- skipNav -->
   <div id="skipNav">
-    <a href="#content">본문 바로가기</a>
+    <a href="#cgontent">본문 바로가기</a>
     <a href="#gnb">글로벌 내비게이션 바로가기</a>
   </div>
   <div id="wrap">
