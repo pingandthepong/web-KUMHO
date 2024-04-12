@@ -8,9 +8,9 @@
   overflow: hidden;
 }
 #content .content_area .quality .tabs .tab {
-  width: 300px;
-  font-size: 1.5rem;
-  font-weight: 500;
+  width: 250px;
+  font-size: 2rem;
+  font-weight: 100;
   line-height: 3;
   text-align: center;
   color: #999;
@@ -20,22 +20,51 @@
   transition: all .25s ease-out;
 }
 #content .content_area .quality .tabs .tab1 {
-  left: 510px;
+  left: 585px;
 }
 #content .content_area .quality .tabs .tab2 {
-  left: 810px;
+  left: 835px;
 }
 #content .content_area .quality .tabs .tab3 {
-  left: 1110px;
+  left: 1085px;
+}
+#content .content_area .quality .tabs .tab::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f65742;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: all .25s ease-out;
+}
+#content .content_area .quality .tabs .tab.on::before {
+  width: 100%;
+}
+#content .content_area .quality .tabs .tab::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 9px;
+  border-radius: 50%;
+  background: #f65742;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0;
+  transition: all .25s ease-out;
+}
+#content .content_area .quality .tabs .tab.on::after {
+  opacity: 1;
 }
 #content .content_area .quality .tabs .tab:is(.on, :hover) {
-  background: #f65742;
-  color: #fff;
-  border-radius: 24px;
+  color: #f65742;
 }
 #content .content_area .quality .tabs .contlist {
   margin: 72px auto 0;
-  padding: 78px 100px 150px;
+  padding: 100px 0 200px;
   display: none;
 }
 
@@ -43,27 +72,30 @@
 #content .content_area .quality .tabs .contlist:nth-of-type(1) {
 }
 #content .content_area .quality .tabs .contlist:nth-of-type(1) ul {
+  width: 1650px;
+  margin: 0 auto;
   counter-reset: policy;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 #content .content_area .quality .tabs .contlist:nth-of-type(1) li {
   width: calc((100% - 40px) / 3);
-  background: #f2f2f2;
+  
+  background: #f8f8f8;
   border-radius: 20px;
-  padding: 50px 14px;
+  box-shadow: 5px 5px 1px 1px rgba(0,0,0,.2);
+  padding: 50px;
   box-sizing: border-box;
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
-  transition: all .25s ease-out;
+  transition: all .35s ease-out;
 }
 #content .content_area .quality .tabs .contlist:nth-of-type(1) li:hover {
-  transform: scale(1.05);
-}
-#content .content_area .quality .tabs .contlist:nth-of-type(1) li:is(:nth-last-of-type(1), :nth-last-of-type(2)) {
-  width: calc((100% - 20px) / 2);
+  transform: scale(1.04);
+
 }
 #content .content_area .quality .tabs .contlist:nth-of-type(1) li::before {
   counter-increment: policy;
@@ -71,14 +103,14 @@
   display: block;
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 10px;
   color: #f65742;
+  margin: -5px 0 20px;
 }
 #content .content_area .quality .tabs .contlist:nth-of-type(1) .sign .pos {
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 130px;
 }
 #content .content_area .quality .tabs .contlist:nth-of-type(1) .sign .name {
   font-size: 2.5rem;

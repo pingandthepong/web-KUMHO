@@ -13,6 +13,7 @@ $(".tab").on("click", function (e) {
   $(`.contlist:eq(${index})`).show();
 });
 
+
 // tab2
 Highcharts.chart("system", {
   chart: {
