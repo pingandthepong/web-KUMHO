@@ -103,7 +103,8 @@
 
 
 /* .environment_policy */
-#content .content_area .environment_policy {}
+#content .content_area .environment_policy {
+}
 #content .content_area .environment_policy h4 {
   margin-bottom: 30px;
 }
@@ -112,16 +113,16 @@
   font-weight: 200;
   margin-bottom: 50px;
 }
-#content .content_area .environment_policy ul {
+#content .content_area .environment_policy > ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 42px;
 }
-#content .content_area .environment_policy ul li {
+#content .content_area .environment_policy > ul li {
   width: 100%;
 ;}
-#content .content_area .environment_policy li .title {
+#content .content_area .environment_policy .title {
   font-size: 30px;
   font-weight: 200;
   margin-bottom: 40px;
@@ -147,4 +148,70 @@
   color: #f65742;
   display: inline-block;
   width: 40px;
+}
+
+#content .content_area .environment_policy .record {
+  margin: 100px 0;
+}
+#content .content_area .environment_policy .record .record_container {
+  height: 212px;
+  position: relative;
+}
+#content .content_area .environment_policy .record .record_year::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #9e9e9e;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#content .content_area .environment_policy .record .record_year ul {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: -36px;
+}
+#content .content_area .environment_policy .record .record_year li {
+  width: 25%;
+  font-size: 16px;
+  font-weight: 300;
+  color: #101010;
+  text-align: center;
+}
+#content .content_area .environment_policy .record .record_num {
+  font-size: 36px;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -150%);
+}
+#content .content_area .environment_policy .record .move_list {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+
+}
+#content .content_area .environment_policy .record .move_list ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+#content .content_area .environment_policy .record .move_list li {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 2;
+  background: #f8f8f8;
+  color: #f65742;
+  width: 100%;
+  border: 1px solid #9e9e9e;
+  text-align: center;
+  box-sizing: border-box;
 }
