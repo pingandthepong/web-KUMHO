@@ -3,7 +3,8 @@
   
 }
 #content .content_area .policy .tabs {
-  width: 1280px;
+  /* width: 1280px; */
+  width: 1920px;
   margin: 0 auto 150px;
   position: relative;
   overflow: hidden;
@@ -23,10 +24,10 @@
   transition: all .25s ease-out;
 }
 #content .content_area .policy .tabs .tab.tab1 {
-  margin-left: 240px;
+  margin-left: 560px;
 }
 #content .content_area .policy .tabs .tab.tab2 {
-  margin-left: 640px;
+  margin-left: 960px;
 }
 #content .content_area .policy .tabs .tab:is(.on, :hover) {
   color: #f65742;
@@ -65,17 +66,30 @@
 
 /* .contlist */
 #content .content_area .policy .tabs .contlist {
-  margin-top: 72px;
+  margin-top: 10px;
   padding-top: 100px;
   display: none;
 }
-
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .visual_img {
+  width: 80%;
+  height: 400px;
+  margin: 0 auto 100px;
+  background: url('../images/content3/sub_visual_03.jpeg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: all .5s ease-out;
+  border-radius: 20px;
+}
+#content .content_area .policy .tabs .contlist .visual_img.on {
+  width: 100%;
+  border-radius: 0;
+}
 /* .contlist1 */
-#content .content_area .policy .tabs .contlist:nth-of-type(1) > div {
+#content .content_area .policy .tabs .contlist:nth-of-type(1) > div:not(:first-of-type) {
   margin-bottom: 50px;
 }
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .rule dt {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 500;
   text-align: center;
   margin: 50px 0;
@@ -106,123 +120,43 @@
   color: #f65742;
 }
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .venn {
-  height: 500px;
-  margin: 100px auto;
-  position: relative;
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn span {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  height: 400px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
+  gap: 10px;
+  counter-reset: valCounter;
 }
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn :is(.val1, .val2) {
-  border: 1px solid #ddd;
-  box-shadow: -5px -5px 1px 0 rgba(255,255,255,.5), 1px 1px 5px 0 rgba(0,0,0,.2);
-  transition: all .35s ease-out;
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val1 {
-  width: 250px;
-  height: 250px;
-  border-radius: 100%;
-  background: #f65742;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val1:hover {
-  transform: translate(-50%, -50%) scale(1.1);
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2 {
-  width: 300px;
-  height: 150px;
-  background: #f8f8f8;
-  border-radius: 30px;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_1 {
-  transform: translate(-150%, -150%);
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_2 {
-  transform: translate(50%, -150%);
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_3 {
-  transform: translate(-150%, 50%);
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_4 {
-  transform: translate(50%, 50%);
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_1:hover {
-  transform: translate(-150%, -150%) scale(1.1);
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_2:hover {
-  transform: translate(50%, -150%) scale(1.1);
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_3:hover {
-  transform: translate(-150%, 50%) scale(1.1);
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val2_4:hover {
-  transform: translate(50%, 50%) scale(1.1);
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .bg {
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val {
   display: block;
-  width: 500px;
-  height: 1px;
-  background: #ddd;
-  z-index: -10;
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .bg1 {
-  transform: translateX(-50%) rotate(25deg);
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .bg2 {
-  transform: translateX(-50%) rotate(-25deg);
-}
-
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .goals {
-  width: 50%;
-  margin: 0 auto 150px;
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
-  padding: 30px 0;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 1px solid #e4e4e4;
+  color: #f65742;
+  background: #fff;
+  box-shadow: 5px 5px 1px 1px rgba(246,87,66, .2);
+  font-size: 1.35rem;
+  position: relative;
+  padding-top: 125px;
+  box-sizing: border-box;
   text-align: center;
+  transition: all .35s ease-out;
   position: relative;
 }
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .goals::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #333;
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val::before {
+  counter-increment: valCounter;
+  content: '0' counter(valCounter);
   position: absolute;
-  top: -10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -300%);
+  font-size: 1rem;
 }
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .goals::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #333;
-  position: absolute;
-  bottom: -10px;
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .goals p {
-  font-size: 1.35rem;
-  font-weight: 500;
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .goals p::before {
-  content: '\f00c';
-  font-family: "Font Awesome 5 Free";
-  font-weight: 700;
-  display: inline-block;
-  margin-right: 8px;
-}
-#content .content_area .policy .tabs .contlist:nth-of-type(1) .goals p .accent {
-  color: #f65742;
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .venn .val:hover {
+  transform: scale(1.05);
 }
 #content .content_area .policy .tabs .contlist:nth-of-type(1) .sign {
   text-align: center;
@@ -245,6 +179,10 @@
 }
 
 /* .contlist2 */
+#content .content_area .policy .tabs .contlist:nth-of-type(2) {
+  width: 1280px;
+  margin: 100px auto;
+}
 #content .content_area .policy .tabs .contlist:nth-of-type(2) h4 {
   font-size: 2rem;
   font-weight: 500;
@@ -280,6 +218,7 @@
   position: relative;
   border-bottom: 1px solid #ddd;
 }
+
 #content .content_area .policy .tabs .contlist:nth-of-type(2) .activity dt .en {
   font-size: 1.25rem;
   font-weight: 100;
