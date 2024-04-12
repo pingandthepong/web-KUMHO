@@ -1,14 +1,102 @@
 /* .environment_goals */
-#content .content_area .environment_goals {}
-#content .content_area .environment_goals h4 {}
-#content .content_area .environment_goals .goal {}
-#content .content_area .environment_goals .goal .title {}
-#content .content_area .environment_goals .goal ul {}
+#content .content_area .environment_goals {
+  width: 1200px;
+  margin: 0 auto 100px;
+}
+#content .content_area .environment_goals h4 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+#content .content_area .environment_goals .goal {
+  overflow: hidden;
+}
+#content .content_area .environment_goals .goal .title {
+  float: left;
+  font-size: 20px;
+  font-weight: 300;
+}
+#content .content_area .environment_goals .goal ul {
+  float: right;
+  width: 1070px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 77px;
+}
+#content .content_area .environment_goals .goal li {
+  width: 280px;
+}
 
 
 #content .content_area .environment_goals .goal1 {}
-#content .content_area .environment_goals .goal1 li {}
+#content .content_area .environment_goals .goal1 ul {
+  counter-reset: goal1Counter;
+  position: relative;
+}
+#content .content_area .environment_goals .goal1 ul::before {
+  content: '';
+  display: block;
+  width: 75px;
+  height: 1px;
+  background: #f65742;
+  position: absolute;
+  left: 300px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#content .content_area .environment_goals .goal1 ul::after {
+  content: '';
+  display: block;
+  width: 75px;
+  height: 1px;
+  background: #f65742;
+  position: absolute;
+  right: 300px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#content .content_area .environment_goals .goal1 li {
+  height: 129px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+  color: #101010;
+  position: relative;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+#content .content_area .environment_goals .goal1 li::before {
+  counter-increment: goal1Counter;
+  content: '0' counter(goal1Counter);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2;
+  color: #f65742;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
 
-#content .content_area .environment_goals .goal2 {}
-#content .content_area .environment_goals .goal2 li {}
-#content .content_area .environment_goals .goal2 li img {}
+#content .content_area .environment_goals .goal2 {
+  padding: 50px 5px 5px 0;
+}
+#content .content_area .environment_goals .goal2 li {
+  height: 280px;
+  border-radius: 50%;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #f65742;
+  box-shadow: 5px 5px 0 0 rgba(246,87,66, .2);
+}
