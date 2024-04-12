@@ -1,9 +1,9 @@
 /* .environment_goals */
-#content .content_area .environment_goals {
+#content .content_area section {
   width: 1200px;
   margin: 0 auto 100px;
 }
-#content .content_area .environment_goals h4 {
+#content .content_area section h4 {
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 70px;
