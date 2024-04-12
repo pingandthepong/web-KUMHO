@@ -1,14 +1,14 @@
-/* .intro */
-#content .content_area .intro .intro__title {
-  width: 680px;
-  padding-left: calc(1400px - 600px);
-}
+/* .environment_goals */
+#content .content_area .environment_goals {}
+#content .content_area .environment_goals h4 {}
+#content .content_area .environment_goals .goal {}
+#content .content_area .environment_goals .goal .title {}
+#content .content_area .environment_goals .goal ul {}
 
-/* .intro3 */
-#content .content_area .intro3 {
-  background: url('../images/content4/intro3_bg.jpg') no-repeat 0 0;
-  background-size: cover;
-}
-#content .content_area .intro3 .more_btn {
-  width: 260px;
-}
+
+#content .content_area .environment_goals .goal1 {}
+#content .content_area .environment_goals .goal1 li {}
+
+#content .content_area .environment_goals .goal2 {}
+#content .content_area .environment_goals .goal2 li {}
+#content .content_area .environment_goals .goal2 li img {}
