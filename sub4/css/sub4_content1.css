@@ -5,49 +5,6 @@
   display: flex;
   justify-content: center;
 }
-/* #content .content_area .content_wrap .tab_menu li {
-  padding: 16px 36px;
-  position: relative;
-}
-#content .content_area .content_wrap .tab_menu li::before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #f65742;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-}
-#content .content_area .content_wrap .tab_menu li.on::before {
-  content: "";
-  width: 100%;
-}
-#content .content_area .content_wrap .tab_menu .tab {
-  font-size: 2.25rem;
-  font-weight: 100;
-  color: #999;
-  padding: 0 12px;
-  transition: all .3s ease-out;
-  position: relative;
-}
-#content .content_area .content_wrap .tab_menu .tab.on,
-#content .content_area .content_wrap .tab_menu .tab:hover {
-  color: #f65742;
-  position: relative;
-}
-#content .content_area .content_wrap .tab_menu .tab.on::after {
-  content: "";
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #f65742;
-  position: absolute;
-  right: 0;
-  top: 0;
-} */
 #content .content_area .content_wrap .tab_menu .tab {
   font-size: 2.25rem;
   font-weight: 100;
@@ -94,6 +51,8 @@
 
 /* .content_wrap .tabs*/
 #content .content_area .content_wrap .tabs{
+  width: 1920px;
+  margin: 0 auto;
 }
 #content .content_area .content_wrap .tabs .contlist {
   padding: 100px 200px;
@@ -147,7 +106,20 @@
   font-weight: 500;
   padding: 30px 80px 30px 20px;
   border-bottom: 1px solid #e5e5e5;
-  transition: all .1s ease-out;
+  position: relative;
+  transition: all .25s ease-out;
+}
+#content .content_area .content_wrap .tabs :is(.list2, .list3 .conduct) dt .trigger::after {
+  content: '\2b';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#content .content_area .content_wrap .tabs :is(.list2, .list3 .conduct) dt .trigger.active::after {
+  content: '\f068';
 }
 #content .content_area .content_wrap .tabs :is(.list2, .list3 .conduct) dt i {
   float: right;
