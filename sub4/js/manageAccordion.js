@@ -25,4 +25,4 @@ $('.manage_accordion .trigger').on('click', function(e) {
     myList.removeClass('show').addClass('hide');
     myList.find('.a').slideUp('fast');
   }
-})
+});
