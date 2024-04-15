@@ -206,9 +206,7 @@
   
 }
 #content .content_area .environment_policy .record .move_list ul {
-  width: 1200px;
   float: left;
-
 }
 #content .content_area .environment_policy .record .move_list li {
   width: calc(1200px / 5);
