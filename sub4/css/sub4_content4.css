@@ -223,3 +223,82 @@
   box-sizing: border-box;
   float: left;
 }
+
+/* .certification */
+#content .content_area .certification {
+  position: relative;
+  height: 530px;
+  margin-bottom: 80px;
+}
+#content .content_area .certification h4 {}
+#content .content_area .certification p {
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 90px;
+}
+#content .content_area .certification img {
+  width: 564px;
+  height: 350px;
+  padding: 90px 50px;
+  border: 1px solid #ddd;
+  position: absolute;
+  right: 0;
+  top: 0; 
+}
+#content .content_area .certification .downloads ul {
+  display: flex;
+  align-items: center;
+
+}
+#content .content_area .certification .downloads li {
+  box-sizing: border-box;
+  position: relative;
+}
+#content .content_area .certification .downloads li:first-of-type::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 53px;
+  background: #d9d9d9;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 30px;
+}
+#content .content_area .certification .downloads li a {
+  width: 200px;
+  height: 53px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  overflow: hidden;
+}
+#content .content_area .certification .downloads li a span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  display: block;
+}
+#content .content_area .certification .downloads li a::before {
+  content: '';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  color: #666;
+  border: 1px solid #e4e4e4;
+  background: #fbfbfb;
+  float: left;
+  margin-right: 20px;
+}
+#content .content_area .certification .downloads .outlink a::before {
+  content: '\f08e';
+}
+#content .content_area .certification .downloads .pdf a::before {
+  content: '\f019';
+}
