@@ -121,10 +121,6 @@
 #content .content_area .content_wrap .tabs :is(.list2, .list3 .conduct) dt .trigger.active::after {
   content: '\f068';
 }
-#content .content_area .content_wrap .tabs :is(.list2, .list3 .conduct) dt i {
-  float: right;
-  font-size: 1.8rem;
-}
 #content .content_area .content_wrap .tabs :is(.list2, .list3 .conduct) dt:hover .trigger {
   color: #f65742;
   cursor: pointer;

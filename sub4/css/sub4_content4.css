@@ -247,7 +247,6 @@
 #content .content_area .certification .downloads ul {
   display: flex;
   align-items: center;
-
 }
 #content .content_area .certification .downloads li {
   box-sizing: border-box;
@@ -309,36 +308,58 @@
 #content .content_area .environment_management .manage_accordion {
   border-top: 3px solid #000;
 }
-#content .content_area .environment_management .manage_accordion .trigger {
+#content .content_area .environment_management .manage_list .trigger {
   height: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-size: 24px;
+  line-height: 90px;
   padding: 0 20px;
   color: #101010;
-  font-size: 24px;
   border-bottom: 1px solid #000;
+  position: relative;
   transition: all .25s ease-out;
 }
-#content .content_area .environment_management .manage_accordion .manage_list:hover .trigger {
+#content .content_area .environment_management .manage_list:hover .trigger {
   color: #f65742;
 }
-#content .content_area .environment_management .manage_accordion .trigger::after {
-  content: '\2b';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 600;
-  color: #666;
+#content .content_area .environment_management .manage_list .trigger::before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 24px;
+  background: #666;
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0);
+  transition: all .25s ease-out;
 }
-#content .content_area .environment_management .manage_accordion .manage_list:hover .trigger::after {
-  color: #f65742;
+#content .content_area .environment_management .manage_list .trigger::after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #666;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .25s ease-out;
 }
-#content .content_area .environment_management .manage_accordion .manage_list.show .trigger {
+#content .content_area .environment_management .manage_list:hover .trigger::before,
+#content .content_area .environment_management .manage_list:hover .trigger::after {
+  background: #f65742;
+}
+
+#content .content_area .environment_management .manage_list.show .trigger {
   color: #f65742;
   border-bottom: 1px solid #f65742;
 }
-#content .content_area .environment_management .manage_accordion .manage_list.show .trigger::after {
-  content: '\f068';
-  color: #f65742;
+#content .content_area .environment_management .manage_list.show .trigger::before,
+#content .content_area .environment_management .manage_list.show .trigger::after {
+  background: #f65742;
+}
+#content .content_area .environment_management .manage_list.show .trigger::before {
+  transform: translateY(-50%) rotate(90deg);
 }
 
 
@@ -347,9 +368,6 @@
   border-bottom: 1px solid #000;
   display: none;
 }
-#content .content_area .environment_management .manage_accordion .manage_list.show .a {
-  display: block;
-}
 
 
 /* li:first */
@@ -357,6 +375,7 @@
   text-align: center;
 }
 #content .content_area .environment_management .manage_accordion li:nth-child(1) .a img {
+  width: 400px;
   border: 1px solid #000;
   box-shadow: 5px 5px 10px 0 rgba(0,0,0,.2);
 }
@@ -366,25 +385,24 @@
   align-items: center;
   gap: 20px;
   font-size: 1.25rem;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 #content .content_area .environment_management .manage_accordion li:nth-child(1) .a .downloads ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  
+  gap: 8px; 
 }
 #content .content_area .environment_management .manage_accordion li:nth-child(1) .a .downloads ul li a {
-  background: #ef0010;
-  color: #fff;
   padding: 8px 16px;
   border-radius: 8px;
   font-weight: 600;
   border: 1px solid #d5d5d5;
-  box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
-}
-#content .content_area .environment_management .manage_accordion li:nth-child(1) .a .downloads ul li:last-of-type a {
   background: #f8f8f8;
-  color: #e66d1e;
+}
+#content .content_area .environment_management .manage_accordion li:nth-child(1) .a .downloads ul li a::after {
+  content: '\f019';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 700;
+  margin-left: 8px;
 }
