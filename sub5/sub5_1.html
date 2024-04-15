@@ -17,70 +17,73 @@
     <script src="../common/js/prefixfree.min.js"></script>
   </head>
   <body>
-      <? include '../common/sub_header.html' ?>
+    <? include '../common/sub_header.html' ?>
 
-      <!-- .visual -->
-      <div class="visual">
-        <span>인재채용</span>
+    <!-- .visual -->
+    <div class="visual">
+      <span>인재채용</span>
+    </div>
+
+    <!-- .sub_nav -->
+    <div class="sub_nav">
+      <ul>
+        <li><a href="./sub5_1.html" class="current">직무소개</a></li>
+        <li><a href="./sub5_2.html">인사제도</a></li>
+        <li><a href="./sub5_3.html">채용정보</a></li>
+      </ul>
+    </div>
+
+    <!-- article -->
+    <article id="content">
+      <!-- .title_area -->
+      <div class="title_area">
+        <div class="line_map">
+          <span class="home">Home</span> &gt; 인재채용 &gt;
+          <strong>직무소개</strong>
+        </div>
+        <h2>직무소개</h2>
+        <p>Think of the people and nature</p>
       </div>
 
-      <!-- .sub_nav -->
-      <div class="sub_nav">
-        <ul>
-          <li><a href="./sub5_1.html" class="current">직무소개</a></li>
-          <li><a href="./sub5_2.html">인사제도</a></li>
-          <li><a href="./sub5_3.html">채용정보</a></li>
-        </ul>
-      </div>
+      <!-- .content_area -->
+      <div class="content_area">
+        <section>
+          <ul class="tabs">
+            <li class="tab_menu">
+              <a href="#" class="tab current">금호건설 직장인 브이로그</a>
+            </li>
+            <li class="tab_menu"><a href="#" class="tab">직무소개</a></li>
+          </ul>
 
-      <!-- article -->
-      <article id="content">
-
-        <!-- .title_area -->
-        <div class="title_area">  
-          <div class="line_map"> 
-            <span class="home">Home</span> &gt; 인재채용 &gt; <strong>직무소개</strong>
+          <div class="contlist cont1">
+            <h3 class="hidden">금호건설 직장인 브이로그</h3>
+            <ul></ul>
+            <div class="modal_box"></div>
+            <!-- 팝업창 -->
+            <div class="popup_youtube modal1">
+              <!-- 데이터 -->
+              <div class="youtube_init">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/yWFW-Zu4yvg?si=FIMfOg8sxFCXNW6A"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
           </div>
-          <h2>직무소개</h2>
-          <p>Think of the people and nature</p>
-        </div>
+          <div class="contlist">
+            <h3 class="hidden">직무소개</h3>
+          </div>
+        </section>
+      </div>
+    </article>
 
-        <!-- .content_area -->
-        <div class="content_area">
-          <section>
-            <ul class="tabs">
-              <li class="tab_menu"><a href="#" class="tab current">금호건설 직장인 브이로그</a></li>
-              <li class="tab_menu"><a href="#" class="tab">직무소개</a></li>
-            </ul>
-
-            <div class="contlist">
-              <h3 class="hidden">금호건설 직장인 브이로그</h3>
-              <ul>
-                <li>
-                  <a href="#">
-                    <div class="img_box">
-                      <div class="img">
-                        <img src="./images/content1/youtube_01.jpg" alt="금호건설 신입사원 Vlog">
-                      </div>
-                    </div>
-                    <div class="txt_box">
-                      <p class="tit">[#직장인브이로그] 새벽을 깨우는 갓생 브이로그</p>
-                      <p class="txt">2023년 4월 입사 금호건설 신입사원의 직장인 브이로그!</p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="contlist">
-              <h3 class="hidden">직무소개</h3>
-            </div>
-            
-          </section>
-        </div>
-      </article>
-
-      <? include '../common/sub_footer.html' ?>
-      <script src="./js/youtube.js"></script>
-
+    <? include '../common/sub_footer.html' ?>
+    <script src="./js/youtube.js"></script>
+    <script src="./js/youtubePopup.js"></script>
   </body>
 </html>

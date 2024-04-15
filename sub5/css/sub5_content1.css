@@ -10,13 +10,13 @@
   margin-bottom: 60px;
 }
 #content .content_area section .tabs .tab_menu {
-  
 }
 #content .content_area section .tabs .tab_menu .tab {
   width: 600px;
   height: 60px;
   font-size: 18px;
-  font-weight: 300; color: #666;
+  font-weight: 300;
+  color: #666;
   text-align: center;
   line-height: 60px;
   border: 1px solid #ddd;
@@ -29,12 +29,11 @@
 }
 
 #content .content_area section .contlist {
-    
 }
 #content .content_area section .contlist ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 #content .content_area section .contlist li a {
   width: 585px;
@@ -46,7 +45,7 @@
   position: relative;
 }
 #content .content_area section .contlist li a .img_box::before {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 100%;
@@ -54,15 +53,15 @@
   left: 0;
   top: 0;
   z-index: 1;
-  background: rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 #content .content_area section .contlist li a .img_box .img::before {
-  content: '\f04b';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f04b";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   width: 50px;
   height: 50px;
-  background: rgba(255,255,255,.2);
+  background: rgba(255, 255, 255, 0.2);
   border: 1px solid #fff;
   border-radius: 50%;
   position: absolute;
@@ -74,7 +73,7 @@
   text-align: center;
   line-height: 50px;
   font-size: 1.25rem;
-  transition: all .15s ease-out;
+  transition: all 0.15s ease-out;
 }
 #content .content_area section .contlist li:hover a .img_box .img::before {
   background: #f65742;
@@ -85,7 +84,7 @@
 }
 #content .content_area section .contlist li a .img_box .img img {
   width: 100%;
-  transition: all .25s ease-out;
+  transition: all 0.25s ease-out;
 }
 #content .content_area section .contlist li:hover a .img_box .img img {
   transform: scale(1.05);
@@ -95,10 +94,33 @@
   font-weight: 500;
   color: #1c1c1c;
   line-height: 30px;
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 #content .content_area section .contlist li a .txt_box .txt {
   margin-top: 5px;
   font-size: 1.1rem;
   color: #666;
+}
+#content .content_area section .contlist .modal_box {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 10;
+}
+#content .content_area section .contlist .popup_youtube {
+  width: 900px;
+  height: 600px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: none;
 }
