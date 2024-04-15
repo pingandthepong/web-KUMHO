@@ -192,26 +192,34 @@
   transform: translate(-50%, -150%);
 }
 #content .content_area .environment_policy .record .move_list {
-  width: 100%;
+  width: 1200px;
   position: absolute;
   left: 0;
   bottom: 50px;
+  overflow: hidden;
 
 }
+#content .content_area .environment_policy .record .move_list .move_list_wrap {
+  width: calc(1200px * 2);
+  position: relative;
+  background: tomato;
+  
+}
 #content .content_area .environment_policy .record .move_list ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 1200px;
+  float: left;
 
 }
 #content .content_area .environment_policy .record .move_list li {
+  width: calc(1200px / 5);
+  height: 42px;
   font-size: 1.3rem;
   font-weight: 600;
   line-height: 2;
   background: #f8f8f8;
   color: #f65742;
-  width: 100%;
   border: 1px solid #9e9e9e;
   text-align: center;
   box-sizing: border-box;
+  float: left;
 }
