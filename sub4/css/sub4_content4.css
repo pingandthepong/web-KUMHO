@@ -230,7 +230,6 @@
   height: 530px;
   margin-bottom: 80px;
 }
-#content .content_area .certification h4 {}
 #content .content_area .certification p {
   font-size: 30px;
   font-weight: 200;
@@ -302,3 +301,30 @@
 #content .content_area .certification .downloads .pdf a::before {
   content: '\f019';
 }
+
+/* .environment_management */
+#content .content_area .environment_management {}
+#content .content_area .environment_management h4 {
+  margin-bottom: 53px;
+}
+#content .content_area .environment_management .manage_accordion {
+  border-top: 1px solid #000;
+}
+#content .content_area .environment_management .manage_accordion ul {
+  
+}
+#content .content_area .environment_management .manage_accordion li {}
+#content .content_area .environment_management .manage_accordion li p {}
+#content .content_area .environment_management .manage_accordion li p a {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+#content .content_area .environment_management .manage_accordion li p a::after {
+  content: '\2b';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+}
+#content .content_area .environment_management .manage_accordion li .a {}
