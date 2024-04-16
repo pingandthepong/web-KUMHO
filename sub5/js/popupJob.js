@@ -34,6 +34,8 @@ $(document).ready(function(){
       $('.modal_box2').fadeIn('fast');
       $('.popup_job').fadeIn('slow');
 
+      $('body').addClass('modal-open');
+
       newContent=''; // 이전 데이터가 비워지도록 초기화
       newContent+=`<h5>${responseObject.popupJob[ind].title}<span>${responseObject.popupJob[ind].category}</span></h5>`;
       newContent+=`<dl class="introduce">`;
@@ -54,8 +56,6 @@ $(document).ready(function(){
       newContent+=`</dl>`;
 
 
-
-
       $('.popup_job_wrap').html(newContent);
   
   });
@@ -66,5 +66,7 @@ $(document).ready(function(){
       
     $('.modal_box2').hide();
     $('.popup_job').hide();
+
+    $('body').removeClass('modal-open');
   });
 });

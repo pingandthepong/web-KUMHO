@@ -302,3 +302,8 @@
   right: 30px;
   top: 20px;
 }
+
+.modal-open {
+  overflow: hidden; /* 스크롤 비활성화 */
+  padding-right: 15px; /* 스크롤이 사라지는 공간 만큼 오른쪽에 padding 추가 */
+}
