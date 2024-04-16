@@ -52,8 +52,8 @@
   
 }
 #content .content_area .personnel_system2 .system_graph dl {
-  width: 280px;
-  height: 280px;
+  width: 240px;
+  height: 240px;
   position: absolute;
   left: 50%;
   top: -20px;
@@ -63,8 +63,8 @@
 #content .content_area .personnel_system2 .system_graph dl::before {
   content: '';
   display: block;
-  width: 280px;
-  height: 280px;
+  width: 240px;
+  height: 240px;
   transform: rotate(45deg);
   position: relative;
   box-shadow: 5px 5px 10px 0px rgba(0,0,0,.2);
@@ -89,19 +89,35 @@
 #content .content_area .personnel_system2 .system_graph dl.sgr2::before {
   border: 1px solid #f65742;
   background: #f8c5be;
-  top: 100px;
+  top: 125px;
 }
 #content .content_area .personnel_system2 .system_graph dl.sgr3::before {
   border: 1px solid #f65742;
   background: #ffaba0;
-  top: 200px;
+  top: 250px;
 }
 #content .content_area .personnel_system2 .system_graph dl.sgr4::before {
   border: 1px solid #f65742;
   background: #f65742;
-  top: 300px;
+  top: 375px;
 }
 
+#content .content_area .personnel_system2 .system_graph dt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotateX(-48deg);
+  /* transform: translateX(-50%) rotateX(48deg); */
+  border: 1px solid #000;
+  font-size: 24px;
+  font-weight: 600;
+}
+#content .content_area .personnel_system2 .system_graph dl.sgr1 dt {}
+#content .content_area .personnel_system2 .system_graph dl.sgr2 dt {}
+#content .content_area .personnel_system2 .system_graph dl.sgr3 dt {}
+#content .content_area .personnel_system2 .system_graph dl.sgr4 dt {}
+
+#content .content_area .personnel_system2 .system_graph dd {}
 
 /* .personnel_system3 */
 #content .content_area .personnel_system3 {}
