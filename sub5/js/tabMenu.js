@@ -1,6 +1,6 @@
 // 초기 상태
-$('.tab_menu:eq(1) .tab').addClass('current');
-$('.contlist:eq(1)').show();
+$('.tab_menu:eq(0) .tab').addClass('current');
+$('.contlist:eq(0)').show();
 
 // 클릭 이벤트 핸들러
 $('.tab').on('click focus', function(e) {
