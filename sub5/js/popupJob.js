@@ -31,8 +31,8 @@ $(document).ready(function(){
 
       // console.log('클릭 이벤트 발생'); // 확인
 
-      $('.modal_box2').fadeIn('fast');
-      $('.popup_job').fadeIn('slow');
+      $('.modal_box2').show();
+      $('.popup_job').show();
 
       $('body').addClass('modal-open');
 
@@ -69,4 +69,5 @@ $(document).ready(function(){
 
     $('body').removeClass('modal-open');
   });
+  
 });
