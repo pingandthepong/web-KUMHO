@@ -23,7 +23,7 @@
   margin-bottom: 30px;
 }
 #content .content_area section .txt_box p.strong .accent {
-  font-weight: 700;
+  font-weight: 900;
 }
 #content .content_area section .txt_box p.desc {
   font-size: 18px;
@@ -184,4 +184,25 @@
 }
 
 /* .personnel_system3 */
-#content .content_area .personnel_system3 {}
+#content .content_area .personnel_system3 {
+  width: 1920px;
+  height: 907px;
+  padding: 100px 0;
+  background: #f6f6f6;
+  flex-direction: column;
+  justify-content: unset;
+  gap: 55px;
+}
+#content .content_area .personnel_system3 .system3_txt_wrap {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#content .content_area .personnel_system3 .system_slider_wrap {
+  
+
+}
+#content .content_area .personnel_system3 .system_slider_wrap .system_slider {
+  
+}
