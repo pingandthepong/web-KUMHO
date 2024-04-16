@@ -66,17 +66,17 @@
 }
 #content .content_area .personnel_system2 .system_graph dl.sgr2 {
   border-right: 200px solid #ffaba0;
-  top: 120px;
+  top: 100px;
   z-index: 30;
 }
 #content .content_area .personnel_system2 .system_graph dl.sgr3 {
   border-right: 200px solid #f65742;
-  top: 240px;
+  top: 200px;
   z-index: 20;
 }
 #content .content_area .personnel_system2 .system_graph dl.sgr4 {
   border-right: 200px solid #ef0010;
-  top: 360px;
+  top: 300px;
   z-index: 10;
 }
 #content .content_area .personnel_system2 .system_graph dl::after {
@@ -103,15 +103,17 @@
 }
 
 #content .content_area .personnel_system2 .system_graph dt {
-  /* position: absolute;
-  left: 50%;
-  bottom: 50px;
-  transform: translateX(-50%) rotateX(0deg);
+  width: 100px;
+  text-align: center;
   font-size: 24px;
-  font-weight: 600; */
-  display: none;
+  font-weight: 600;
+  position: absolute;
+  transform: translate(150%, 100%);
+  z-index: 100;
+  color: #fff;
 }
 #content .content_area .personnel_system2 .system_graph dl.sgr1 dt {
+  color: #000;
 }
 #content .content_area .personnel_system2 .system_graph dl.sgr2 dt {}
 #content .content_area .personnel_system2 .system_graph dl.sgr3 dt {}
