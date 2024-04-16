@@ -115,12 +115,16 @@
 #content .content_area .personnel_system2 .system_graph dl.sgr1 dt {
   color: #000;
 }
-#content .content_area .personnel_system2 .system_graph dl.sgr2 dt {}
-#content .content_area .personnel_system2 .system_graph dl.sgr3 dt {}
-#content .content_area .personnel_system2 .system_graph dl.sgr4 dt {}
-
 #content .content_area .personnel_system2 .system_graph dd {
-  display: none;
+  width: 320px;
+  position: absolute;
+}
+#content .content_area .personnel_system2 .system_graph dl:nth-child(odd) dd {
+  transform: translate(150%, -50%);
+}
+#content .content_area .personnel_system2 .system_graph dl:nth-child(even) dd {
+  text-align: right;
+  transform: translate(-125%, -50%);
 }
 
 /* .personnel_system3 */
