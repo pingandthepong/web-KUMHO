@@ -138,9 +138,49 @@
 #content .content_area .personnel_system2 .system_graph dl:nth-child(odd) dd::before {
   content: '';
   display: block;
-  width: 100px;
-  height: 1px;
-  background: #000;
+  width: 60px;
+  height: 2px;
+  background: #f65742;
+  position: absolute;
+  left: -70px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -10;
+}
+#content .content_area .personnel_system2 .system_graph dl:nth-child(even) dd::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #f65742;
+  position: absolute;
+  right: -70px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#content .content_area .personnel_system2 .system_graph dl:nth-child(odd) dd::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #f65742;
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#content .content_area .personnel_system2 .system_graph dl:nth-child(even) dd::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #f65742;
+  position: absolute;
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* .personnel_system3 */
