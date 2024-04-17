@@ -163,65 +163,40 @@
   transform: translateX(-50%);
 }
 
-#content .content_area .more_btn {
-  width: 175px;
-  background: #fff;
-  border: 1px solid #2C44F2;
-  color: #2C44F2;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px 0;
-  font-size: 1.13rem;
-  transition: all .25s ease-out;
-}
-#content .content_area .more_btn:hover {
-  background: #2C44F2;
-  color: #fff;
-}
-
-/* .intro */
-#content .content_area .intro {
-  text-align: center;
-  height: 400px;
-  margin-bottom: 105px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-#content .content_area p {
-  margin: 0 auto;
-  font-size: 1.65rem;
-  font-weight: 300;
-  line-height: 1.75;
+/* section common */
+#content .content_area section {
   position: relative;
 }
-#content .content_area p .fa-solid {
-  font-size: 3rem;
-  color: #efefef;
-  position: absolute;
+#content .content_area section:not(:last-of-type) {
+  margin-bottom: 120px;
 }
-#content .content_area p .fa-solid[class*="left"] {
-  left: 50%;
-  top: -80px;
-  transform: translateX(-50%);
+#content .content_area section .txt_box_wrap {
+  width: 1200px;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-between;
 }
-#content .content_area p .fa-solid[class*="right"] {
-  left: 50%;
-  bottom: -90px;
-  transform: translateX(-50%);
+#content .content_area section .txt_box_wrap h3 {
+  font-size: 27px;
+  font-weight: 700;
+  color: #1c1c1c;
+  letter-spacing: -1.5px;
+  line-height: 1.75;
 }
-#content .content_area p mark {
-  background-color: #f65742;
-  color: #fff;
-  padding: 0 8px;
-  font-weight: 400;
+#content .content_area section .txt_box_wrap .txt_box {
+  width: 880px;
+  letter-spacing: -0.54px;
 }
-#content .content_area p strong.sm {
-  font-weight: 400;
-  font-size: 2rem;
+#content .content_area section .txt_box_wrap .txt_box p.strong {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+  margin-bottom: 30px;
 }
-#content .content_area p strong.lg {
-  font-weight: 500;
-  font-size: 2.3rem;
+#content .content_area section .txt_box_wrap .txt_box p.strong .accent {
+  font-weight: 900;
+}
+#content .content_area section .txt_box_wrap .txt_box p.desc {
+  font-size: 18px;
+  font-weight: 200;
 }
