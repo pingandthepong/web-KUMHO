@@ -25,7 +25,7 @@
 #content .content_area section .txt_box_wrap .txt_box p.strong {
   font-size: 22px;
   font-weight: 600;
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
   margin-bottom: 30px;
 }
 #content .content_area section .txt_box_wrap .txt_box p.strong .accent {
@@ -137,7 +137,12 @@
   text-align: right;
   transform: translate(-125%, -50%);
 }
-#content .content_area .personnel_system2 .system_graph dl:nth-child(odd) dd::before {
+#content
+  .content_area
+  .personnel_system2
+  .system_graph
+  dl:nth-child(odd)
+  dd::before {
   content: "";
   display: block;
   width: 60px;
@@ -149,7 +154,12 @@
   transform: translateY(-50%);
   z-index: -10;
 }
-#content .content_area .personnel_system2 .system_graph dl:nth-child(even) dd::before {
+#content
+  .content_area
+  .personnel_system2
+  .system_graph
+  dl:nth-child(even)
+  dd::before {
   content: "";
   display: block;
   width: 60px;
@@ -160,7 +170,12 @@
   top: 50%;
   transform: translateY(-50%);
 }
-#content .content_area .personnel_system2 .system_graph dl:nth-child(odd) dd::after {
+#content
+  .content_area
+  .personnel_system2
+  .system_graph
+  dl:nth-child(odd)
+  dd::after {
   content: "";
   display: block;
   width: 12px;
@@ -172,7 +187,12 @@
   top: 50%;
   transform: translateY(-50%);
 }
-#content .content_area .personnel_system2 .system_graph dl:nth-child(even) dd::after {
+#content
+  .content_area
+  .personnel_system2
+  .system_graph
+  dl:nth-child(even)
+  dd::after {
   content: "";
   display: block;
   width: 12px;
@@ -191,7 +211,100 @@
   background: #f6f6f6;
 }
 
-#content .content_area .personnel_system3 .box {
-  height: 100px;
-  background: pink;
+/* Todo: Swiper 사용해보기 */
+#content .content_area .personnel_system3 .swiper {
+  width: 1200px;
+  height: 550px;
+  overflow: visible;
+}
+#content .content_area .personnel_system3 .swiper-wrapper {
+  /* display: flex; */
+  /* gap: 40px; */
+}
+#content .content_area .personnel_system3 .swiper-wrapper img {
+  filter: brightness(0.7);
+}
+#content .content_area .personnel_system3 .swiper-wrapper .benefit_list {
+  color: #fff;
+  position: absolute;
+  left: 110px;
+  top: 95px;
+}
+#content .content_area .personnel_system3 .swiper .benefit_list .tit {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+#content .content_area .personnel_system3 .swiper .benefit_list ul li {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#content .content_area .personnel_system3 .swiper .benefit_list ul li::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+}
+#content .content_area .personnel_system3 .swiper .navigation {
+  width: 330px;
+  height: 80px;
+  background: #333;
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  z-index: 10;
+}
+#content .content_area .personnel_system3 .swiper .navigation .progress {
+ 
+}
+#content .content_area .personnel_system3 .swiper .navigation .progress::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 50px;
+  background: #fff;
+  opacity: 0.5;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+#content .content_area .personnel_system3 .swiper .navigation .progress span {
+  display: block;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#content .content_area .personnel_system3 .swiper .navigation .progress .num {
+  transform: translate(-300%, -100%);
+}
+#content .content_area .personnel_system3 .swiper .navigation .progress .max {
+  transform: translate(300%, 0%);
+  opacity: 0.5;
+}
+#content .content_area .personnel_system3 .swiper .navigation :is(#next, #prev) {
+  width: 31px;
+  height: 7px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#content .content_area .personnel_system3 .swiper .navigation #prev {
+  background: url('../../mainimages/slide_arrow_prev.png') no-repeat center; 
+  left: 50%;
+  transform: translate(-150%, -50%);
+}
+#content .content_area .personnel_system3 .swiper .navigation #next {
+  background: url('../../mainimages/slide_arrow_next.png') no-repeat center;
+  right: 50%;
+  transform: translate(150%, -50%);
+
 }
