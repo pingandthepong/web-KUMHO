@@ -217,10 +217,6 @@
   height: 550px;
   overflow: visible;
 }
-#content .content_area .personnel_system3 .swiper-wrapper {
-  /* display: flex; */
-  /* gap: 40px; */
-}
 #content .content_area .personnel_system3 .swiper-wrapper img {
   filter: brightness(0.7);
 }
@@ -228,7 +224,13 @@
   color: #fff;
   position: absolute;
   left: 110px;
+  top: 150px;
+  opacity: 0;
+  transition: all .5s ease-out;
+}
+#content .content_area .personnel_system3  .swiper-slide-active .benefit_list {
   top: 95px;
+  opacity: 1;
 }
 #content .content_area .personnel_system3 .swiper .benefit_list .tit {
   font-size: 30px;
