@@ -14,8 +14,7 @@
 }
 #content .content_area section .txt_box {
   width: 880px;
-  letter-spacing: -.54px;
-  
+  letter-spacing: -0.54px;
 }
 #content .content_area section .txt_box p.strong {
   font-size: 22px;
@@ -30,10 +29,9 @@
   font-weight: 200;
 }
 
-
 /* .personnel_system1 */
-#content .content_area .personnel_system1 {}
-
+#content .content_area .personnel_system1 {
+}
 
 /* .personnel_system2 */
 #content .content_area .personnel_system2 {
@@ -48,7 +46,7 @@
   bottom: 0;
 }
 #content .content_area .personnel_system2 .system_graph::after {
-  content: '';
+  content: "";
   display: block;
   width: 400px;
   height: 300px;
@@ -89,7 +87,7 @@
   z-index: 10;
 }
 #content .content_area .personnel_system2 .system_graph dl::after {
-  content: '';
+  content: "";
   border-left: 200px solid #666666;
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
@@ -135,8 +133,13 @@
   text-align: right;
   transform: translate(-125%, -50%);
 }
-#content .content_area .personnel_system2 .system_graph dl:nth-child(odd) dd::before {
-  content: '';
+#content
+  .content_area
+  .personnel_system2
+  .system_graph
+  dl:nth-child(odd)
+  dd::before {
+  content: "";
   display: block;
   width: 60px;
   height: 2px;
@@ -147,8 +150,13 @@
   transform: translateY(-50%);
   z-index: -10;
 }
-#content .content_area .personnel_system2 .system_graph dl:nth-child(even) dd::before {
-  content: '';
+#content
+  .content_area
+  .personnel_system2
+  .system_graph
+  dl:nth-child(even)
+  dd::before {
+  content: "";
   display: block;
   width: 60px;
   height: 2px;
@@ -158,8 +166,13 @@
   top: 50%;
   transform: translateY(-50%);
 }
-#content .content_area .personnel_system2 .system_graph dl:nth-child(odd) dd::after {
-  content: '';
+#content
+  .content_area
+  .personnel_system2
+  .system_graph
+  dl:nth-child(odd)
+  dd::after {
+  content: "";
   display: block;
   width: 12px;
   height: 12px;
@@ -170,8 +183,13 @@
   top: 50%;
   transform: translateY(-50%);
 }
-#content .content_area .personnel_system2 .system_graph dl:nth-child(even) dd::after {
-  content: '';
+#content
+  .content_area
+  .personnel_system2
+  .system_graph
+  dl:nth-child(even)
+  dd::after {
+  content: "";
   display: block;
   width: 12px;
   height: 12px;
@@ -184,25 +202,3 @@
 }
 
 /* .personnel_system3 */
-#content .content_area .personnel_system3 {
-  width: 1920px;
-  height: 907px;
-  padding: 100px 0;
-  background: #f6f6f6;
-  flex-direction: column;
-  justify-content: unset;
-  gap: 55px;
-}
-#content .content_area .personnel_system3 .system3_txt_wrap {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-#content .content_area .personnel_system3 .system_slider_wrap {
-  
-
-}
-#content .content_area .personnel_system3 .system_slider_wrap .system_slider {
-  
-}
