@@ -1,30 +1,37 @@
 /* section common */
 #content .content_area section {
+  position: relative;
+}
+#content .content_area section:not(:last-of-type) {
+  margin-bottom: 120px;
+}
+#content .content_area section .txt_box_wrap {
   width: 1200px;
-  margin: 0 auto 120px;
+  margin: 0 auto 50px;
   display: flex;
   justify-content: space-between;
 }
-#content .content_area section h3 {
+#content .content_area section .txt_box_wrap h3 {
   font-size: 27px;
   font-weight: 700;
   color: #1c1c1c;
   letter-spacing: -1.5px;
   line-height: 1.75;
 }
-#content .content_area section .txt_box {
+#content .content_area section .txt_box_wrap .txt_box {
   width: 880px;
   letter-spacing: -0.54px;
 }
-#content .content_area section .txt_box p.strong {
+#content .content_area section .txt_box_wrap .txt_box p.strong {
   font-size: 22px;
   font-weight: 600;
+  letter-spacing: -.05rem;
   margin-bottom: 30px;
 }
-#content .content_area section .txt_box p.strong .accent {
+#content .content_area section .txt_box_wrap .txt_box p.strong .accent {
   font-weight: 900;
 }
-#content .content_area section .txt_box p.desc {
+#content .content_area section .txt_box_wrap .txt_box p.desc {
   font-size: 18px;
   font-weight: 200;
 }
@@ -35,13 +42,10 @@
 
 /* .personnel_system2 */
 #content .content_area .personnel_system2 {
-  height: calc(68px + 75px + 514px);
-  position: relative;
 }
 #content .content_area .personnel_system2 .system_graph {
-  width: 100%;
-  height: 514px;
-  position: absolute;
+  height: 500px;
+  position: relative;
   left: 0;
   bottom: 0;
 }
@@ -183,21 +187,11 @@
 
 /* .personnel_system3 */
 #content .content_area .personnel_system3 {
-  position: relative;
-  width: 100%;
   padding: 100px 0;
   background: #f6f6f6;
-  margin-bottom: 0;
-  display: block;
 }
-#content .content_area .personnel_system3 .txt_box_wrap {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
+
 #content .content_area .personnel_system3 .box {
-  width: 100%;
   height: 100px;
   background: pink;
 }
