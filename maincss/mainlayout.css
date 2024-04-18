@@ -184,7 +184,7 @@
   bottom: 70px;
   transform: translateX(-50%);
 }
-.scroll_btn svg {
+.scroll_btn img {
   animation: scroll_btn 0.65s infinite alternate-reverse ease-out;
 }
 /* 본문 콘텐츠 영역 */
