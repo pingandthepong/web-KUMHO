@@ -5,7 +5,7 @@ var progressBar1 = new ProgressBar.Circle('#progressBar1', {
   color: '#f65742', // 진행률 바 색상
   trailColor: '#f3f3f3', // 진행률 바 배경 색상
   trailWidth: 8, // 배경 선 두께
-  svgStyle: {width: '235px', height: '235px'}, // SVG 스타일
+  svgStyle: {width: '100%', height: '100%'}, // SVG 스타일
   text: {
     style: {
       // 텍스트 스타일
@@ -32,7 +32,7 @@ var progressBar2 = new ProgressBar.Circle('#progressBar2', {
   color: '#f65742', // 진행률 바 색상
   trailColor: '#f3f3f3', // 진행률 바 배경 색상
   trailWidth: 8, // 배경 선 두께
-  svgStyle: {width: '235px', height: '235px'}, // SVG 스타일
+  svgStyle: {width: '100%', height: '100%'}, // SVG 스타일
   text: {
     style: {
       // 텍스트 스타일
@@ -59,7 +59,7 @@ var progressBar3 = new ProgressBar.Circle('#progressBar3', {
   color: '#f65742', // 진행률 바 색상
   trailColor: '#f3f3f3', // 진행률 바 배경 색상
   trailWidth: 8, // 배경 선 두께
-  svgStyle: {width: '235px', height: '235px'}, // SVG 스타일
+  svgStyle: {width: '100%', height: '100%'}, // SVG 스타일
   text: {
     style: {
       // 텍스트 스타일
@@ -86,7 +86,7 @@ var progressBar4 = new ProgressBar.Circle('#progressBar4', {
   color: '#f65742', // 진행률 바 색상
   trailColor: '#f3f3f3', // 진행률 바 배경 색상
   trailWidth: 8, // 배경 선 두께
-  svgStyle: {width: '235px', height: '235px'}, // SVG 스타일
+  svgStyle: {width: '100%', height: '100%'}, // SVG 스타일
   text: {
     style: {
       // 텍스트 스타일
