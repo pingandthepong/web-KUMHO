@@ -121,7 +121,6 @@
               <ul>
                 <li><a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=free">금호뉴스</a></li>
                 <li><a href="../../sub6/sub6_2.html">분양뉴스</a></li>
-                <li><a href="../../sub6/sub6_3.html">고객센터</a></li>
               </ul>
             </li>
           </ul>
@@ -145,7 +144,6 @@
       <ul>
         <li><a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=free" class="current">금호뉴스</a></li>
         <li><a href="../../sub6/sub6_2.html">분양뉴스</a></li>
-        <li><a href="../../sub6/sub6_3.html">고객센터</a></li>
       </ul>
     </div>
 
