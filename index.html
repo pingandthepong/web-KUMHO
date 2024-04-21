@@ -16,6 +16,8 @@
       src="https://kit.fontawesome.com/5c48cfd0d4.js"
       crossorigin="anonymous"></script>
     <script src="./mainjs/mainpopup.js"></script>
+    <!-- chartjs -->
+    <script src="./mainjs/chart.js"></script>
   </head>
   <body>
     <? include './common/main_header.html' ?>
@@ -409,7 +411,9 @@
               </div>
               <div class="notice_date">기준일: 24. 2. 23</div>
               <div class="graph">
-                <div class="chart">(차트영역)</div>
+                <div class="canvas_wrap">
+                  <canvas class="chart" id="earningRate">(차트영역)</canvas>
+                </div>
                 <ul class="button_bar">
                   <li class="checkbox">
                     <input type="checkbox" checked id="ci2">
@@ -504,6 +508,7 @@
     <script src="./mainjs/master.js"></script>
     <script src="./mainjs/move.js"></script>
     <script type="module" src="./mainjs/award-data-json.js"></script>
+    <script src="./mainjs/earningRate.js"></script>
 
     <!-- 메인 팝업(광고/이벤트/공지) -->
     <div id="showimage">
