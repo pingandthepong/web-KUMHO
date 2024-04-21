@@ -197,13 +197,17 @@
 #content .contlist.tab1 .earning-rate .graph {
   clear: both;
 }
+#content .contlist.tab1 .earning-rate .graph .canvas_wrap {
+  width: 100%;
+  height: 260px;
+  margin: 80px 0 20px;
+}
 #content .contlist.tab1 .earning-rate .graph .chart {
-  height: 325px;
   display: grid;
   place-items: center;
   color: #999;
 }
-#content .contlist.tab1 .earning-rate .graph .chart #chart {
+#content .contlist.tab1 .earning-rate .graph .chart_wrap #earningRate {
   width: 300px;
 }
 #content .contlist.tab1 .earning-rate .graph .button_bar {
