@@ -20,7 +20,7 @@ $(document).ready(function () {
 
   // 일반 경로로 넘어왔을 때 페이지가 안보이는 것을 방지
   if (!value) {
-    value = 2;
+    value = 1;
   }
 
   $(".contlist").hide();
