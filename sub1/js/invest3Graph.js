@@ -1,4 +1,4 @@
-const data = {
+const investData = {
   labels: ['최대주주 및 그 특수 관계인', '국내기관', '자사주', '외국인', '국내개인 및 기타'],
   datasets: [{
     label: '보통주',
@@ -14,9 +14,9 @@ const data = {
   }]
 };
             
-const config = {
+const investConfig = {
   type: 'doughnut',
-  data: data,
+  data: investData,
   options: {
     plugins: {
       legend: {
@@ -48,5 +48,5 @@ const config = {
 
 const invest3Graph = new Chart(
       document.getElementById('invest3Graph'),
-      config
+      investConfig
 );
