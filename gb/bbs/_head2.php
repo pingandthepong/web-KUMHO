@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>홍보센터-금호뉴스</title>
+  <title>홍보센터-분양뉴스</title>
   <link rel="shortcut icon" href="../favicon.ico">
   <link rel="stylesheet" href="../../common/css/aos.css">
   <link rel="stylesheet" href="../../common/css/common.css">
@@ -142,8 +142,8 @@
     <!-- .sub_nav -->
     <div class="sub_nav">
       <ul>
-        <li><a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=free" class="current">금호뉴스</a></li>
-        <li><a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=gallery">분양뉴스</a></li>
+        <li><a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=free">금호뉴스</a></li>
+        <li><a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=gallery" class="current">분양뉴스</a></li>
       </ul>
     </div>
 
@@ -153,9 +153,9 @@
       <div class="title_area">
         <div class="line_map">
           <span class="home">Home</span> &gt; 홍보센터 &gt;
-          <strong>금호뉴스</strong>
+          <strong>분양뉴스</strong>
         </div>
-        <h2>금호뉴스</h2>
+        <h2>분양뉴스</h2>
         <p>Think of the people and nature</p>
       </div>
 
