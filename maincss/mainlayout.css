@@ -954,6 +954,7 @@
   height: 155px;
   background: #ef0010;
   position: relative;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
 }
 #showimage::after {
   content: '';
@@ -977,15 +978,8 @@
 #showimage p {
   font-size: 1.2rem;
   line-height: 1.5;
+  margin-top: 30px;
   margin-bottom: 15px;
-}
-#showimage p::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #d5d5d5;
-  margin: 0 auto 30px;
 }
 #showimage p .accent {
   font-weight: 700;
