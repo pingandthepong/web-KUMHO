@@ -177,8 +177,8 @@
           </div>
 
           <div class="master_tab_conlist">
-            <h4 class="tab_title"></h4>
-            <p class="tab_desc"></p>
+            <h4 class="tab_title">Title</h4>
+            <p class="tab_desc">Description</p>
           </div>
 
           <!-- .master_tab -->
@@ -516,32 +516,25 @@
         function closeWin() {
           var chk = document.getElementById("Notice");
           if (chk.checked) {
-            setCookie("Notice", "done", 0); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+            setCookie("Notice", "done", 1); // 1일간 안보임
           }
         }
         if (getCookie("Notice") == "done") {
           hidebox();
         }
       </script>
-      <img src="./common/images/KUMHO_Logo_KJH_txtblack_pb20.png" alt="">
+      <img class="popup_img" src="./common/images/header-logo-pb20.png" alt="">
       <p>
-        본 사이트는 상업적 목적이 아닌<br><span class="accent"
-          >개인 포트폴리오</span
-        >용도로 만들어졌습니다.<br>홈페이지의 일부 내용과 기타 이미지 등은<br>그
-        출처가 따로 있음을 밝힙니다.
+        본 사이트는 상업적 목적이 아닌<br><span class="accent">개인 포트폴리오</span> 용도로 만들어졌습니다.<br>홈페이지의 일부 내용과 기타 이미지 등은<br>그 출처가 따로 있음을 밝힙니다.
       </p>
-      <div class="qrcode">MSF Mobile</div>
+      <div class="qrcode">
+        <span>MSF Mobile</span>
+        <img src="./mainimages/KUMHO_qr_357.png" alt="">
+        </div>
       <div class="close_box">
         <label for="Notice">
-          <input
-            type="checkbox"
-            name="Notice"
-            id="Notice"
-            value=""
-            title="오늘 하루 열지 않기 선택상자">오늘 하루 열지 않기</label
-        >
-        <!-- <a href="#" onclick="closeWin();hidebox();return false;">닫기</a> -->
-        <a href="#" onclick="closeWin(); hidebox(); return false;">[닫기]</a>
+          <input type="checkbox" name="Notice" id="Notice" value="" title="오늘 하루 열지 않기 선택상자">오늘 하루 열지 않기</label>
+        <a href="#" onclick="closeWin(); hidebox(); return false;" class="popup_close">[닫기]</a>
       </div>
     </div>
   </body>

@@ -936,65 +936,115 @@
 
 /* popup */
 #showimage {
-  width: 18rem;
-  height: 18rem;
-  border-radius: 50%;
-  border: 5px solid #ef0010;
+  width: 400px;
+  height: 600px;
   background: #fff;
   position: absolute;
-  left: 50%;
+  right: 150px;
   top: 200px;
-  transform: translateX(-250%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
   text-align: center;
+  overflow: hidden;
 }
-#showimage img {
-  margin-top: 20px;
+#showimage::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 155px;
+  background: #ef0010;
+  position: relative;
+}
+#showimage::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: 107px;
+  top: 42px;
+}
+#showimage .popup_img {
+  width: 170px;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 #showimage p {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 15px;
 }
+#showimage p::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #d5d5d5;
+  margin: 0 auto 30px;
+}
 #showimage p .accent {
   font-weight: 700;
-}
-#showimage .qrcode::before {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 80px;
-  border: 1px solid #000;
+  color: #ef0010;
 }
 #showimage .qrcode {
-  font-size: 0.5rem;
+  font-size: .8rem;
   color: #666;
+  position: relative;
+}
+#showimage .qrcode span {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+#showimage .qrcode img {
+  width: 200px;
 }
 #showimage .close_box {
   width: 100%;
+  height: 60px;
+  padding: 0 25px;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  color: #fff;
+  justify-content: space-between;
+  color: #1c1c1c;
   position: absolute;
-  left: 50%;
-  bottom: -10%;
-  transform: translateX(-50%);
+  left: 0;
+  bottom: 0;
 }
-#showimage .close_box :is(label, a) {
-  font-size: 0.8rem;
+#showimage .close_box::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #d5d5d5;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#showimage .close_box label {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 6px;
 }
 #showimage .close_box input {
   accent-color: #f65742;
+  width: 16px;
+  height: 16px;
 }
-#showimage .close_box a {
-  color: #fff;
+#showimage .close_box .popup_close {
+  width: 14px;
+  height: 14px;
+  background: url('../mainimages/popup_close.png') no-repeat center;
+  overflow: hidden;
+  text-indent: -9999px;
+  padding: 16px;
+  margin-right: -5px;
 }
