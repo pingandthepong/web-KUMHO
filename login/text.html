@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      property="og:description"
+      content="월 2만원대로 Python, JavaScript, HTML/CSS 등 4,000개 이상 프로그래밍 강의를 배워보세요!" />
+    <meta
+      property="og:image"
+      content="https://codeit-static.codeit.com/images/brand/og_tag.png" />
+    <meta property="og:title" content="코드잇 | 코딩, 쉬워질 때도 됐다" />
+    <title>로그인 | 코드잇</title>
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="No-Cache" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="next-head-count" content="10" />
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/nprogress@0.2.0/nprogress.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/static/favicon/apple-icon-57x57.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/static/favicon/apple-icon-60x60.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/static/favicon/apple-icon-72x72.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/static/favicon/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/static/favicon/apple-icon-114x114.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/static/favicon/apple-icon-120x120.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/static/favicon/apple-icon-144x144.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/static/favicon/apple-icon-152x152.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/favicon/apple-icon-180x180.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/static/favicon/android-icon-192x192.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/static/favicon/favicon-96x96.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/static/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.quilljs.com/1.2.6/quill.snow.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
+      integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn"
+      crossorigin="anonymous" />
+    <meta
+      name="naver-site-verification"
+      content="75679552d5541482cc2d3058b6b6ddb920bf9738" />
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MSJJSLP");
+    </script>
+    <script
+      defer=""
+      src="https://www.googletagmanager.com/gtag/js?id=UA-155054762-1"></script>
+    <script id="gtag-init" defer="">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-17ZJCW28XZ");
+      gtag("config", "UA-155054762-1", { optimize_id: "GTM-TQ6PKGF" });
+      gtag("config", "AW-801054331", { allow_enhanced_conversions: true });
+    </script>
+    <link
+      rel="preload"
+      href="https://codeit-static.codeit.com/_main/production/_next/static/css/4202b143913bf501.css"
+      as="style" />
+    <link
+      rel="stylesheet"
+      href="https://codeit-static.codeit.com/_main/production/_next/static/css/4202b143913bf501.css"
+      data-n-g="" />
+    <link
+      rel="preload"
+      href="https://codeit-static.codeit.com/_main/production/_next/static/css/ada3cc24d80dfe38.css"
+      as="style" />
+    <link
+      rel="stylesheet"
+      href="https://codeit-static.codeit.com/_main/production/_next/static/css/ada3cc24d80dfe38.css"
+      data-n-p="" />
+    <link
+      rel="preload"
+      href="https://codeit-static.codeit.com/_main/production/_next/static/css/3c8e7f9b315d1217.css"
+      as="style" />
+    <link
+      rel="stylesheet"
+      href="https://codeit-static.codeit.com/_main/production/_next/static/css/3c8e7f9b315d1217.css"
+      data-n-p="" />
+    <noscript data-n-css=""></noscript>
+    <script
+      defer=""
+      nomodule=""
+      src="https://codeit-static.codeit.com/_main/production/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+    <script
+      src="https://codeit-static.codeit.com/_main/production/_next/static/chunks/webpack-54b0030c689c55e1.js"
+      defer=""></script>
+    <script
+      src="https://codeit-static.codeit.com/_main/production/_next/static/chunks/framework-742b7d672e4d8bb8.js"
+      defer=""></script>
+    <script
+      src="https://codeit-static.codeit.com/_main/production/_next/static/chunks/main-c78cb4475aa1c8b3.js"
+      defer=""></script>
+    <script
+      src="https://codeit-static.codeit.com/_main/production/_next/static/chunks/pages/_app-c0e540292186a2fd.js"
+      defer=""></script>
+    <script
+      src="https://codeit-static.codeit.com/_main/production/_next/static/chunks/2824-e15f84bbaf6045df.js"
+      defer=""></script>
+    <script
+      src="https://codeit-static.codeit.com/_main/production/_next/static/chunks/8421-2e04a6853d4046ac.js"
+      defer=""></script>
+    <script
+      src="https://codeit-static.codeit.com/_main/production/_next/static/chunks/6203-163c84841ce991f1.js"
+      defer=""></script>
+    <script
+      src="https://codeit-static.codeit.com/_main/production/_next/static/chunks/4252-edac51e749861bf8.js"
+      defer=""></script>
+    <script
+      src="https://codeit-static.codeit.com/_main/production/_next/static/chunks/3488-df4583477884aaf9.js"
+      defer=""></script>
+    <script
+      src="https://codeit-static.codeit.com/_main/production/_next/static/chunks/5422-543b9de652884ec1.js"
+      defer=""></script>
+    <script
+      src="https://codeit-static.codeit.com/_main/production/_next/static/chunks/pages/signin-35d6c3f6954fb6fd.js"
+      defer=""></script>
+    <script
+      src="https://codeit-static.codeit.com/_main/production/_next/static/T8WDljgHrIx-w4dZTQR5T/_buildManifest.js"
+      defer=""></script>
+    <script
+      src="https://codeit-static.codeit.com/_main/production/_next/static/T8WDljgHrIx-w4dZTQR5T/_ssgManifest.js"
+      defer=""></script>
+  </head>
+  <body lang="ko">
+    <div id="__next">
+      <div class="app" id="root">
+        <div
+          class="GeneralLayout_container__oeiZj GeneralLayout_hasGeneralNavigationTab__oKn8F">
+          <div class="GeneralLayout_stickySection__6KU27"></div>
+          <div class="GeneralLayout_content__r4VlS">
+            <div class="SignInLayout_container__cjuXv">
+              <div class="SignHeader_container__6ZffV">
+                <a href="/"
+                  ><svg
+                    fill="current"
+                    width="282"
+                    height="80"
+                    viewBox="0 0 282 80"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    role="img"
+                    class="SignHeader_codeitLogo__sD3z_"
+                    style="fill: #6500c3">
+                    <title>Codeit Logo</title>
+                    <defs><path id="a" d="M0 0h14.03v21.286H0z"></path></defs>
+                    <g fill="current" fill-rule="evenodd">
+                      <path
+                        d="M183.403 41.281 162.608 58.56c-2.132-5.66-.46-12.143 4.24-16.047a14.31 14.31 0 0 1 9.123-3.296c2.648 0 5.196.71 7.432 2.065m10.772-2.881c-4.505-5.42-11.14-8.524-18.206-8.524a23.656 23.656 0 0 0-15.091 5.449c-10.01 8.319-11.402 23.219-3.118 33.246l.035.062.056.045c4.026 4.818 9.695 7.787 15.968 8.367a23.662 23.662 0 0 0 17.284-5.348 4.678 4.678 0 0 0 .608-6.578 4.67 4.67 0 0 0-6.575-.606 14.307 14.307 0 0 1-9.125 3.293c-2.647 0-5.196-.712-7.428-2.065l24.991-20.766a4.642 4.642 0 0 0 1.667-3.162 4.679 4.679 0 0 0-1.066-3.413M274.847 44.46c3.753 0 6.804-2.966 6.804-6.613a6.812 6.812 0 0 0-6.804-6.804c-3.646 0-6.612 3.051-6.612 6.804-.003 3.647 2.966 6.613 6.612 6.613"
+                        fill="current"></path>
+                      <g transform="translate(267.658 58.48)">
+                        <mask id="b" fill="#fff">
+                          <use xlink:href="#a"></use>
+                        </mask>
+                        <path
+                          d="M13.698 4.768C13.074 2.591 11.336 0 6.613 0A6.62 6.62 0 0 0 0 6.613a6.605 6.605 0 0 0 5.938 6.578v8.095l1.033-.648c5.388-3.376 8.04-11.304 6.727-15.87"
+                          fill="current"
+                          mask="url(#b)"></path>
+                      </g>
+                      <path
+                        d="M216.516 22.424c-1.49 0-2.77-.524-3.798-1.552-1.028-1.031-1.552-2.31-1.552-3.798 0-1.43.524-2.695 1.558-3.756 1.028-1.058 2.307-1.594 3.795-1.594 1.427 0 2.69.536 3.753 1.6 1.06 1.063 1.6 2.325 1.6 3.752 0 1.489-.537 2.765-1.598 3.796-1.063 1.028-2.328 1.552-3.758 1.552zm-11.519 54.363c-.88 0-1.648-.322-2.277-.954-.633-.633-.955-1.398-.955-2.278 0-.88.322-1.645.955-2.278.632-.632 1.4-.954 2.277-.954h7.373c.2 0 .362-.162.362-.362V38.264c0-.199-.163-.361-.362-.361h-7.373c-.88 0-1.648-.322-2.277-.954-.633-.633-.955-1.398-.955-2.278 0-.877.322-1.645.955-2.278.632-.632 1.4-.954 2.277-.954h11.426c1 0 1.874.367 2.6 1.093.725.725 1.092 1.6 1.092 2.602v34.83c0 .2.162.362.361.362h7.464c.877 0 1.645.321 2.277.954.633.635.954 1.4.954 2.277 0 .88-.321 1.646-.954 2.278-.632.633-1.4.954-2.277.954h-22.943v-.002zM257.755 76.787c-5.717 0-10.453-1.704-14.081-5.063-3.623-3.352-5.46-8.314-5.46-14.754V37.898c0-.2-.161-.362-.36-.362h-5.07c-.943 0-1.727-.292-2.33-.866-.606-.58-.901-1.292-.901-2.182 0-.877.303-1.61.9-2.18.602-.576 1.386-.869 2.332-.869h5.068c.2 0 .362-.162.362-.361v-7.926c0-1.015.356-1.866 1.092-2.6.723-.725 1.6-1.092 2.6-1.092 1.06 0 1.966.367 2.692 1.093.725.725 1.092 1.6 1.092 2.6v7.922c0 .2.162.362.362.362h9.58c.886 0 1.657.295 2.292.871.625.572.94 1.303.94 2.174 0 .885-.308 1.595-.943 2.174-.635.58-1.406.872-2.29.872h-9.582c-.2 0-.362.162-.362.362v17.23c0 4.731.941 8.325 2.796 10.682 1.864 2.368 4.965 3.888 9.215 4.51.965.115 1.762.484 2.376 1.095.611.612.906 1.313.906 2.14 0 .882-.308 1.65-.914 2.283-.603.648-1.363.957-2.312.957M136.28 53.257c0 7.889-6.416 14.304-14.305 14.304-7.888 0-14.304-6.415-14.304-14.304 0-7.888 6.416-14.304 14.304-14.304 7.889 0 14.305 6.416 14.305 14.304M140.95 0a4.674 4.674 0 0 0-4.67 4.67v29.778a23.612 23.612 0 0 0-14.305-4.837c-13.036 0-23.643 10.607-23.643 23.643 0 13.037 10.607 23.644 23.643 23.644a23.612 23.612 0 0 0 14.305-4.837v.168a4.674 4.674 0 0 0 4.67 4.67 4.674 4.674 0 0 0 4.67-4.67V4.669A4.674 4.674 0 0 0 140.95 0M37.048 62.004a4.634 4.634 0 0 0-3.301 1.369 14.21 14.21 0 0 1-10.116 4.183c-3.792 0-7.354-1.459-10.044-4.111l-.071-.075a14.206 14.206 0 0 1-4.184-10.116c0-3.827 1.486-7.417 4.184-10.112a14.206 14.206 0 0 1 10.115-4.184c3.827 0 7.418 1.486 10.116 4.184a4.636 4.636 0 0 0 3.3 1.366 4.644 4.644 0 0 0 3.305-1.37 4.64 4.64 0 0 0 1.368-3.303 4.644 4.644 0 0 0-1.368-3.303c-4.458-4.46-10.395-6.913-16.718-6.913s-12.26 2.455-16.72 6.913c-9.204 9.204-9.218 24.17-.046 33.392l.051.05.008.009.005.005c4.457 4.447 10.387 6.897 16.702 6.897 6.323 0 12.26-2.456 16.718-6.913a4.64 4.64 0 0 0 1.368-3.304 4.644 4.644 0 0 0-1.368-3.303 4.67 4.67 0 0 0-3.304-1.361M70.034 67.561c-7.888 0-14.304-6.415-14.304-14.304 0-7.888 6.416-14.304 14.304-14.304s14.304 6.416 14.304 14.304c0 7.886-6.418 14.304-14.304 14.304m0-37.948c-13.037 0-23.644 10.608-23.644 23.644 0 13.037 10.607 23.644 23.644 23.644 13.036 0 23.644-10.607 23.644-23.644 0-13.036-10.608-23.644-23.644-23.644"
+                        fill="current"></path>
+                    </g></svg
+                ></a>
+                <p class="SignHeader_message__jQbuh">
+                  회원이 아니신가요?<a
+                    class="SignHeader_link__kyeFU"
+                    href="/signup"
+                    >회원가입 하기</a
+                  >
+                </p>
+              </div>
+              <div class="SignInLayout_guide__NZ0H5"></div>
+              <div class="SignInLayout_signInForm__r3Dxp">
+                <form method="post" class="SignInForm_container__Wc0i1">
+                  <div class="SignInForm_inputBox__m0Uc0">
+                    <div
+                      class="InputBase_inputBase__f8LNN"
+                      style="width: unset">
+                      <label class="inputField_label__y8y2P"
+                        ><div class="inputField_labelTextContainer__2BqZ5">
+                          <div class="inputField_labelText__NWr7b">이메일</div>
+                        </div>
+                        <input
+                          type="text"
+                          inputmode="email"
+                          name="email"
+                          class="inputField_input__004jm inputField_withLabel__z5_la"
+                          autocomplete="username"
+                          value=""
+                      /></label>
+                    </div>
+                  </div>
+                  <div class="SignInForm_inputBox__m0Uc0">
+                    <div
+                      class="InputBase_inputBase__f8LNN"
+                      style="width: unset">
+                      <label class="inputField_label__y8y2P"
+                        ><div class="inputField_labelTextContainer__2BqZ5">
+                          <div class="inputField_labelText__NWr7b">
+                            비밀번호
+                          </div>
+                        </div>
+                        <input
+                          type="password"
+                          name="password"
+                          class="inputField_input__004jm inputField_password__li_TF inputField_withLabel__z5_la"
+                          autocomplete="off"
+                          data-1p-ignore="true"
+                          value=""
+                      /></label>
+                    </div>
+                  </div>
+                  <div class="SignInForm_submitButtonBox__Ub5Ay">
+                    <button
+                      class="Button_button___Dadr Button_primary__BxDoK Button_fullWidth__Wp545"
+                      type="submit">
+                      <div class="Button_contentWrapper__ek4Um">
+                        로그인 하기
+                      </div>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="SignInLayout_oauthSignIn__0b3nN">
+                <div class="OauthSignIn_container__sBtOe">
+                  <p class="OauthSignIn_text__S6t5B">SNS 간편 로그인</p>
+                  <div class="OauthSignIn_badges__dts2N">
+                    <div class="OauthBadge_container__zhJq7">
+                      <a
+                        class="OauthBadge_badge__FHxA8 OauthBadge_naver__robWT"
+                        href="https://nid.naver.com/oauth2.0/authorize?client_id=ONlZ6QxtIxlGvAA5Jbq3&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fwww.codeit.kr%2FOAuth_loading%2Fnaver&amp;state=%7B%7D"
+                        rel="noreferrer"
+                        ><div
+                          class="OauthBadge_icon__dLR5a OauthBadge_naver__robWT"></div
+                      ></a>
+                    </div>
+                    <div class="OauthBadge_container__zhJq7">
+                      <a
+                        class="OauthBadge_badge__FHxA8 OauthBadge_google__nShpz"
+                        href="https://accounts.google.com/o/oauth2/v2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20email&amp;access_type=offline&amp;include_granted_scopes=true&amp;redirect_uri=https%3A%2F%2Fwww.codeit.kr%2FOAuth_loading%2Fgoogle&amp;state=%7B%7D&amp;response_type=code&amp;client_id=729476364420-6hqmcik6eno6l4p5umukorc8v60dl898.apps.googleusercontent.com"
+                        rel="noreferrer"
+                        ><div
+                          class="OauthBadge_icon__dLR5a OauthBadge_google__nShpz"></div
+                      ></a>
+                    </div>
+                    <div class="OauthBadge_container__zhJq7">
+                      <a
+                        class="OauthBadge_badge__FHxA8 OauthBadge_facebook__1wh55"
+                        href="https://www.facebook.com/v5.0/dialog/oauth?client_id=1702691573299443&amp;redirect_uri=https%3A%2F%2Fwww.codeit.kr%2FOAuth_loading%2Ffacebook&amp;state=%7Bkey%3D%3ARialj6%3A%7D&amp;scope=email"
+                        rel="noreferrer"
+                        ><div
+                          class="OauthBadge_icon__dLR5a OauthBadge_facebook__1wh55"></div
+                      ></a>
+                    </div>
+                    <div class="OauthBadge_container__zhJq7">
+                      <a
+                        class="OauthBadge_badge__FHxA8 OauthBadge_kakao__Zxp_1"
+                        href="https://kauth.kakao.com/oauth/authorize?client_id=b8c21c66acf5a661ecaad558d1a0b6ea&amp;redirect_uri=https%3A%2F%2Fwww.codeit.kr%2FOAuth_loading%2Fkakao&amp;response_type=code&amp;state=%7B%7D"
+                        rel="noreferrer"
+                        ><div
+                          class="OauthBadge_icon__dLR5a OauthBadge_kakao__Zxp_1"></div
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="SignInLayout_forgotPassword__lovzm">
+                <div class="ForgotPassword_container__Xyber">
+                  <button
+                    type="button"
+                    class="ForgotPassword_searchPassword__w7nM4">
+                    비밀번호 찾기
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="portal"></div>
+        <div id="modal"></div>
+        <div id="loading"></div>
+      </div>
+      <div
+        class="ToastRenderer_container__txIO3"
+        style="right: 1.8rem; bottom: 7.6rem; z-index: auto"></div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+      {
+        "props": {
+          "pageProps": {
+            "_nextI18Next": {
+              "initialI18nStore": {
+                "ko": {
+                  "common": {
+                    "common": "자주 반복되는 스트링 리스트",
+                    "common__loading": "로딩 중",
+                    "codeit_DEFAULT_TITLE": "코드잇 | 코딩, 쉬워질 때도 됐다",
+                    "codeit_DESCRIPTION": "월 2만원대로 Python, JavaScript, HTML/CSS 등 4,000개 이상 프로그래밍 강의를 배워보세요!",
+                    "codeit_OG_TITLE": "코드잇 | 코딩, 쉬워질 때도 됐다",
+                    "EnrollLesson_enroll": "수강하기",
+                    "EnrollLesson_start_enrollment": "수강시작",
+                    "EnrollLesson_continue": "이어하기",
+                    "EnrollLesson_invalid_enrollment": "수강 정보를 확인할 수 없습니다. 하단의 문의하기를 통해 문의해 주세요.",
+                    "EnrollLesson_invalid_subscription_info": "구독 정보를 확인할 수 없습니다. 하단의 문의하기를 통해 문의해 주세요.",
+                    "EnrollLesson_invalid_subscription_status": "구독 정보의 상태를 확인할 수 없습니다. 하단의 문의하기를 통해 문의해 주세요.",
+                    "EnrollLesson_no_permission": "수강 권한이 없습니다. 자세한 사항은 기업 담당자에게 문의해 주세요.",
+                    "EnrollLesson_enter_error": "강의실 입장에 오류가 발생했습니다. 하단의 문의하기를 통해 문의해 주세요.",
+                    "BusinessAccessStore_TOKEN_ERROR": "Multicampus SSO 데이터를 통해 token을 받지 못했습니다.\n문제가 해결되지 않으면 문의해 주세요",
+                    "BusinessAccessStore_PIN_ENTER_ERROR": "학습자 성함이 일치하지 않습니다.",
+                    "SendNotificationStore_ENTER_COUPON_CONTENT": "쿠폰 내용을 입력해 주세요.",
+                    "SendNotificationStore_SELECT_COURSE_TOPIC": "코스 혹은 토픽을 선택해 주세요.",
+                    "notification_SEND_FAILED": "알림 전송에 실패하였습니다.",
+                    "notification_SEND_SUCCESS": "알림이 성공적으로 전송되었습니다.",
+                    "notification_NEW_COURSE_SEND_FAILED": "신규 출시 알림 전송에 실패하였습니다.",
+                    "notification_NEW_COURSE_SEND_SUCCESS": "신규 출시 알림이 성공적으로 전송되었습니다.",
+                    "notification_NEW_COURSE_KAKAO_SEND_FAILED": "신규 출시 카카오톡 전송에 실패하였습니다.",
+                    "notification_NEW_COURSE_KAKAO_SEND_SUCCESS": "신규 출시 카카오톡이 성공적으로 전송되었습니다.",
+                    "originHtmlCssBlock_RESULT_CHECK": "결과 확인",
+                    "timeFormat_YYYYMMDD": "{year}년 {month}월 {day}일",
+                    "timeFormat_YYYYMMDD_LINE_BREAK": "{year}년\n{month}월\n{day}일",
+                    "timeFormat_BEFORE_ONE_MINUTE": "1분 전 ",
+                    "timeFormat_BEFORE_MINUTE": "{minute}분 전 ",
+                    "timeFormat_BEFORE_HOUR": "{hour}시간 전 ",
+                    "timeFormat_BEFORE_DAY": "{day}일 전 ",
+                    "toKorean_INPUT_ERROR": "오류입니다! 인풋을 확인해주세요",
+                    "toKorean_VIDEO": "영상",
+                    "toKorean_NOTE": "노트",
+                    "toKorean_QUIZ": "퀴즈",
+                    "toKorean_EXERCISE": "실습",
+                    "faq_title": "자주 묻는 질문 | 코드잇",
+                    "FAQsearchResultMessage": "관련 FAQ가 총 { resultNumber }건 있습니다.",
+                    "FAQ_BANNER_TITLE": "어떤 부분이 궁금하세요?",
+                    "FAQ_BANNER_CONTENT1": "수강생들이 자주 궁금해하는 부분들을 모은 공간이에요.",
+                    "FAQ_BANNER_CONTENT2": "\u003cspan\u003e자주 묻는 질문\u003c/span\u003e을 통해 빠르게 궁금증을 해결할 수 있어요!",
+                    "FAQ_BANNER_CONTENT3": "추가적인 서비스 관련 문의는 \u003cspan\u003e채팅 문의\u003c/span\u003e를 통해 알려 주세요.",
+                    "LessonRelatedQuestionEmpty_LEAVE_QUESTION": "궁금하신 내용이 있다면 질문을 남겨보세요.",
+                    "LessonRelatedQuestion_QUESTION": "질문하기",
+                    "LessonRelatedQuestion_RELATED_QUESTION": "관련 질문",
+                    "LessonRelatedQuestion_SEE_MORE_QUESTION": "질문 더 보기",
+                    "catalog_CHAPTER": "챕터",
+                    "country_82": "한국",
+                    "country_30": "그리스",
+                    "country_31": "네덜란드",
+                    "country_47": "노르웨이",
+                    "country_64": "뉴질랜드",
+                    "country_886": "대만",
+                    "country_45": "덴마크",
+                    "country_49": "독일",
+                    "country_856": "라오스",
+                    "country_371": "라트비아",
+                    "country_7": "러시아",
+                    "country_961": "레바논",
+                    "country_40": "루마니아",
+                    "country_352": "룩셈부르크",
+                    "country_370": "리투아니아",
+                    "country_853": "마카오",
+                    "country_389": "마케도니아",
+                    "country_60": "말레이시아",
+                    "country_356": "몰타",
+                    "country_1": "미국/캐나다",
+                    "country_95": "미얀마",
+                    "country_973": "바레인",
+                    "country_880": "방글라데시",
+                    "country_84": "베트남",
+                    "country_32": "벨기에",
+                    "country_375": "벨라루스",
+                    "country_387": "보스니아",
+                    "country_359": "불가리아",
+                    "country_673": "브루나이",
+                    "country_966": "사우디아라비아",
+                    "country_381": "세르비아",
+                    "country_46": "스웨덴",
+                    "country_41": "스위스",
+                    "country_34": "스페인",
+                    "country_421": "슬로바키아",
+                    "country_386": "슬로베니아",
+                    "country_65": "싱가포르",
+                    "country_971": "아랍에미리트",
+                    "country_374": "아르메니아",
+                    "country_353": "아일랜드",
+                    "country_994": "아제르바이잔",
+                    "country_93": "아프가니스탄",
+                    "country_355": "알바니아",
+                    "country_372": "에스토니아",
+                    "country_44": "영국",
+                    "country_967": "예멘",
+                    "country_968": "오만",
+                    "country_43": "오스트리아",
+                    "country_962": "요르단",
+                    "country_998": "우즈베키스탄",
+                    "country_380": "우크라이나",
+                    "country_972": "이스라엘",
+                    "country_20": "이집트",
+                    "country_39": "이탈리아",
+                    "country_91": "인도",
+                    "country_62": "인도네시아",
+                    "country_81": "일본",
+                    "country_86": "중국",
+                    "country_420": "체코",
+                    "country_855": "캄보디아",
+                    "country_965": "쿠웨이트",
+                    "country_385": "크로아티아",
+                    "country_996": "키르기스스탄",
+                    "country_357": "키프로스",
+                    "country_992": "타지키스탄",
+                    "country_66": "태국",
+                    "country_90": "터키",
+                    "country_993": "투르크메니스탄",
+                    "country_92": "파키스탄",
+                    "country_675": "파푸아뉴기니",
+                    "country_351": "포르투갈",
+                    "country_48": "폴란드",
+                    "country_33": "프랑스",
+                    "country_358": "핀란드",
+                    "country_63": "필리핀",
+                    "country_36": "헝가리",
+                    "country_61": "호주",
+                    "country_852": "홍콩",
+                    "UtilsCoupon__benefit_type_discount": "결제 할인",
+                    "UtilsCoupon__benefit_type_subscription": "기간 연장",
+                    "faq_CONTENTS": "강의 상세",
+                    "faq_ACCOUNT": "계정 설정",
+                    "faq_VIDEO": "기기 및 재생환경",
+                    "faq_SERVICE": "서비스",
+                    "faq_PAYMENT": "결제",
+                    "faq_REFUND": "해지/환불",
+                    "faq_GENERAL": "일반",
+                    "lessonFilter_ALL_TOPICS": "토픽 전체",
+                    "lessonFilter_ALL_CHAPTERS": "챕터 전체",
+                    "lessonFilter_ALL_LESSONS": "레슨 전체",
+                    "lessonFilter_SELECT_TOPIC": "토픽 선택",
+                    "lessonFilter_SELECT_CHAPTER": "챕터 선택",
+                    "lessonFilter_SELECT_LESSON": "레슨 선택",
+                    "notification_reference_ANNOUNCEMENT_CODE": "공지사항",
+                    "notification_reference_SIGN_UP_GREETING_CODE": "신규 가입",
+                    "notification_reference_START_CODEIT_CODE": "코드잇 시작",
+                    "notification_reference_EVENT_COUPON_CODE": "이벤트/할인 쿠폰",
+                    "notification_reference_NEW_COURSE_CODE": "새로운 코스",
+                    "notification_reference_RENEW_COURSE_CODE": "코스 개편",
+                    "notification_reference_NEW_TOPIC_CODE": "새로운 토픽",
+                    "notification_reference_RENEW_TOPIC_CODE": "토픽 개편",
+                    "notification_reference_LEVEL_UP_CODE": "레벨 업",
+                    "notification_reference_FINISH_COURSE_CODE": "코스 완료",
+                    "notification_reference_FINISH_TOPIC_CODE": "토픽 완료",
+                    "notification_reference_REVIEW_HIDDEN_CODE": "후기 숨김",
+                    "notification_reference_WRITE_QUESTION_CODE": "질문 작성",
+                    "notification_reference_MY_QUESTION_NEW_ANSWER_CODE": "새로운 답변 등록",
+                    "notification_reference_MY_QUESTION_RESOLVED_CODE": "내 질문 해결",
+                    "notification_reference_MY_ANSWER_ACCEPTED_CODE": "내 답변 채택",
+                    "notification_reference_MY_ANSWER_COMMENT_CODE": "내 답변에 댓글",
+                    "notification_reference_BOOKMARKED_NEW_ANSWER_CODE": "북마크 질문 답변",
+                    "notification_reference_BOOKMARKED_RESOLVED_CODE": "북마크 질문 해결",
+                    "notification_reference_MY_QUESTION_HIDDEN_CODE": "내 질문 숨김",
+                    "notification_reference_MY_ANSWER_HIDDEN_CODE": "내 답변 숨김",
+                    "notification_reference_PAYMENT_FAILED_CODE": "결제 실패",
+                    "notification_reference_MEMBERSHIP_CHANGE_CODE": "멤버십 변경",
+                    "notification_reference_MEMBERSHIP_EXPIRE_CODE": "멤버십 만료",
+                    "notification_reference_EXAM_AVAILABLE_CODE": "시험 가능",
+                    "users_title": "수강생 관리 | 코드잇",
+                    "users_seqid_title": "수강생 관리 | 코드잇",
+                    "admin_title": "수강생 관리 | 코드잇",
+                    "business_enrollment_title": "B2B | 코드잇",
+                    "changepassword_title": "비밀번호 재설정 | 코드잇",
+                    "community_threads_edit_title": "게시글 수정하기 | 코드잇",
+                    "community_threads_title": "코드잇",
+                    "community_write_title": "게시글 작성하기 | 코드잇",
+                    "courses_cslug_topics_title": "코드잇",
+                    "learn_title": "코드잇",
+                    "learn_description": "3,000개 이상 코딩 강의를 무료로 체험해보세요!",
+                    "reviews_title": "수강 후기 | 코드잇",
+                    "signin_title": "로그인 | 코드잇",
+                    "signup_title": "회원 가입 | 코드잇",
+                    "subscription_title": "멤버십 등록하기 | 코드잇",
+                    "topics_title": "{ title } - { metaTagTitleCategory } 강의 | 코드잇",
+                    "user_become_failure": "접속 실패",
+                    "user_become_loading": "접속 중",
+                    "XpEditor_CURRENT_SCORE": "현재 점수",
+                    "XpEditor_CONTENT": "추가, 차감 모두 가능합니다. 차감 시 숫자 앞에 ‘-‘를 붙여주세요",
+                    "XpEditor_PLACEHOLDER": "추가, 차감할 점수",
+                    "XpEditor_APPLY": "적용",
+                    "XpEditor_APPLY_IN_PROGRESS": "적용 중",
+                    "AdminPopup_TITLE": "\u003cb\u003e퀼에디터\u003c/b\u003e는 일반 커뮤니티에서 사용되는 에디터로 태그방식으로 저장됩니다.\u003cbr/\u003e\u003cb\u003e마크다운 에디터\u003c/b\u003e는 텍스트만 입력하는 마크다운 문법을 정확히 따릅니다.\u003cbr/\u003e(개편 전 글들은 전부 마크다운 방식으로 작성되어 있습니다.)\u003cbr/\u003e\u003cbr/\u003e어떤 모드를 써도 괜찮지만, \u003cb\u003e모드를 함부로 바꿔 쓰지 않도록 주의\u003c/b\u003e해 주세요!",
+                    "AdminLayout_CODEIT_ADMIN": "(구) 코드잇 어드민",
+                    "AdminLayout_ADMIN": "관리자",
+                    "AdminLayout_BACK_TO_CODEIT": "코드잇 돌아가기",
+                    "AdminLayout_LOGOUT": "로그아웃",
+                    "TopicInfo_COMPLETE": "레슨 완료",
+                    "PopupFootnote_COMMENT": "각주",
+                    "DefaultFooter_CODEIT": "(주) 코드잇",
+                    "DefaultFooter_PIPO": "개인정보보호책임자",
+                    "DefaultFooter_BN": "사업자 번호",
+                    "DefaultFooter_MAIL_ORDER": "통신판매업",
+                    "DefaultFooter_ADDRESS": "주소",
+                    "DefaultFooter_ABOUT": "코드잇 소개",
+                    "DefaultFooter_MEMBERSHIP": "멤버십 소개",
+                    "DefaultFooter_USE_TERM": "사용자 이용 약관",
+                    "DefaultFooter_PRIVACY_TERM": "개인정보 처리방침",
+                    "DefaultFooter_FAQ": "자주 묻는 질문",
+                    "DefaultFooter_BizEducation": "기업 교육 소개",
+                    "DefaultFooter_CEO": "대표",
+                    "Menu_VIEW_PLANS": "멤버십 안내",
+                    "Menu_COMMUNITY": "커뮤니티",
+                    "Menu_SIGNIN": "로그인",
+                    "Menu_SIGNUP": "회원가입",
+                    "Menu_REVIEW": "수강 후기",
+                    "ProfileMenu_TEAMS_ADMIN": "내 팀 관리",
+                    "ProfileMenu_PROFILE": "내 프로필",
+                    "ProfileMenu_ACCOUNT": "계정 설정",
+                    "ProfileMenu_SIGN_OUT": "로그아웃",
+                    "Profile_Edit_Button": "프로필 수정하기",
+                    "Profile_Remain": "다음 레벨까지 \u003cstrong\u003e{xp} XP\u003c/strong\u003e 남았어요!",
+                    "Profile_More": "더보기",
+                    "Profile_Tab_Activity": "학습 통계",
+                    "Profile_Tab_Community": "커뮤니티 활동",
+                    "Profile_Tab_Badges": "배지",
+                    "ProfileMenu_NOTIFICATION": "알림",
+                    "Profile_Edit_UploadPhoto": "사진 업로드",
+                    "Profile_Edit_email": "이메일",
+                    "Profile_Edit_bio": "소개",
+                    "Profile_Edit_Update": "변경 완료",
+                    "Profile_Edit_UpdateCompleteMessage": "프로필 정보 변경이 완료되었어요.",
+                    "PopupAskDelete_TITLE_1": "정말 숨김처리 하시겠어요?",
+                    "PopupAskDelete_TITLE_2": "정말 삭제하시겠어요?",
+                    "PopupAskDelete_TEXT_1": "숨김 처리",
+                    "PopupAskDelete_TEXT_2": "삭제하기",
+                    "CourseCertificate_modal_title": "토픽 수료",
+                    "CourseCertificate_modal_description": "축하합니다!\n{ title } 토픽을 수료했어요",
+                    "CourseCertificate_modal_cta_button_label": "다른 토픽 시작하기",
+                    "PopupCourseReview_CHECK_SCORE": "별점을 체크해주세요",
+                    "PopupForMembership_TITLE": "멤버십을 등록해 주세요.",
+                    "PopupForMembership_BUTTON": "멤버십 확인하기",
+                    "PopupIEBrowser_TITLE": "지원되지 않는 브라우저",
+                    "PopupIEBrowser_DESCRIPTION": "코드잇은 구글 크롬 브라우저에 최적화되어 있으며,\u003cdiv\u003eInternet Explorer에서는 서비스를 이용하실 수 없습니다.\u003cdiv/\u003e\u003cb\u003e\u003ca href=\"https://www.google.com/intl/ko/chrome/\" target=\"_blank\" rel=\"noreferrer noopener\"\u003eGoogle Chrome\u003c/a\u003e, \u003ca href=\"https://support.apple.com/ko_KR/downloads/safari\" target=\"_blank\" rel=\"noreferrer\"\u003eSafari\u003c/a\u003e, \u003ca href=\"https://www.microsoft.com/ko-kr/edge\" target=\"_blank\" rel=\"noreferrer\"\u003eMicrosoft Edge\u003c/a\u003e 이용을 권장\u003c/b\u003e드립니다.",
+                    "PopupKeepLesson_TITLE": "최근에 수강한 레슨으로 이동할게요.",
+                    "PopupKeepLesson_BUTTON": "이동하기",
+                    "PopupSubmitFeedback_TITLE": "어떤 점이 개선되면 좋을까요?",
+                    "PopupSubmitFeedback_PLACEHOLDER": "개선하면 좋을 점을 자유롭게 남겨주세요(10자 이상).",
+                    "PopupSubmitFeedback_SUBMIT": "평가 보내기",
+                    "PopupSubmitFeedback_ERROR_TOAST": "내용을 작성해 주세요(10자 이상).",
+                    "GeneralPopup_B2B_PURCHASED_EXPIRED": "B2B 기간이 만료된 계정입니다. 회사, 혹은 담당 기관의 관리자에게 문의해 주세요.",
+                    "GeneralPopup_B2B_PURCHASED_NO_ENROLLMENT": "B2B 유저로 등록된 경우, 현재 수강 중인 수업만 이용이 가능해요. 다른 수업도 듣고 싶다면 회원 가입을 통해 코드잇 멤버십을 이용해 주세요.",
+                    "GeneralPopup_SIGNUP_LOGGED": "회원가입을 위해서는 로그아웃이 필요합니다.",
+                    "GeneralPopup_SIGNIN_LOGGED": "이미 로그인 된 계정입니다.",
+                    "GeneralPopup_ERROR_EMPTY_CONTENT_15": "내용을 작성해 주세요(15자 이상).",
+                    "GeneralPopup_NO_CONTENT": "현재 포함되어 있는 강의가 존재하지 않습니다.",
+                    "GeneralPopup_CREATE_ERROR_LESSON": "관련 카테고리를 모두 선택해 주세요.",
+                    "GeneralPopup_EMAIL_SUCCESS": "전송 완료되었습니다.",
+                    "GeneralPopup_NOT_EMAIL_FORM": "이메일 양식으로 작성해 주세요.",
+                    "GeneralPopup_EMAIL_NOT_EXIST": "존재하지 않는 이메일입니다.",
+                    "GeneralPopup_ENROLL_EXPIRED": "해당 강의는 기간이 만료되었어요.",
+                    "GeneralPopup_ENROLL_EXPIRED_CONTENT_1": "코드잇 멤버십을 등록하시면,",
+                    "GeneralPopup_ENROLL_EXPIRED_CONTENT_2": "남은 기간 동안 코드잇의 모든 수업을 들으실 수 있어요!",
+                    "GeneralPopup_SUBSCRIPTION_INCOMPLETE_TITLE": "다시 결제하러 가 볼까요?",
+                    "GeneralPopup_SUBSCRIPTION_INCOMPLETE_CONTENT_1": "등록한 결제 정보로 결제가 제대로 이루어지지 않아",
+                    "GeneralPopup_SUBSCRIPTION_INCOMPLETE_CONTENT_2": "멤버십이 일시적으로 정지 되었어요.",
+                    "GeneralPopup_SUBSCRIPTION_INCOMPLETE_BUTTON": "내 멤버십으로",
+                    "GeneralPopup_SUBSCRIPTION_CANCELLED_BUTTON_1": "내 멤버십으로",
+                    "CSConfirmPopup_NEED_HINT": "힌트를 이용하시겠어요?",
+                    "CSConfirmPopup_MINUS_HINT_POINT": "레슨에서 얻을 수 있는 점수가 { hintPoint } 차감돼요.",
+                    "CSConfirmPopup_YES": "예",
+                    "CSConfirmPopup_NO": "아니오",
+                    "CSConfirmPopup_NEED_SOLUTION": "해설을 이용하시겠어요?",
+                    "HintViewer_HINT": "힌트",
+                    "ContentSupporter_HINT": "힌트",
+                    "ContentSupporter_SEE_SOLUTION": "해설 보기",
+                    "ExerciseViewerSelfCheck_SELF_CHECK": "셀프 채점",
+                    "ExerciseViewerSelfCheck_CHECK_ITEMS": "다음 항목들이 제대로 구현되었는지 확인해 보세요!",
+                    "ExerciseViewer_NO_GUIDE_IN_SELF_CHECK": "문제가 발생했습니다. 코드잇에 제보해 주세요. (셀프채점인데 가이드가 비어있습니다)",
+                    "QuizViewerMultiple_CORRECT_ANSWER_MESSAGE": "👏🏻 정답입니다.",
+                    "QuizViewerMultiple_GET_XP_MESSAGE": "를 획득하셨어요!",
+                    "QuizViewerText_INPUT_ANSWER_CORRECTLY": "정답을 정확히 입력해주세요",
+                    "QuizViewer_INPUT_VALUE_ALERT": "값을 입력해주셔야 합니다",
+                    "QuizViewer_QUESTION": "질문",
+                    "QuizViewer_CHECK_ANSWER": "정답 확인",
+                    "QuizViewer_WRONG_ANSWER_MESSAGE": "❌ 정답이 아니에요.",
+                    "QuizMultipleChoice_SOLUTION_ERROR": "힌트/해설 보기에 오류가 발생했어요.",
+                    "RedoQuizBox_ALL_DONE": "모든 문제를 다 푸셨어요.",
+                    "RedoQuizBox_REVIEW": "복습해 보시겠어요?",
+                    "RedoQuizBox_REDO_QUIZ": "퀴즈 다시 풀기",
+                    "LessonViewer_REPORT_ERROR": "의견 보내기",
+                    "HeaderProfile_TEAMS_ADMIN": "내 팀 관리",
+                    "HeaderProfile_MY_PROFILE": "내 프로필",
+                    "HeaderProfile_LOGOUT": "로그아웃",
+                    "HeaderProfile_DARKMODE": "다크 모드",
+                    "HeaderProfile_LIGHTMODE": "라이트 모드",
+                    "HeaderProfile_HOME": "홈",
+                    "HeaderProfile_ACCOUNT": "계정 설정",
+                    "PopupTopicReview_PLACEHOLDER": "수강 후기를 입력해 주세요 (15자 이상)",
+                    "": "url이 클립보드에 복사되었습니다.",
+                    "NewEditorConsoleBtns_EXECUTE": "실행",
+                    "NewEditorConsoleBtns_NON_EXECUTABLE": "본 과제는 실행이 지원되지 않습니다.",
+                    "NewEditorConsoleBtns_OPEN_WEB_PAGE": "웹 페이지 열기",
+                    "NewEditorConsoleBtns_SELF_SCORING": "셀프 채점",
+                    "NewEditorConsoleBtns_SCORING": "채점",
+                    "Console_LOADING_SCHEMA": "스키마를 불러오는 중 입니다...",
+                    "Console_LOADING_SCHEMA_ERROR": "스키마를 불러오는 중 문제가 발생했습니다.",
+                    "Console_RESULT": "실행 결과",
+                    "Console_SCHEMA": "스키마",
+                    "Console_RESULT_WITH_SIGN": "\u003c/\u003e 실행 결과",
+                    "Console_WEB_TERMINAL": "터미널",
+                    "EditorTemplate_SAVE": "저장",
+                    "EditorTemplate_RESET": "초기화",
+                    "EditorTemplate_POPUP_RESET_TITLE": "정말로 초기화하시겠어요?",
+                    "EditorTemplate_WILL_DELETE": "해당 레슨에서 작업했던 모든 파일이 삭제되고",
+                    "EditorTemplate_WILL_RESET": "초기 제공 파일만 남은 상태로 돌아갑니다.",
+                    "EditorTemplate_INVISIBLE_FILE": "미리보기를 지원하지 않는 파일입니다.",
+                    "ExplorerItem_NEW_FILE": "새 파일",
+                    "ExplorerItem_NEW_FOLDER": "새 폴더",
+                    "ExplorerItem_RENAME": "이름 변경",
+                    "ExplorerItem_DELETE": "삭제",
+                    "ExplorerItem_DOWNLOAD": "다운로드",
+                    "ExplorerItem_WILL_YOU_DELETE": "정말 삭제하시겠어요?",
+                    "Challenge_title": "챌린지 | 코드잇",
+                    "CodeEditorFileExplorerEditorModal_INPUT_NAME": "이름을 입력하세요",
+                    "CodeEditorFileExplorerEditorModal_CREATE_NEW_FILE": "새 파일 생성",
+                    "CodeEditorFileExplorerEditorModal_CREATE_NEW_FOLDER": "새 폴더 생성",
+                    "CodeEditorFileExplorerEditorModal_CREATE": "생성하기",
+                    "CodeEditorStore_WAITING": "잠시만 기다려주세요...",
+                    "CodeEditorStore_EXECUTION_ERROR": "실행 중 오류가 발생하였습니다.",
+                    "CodeEditorStore_COMPLETE_SELF_CHECK": "셀프 채점 항목을 모두 체크하고 과제를 완료해 주세요.",
+                    "CodeEditorStore_CHECK_BROWSER_SETTING": "결과 창이 뜨지 않을 시, 브라우저의 팝업을 허용하고 '웹 페이지 열기'를 다시 눌러 주세요.",
+                    "CodeEditorStore_EXECUTION_TIME_ERROR": "실행 시간을 초과하였습니다. 코드 내에 무한 루프가 있을 수 있으니 확인해 주세요.",
+                    "CodeEditorStore_LOADING_TERMINAL": "터미널 로딩 중",
+                    "CodeEditorStore_FILE": "실습 파일",
+                    "CodeEditorStore_SAVED": "저장되었습니다.",
+                    "CodeEditorStore_EXTENSION_REQUIRED": "파일 확장자를 입력해주세요.",
+                    "NotificationTemplate_NOTICE": "알림",
+                    "NotificationTemplate_DELETE_ALL": "모두 삭제",
+                    "NotificationTemplate_ALL_READ": "모든 알림을 확인하셨어요.",
+                    "CatalogTopicContent_chapter": "챕터",
+                    "CatalogTopicContent_lesson": "레슨",
+                    "CatalogTopicContent_preparing": "출시 예정",
+                    "CatalogTopicContent_n_week_course": "{ week } 주 과정",
+                    "CatalogTopic_topic_edit": "토픽 상세편집",
+                    "CatalogTopic_course": "코스 전용 소개",
+                    "CatalogTopic_list_del": "목록에서 삭제",
+                    "Classroom_Check_Membership": "멤버십 확인하기",
+                    "ClassroomTutorial_next": "다음",
+                    "ClassroomTutorial_back": "이전",
+                    "ClassroomTutorial_close": "닫기",
+                    "ClassroomTutorial_split_view_handle_button_title": "코드잇 실행기 열고 닫기",
+                    "ClassroomTutorial_split_view_handle_button_content": "화살표를 눌러 코드잇 실행기를 열고 닫아 보세요!",
+                    "ClassroomTutorial_split_view_handle_bar_title": "실행기 화면 비율 조절하기",
+                    "ClassroomTutorial_split_view_handle_bar_content": "경계선을 드래그해서  화면 비율을 조절해 보세요.",
+                    "ToUseThisFeatureModal_subscribe_message": "멤버십에 등록해 주세요.",
+                    "ToUseThisFeatureModal_cancel": "취소하기",
+                    "ToUseThisFeatureModal_subscribe_and_use": "코드잇 멤버십에 등록한 유저만 이용할 수 있어요.\n멤버십에 등록하여 기능을 이용해 보세요!",
+                    "ToUseThisFeatureModal_subscribe": "멤버십 등록",
+                    "JupyterOutput_error": "출력을 지원하지 않는 결과물입니다. 문제가 있을 경우 코드잇 팀에 문의해주세요.",
+                    "BookmarkBtn_done": "북마크 완료!",
+                    "BookmarkBtn_get_bookmarked": "홈에서 북마크한 { type }을 모아 보세요.",
+                    "BookmarkBtn_lesson": "레슨",
+                    "BookmarkBtn_confirm": "확인",
+                    "LikeCounter_manager": "관리자",
+                    "CommonResult_correct": "정답입니다!",
+                    "PopupGeneral_btnText": "확인",
+                    "PopupGeneral_btn2Text": "취소하기",
+                    "PopupTwoBtns_btn1Text": "확인",
+                    "PopupTwoBtns_btn2Text": "취소하기",
+                    "PopupWithBtn_btn1Text": "확인",
+                    "PopupWithBtn_btn2Text": "아니요",
+                    "FootnoteBuilder_save": "저장하기",
+                    "FootnoteBuilder_cancel": "취소하기",
+                    "TutorialDetailPage_codeit": "코드잇",
+                    "QuillEditorStore_img_error": "이미지를 업로드하는데 오류가 발생했습니다. 다시 시도해주세요.",
+                    "Search_page_title": "'{ keyword }' 검색 결과 | 코드잇",
+                    "Search_all": "전체",
+                    "Search_path": "강의 / 로드맵",
+                    "Search_topic": "토픽",
+                    "Search_lesson": "레슨",
+                    "Search_Header_title_target": "상위 검색 결과",
+                    "Search_Header_count_prefix": "전체",
+                    "Search_Header_count_unit": "개",
+                    "Search_more": "더보기",
+                    "Search_empty_header_all": "검색 결과가 없습니다.",
+                    "Search_empty_header_path": "검색 결과가 없습니다.",
+                    "Search_empty_header_topic": "검색된 토픽이 없습니다.",
+                    "Search_empty_header_lesson": "검색된 레슨이 없습니다.",
+                    "Search_empty_content": "단어의 철자가 정확한지 확인해 보세요.\n띄어쓰기 또는 넓은 의미의 단어를 사용해 보세요.",
+                    "CoursesContentTopicEach_del": "해당 토픽의 설명 및 비디오링크를 삭제하시겠습니까?",
+                    "CoursesContentTopicEach_yes": "예",
+                    "CoursesContentTopicEach_no": "아니요",
+                    "CoursesContentTopicEachDescription_submit": "제출",
+                    "CoursesContentTopicEachDescription_video": "비디오 링크",
+                    "CoursesContentTopicEachDescription_link_please": "vimeo 링크를 복사해주세요",
+                    "CoursesContentTopicEachDescription_topic": "토픽 요약",
+                    "CoursesContentTopicEachDescription_summary_please": "토픽 요약을 입력해 주세요.",
+                    "CoursesContentTopicEachDescription_content_please": "내용을 작성해 주세요.",
+                    "CourseDetailContainer_question": "강의에 대해 궁금한 점이 있으신가요?",
+                    "CourseDetailContainerTopics_topic": "{ topicTitle } 토픽",
+                    "CourseDetailContainerTopics_n_topic_exists": "{ title }에는 총 { topicCount }개의 토픽이 존재합니다.",
+                    "CourseDetailContainerTopics_from": "[{ topicTitle }]부터 시작 해 보세요.",
+                    "CourseDetailContainerTopics_no": "아직 토픽이 존재하지 않습니다.",
+                    "CourseDetailContainerTopics_total_topic": "총 { topicCount }개 토픽",
+                    "CourseDetailContainerTopics_topic_compose": "토픽 구성",
+                    "CourseDetailContainerHead_detail": "코스 상세",
+                    "CourseDetailContainerHead_progress": "코스 진행률",
+                    "CourseDetailContainerHead_with_video": "영상으로 알아보기",
+                    "CourseDetailContainerInfoBox_more": "...더보기",
+                    "CourseDetailContainerInfoBox_detail": "수업 상세",
+                    "CourseDetailContainerInfoBox_before": "선수 코스",
+                    "CourseDetailContainerInfoBox_none": "없음",
+                    "CourseDetailContainerInfoBox_video": "영상 {video}",
+                    "CourseDetailContainerInfoBox_note": "노트 {note}",
+                    "CourseDetailContainerInfoBox_task": "실습 {exercise}",
+                    "CourseDetailContainerInfoBox_quiz": "퀴즈 {quiz}",
+                    "CourseDetailContainerInfoBox_no_lesson": "내부에 레슨이 존재하지 않습니다",
+                    "CourseDetailContainerInfoBox_no_topic": "내부에 토픽이 존재하지 않습니다",
+                    "CourseDetailContainerPopup_detail": "코스 상세",
+                    "CourseDetailContainerPopup_renewal": "코스가 리뉴얼되었습니다.",
+                    "CourseDetailContainerPopup_new": "새로운 코스로 만나보세요.",
+                    "CourseDetailContainerPopup_selected": "진입하고자 하는 코스는",
+                    "CourseDetailContainerPopup_legacy": "현재 수강하고 있는 코스의 이전 버전입니다.",
+                    "CourseDetailContainerPopup_blocked": "강의실 입장이 어려운 점 양해 부탁드립니다.",
+                    "CourseDetailContainerPopup_renewed": "진입하고자 하는 코스는 최근에 리뉴얼되어,",
+                    "CourseDetailContainerPopup_its_blocked": "해당 강의실 입장이 어려운 점 양해 부탁드립니다.",
+                    "CourseDetailContainerPopup_contact": "자세한 사항은 코드잇에 문의 바랍니다.",
+                    "CourseDetailContainerReview_review": "수강 후기",
+                    "CourseDetailContainerReview_take": "1000여 명의 수강생이 직접 남긴 수강 후기를 살펴보세요.",
+                    "ExamNavigator_submit": "제출하기",
+                    "CommunityAnswerBuilder_input_content": "내용을 입력해 주세요.",
+                    "Comment_Form_input_comment": "댓글을 입력하세요",
+                    "Comment_Form_comment_posted": "댓글이 등록되었습니다.",
+                    "Comment_Form_comment_failed": "댓글 작성에 실패했습니다.",
+                    "Comment_Form_comment_placeholder": "댓글 입력하기",
+                    "Comment_Viewer_comment_updated": "댓글이 수정되었습니다.",
+                    "Comment_Viewer_comment_update_failed": "댓글 수정에 실패했습니다.",
+                    "Comment_Viewer_comment_deleted": "댓글이 삭제되었습니다.",
+                    "Comment_Viewer_comment_delete_failed": "댓글 삭제에 실패했습니다.",
+                    "Comment_Viewer_comment_move": "어떤 답변으로 이동시킬까요?",
+                    "Comment_Viewer_cancel": "취소하기",
+                    "Comment_Viewer_modify": "수정하기",
+                    "Comment_Viewer_delete": "삭제하기",
+                    "Comment_Viewer_goto_answer": "답변으로",
+                    "Comment_Viewer_move": "댓글이동",
+                    "CommunityEachBody_url_copied": "url이 클립보드에 복사되었습니다.",
+                    "CommunityEachBody_accept_question": "정말 답변을 채택하시겠어요?",
+                    "CommunityEachBody_accept": "채택하기",
+                    "CommunityEachBody_share": "공유하기",
+                    "CommunityRelatedQuestions_related": "관련 질문",
+                    "CommunityPopularQuestions": "인기 질문",
+                    "CommunityRelatedQuestions_no_related": "아직 관련 질문이 없네요.",
+                    "CommunityContentShow_modify": "수정하기",
+                    "CommunityContentShow_delete": "삭제하기",
+                    "CommunityContentShow_hide": "숨기기",
+                    "CommunityContentShow_cannot_delete_accepted": "채택된 답변은 삭제할 수 없어요.",
+                    "CommunityContentShowStore_error": "오류가 발생했습니다.",
+                    "CommunityContentShowStore_error_delete_question": "질문을 삭제하는데 오류가 발생했습니다. 다시 시도해주세요.",
+                    "CommunityContentShowStore_delete_question_success": "질문이 삭제되었습니다.",
+                    "CommunityContentShowStore_error_hide_question": "질문을 숨기는데 오류가 발생했습니다. 다시 시도해주세요.",
+                    "CommunityContentShowStore_hide_question_success": "숨김처리 되었습니다.",
+                    "CommunityContentShowStore_error_delete_answer": "답변을 삭제하는데 오류가 발생했습니다. 다시 시도해주세요.",
+                    "CommunityContentShowStore_delete_answer_success": "답변이 삭제되었습니다.",
+                    "CommunityContentShowStore_error_hide_answer": "답변을 숨기는데 오류가 발생했습니다. 다시 시도해주세요.",
+                    "CommunityContentShowStore_hide_answer_success": "숨김처리 되었습니다.",
+                    "CommunityContentShowStore_error_accept_answer": "답변 채택에 오류가 발생했습니다. 다시 시도해주세요.",
+                    "CommunityContentShowStore_error_create_answer": "답변 생성에 오류가 발생했습니다. 다시 시도해주세요.",
+                    "CommunityContentShowStore_answer_registered": "답변이 등록되었습니다.",
+                    "CommunityContentShowStore_error_modify_answer": "답변 수정에 오류가 발생했습니다. 다시 시도해주세요.",
+                    "CommunityContentShowStore_answer_modified": "답변이 수정되었습니다.",
+                    "CommunityContentShowStore_error_upgrade_comment": "댓글 이동에 오류가 발생했습니다. 다시 시도해주세요.",
+                    "CommunityContentShowStore_upgrade_comment_success": "반영되었습니다.",
+                    "CommunityFilter_lesson": "연관 수업",
+                    "CommunityIndex_ask": "질문하기",
+                    "CommunityQuestionBuilder_enter_codeblock": "코드는 여기 코드블록에 입력해 주세요.",
+                    "CommunityQuestionBuilder__title_helper_text": "제목만 보고 구체적인 내용을 알 수 있게 작성해주세요!",
+                    "CommunityQuestionBuilderStore_enter_title_min": "제목은 최소 12자 이상 입력해주세요.",
+                    "CommunityQuestionBuilderStore_enter_content": "내용을 입력해 주세요.",
+                    "CommunityQuestionBuilderStore_enter_type": "질문 종류를 설정해 주세요.",
+                    "CommunityQuestionBuilderStore_error_question_register": "질문 등록에 오류가 발생했습니다. 다시 시도해주세요.",
+                    "CommunityQuestionBuilderStore_question_register_success": "질문이 등록되었습니다.",
+                    "CommunityQuestionBuilderStore_error_question_modify": "질문 수정에 오류가 발생했습니다. 다시 시도해주세요.",
+                    "CommunityQuestionBuilderStore_question_modify_success": "질문이 수정되었습니다.",
+                    "QuestionBuilderRelatedQuestions_title": "유사한 질문을 확인해 보세요!",
+                    "QuestionLessonHierarchy_normal_question": "일반 질문",
+                    "CommunityQuestionHead_write": "{ postedAt }",
+                    "ReviewTemplate_rating": "평점순",
+                    "FootnotesViewer_from": "출처:",
+                    "ChangePW_RESET_PASSWORD": "비밀번호 재설정",
+                    "ChangePW_NEW_PASSWORD": "새 비밀번호",
+                    "ChangePW_INPUT_COMBINATION_PASSWORD": "영문+숫자 조합 8자 이상 입력해 주세요.",
+                    "ChangePW_CHECK_NEW_PASSWORD": "새 비밀번호 확인",
+                    "ChangePW_INPUT_PASSWORD_AGAIN": "비밀번호를 다시 한번 입력해 주세요.",
+                    "ChangePW_COMPLETE_CHANGING": "변경 완료하기",
+                    "ChangePWStore_INPUT_COMBINATION_PASSWORD": "비밀번호는 영문, 숫자 조합 8자 이상 입력해 주세요.",
+                    "ChangePWStore_NOT_MATCHING_PASSWORD": "비밀번호가 일치하지 않아요.",
+                    "ChangePWStore_CHANGING_PASSWORD_COMPLETED": "비밀번호 재설정이 완료되었습니다.",
+                    "ChangePWStore_FAIL_TO_CHANGING_PASSWORD": "비밀번호 재설정에 실패했습니다 코드잇에 문의해 주세요!",
+                    "SignIn_CHECK_MEMBER": "회원이 아니신가요?",
+                    "SignIn_SIGNUP": "회원가입 하기",
+                    "SignInStore_CHECK_EMAIL": "이메일을 확인해주세요.",
+                    "SignInStore_CHECK_PASSWORD": "비밀번호를 확인해주세요.",
+                    "SignInStore_PASSWORD_MAX_RETRIED": "로그인에 연속으로 실패해서 차단되었습니다. 개발팀에 문의해주세요.",
+                    "SignInStore_PASSWORD_RESET_REQUIRED": "마지막 비밀번호 변경 뒤 6개월이 지났습니다. 개발팀에 문의해주세요.",
+                    "SignInStore_LOGIN_COUNT_EXCEEDED": "접속 횟수 제한. 개발팀에 문의해주세요.",
+                    "SignUp_ALREADY_MEMBER": "이미 회원이신가요?",
+                    "SignUp_SIGNIN": "로그인 하기",
+                    "SignUpContent_SIGNUP_WITH_KAKAO": "카카오로 3초만에 시작하기",
+                    "SignUpContent_SIGNUP_WITH_EMAIL": "이메일로 가입하기",
+                    "SignUpContent_SIGNUP_WITH_OTHERS": "다른 방식으로 가입하기",
+                    "SignUpContent_FOR_BUSINESS": "기업 수강을 원하시나요?",
+                    "SignUpWithEmail_EMAIL": "이메일",
+                    "SignUpWithEmail_PASSWORD": "비밀번호",
+                    "SignUpWithEmail_CONFIRM_PASSWORD": "비밀번호 확인",
+                    "SignUpWithEmail_SIGNUP": "가입하기",
+                    "SignUpWithEmail_ERROR_IN_SIGNUP": "회원가입에 오류가 발생했습니다. 다시 시도해주세요.",
+                    "SignUpWithEmail_HOOKS_CHECK_BLANK": "빈 칸을 확인해 주세요.",
+                    "SignUpWithEmail_HOOKS_INVALID_EMAIL": "올바른 이메일 주소가 아닙니다.",
+                    "SignUpWithEmail_HOOKS_EMAIL_IN_USE": "이미 사용 중인 아이디입니다.",
+                    "SignUpWithEmail_HOOKS_PASSWORD_COMBINATION": "비밀번호는 영문, 숫자 조합 8자 이상 입력해 주세요.",
+                    "SignUpWithEmail_HOOKS_PASSWORD_MISMATCH": "비밀번호가 일치하지 않아요.",
+                    "TermsCheckboxes_AGREE_ALL_TERMS": "전체 약관 동의",
+                    "TermsCheckboxes_AGREE_CODEIT_TERMS": "[필수] 코드잇 이용 약관에 동의",
+                    "TermsCheckboxes_AGREE_PRIVACY_POLICY": "[필수] 개인정보 수집 및 이용에 동의",
+                    "TermsCheckboxes_AGREE_MARKETING": "[선택] 마케팅 정보 수신 및 선택적 개인정보 제공",
+                    "TermsCheckboxes_AGREE_BUSINESS_POLICY": "[필수] 소속 기업에 학습 정보 제공에 동의",
+                    "TermsCheckboxes_MUST_AGREE_REQUIRED_TERMS": "필수 약관에 모두 동의해주세요.",
+                    "BusinessSignUpContainer_SIGN_UP_ERROR": "회원가입에 오류가 발생했습니다. 다시 시도해주세요.",
+                    "BusinessSignUpContainer_EMAIL": "이메일",
+                    "BusinessSignUpContainer_PASSWORD": "비밀번호",
+                    "BusinessSignUpContainer_CONFIRM_PASSWORD": "비밀번호 확인",
+                    "BusinessSignUpContainer_SIGN_UP": "가입하기",
+                    "OAuthEmailForm_EMAIL": "이메일",
+                    "OAuthEmailForm_SIGN_UP_WITH_KAKAO": "카카오로 가입하기",
+                    "OAuthEmailWithTermsForm_EMAIL": "이메일",
+                    "OAuthEmailWithTermsForm_SIGN_UP_WITH_FACEBOOK": "페이스북으로 가입하기",
+                    "OAuthEmailWithTermsForm_SIGN_UP_WITH_GOOGLE": "구글로 가입하기",
+                    "OAuthEmailWithTermsForm_SIGN_UP_WITH_NAVER": "네이버로 가입하기",
+                    "OAuth_HOOKS_ERROR_IN_SIGNUP": "회원가입에 오류가 발생했습니다. 다시 시도해주세요.",
+                    "OAuth_HOOKS_ALREADY_KAKAO": "카카오로 이미 가입하셨어요",
+                    "OAuth_HOOKS_ALREADY_NAVER": "네이버로 이미 가입하셨어요",
+                    "OAuth_HOOKS_ALREADY_GOOGLE": "구글로 이미 가입하셨어요",
+                    "OAuth_HOOKS_ALREADY_FACEBOOK": "페이스북으로 이미 가입하셨어요",
+                    "OAuth_HOOKS_LOGIN_WITH_OTHERS": "{ platform } 계정으로 로그인 하시겠어요?",
+                    "OAuth_HOOKS_LOGIN": "로그인 하기",
+                    "OAuth_HOOKS_CANCEL": "취소",
+                    "OAuth_HOOKS_KAKAO": "카카오",
+                    "OAuth_HOOKS_NAVER": "네이버",
+                    "OAuth_HOOKS_GOOGLE": "구글",
+                    "OAuth_HOOKS_FACEBOOK": "페이스북",
+                    "Nickname_NICKNAME": "닉네임",
+                    "UserAccountProfileContainerPassword_fill": "빈칸을 모두 채워주세요.",
+                    "UserAccountProfileContainerPassword_condition": "영문 숫자 조합 8자 이상 입력해 주세요.",
+                    "UserAccountProfileContainerPassword_pw_done": "비밀번호 변경이 완료되었어요.",
+                    "UserAccountProfileContainerPassword_not_match": "비밀번호가 서로 일치하지 않습니다.",
+                    "SchemaTable_null": "스키마가 비어 있습니다.",
+                    "UtilApiProfile_pf_image_error": "프로필 사진 변경 중 오류가 발생했습니다.",
+                    "UtilApiAccount_prev_wrong": "기존 비밀번호가 올바르지 않습니다",
+                    "UtilApiAccount_prev_same": "기존 비밀번호와 다르게 입력해 주세요",
+                    "UtilApiAccount_pw_fail": "비밀번호 변경에 실패했습니다",
+                    "UtilApiAccount_not_match": "비밀번호가 서로 일치하지 않습니다.",
+                    "AccountStore_limited_event_error": "한정 특가 이벤트 적용에 실패했습니다",
+                    "AccountStore_limited_event_success": "한정 특가 이벤트가 적용되었습니다",
+                    "CourseCard__beginner": "입문",
+                    "CourseCard__easy": "초급",
+                    "CourseCard__medium": "중급",
+                    "CourseCard__hard": "고급",
+                    "CoursesContentTopicEachB2B_progress": "기말 평가는 진도율 { progressThreshold }% 이상부터 진행이 가능합니다.",
+                    "CoursesContentTopicEachB2B_remainingExamCount": "남은 응시 횟수 { remainingExamCount } 회",
+                    "CoursesContentTopicEachB2B_score": "점수 : {score}점",
+                    "CoursesContentTopicEachB2B_questionCount": "총 {questionCount}문제",
+                    "CoursesContentTopicEachB2B_progress_explanation": "평가는 진도율 { progressThreshold }% 이상부터 진행이 가능하며,",
+                    "CoursesContentTopicEachB2B_userScore": "{ userName }님의 기말평가점수는 { score }점입니다",
+                    "UseSolution_USED": "사용",
+                    "UseSolution_SHOW_HINT": "힌트 보기",
+                    "UseSolution_SHOW_SOLUTION": "해설 보기",
+                    "GetSolutions_HINT": "힌트",
+                    "GetSolutions_QUIZ_EXPLANATION": "퀴즈 해설",
+                    "CoursesContentTopicEachB2B_no_more_exam_chance": "응시 기회를 모두 사용하셨습니다.",
+                    "CoursesContentTopicEachB2B_final": "기말 평가",
+                    "CoursesContentTopicEachB2B_examcount_notice": "응시 기회는 총 { examCount }회 입니다.",
+                    "CoursesContentTopicEachB2B_be_careful": "신중하게 시작해 주시길 바랍니다.",
+                    "CoursesContentTopicEachB2B_want_start": "기말 평가를 시작하시겠어요?",
+                    "CoursesContentTopicEachB2B_start": "평가 시작",
+                    "CoursesContentTopicEachB2B_submitted": "시험이 제출되었습니다!",
+                    "CoursesContentTopicEachB2B_well_done": "수고하셨습니다!",
+                    "CoursesContentTopicEachB2B_expired": "평가 기간이 만료되어, 기말 평가를 칠 수 없어요.\u003cbr/\u003e자세한 사항은 회사 담당자에게 문의해 주세요.",
+                    "CoursesContentTopicEachB2B_ready_to_test": "코드잇 기말 평가는 일시정지가 불가하며, 시험 시간은 총 60분입니다.\u003cbr/\u003e충분한 시간 확보 후 시험에 응시해주시기 바랍니다.\u003cbr/\u003e\u003cspan\u003e* 시험 응시 중 창을 닫은 경우, 사이트에 다시 접속하면 계속해서 응시가\u003cbr/\u003e가능하지만, \u003cb\u003e처음 시작한 시점\u003c/b\u003e에서 60분이 지나면 자동으로 제출됩니다.\u003c/span\u003e\u003cspan\u003e* 수강 기간이 만료될시 시험도 강제 종료됩니다.\u003c/span\u003e",
+                    "CoursesContentTopicEachB2B_ready_to_test_for_lotte": "코드잇 기말 평가는 일시정지가 불가하며, 시험 시간은 총 60분입니다.\u003cbr/\u003e충분한 시간 확보 후 시험에 응시해주시기 바랍니다.\u003cbr/\u003e\u003cspan\u003e* 시험 응시 중 창을 닫은 경우 사이트에 다시 접속하면 계속해서 응시가\u003cbr/\u003e가능하지만, \u003cb\u003e처음 시작한 시점\u003c/b\u003e에서 60분이 지나면 자동으로 제출됩니다.\u003cspan\u003e* 수강 기간이 만료될시 시험도 강제 종료됩니다.\u003c/span\u003e* 시험 응시 중 오류가 났을 경우, [오류 화면을 캡쳐]하여\u003cbr/\u003e제시해 주셔야 도움을 드릴 수 있다는 점 참고 부탁드립니다.\u003c/span\u003e",
+                    "CoursesContentTopicEachB2B_please_suggest": "‘코딩은 실습이지’ 과정에 대한\u003cbr/\u003e 많은 추천 부탁드립니다. 감사합니다.",
+                    "QuizTextMultipleChoices_append": "추가",
+                    "LessonEvaluation_header": "이번 레슨은 어땠나요?",
+                    "TutorialEvaluation_header": "이 튜토리얼은 어땠나요?",
+                    "ApplicationToolKit_COPY_TO_CLIPBOARD": "클립보드에 복사되었습니다.",
+                    "AccountNotification_ANNOUNCEMENTS_TITLE": "Announcements",
+                    "AccountNotification_ANNOUNCEMENTS": "Get notified when we launch new courses, topics, and product features.",
+                    "AccountNotification_TIPS_AND_TRICKS_TITLE": "Tips and Tricks",
+                    "AccountNotification_TIPS_AND_TRICKS": "Receive helpful tips and tricks to get you started.",
+                    "AccountNotification_SPECIAL_PROMOTIONS_TITLE": "Special Promotions",
+                    "AccountNotification_SPECIAL_PROMOTIONS": "Receive special offers and promotions from Codeit.",
+                    "AccountNotification_EVENTS_AND_WEBINARS_TITLE": "Events and Webinars",
+                    "AccountNotification_EVENTS_AND_WEBINARS": "Stay informed about special events like webinars, challenges, and hackathons.",
+                    "AccountNotification_NEWSLETTERS_TITLE": "Newsletters",
+                    "AccountNotification_NEWSLETTERS": "Receive personalized newsletters that round up events and news in your field of interest.",
+                    "AccountNotification_STUDY_REMINDERS_TITLE": "Study Reminders",
+                    "AccountNotification_STUDY_REMINDERS": "Receive daily, weekly, or monthly reminders to help you keep on track",
+                    "AccountNotification_PROGRESS_UPDATES_TITLE": "Progress Updates",
+                    "AccountNotification_PROGRESS_UPDATES": "Receive updates on your course or topic progress to help you reach your goals.",
+                    "AccountNotification_SATISFACTION_SURVEYS_TITLE": "Satisfaction Surveys",
+                    "AccountNotification_SATISFACTION_SURVEYS": "Help us improve Codeit content and features so that you can have the best learning experience.",
+                    "Community__like": "좋아요 { likes }",
+                    "Community__view": "{ views } 조회",
+                    "Community__answer": "답변 { answers }",
+                    "RecentKeywords_title": "최근 검색어",
+                    "RecentKeywords_delete_all": "전체 삭제",
+                    "RecentKeywords_empty": "최근 검색어가 없습니다.",
+                    "QuestionWatch_watch_description": "질문 지켜보기를 시작하면 질문에 \u003cb\u003e답변, 댓글이 달릴 때 알림\u003c/b\u003e을 받을 수 있어요.",
+                    "QuestionWatch_unwatch_description": "질문 지켜보기를 중단하면\u003cbr/\u003e질문에 대한 알림을 받을 수 없어요.",
+                    "Classroom__unanswered_question": "답변을 기다리는 질문",
+                    "Classroom__code_editor": "실행기",
+                    "CommunityAnswer_accept": "채택하기",
+                    "Community__commentCount": "댓글 { count }개",
+                    "Topic_subtitle": "토픽",
+                    "Topic_included_in_path": "포함된 강의/로드맵",
+                    "Topic_lesson": "레슨 수",
+                    "Topic_difficulty": "난이도",
+                    "Topic_keyword": "키워드",
+                    "Topic_playlist": "재생목록 추가",
+                    "Topic_start": "토픽 수강하기",
+                    "Topic_continue": "토픽 이어하기",
+                    "Topic_details": "토픽 커리큘럼",
+                    "Topic_total_lesson_count": "총 레슨 { count }개",
+                    "Topic_total_video_time": "영상 약 { time }",
+                    "Topic_review_title": "토픽 후기",
+                    "Topic_review_button": "후기 전체보기",
+                    "Topic_review_count": "총 \u003cspan\u003e{ reviews }개\u003c/span\u003e의 토픽 후기",
+                    "Topic_playlist_count_0": "토픽 0개",
+                    "Topic_playlist_count": "토픽 { count }개",
+                    "Topic_playlist_modal_title": "재생목록에 추가하기",
+                    "Topic_playlist_complete_title": "토픽이 잘 담겼어요",
+                    "Topic_playlist_complete_question": "재생 목록으로 바로 이동하시겠어요?",
+                    "Topic_playlist_complete_move": "이동하기",
+                    "Topic_already_title": "이미 추가된 토픽입니다",
+                    "Topic_already_description": "선택한 토픽이 이미 내 재생목록에 있습니다.",
+                    "Topic_already_cancel": "취소하기",
+                    "Topic_already_confirm": "그래도 추가하기",
+                    "Topic_hour": "{ time }시간",
+                    "Topic_minute": "{ time }분",
+                    "Topic_progress_target": "레슨 완료",
+                    "Topic_trial_lesson_preview": "무료",
+                    "TopicCard_LESSON_COUNT": "레슨 { count }",
+                    "Curriculum_CURRICULUM": "커리큘럼",
+                    "Curriculum_SELECT_ALL": "모두 선택하기",
+                    "MembershipBenefit_MONTHLY_PRICE": "월 \u003cspan\u003e{ price }원\u003c/span\u003e",
+                    "MembershipBenefit_BENEFIT": "코드잇 멤버십\n구독 혜택",
+                    "MembershipBenefit_START_MEMBERSHIP": "멤버십 시작하기",
+                    "MembershipBenefit_BENEFIT_MESSAGE_1": "멤버십 하나로 코드잇 전 강의 무제한 수강 가능",
+                    "MembershipBenefit_BENEFIT_MESSAGE_2": "퀄리티가 보장되는 100% 자체제작 강의 콘텐츠",
+                    "MembershipBenefit_BENEFIT_MESSAGE_3": "PC, 태블릿, 모바일 어떤 환경에서도 수강 및 실습 가능",
+                    "MembershipBenefit_BENEFIT_MESSAGE_4": "복잡한 설치 작업 없이, 배운 내용을 바로 브라우저에서 실습할 수 있는 환경",
+                    "Faq_TITLE": "자주 묻는 질문",
+                    "Faq_SUBTITLE": "궁금한 점이 있으세요?",
+                    "Faq_SEE_ALL_FAQ": "질문 전체보기",
+                    "Classroom__mark_done": "레슨완료",
+                    "Classroom__quiz_done_disabled_guide": "퀴즈를 통과해야 해요.",
+                    "Classroom__exercise_done_disabled_guide": "실습을 통과해야 해요.",
+                    "Classroom__lesson_passed": "완료됨",
+                    "Classroom_popup_markdone_reminder_title": "레슨완료 버튼을 눌러주세요",
+                    "Classroom_incomplete_last_lesson_modal_title": "토픽의 마지막 레슨이에요!",
+                    "Classroom_incomplete_last_lesson_modal_description": "아직 완료하지 않은 레슨이 남아있어요.\n레슨을 모두 완료하고 토픽을 수료해보세요.",
+                    "Classroom_incomplete_last_lesson_modal_cta_button_label": "미완료 레슨 듣기",
+                    "Classroom_go_to_dashboard": "홈으로 가기",
+                    "Classroom_popup_markdone_reminder_content_firstline": "우측 하단의 레슨 완료 버튼을 누르지 않고 레슨을 건너 뛸 경우,",
+                    "Classroom_popup_markdone_reminder_content_secondline": "듣지 않은 수업으로 처리되니 주의해 주세요.",
+                    "Classroom_popup_markdone_reminder_skip_lesson": "레슨 건너뛰기",
+                    "Classroom_popup_markdone_reminder_checkbox": "다음부터 보지 않기",
+                    "Path__playlist_button_select_all": "로드맵 따라가기",
+                    "Path__playlist_button": "선택한 강의 담기",
+                    "Path__playlist_float": "{title} \u003cspan\u003e{topic}\u003c/span\u003e",
+                    "Community__revision_title": "\u003cb\u003e{ name }\u003c/b\u003e가 수정",
+                    "Community__edited": "수정됨",
+                    "Community__moderator_name": "커뮤니티 파트너",
+                    "Dashboard__bookmarks__title": "북마크한 레슨",
+                    "Dashboard__bookmarks__empty_message": "북마크한 레슨이 없어요.",
+                    "RecommendationCard_VIEW_DETAILS": "더 알아보기",
+                    "MyTopics_WRITE_REVIEW": "후기 작성하기 (+500XP)",
+                    "MyTopics_EMPTY_COMPLETED_TOPIC": "완료한 토픽이 없어요.",
+                    "Review__count": "{ reviews }개의 후기",
+                    "Review__all_paths": "로드맵 전체",
+                    "Review__all_topics": "토픽 전체",
+                    "Review__empty_list": "아직 작성된 후기가 없어요. \n첫 후기를 남겨보세요!",
+                    "Playlist__new_playlist": "새 재생목록 만들기",
+                    "Playlist__create_playlist": "새로운 재생목록 만들기",
+                    "Playlist__enter_playlist_name": "재생목록 이름을 입력해 주세요.",
+                    "Playlist__enter__name": "이름을 입력해 주세요.",
+                    "Playlist__edit_name": "이름 변경",
+                    "Playlist__delete_playlist": "재생목록 삭제",
+                    "Playlist__already_in_use": "이름이 중복되었어요.",
+                    "Playlist__delete_playlist_alert_message": "선택한 재생목록이 삭제됩니다. \n계속하시겠어요?",
+                    "Playlist__delete_topics_alert_message": "선택한 토픽이 삭제됩니다. \n계속하시겠어요?",
+                    "Playlist__edit_playlist_name": "재생목록 이름 편집",
+                    "Playlist__create": "만들기",
+                    "Playlist__edit": "수정하기",
+                    "Playlist__delete": "삭제하기",
+                    "Playlist__cancel": "취소하기",
+                    "Playlist__modify": "편집하기",
+                    "Playlist__done": "완료하기",
+                    "Playlist__delete_topics_alert_message_plural": "선택한 토픽이 삭제됩니다. \n계속하시겠어요?",
+                    "Playlist__confirm_leave": "변경 사항을 저장하지 않고 페이지를 나가시겠어요?",
+                    "Path__LearningObjectives_title": "수강하면 이런 것을\n할 수 있어요!",
+                    "Streak_DAY_1": "월",
+                    "Streak_DAY_2": "화",
+                    "Streak_DAY_3": "수",
+                    "Streak_DAY_4": "목",
+                    "Streak_DAY_5": "금",
+                    "Streak_DAY_6": "토",
+                    "Streak_DAY_7": "일",
+                    "Streak_STATUS_TITLE": "출석",
+                    "Streak_STATUS_WEEK_STREAK": "{ week }주째 출석 중",
+                    "Streak_STATUS_DAY_STREAK": "{ day }일 연속 공부 중",
+                    "AccountStore_membership": "",
+                    "CommunityQuestionBuilderStore_enter_title": "",
+                    "Path__Targets_title": "이런 분들에게 도움이 돼요!",
+                    "Path_REVIEW_TITLE": "수강 후기",
+                    "Path_REVIEW_COUNT": "총 \u003cstrong\u003e{ reviews }개\u003c/strong\u003e의 수강 후기",
+                    "Next_level_info": "다음 레벨까지 \u003cstrong\u003e{xp} XP\u003c/strong\u003e 남았어요.",
+                    "Toast_lesson_complete_title": "레슨 완료",
+                    "Toast_lesson_complete_description": "힌트, 해설 보기 {xp} XP",
+                    "Toast_streak_bonus_title": "연속 출석 보너스",
+                    "Toast_streak_bonus_description": "{week}주 연속 출석중",
+                    "Toast_streak_bonus_description_plural": "{week}주 연속 출석중",
+                    "Level_up_description": "축하합니다. 레벨이 올랐어요!\n다음 레벨까지 더 달려볼까요?",
+                    "Toast_lesson_complete_description_1": "다음 레슨도 가볼까요?",
+                    "Toast_lesson_complete_description_2": "대단해요! 계속 해볼까요?",
+                    "Toast_lesson_complete_description_3": "멋져요! 잘 하고 있어요",
+                    "Toast_lesson_complete_description_4": "이대로 다음 레슨까지 Go!",
+                    "Toast_lesson_complete_description_5": "혹시 당신은 천재인가요?!",
+                    "ModalBadgeList_title": "획득한 배지",
+                    "TeamTermsModal_start_codeit": "코드잇 이용 시작하기",
+                    "TeamTermsModal_main_description": "안녕하세요. {userName}님! Codeit 서비스 이용을\n위해 아래의 약관 동의가 필요합니다.",
+                    "TeamTermsModal_sub_description": "\u003cmark\u003e본 절차는 약관 동의 이력이 없는 회원일 경우\u003c/mark\u003e 1회에 한하여\n수행되며 약관 동의 후 해당 화면은 다시 발생하지 않습니다.",
+                    "Badge_empty": "아직 획득한 뱃지가 없어요",
+                    "BadgeToast_title": "배지 획득!",
+                    "OneButtonModal_button_text": "확인",
+                    "TwoButtonsModal_secondary_button_text": "취소하기",
+                    "ProfileCommunity_watching_questions": "지켜보는 질문",
+                    "ProfileCommunity_my_asked_questions": "내 질문",
+                    "ProfileCommunity_asked_questions": "질문",
+                    "ProfileCommunity_my_answered_questions": "내 답변",
+                    "ProfileCommunity_answered_questions": "답변",
+                    "SimpleBadgeList_title": "획득한 배지",
+                    "SimpleBadgeList_count": "{count}개",
+                    "CumulativeActivities_title": "누적 학습 현황",
+                    "CumulativeActivities_max_streak": "최대 연속 출석",
+                    "CumulativeActivities_lessons_complete": "완료한 레슨",
+                    "CumulativeActivities_questions_asked": "커뮤니티 질문",
+                    "CumulativeActivities_questions_answered": "커뮤니티 답변",
+                    "CumulativeActivities_answers_accepted": "채택된 답변",
+                    "CumulativeActivities_likes_received": "획득한 좋아요",
+                    "CumulativeActivities_count": "{value}개",
+                    "CumulativeActivities_day": "{day}일",
+                    "CumulativeActivities_week": "{week}주",
+                    "WeekStreak_title": "이번 주 학습",
+                    "WeekStreak_streak": "{week}주 연속 출석 중!",
+                    "ProfileCommunity_empty_watching": "지켜보는 질문이 없어요.",
+                    "ProfileCommunity_empty_asked": "아직 등록한 질문이 없네요.",
+                    "ProfileCommunity_empty_answered": "아직 등록한 답변이 없네요.",
+                    "Membership_plan_personal": "개인 멤버십",
+                    "Membership_plan_personal_subtitle": "코드잇의 3,000여개 모든 강의를 무제한으로 수강",
+                    "Membership_plan_team_basic": "팀 멤버십",
+                    "Membership_plan_team_basic_subtitle": "소규모 팀을 위한 기본적인 관리 기능 지원",
+                    "Membership_plan_team_pro": "팀 프로 멤버십",
+                    "Membership_plan_team_pro_subtitle": "교육 운영에 필요한 고도화된 관리 기능 지원",
+                    "Membership_contact": "문의하기",
+                    "Membership_contact_to_sales": "상담 신청하기",
+                    "Membership_start": "시작하기",
+                    "Membership_pay_and_start": "결제하고 시작하기",
+                    "Membership_ask_change_membership": "멤버십 변경 문의하기",
+                    "Membership_ongoing": "이용중",
+                    "Membership_restart": "멤버십 재등록",
+                    "Membership_charge_term_monthly": "월",
+                    "Membership_yearly_charge_benefit": "월간 결제보다 31% 할인",
+                    "Membership_personal_features_1": "+ 모든 영상/노트/실습 강의 무제한 수강\n+ 강의/로드맵 추천\n+ Q\u0026A 커뮤니티 이용\n+ 매달 신규 강의 오픈\n+ 웹 코드 실행기 무제한 이용\n+ 개인별 맞춤 수강 독려\n+ 코딩 챌린지 참여",
+                    "Membership_team_basic_features_1": "+ 개인 멤버십의 모든 기능",
+                    "Membership_team_basic_features_2": "+ 전용 관리자 페이지 제공\n+ 자유로운 팀원 수강 권한 관리\n+ 교육과정 무제한 개설\n+ 학습 데이터 리포트",
+                    "Membership_team_pro_features_1": "+ 팀 멤버십의 모든 기능",
+                    "Membership_team_pro_features_2": "+ 학습 평가 기능\n+ 커스텀 디자인(로고)\n+ 기업 교육 담당자의 지속적인 서포트",
+                    "Membership_team_pro_features_3": "+ 수강 데이터 연동(LMS 연동)을 위한 API 제공\n+ SSO(Single Sign On)를 위한 엔지니어 서포트",
+                    "Membership_feature_need_discussion": "협의 필요",
+                    "Membership_target_section_label": "수강 대상",
+                    "Membership_target_section_title": "무제한 수강 멤버십,\n이런 분들에게 필요해요",
+                    "AccountLayout_title": "계정 설정",
+                    "AccountPage_profile": "프로필 설정",
+                    "AccountPage_plan": "멤버십 설정",
+                    "AccountPage_password": "비밀번호 변경",
+                    "AccountPage_notifications": "알림 설정",
+                    "Membership_benefit_section_title": "무제한 수강 멤버십의 다양한 혜택",
+                    "Membership_benefit_title_1": "비교 불가능한 가격",
+                    "Membership_benefit_description_1": "모든 강의를 수강할 수 있는데도\n타사 온라인 강의 하나 가격의 절반 수준!",
+                    "Membership_benefit_title_2": "매달 추가되는 새로운 강의",
+                    "Membership_benefit_description_2": "코딩은 물론 PM, UX·UI 디자인 등 매달 새로운 배움이 찾아와요.",
+                    "Membership_benefit_title_3": "모든 강의 수강 가능",
+                    "Membership_benefit_description_3": "멤버십 하나로 코드잇의 모든 강의를\n무제한으로 수강할 수 있어요.",
+                    "Membership_benefit_title_4": "코드잇 커뮤니티 이용",
+                    "Membership_benefit_description_4": "궁금한 내용을 묻고 답할 수 있는 멤버십 전용 \n커뮤니티를 이용할 수 있어요.",
+                    "Membership_review_section_title": "단 한 글자도 편집하지 않은 코드잇 후기!",
+                    "See_all_reviews": "전체 수강후기 보기",
+                    "PasswordChange_current_password": "현재 비밀번호",
+                    "PasswordChange_new_password": "새 비밀번호",
+                    "PasswordChange_new_password_confirm": "새 비밀번호 확인",
+                    "PasswordChange_button": "변경 완료",
+                    "Membership_team_pro": "팀 프로 멤버십",
+                    "Membership_team_basic": "팀 베이직 멤버십",
+                    "Meeting_my_classes": "내 수강 목록",
+                    "Meeting_expired": "화상 대화 주소가 만료되었습니다.",
+                    "Meeting_no_topic": "수강 목록이 없어요",
+                    "Codeit": "코드잇",
+                    "Project_Status_In_Progress": "진행 중",
+                    "Project_Status_Submitted": "제출 완료",
+                    "Project_Dashboard_title": "내 프로젝트",
+                    "Project_list_tab_enrolled": "진행 중인 프로젝트",
+                    "Project_list_tab_done": "끝난 프로젝트",
+                    "Project_participant_label": "\u003cb\u003e{ count }명\u003c/b\u003e 참여중",
+                    "Project_how_to": "진행 방식",
+                    "Project_objective": "프로젝트에서 배울 수 있는 것",
+                    "Project_related_topic": "관련 토픽",
+                    "Project_images": "예시 이미지",
+                    "Project_time_left": "남은 시간",
+                    "Project_checklist": "체크리스트",
+                    "Project_participants": "팀원",
+                    "Project_submit": "프로젝트 결과물 제출하기",
+                    "Project_submit_success": "제출이 완료되었어요.",
+                    "Project_recent_submitted_date": "최근 제출 일시",
+                    "classroom": {
+                      "enroll_topic_question": "토픽을 수강하시겠어요?",
+                      "enroll_topic_action": "토픽 수강하기",
+                      "enroll_topic_blocked": "수강하고 듣지 않으면, 진도 체크가 되지 않아요.\n\"{ name }\" 토픽을 수강하고 들어주세요.",
+                      "footer_back_to_home": "홈으로 이동",
+                      "tutorial_bookmark_title": "레슨 북마크",
+                      "tutorial_bookmark_description": "레슨을 북마크하고 홈에서 모아보세요!",
+                      "not_enrolled_feature_description": "토픽을 수강해야만 사용할 수 있는 기능이에요.\n\"{ name }\" 토픽 수강을 시작해 보세요.",
+                      "not_enrolled_terminal_description": "토픽을 수강해야만 코드 실행기가 제공돼요.\n\"{ name }\" 토픽 수강을 시작해 보세요.",
+                      "not_enrolled_terminal_close_button": "실행기 없이 보기",
+                      "enrollment_started": "토픽 수강이 시작되었어요.",
+                      "memo_title": "메모",
+                      "memo_submit_create": "기록하기",
+                      "memo_placeholder": "내용을 입력해 주세요.",
+                      "memo_empty": "메모를 등록해 보세요.",
+                      "memo_list": "목록",
+                      "memo_edit_cancel_title": "메모 목록으로 이동하시겠어요?",
+                      "memo_edit_cancel_description": "변경사항이 저장되지 않았어요.",
+                      "undo_button": "되돌리기",
+                      "memo_delete_message": "메모가 삭제되었어요.",
+                      "tutorial_memo_title": "메모하기",
+                      "tutorial_memo_description": "강의를 들으며 메모를 남겨보세요!",
+                      "memo_topic_filter": "현재 토픽과 관련된 메모만 보기",
+                      "more_unreads": "내용 더 보기",
+                      "exercise_fail": "앗! 다시 해볼까요?",
+                      "exercise_stay": "남아서 복습할게요!",
+                      "exercise_retry": "다시 도전하기!",
+                      "complete_and_move": "레슨을 완료하고 이동합니다.",
+                      "enable_auto_complete": "영상 레슨 자동 완료하기",
+                      "this_lesson": "이번 레슨",
+                      "subscribe_to_learn": "멤버십을 구독하고 레슨을 들어보세요!"
+                    },
+                    "projects": {
+                      "empty": "진행 중인 프로젝트가 없어요",
+                      "empty_done": "끝난 프로젝트가 없어요"
+                    },
+                    "certificate_share": "공유하기",
+                    "certificate_download": "다운로드",
+                    "certificate_title": "{title} 수료증",
+                    "certificate_description": "상기인이 위 교육 과정을 성공적으로 이수하였음을 증명합니다.",
+                    "certificate_date_format": "yyyy년 M월 d일",
+                    "my_topics": {
+                      "issue_certificate": "수료증 발급하기",
+                      "issue_certificate_modal_description": "수료증 발급을 위한 이름을 입력해 주세요.\n이름은 한 번 입력 후 수정이 불가능해요.",
+                      "issue_certificate_modal_confirm": "발급하기"
+                    },
+                    "profile": {
+                      "social_profiles": "링크 추가",
+                      "personal_website": "개인 웹사이트 URL",
+                      "personal_website_name": "개인 웹사이트 이름",
+                      "social_error_message_linked_in": "올바른 LinkedIn URL 형식이 아니에요.",
+                      "social_error_message_github": "올바른 GitHub URL 형식이 아니에요.",
+                      "social_error_message_web": "http 또는 https를 포함한 URL을 입력해 주세요.",
+                      "social_error_message_web_name": "개인 웹사이트 URL을 입력해 주세요.",
+                      "social_default_website_name": "웹 사이트"
+                    },
+                    "badge": {
+                      "empty_description1": "획득한 배지가 없어요.",
+                      "empty_description2": " \n조건을 달성하고 다양한 배지를 모아보세요!",
+                      "empty_button_text": "배지 보러가기"
+                    },
+                    "topic": {
+                      "try_enroll": "수강 해보기",
+                      "renewal_topic_available_title": "리뉴얼된 토픽이 출시되었어요!",
+                      "this_is_renewed_topic": "이 토픽은 수강중이신 토픽의 리뉴얼(Renewal) 버전이에요."
+                    },
+                    "see_more_quick": "간단히 알아보기",
+                    "set_learning_reminders": "학습 알림을 받을래요",
+                    "notification_learning_description": "멤버십을 등록하고 학습 알림으로\n꾸준한 학습에 도움을 받으세요!",
+                    "TeamSubscriptionStepTeam": "팀 만들기",
+                    "TeamSubscriptionStepPayment": "결제",
+                    "TeamSubscriptionStepReview": "결제 리뷰",
+                    "ModalConfirm": "확인하기",
+                    "ModalCancel": "취소하기",
+                    "ReadonlyFile": "읽기 전용 파일",
+                    "Reset": "초기화하기"
+                  }
+                }
+              },
+              "initialLocale": "ko",
+              "ns": ["common"],
+              "userConfig": null
+            },
+            "__APOLLO_STATE__": {},
+            "_sentryTraceData": "4d32510adea147598f6b69a92808564b-a6e1990c098321da-0",
+            "_sentryBaggage": "sentry-environment=production,sentry-release=v1.1428.1,sentry-public_key=a3d24d5170d043009075ccb2c7faf2d5,sentry-trace_id=4d32510adea147598f6b69a92808564b,sentry-transaction=%2Fsignin,sentry-sampled=false"
+          },
+          "__N_SSP": true
+        },
+        "page": "/signin",
+        "query": {},
+        "buildId": "T8WDljgHrIx-w4dZTQR5T",
+        "assetPrefix": "https://codeit-static.codeit.com/_main/production",
+        "isFallback": false,
+        "isExperimentalCompile": false,
+        "gssp": true,
+        "locale": "ko",
+        "locales": ["ko"],
+        "defaultLocale": "ko",
+        "scriptLoader": []
+      }
+    </script>
+    <script id="hotjar" defer="">
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 1538266, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <script id="twitter-pixel" defer="">
+      !(function (e, t, n, s, u, a) {
+        e.twq ||
+          ((s = e.twq =
+            function () {
+              s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }),
+          (s.version = "1.1"),
+          (s.queue = []),
+          (u = t.createElement(n)),
+          (u.async = !0),
+          (u.src = "//static.ads-twitter.com/uwt.js"),
+          (a = t.getElementsByTagName(n)[0]),
+          a.parentNode.insertBefore(u, a));
+      })(window, document, "script");
+      // Insert Twitter Pixel ID and Standard Event data below
+      twq("init", "o8tp0");
+      twq("track", "PageView");
+    </script>
+    <script id="fb-pixel" defer="">
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", 2493706744226594);
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2493706744226594&amp;ev=PageView&amp;noscript=1" /></noscript
+    ><noscript
+      ><iframe
+        title="gtm-noscript"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MSJJSLP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"></iframe
+    ></noscript>
+    <script
+      id="naver-wcs"
+      type="text/javascript"
+      src="//wcs.naver.net/wcslog.js"></script>
+    <script id="naver-wcs-init" type="text/javascript">
+      if (!wcs_add) var wcs_add = {};
+      wcs_add["wa"] = "s_585b3a50e4e0";
+      if (!_nasa) var _nasa = {};
+      if (window.wcs) {
+        wcs.inflow("codeit.kr");
+        wcs_do(_nasa);
+      }
+    </script>
+  </body>
+</html>
