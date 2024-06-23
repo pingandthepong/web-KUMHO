@@ -2,6 +2,7 @@ let lastScrollTop = 0;
 const headerArea = $("#headerArea");
 const logo = $("#headerArea .logo a");
 const depth1 = $(".depth1, .signin a");
+const depth2 = $(".dropdownmenu .menu ul");
 
 $(window).on('scroll', function(event) {
   let scroll = $(this).scrollTop();
@@ -54,17 +55,15 @@ headerArea.on('mouseleave', function () {
 });
 
 
-
-
 // 2depth 열기/닫기
 $(".dropdownmenu").hover(
   function () {
-    $(".dropdownmenu .menu ul").fadeIn("normal", function () { $(this).stop(); });
+    depth2.fadeIn("normal", function () { $(this).stop(); });
     headerArea.animate({ height: 340 }, "fast").clearQueue();
     headerArea.addClass('on');
   },
   function () {
-    $(".dropdownmenu .menu ul").hide();
+    depth2.hide();
     headerArea.animate({ height: 105 }, "fast").clearQueue();
     headerArea.removeClass('on');
   }
@@ -91,7 +90,7 @@ logo.on('focus', function () {
   headerArea.removeClass('on');
   headerArea.addClass('white');
   headerArea.animate({ height: 105 }, "fast").clearQueue();
-  $(".dropdownmenu .menu ul").hide();
+  depth2.hide();
   $(".depth1").css("color", "#111").removeClass("active");
   logo.css({"background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",});
   depth1.css({ "color": "#111" });
@@ -106,7 +105,7 @@ logo.on('blur', function () {
 
 // tab 처리 (depth1에 포커스 시)
 $(".dropdownmenu .menu .depth1").focus(function () {
-  $(".dropdownmenu .menu ul").slideDown("normal");
+  depth2.slideDown("normal");
   headerArea.animate({ height: 340 }, "fast").clearQueue();
   $(this).css({ "color": "#f65742" }).addClass("active");
   $(this).parents(".menu").siblings().find(".depth1").css({ "color": "#111" }).removeClass("active");
@@ -131,7 +130,7 @@ $(".dropdownmenu .menu ul a").blur(function () {
 
 // tab 처리 (마지막 depth1 > ul li a에 포커스 시)
 $(".dropdownmenu .m6 li:last a").blur(function () {
-  $(".dropdownmenu .menu ul").slideUp("fast");
+  depth2.slideUp("fast");
   headerArea.animate({ height: 105 }, "normal").clearQueue();
   headerArea.removeClass('on');
 });
