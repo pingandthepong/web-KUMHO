@@ -107,7 +107,7 @@ logo.on('blur', function () {
 
 
 // tab 처리 (depth1에 포커스 시)
-$(".dropdownmenu .menu .depth1").focus(function () {
+depth1.focus(function () {
   depth2.slideDown("normal");
   headerArea.animate({ height: 340 }, "fast").clearQueue();
   $(this).css({ "color": "#f65742" }).addClass("active");
