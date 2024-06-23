@@ -1,15 +1,16 @@
-var lastScrollTop = 0;
+let lastScrollTop = 0;
+const headerArea = $("#headerArea");
 
 $(window).on('scroll', function(event) {
-  var scroll = $(this).scrollTop();
+  let scroll = $(this).scrollTop();
 
   // 스크롤 방향을 확인하여 헤더 영역을 숨기거나 표시
   if (scroll > lastScrollTop){
     // 아래로 스크롤
-    $("#headerArea").addClass('hide').removeClass('show');
+    headerArea.addClass('hide').removeClass('show');
   } else {
     // 위로 스크롤
-    $("#headerArea").addClass('show white').removeClass('hide');
+    headerArea.addClass('show white').removeClass('hide');
     $("#headerArea .logo a").css({"background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",});
     $(".depth1, .signin a").css({ "color": "#111" });    
   }
@@ -19,7 +20,7 @@ $(window).on('scroll', function(event) {
   // 스크롤이 위에 다다르면 headerArea 다시 투명하게
   if (scroll <= 10) {
     // 투명하게
-    $("#headerArea").removeClass('white');
+    headerArea.removeClass('white');
     $("#headerArea .logo a").css({"background": "url('https://pingandthepong.mycafe24.com/common/images/header-logo-pb20.png') no-repeat 0 0",});
     $(".depth1, .signin a").css({ "color": "#fff" });
   } 
@@ -27,13 +28,13 @@ $(window).on('scroll', function(event) {
 
 
 
-$("#headerArea").on('mouseenter', function () {
+headerArea.on('mouseenter', function () {
   $(this).addClass('white');
   $("#headerArea .logo a").css("background", "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0");
   $(".depth1, .signin a").css("color", "#111");
 });
 
-$("#headerArea").on('mouseleave', function () {
+headerArea.on('mouseleave', function () {
   var scroll = $(window).scrollTop(); // 현재 스크롤 위치
 
   if (scroll <= 100) {
@@ -50,14 +51,14 @@ $("#headerArea").on('mouseleave', function () {
 // 2depth 열기/닫기
 $(".dropdownmenu").hover(
   function () {
-    $('#headerArea').children(".on").show();
     $(".dropdownmenu .menu ul").fadeIn("normal", function () { $(this).stop(); });
-    $("#headerArea").animate({ height: 340 }, "fast").clearQueue();
+    headerArea.animate({ height: 340 }, "fast").clearQueue();
+    headerArea.addClass('on');
   },
   function () {
-    $('#headerArea').children(".on").hide();
     $(".dropdownmenu .menu ul").hide();
-    $("#headerArea").animate({ height: 105 }, "fast").clearQueue();
+    headerArea.animate({ height: 105 }, "fast").clearQueue();
+    headerArea.removeClass('on');
   }
 );
 
@@ -78,16 +79,18 @@ $(".dropdownmenu .menu").hover(
 
 
 // tab 처리 (logo에 포커스 시)
-$("#headerArea .logo a").on('focus', function () {
-  $("#headerArea").children(".on").show();
-  $('#headerArea').addClass('white');
+$("#headerArea .logo a").on('focus', function () {  
+  headerArea.removeClass('on');
+  headerArea.addClass('white');
+  headerArea.animate({ height: 105 }, "fast").clearQueue();
+  $(".dropdownmenu .menu ul").hide();
+  $(".depth1").css("color", "#111").removeClass("active");
   $("#headerArea .logo a").css({"background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",});
   $(".depth1, .signin a").css({ "color": "#111" });
 });
 
 $("#headerArea .logo a").on('blur', function () {
-  $("#headerArea").children(".on").hide();
-  $('#headerArea').removeClass('white');
+  headerArea.removeClass('white');
   $("#headerArea .logo a").css({"background": "url('https://pingandthepong.mycafe24.com/common/images/header-logo-pb20.png') no-repeat 0 0",});
   $(".depth1, .signin a").css({ "color": "#fff" });
 });
@@ -95,13 +98,12 @@ $("#headerArea .logo a").on('blur', function () {
 
 // tab 처리 (depth1에 포커스 시)
 $(".dropdownmenu .menu .depth1").focus(function () {
-  $("#headerArea").children(".on").show();
   $(".dropdownmenu .menu ul").slideDown("normal");
-  $("#headerArea").animate({ height: 340 }, "fast").clearQueue();
+  headerArea.animate({ height: 340 }, "fast").clearQueue();
   $(this).css({ "color": "#f65742" }).addClass("active");
   $(this).parents(".menu").siblings().find(".depth1").css({ "color": "#111" }).removeClass("active");
 
-  $('#headerArea').addClass('white');
+  headerArea.addClass('on white');
   $("#headerArea .logo a").css({"background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",});
   $(".signin a").css({ "color": "#111" });
 });
@@ -122,13 +124,15 @@ $(".dropdownmenu .menu ul a").blur(function () {
 // tab 처리 (마지막 depth1 > ul li a에 포커스 시)
 $(".dropdownmenu .m6 li:last a").blur(function () {
   $(".dropdownmenu .menu ul").slideUp("fast");
-  $("#headerArea").animate({ height: 105 }, "normal").clearQueue();
+  headerArea.animate({ height: 105 }, "normal").clearQueue();
+  headerArea.removeClass('on');
 });
 
 
 // tab 처리 (top_menu 에 포커스 시)
 $(".top_menu a").focus(function () {
-  $('#headerArea').addClass('white');
+  headerArea.remove('on');
+  headerArea.addClass('white');
   $("#headerArea .logo a").css({"background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",});
   $(".depth1, .signin a").css({ "color": "#111" });
   $(".depth1:last").removeClass("active");
