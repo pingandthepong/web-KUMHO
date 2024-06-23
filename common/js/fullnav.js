@@ -119,14 +119,13 @@ depth1.focus(function () {
 });
 
 
-// tab 처리 (depth1 > ul li a에 포커스 시)
-$(".dropdownmenu .menu ul a").focus(function () {
-
+// tab 처리 (depth2 > a에 포커스 시)
+depth2.find('a').focus(function () {
   $(this).css({ "color": "#f65742", });
   $(this).parents(".menu").find(".depth1").css({ "color": "#f65742" }).addClass("active");
   $(this).parents(".menu").siblings().find(".depth1").css("color", "#111").removeClass("active");
 });
-$(".dropdownmenu .menu ul a").blur(function () {
+depth2.find('a').blur(function () {
   $(this).css({ "color": "#111" });
 });
 
