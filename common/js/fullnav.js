@@ -162,11 +162,11 @@ $('.family_site ul li:last a').blur(function () {$('.family_site ul').slideUp('f
 
 
 // move_top
-var lastScrollTopFooter = 0; // 이전에 스크롤한 위치
-var moveTopVisible = false; // 초기 상태는 보이지 않는 상태이기 때문에 false
+let lastScrollTopFooter = 0; // 이전에 스크롤한 위치
+let moveTopVisible = false; // 초기 상태는 보이지 않는 상태로, false
 
 function moveTop() {
-  var scroll = $(window).scrollTop(); // 현재 스크롤 위치
+  let scroll = $(window).scrollTop(); // 현재 스크롤 위치
 
   if (scroll > lastScrollTopFooter && scroll > 300 && !moveTopVisible) {
     // 스크롤의 방향이 아래로 이동했을 때 && 현재 스크롤의 위치가 300 이상일 때 && 버튼이 보이는 상태일 때
