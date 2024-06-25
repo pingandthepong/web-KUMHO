@@ -43,15 +43,28 @@
       const inputFields = document.querySelectorAll(".input__field");
       const placeHolders = document.querySelectorAll(".placeholder-text");
 
-      // .input__field 클릭시 classList.add('on');
+      // DONE: placeHolder 클릭시 add('on')
+      placeHolders.forEach((placeHolder, idx) => {
+        placeHolder.addEventListener("click", function () {
+          if (inputFields[idx].value === "") {
+            placeHolders[idx].classList.remove("on");
+          }
+          placeHolders[idx].classList.add("on");
+          inputFields[idx].focus();
+        });
+      });
+
+      // DONE: inputField focus시 add('on')
+      // DONE: 값이 있는 inputField는 add('on')
       inputFields.forEach((inputField, idx) => {
         inputField.addEventListener("focus", function () {
-          placeHolders.forEach((placeHolder) => {
-            placeHolder.classList.remove("on");
-          });
           placeHolders[idx].classList.add("on");
+          if (inputFields[idx].value == true) {
+            placeHolders[idx].classList.remove("on");
+          }
         });
 
+        // DONE: inputField에 값이 있을 시 add('on') / 없을 때 remove('on')
         inputField.addEventListener("blur", function () {
           if (inputField.value === "") {
             placeHolders[idx].classList.remove("on");
