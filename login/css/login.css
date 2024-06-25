@@ -63,7 +63,7 @@ header p a {
   left: 32px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #aaa;
   transition: all 0.25s ease-out;
 }
