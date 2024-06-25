@@ -110,10 +110,9 @@
             <li class="m5 menu">
               <h3><a class="depth1" href="../../sub5/sub5_1.html">인재채용</a></h3>
               <ul>
-                <li><a href="../../sub5/sub5_1.html">인사제도</a></li>
-                <li><a href="../../sub5/sub5_2.html">직무가이드</a></li>
-                <li><a href="../../sub5/sub5_3.html">채용/면접Tip</a></li>
-                <li><a href="../../sub5/sub5_4.html">채용안내</a></li>
+                <li><a href="../../sub5/sub5_1.html">직무소개</a></li>
+                <li><a href="../../sub5/sub5_2.html">인사제도</a></li>
+                <li><a href="../../sub5/sub5_3.html">채용정도</a></li>
               </ul>
             </li>
             <li class="m6 menu">
@@ -128,8 +127,8 @@
 
         <!-- header .top_menu -->
         <ul class="top_menu">
-          <li class="signin"><a href="#">로그인</a></li>
-          <li class="signup"><a href="#">회원가입</a></li>
+          <li class="signin"><a href="../../login/login.html">로그인</a></li>
+          <li class="signup"><a href="../../member/member_check.html">회원가입</a></li>
         </ul>
       </div>
     </header>
