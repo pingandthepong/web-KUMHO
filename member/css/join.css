@@ -1,126 +1,145 @@
 body {
   background-color: #eee;
   font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+header {
+  margin-top: 160px;
 }
 h1 .logo {
-  margin: 50px auto 0;
+  margin: 0 auto;
   display: block;
   width: 167px;
   height: 58px;
   text-indent: -9999px;
   overflow: hidden;
-  background: url('../../common/images/logox2_black.png') center no-repeat;
+  background: url("../../common/images/logox2_black.png") center no-repeat;
 }
+header p {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+header p a {
+  display: inline-block;
+  color: #ef0010;
+  letter-spacing: -0.09rem;
+}
+
 #content {
-  width: 750px;
+  width: 440px;
   margin: 50px auto;
   background: #fff;
   border-radius: 10px;
   padding: 70px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 500;
 }
-
-#content > span {
-  font-size: 1.7em;
+#content h2 {
+  text-align: center;
+  font-size: 1.7rem;
   font-weight: 700;
-  position: relative;
-  left: 50%;
-  margin-left: -65px;
-  display: block;
 }
-#content > p {
+#content h2 + p {
   color: #999;
-  position: relative;
-  left: 50%;
-  margin-left: -80px;
+  text-align: center;
   margin-top: 10px;
-  font-weight: 400;
 }
-#content > p::before {
+#content h2 + p::before {
   content: "*";
   color: red;
-  margin-right: 5px;
+  margin-right: 4px;
 }
 
-#content form li {
-  margin: 30px 0;
+#content form ul {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
-#content form li label {
-  display: block;
-  font-weight: 500;
+#content form .input__wrapper {
+  position: relative;
 }
-#content form li label::after {
-  content: "*";
-  color: red;
-}
-#content form li span {
-  color: red;
-}
-
-#content form li input {
-  border: 1px solid #eee;
+#content form .input__wrapper input,
+#content form .input__wrapper select {
   width: 100%;
-  height: 50px;
-  margin-top: 5px;
-  border-radius: 5px;
-  font-size: 1.1em;
-  padding-left: 20px;
+  height: 72px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0 32px;
   box-sizing: border-box;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #333;
+  transition: all 0.25s ease-out;
 }
-#content form li input#hp2,
-#content form li input#hp3 {
-  width: 31.4%;
+#content form .input__wrapper input:focus {
+  outline: none;
+  border: 1.5px solid #ef0010;
 }
-#content form li #hp1 {
-  width: 31.5%;
-  height: 54px;
-  padding-left: 10px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.1em;
-  border-radius: 5px;
+#content form .input__wrapper.flex {
+  flex-direction: row;
+  align-items: center;
 }
-#content form li input::placeholder {
-  color: #ddd;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 300;
-  font-size: 0.9em;
+#content form .input__wrapper.flex .flex_label {
+  margin: 16px 0 8px 0;
 }
-
-#content form li input#mail1,
-#content form li input#mail2 {
-  width: 47.5%;
+#content form .input__wrapper.flex .input__container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
-#content form li input:focus {
-  outline-color: #064f9e;
+#content form .input__wrapper .input__field:hover {
+  background: #f8f8f8;
 }
-
-#content form li:last-child {
-  margin-bottom: 70px;
+#content form .input__wrapper .input__field:focus:hover {
+  background: rgba(239, 0, 16, 0.075);
 }
-
-#content input[type="submit"] {
-  border: 0;
-  background: #064f9e;
-  color: #fff;
-  font-family: "Noto Sans KR", sans-serif;
-  width: 40%;
-  padding: 20px 0;
-  border-radius: 7px;
-  font-size: 1.2em;
-  margin-left: 65px;
-  cursor: pointer;
+#content form .input__wrapper .placeholder-text,
+::placeholder {
+  display: block;
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  color: #aaa;
+  transition: all 0.25s ease-out;
 }
-#content input[type="reset"] {
-  border: 1px solid #064f9e;
-  color: #064f9e;
+#content form .input__wrapper .placeholder-text.on {
+  left: 24px;
+  top: 0;
+  font-size: 1rem;
   background: #fff;
-  font-family: "Noto Sans KR", sans-serif;
-  width: 40%;
+  line-height: 0.2;
+  padding: 0 8px;
+  color: #ef0010;
+}
+#content form li .placeholder-text::after,
+#content form li .flex_label::after {
+  content: "*";
+  color: red;
+}
+
+#content form .btn__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+#content form .btn__wrapper input {
+  width: 100%;
   padding: 20px 0;
   border-radius: 7px;
   font-size: 1.2em;
-  margin-left: 10px;
   cursor: pointer;
+}
+#content form .btn__wrapper input[type="submit"] {
+  border: 1px solid #ef0010;
+  background: #ef0010;
+  color: #fff;
+}
+#content form .btn__wrapper input[type="reset"] {
+  border: 1px solid #ef0010;
+  background: #fff;
+  color: #ef0010;
 }
