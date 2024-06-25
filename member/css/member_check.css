@@ -85,7 +85,7 @@ h1 .logo {
   height: 50px;
   padding: 8px 0;
   border: none;
-  background: #064f9e;
+  background: #ef0010;
   color: #fff;
   font-size: 1.1em;
   cursor: pointer;
@@ -104,19 +104,28 @@ h1 .logo {
 }
 .join .allcheck {
   background: transparent;
-  border: 1px solid #046f9e;
-  color: #064f9e;
+  border: 1px solid #ef0010;
+  color: #ef0010;
 }
 
 /* 체크박스 UI변경 */
+input[type="checkbox"] + label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 input[type="checkbox"] + label::before {
-  display: inline-block;
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: transparent;
   width: 18px;
   height: 18px;
   background-color: transparent;
   border: 1px solid #999;
-  content: "";
-  margin: 0px 15px -6px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 input[type="checkbox"] {
   display: none;
@@ -125,6 +134,7 @@ input[type="checkbox"] + label {
   cursor: pointer;
 }
 input[type="checkbox"]:checked + label::before {
-  background: #fff url(../images/checked_bg.png) center center no-repeat;
+  background: #ef0010;
+  color: #fff;
   border: 1px solid #e3e9fe;
 }
