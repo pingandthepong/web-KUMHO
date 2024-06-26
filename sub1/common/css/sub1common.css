@@ -27,17 +27,6 @@
   width: 100%;
   border-bottom: 1px solid #f5f5f5;
 }
-/* 추가코드 start */
-.sub_nav.subNavOn {
-  position: fixed;
-  width: 100%;
-  z-index: 60;
-  left: 0;
-  top: 0;
-  background: #fff;
-  opacity: 0;
-}
-/* 추가코드 end */
 .sub_nav ul {
   width: 1400px;
   margin: 0 auto;

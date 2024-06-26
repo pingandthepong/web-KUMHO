@@ -1,94 +1,46 @@
-$('.slideMenu li:eq(0) a').addClass('spy');
-
-
-
-$('.slideMenu a').click(function(e) {
+// DONE: 각 .slideMenu 클릭 시 해당 history_list(con$)로 이동
+$(".slideMenu li a").click(function (e) {
   e.preventDefault();
-  
-  $('.slideMenu a').removeClass('on');
-  $(this).addClass('on');
-  
-  var hisInd = $(this).index('.slideMenu a');
-  var value = 0;
 
-  if ($(this).hasClass(`link${hisInd + 1}`)) {
+  $(".slideMenu li a").removeClass("spy");
+  $(this).addClass("spy");
 
-    // #headerArea 기능 추가 전까지 빼기 값 추가
-    value = $(`.con${hisInd + 1}`).offset().top - $('#headerArea').outerHeight() - 20;
+  const hisIdx = $(this).index(".slideMenu a"); // 0 1 2 3 4
+  let value = 0;
+
+  if ($(this).hasClass(`link${hisIdx + 1}`)) {
+    value =
+      $(`.con${hisIdx + 1}`).offset().top - $("#headerArea").outerHeight() - 20;
   }
 
-  $('html,body').stop().animate({scrollTop: value}, 500);
-
+  $("html, body").stop().animate({ scrollTop: value }, 500);
 });
 
+let slideMenuTop = $(".slideMenu").offset().top;
 
-// sub_nav 달라붙게 하기
-var smh = $('.visual').height();
-var headerHide = smh * 1 / $('#headerArea').height() + 100;
-console.log(headerHide);
+$(window).on("scroll", function () {
+  let scroll = $(this).scrollTop(); // 현재 스크롤 위치
+  let headerHeight = $("#headerArea").outerHeight();
 
-function subNavSticky() {
-
-  var scroll = $(window).scrollTop();
-
-  if (scroll >= 1 || scroll < headerHide) {
-    $('#headerArea').addClass('white');
-    $("#headerArea .logo a").css({"background": "url('https://pingandthepong.mycafe24.com/common/images/KUMHO_Logo_KJH_txtblack_pb20.png') no-repeat 0 0",});
-    $(".depth1, .signin a").css({ "color": "#111" });
-  
+  // DONE: 스크롤이 slideMenuTop 닿으면 .slideMenu.navOn & header 숨기기
+  if (scroll >= slideMenuTop) {
+    $(".slideMenu").addClass("navOn");
+    $(".history_list:eq(0)").addClass("on");
+    $("#headerArea").hide();
   } else {
-    
-    $('#headerArea').slideUp();
-
-    
+    $(".slideMenu").removeClass("navOn");
+    $(".history_list:eq(0)").removeClass("on");
+    $("#headerArea").slideDown();
   }
 
-  if (scroll >= smh) {
-    $('.sub_nav').addClass('subNavOn').stop().animate({opacity: 1}, 100);
-  } else {
-    $('.sub_nav').removeClass('subNavOn').stop().animate({opacity: 1}, 100);
-  }
-}
+  // DONE: Scroll Spy
+  $(".history_list").each(function (idx) {
+    let sectionTop = $(this).offset().top - headerHeight - 20;
+    let sectionBottom = sectionTop + $(this).outerHeight();
 
-
-
-
-// 스크롤이 .slideMenu를 넘어서면 .slideMenu의 위치 변경하기
-// var slideMenuOffset = $('.slideMenu').offset().top - 200;
-// var slideMenuOffset = $('.slideMenu').offset().top - $('.slideMenu').outerHeight();
-var slideMenuOffset = 367;
-
-
-
-var lastScrollTop = 0
-
-function historyHeader() {
-  var scroll = $(this).scrollTop(); // 현재 스크롤 위치
-  
-
-  if (scroll >= slideMenuOffset) {
-    $('.slideMenu').addClass('navOn');
-    $('#headerArea').hide();
-  
-  } else {
-    $('.slideMenu').removeClass('navOn');
-    $('#headerArea').slideDown();
-  }
-}
-
-$(window).on('scroll', function() {
-  // var scroll = $(this).scrollTop(); // 현재 스크롤 위치
-
-  // if (scroll >= slideMenuOffset) {
-  //   $('.slideMenu').addClass('navOn');
-  //   $('#headerArea').hide();
-  //   $('.sub_nav').addClass('subNavOn');
-  
-  // } else {
-  //   $('.slideMenu').removeClass('navOn');
-  //   $('#headerArea').show();
-  //   $('.sub_nav').removeClass('subNavOn');
-  // }
-  requestAnimationFrame(historyHeader);
-  requestAnimationFrame(subNavSticky);
+    if (scroll >= sectionTop && scroll < sectionBottom) {
+      $(".slideMenu li a").removeClass("spy");
+      $(`.slideMenu li:eq(${idx}) a`).addClass("spy");
+    }
+  });
 });

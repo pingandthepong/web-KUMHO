@@ -1,7 +1,4 @@
-#content .history_scroll_wrap {
-
-}
-#content .slideMenu  {
+#content .slideMenu {
   height: 60px;
   margin-bottom: 150px;
 }
@@ -11,9 +8,11 @@
   width: 100%;
   z-index: 60;
   left: 0;
-  bottom: 0;
+  top: 0;
   margin-bottom: 0;
   background: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease-out;
 }
 /* 추가코드 end */
 #content .slideMenu ul {
@@ -28,8 +27,7 @@
   font-size: 1.13rem;
   font-weight: 500;
   color: #999;
-  /* border-radius: 16px; */
-  transition: all .1s;
+  transition: all 0.25s ease-out;
 }
 #content .slideMenu ul li a:is(:hover, .spy) {
   background: #f65742;
@@ -44,12 +42,14 @@
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-/* #content .history_list.on {
+#content .history_list.on {
+  padding-top: 210px;
   margin-bottom: 100px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-} */
+}
+
 #content .history_list .img_container {
   width: 700px;
   overflow: hidden;
@@ -65,7 +65,6 @@
 }
 #content .history_list .year {
   width: 630px;
-
 }
 #content .history_list .year dl {
   margin-bottom: 80px;
