@@ -392,6 +392,12 @@
   padding: 12px 28px;
   margin-top: 50px;
 }
+#content .content_area .intro3_content_wrap {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+}
 #content .content_area .intro3_content {
   display: flex;
   align-items: center;
