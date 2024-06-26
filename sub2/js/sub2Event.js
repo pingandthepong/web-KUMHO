@@ -24,3 +24,59 @@ window.addEventListener("scroll", function () {
     sec2LastScrollTop = scroll;
   });
 });
+
+// TODO: intro3 move
+let moveSize = (document.querySelector('.intro3_content li').offsetWidth / 2 + 20); // 20은 gap/2
+let movePosition = 0;
+let newCnt = 0;
+let startX, endX;
+const intro3 = document.querySelector(".intro3");
+const intro3Content = document.querySelector(".intro3_content");
+
+function touchMediaStart(e) {
+  e.preventDefault();
+  if (e.pageX == undefined) {
+    // 모바일
+    startX = e.touches[0].pageX;
+  } else {
+    // 데스크탑
+    e.preventDefault();
+    startX = e.pageX;
+  }
+}
+
+function touchMediaEnd(e) {
+  e.preventDefault();
+  if (e.pageX == undefined) {
+    endX = e.changedTouches[0].pageX;
+  } else {
+    e.preventDefault();
+    endX = e.pageX;
+  }
+
+  if (startX > endX) {
+    newCnt++;
+
+    if (newCnt >= 5) {
+      newCnt = newCnt - 1;
+      intro3Content.style.left = "-980px";
+    } else {
+      movePosition += -moveSize;
+      intro3Content.style.left = movePosition + "px";
+    }
+  } else {
+    newCnt--;
+
+    if (newCnt < 0) {
+      newCnt = 0;
+      intro3Content.style.left = 0;
+    } else {
+      movePosition -= -moveSize;
+      intro3Content.style.left = movePosition + "px";
+    }
+  }
+}
+intro3.addEventListener("touchstart", touchMediaStart);
+intro3.addEventListener("touchend", touchMediaEnd);
+intro3.addEventListener("mousedown", touchMediaStart);
+intro3.addEventListener("mouseup", touchMediaEnd);
