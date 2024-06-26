@@ -166,16 +166,16 @@
 #content .content_area .more_btn {
   width: 175px;
   background: #fff;
-  border: 1px solid #2C44F2;
-  color: #2C44F2;
+  border: 1px solid #2c44f2;
+  color: #2c44f2;
   text-align: center;
   border-radius: 10px;
   padding: 10px 0;
   font-size: 1.13rem;
-  transition: all .25s ease-out;
+  transition: all 0.25s ease-out;
 }
 #content .content_area .more_btn:hover {
-  background: #2C44F2;
+  background: #2c44f2;
   color: #fff;
 }
 
@@ -204,18 +204,8 @@
   left: 0;
   top: 0;
   z-index: -1;
-  filter: brightness(.6);
+  filter: brightness(0.6);
   animation: zoomIn 5s ease-out infinite alternate-reverse;
-}
-@keyframes slideup {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 #content .content_area .intro .intro__title_container {
   width: 1400px;
@@ -225,11 +215,22 @@
   width: 584px;
   margin-right: 300px;
   color: #fff;
-  text-shadow: 0px 4px 10px rgba(0,0,0,.7);
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
   padding-left: calc(1400px - 584px);
+  opacity: 0;
 }
-#content .content_area .intro__title_container:hover .intro__title {
-  animation: slideup 1.25s ease-out;
+@keyframes slideup {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#content .content_area .intro.slideEvent .intro__title_container .intro__title {
+  animation: slideup 0.75s ease-out forwards;
 }
 #content .content_area .intro__title .business {
   display: block;
@@ -250,7 +251,7 @@
 #content .content_area .intro__title .sector {
   font-size: 1rem;
   font-weight: 400;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 /* .intro2 */
@@ -278,9 +279,8 @@
   display: block;
   font-size: 3.5rem;
   font-weight: 700;
-  letter-spacing: -.1rem;
+  letter-spacing: -0.1rem;
   margin-top: 10px;
-  /* position: relative; */
 }
 #content .content_area .intro2__title h3 .accent::after {
   content: "";
@@ -290,20 +290,24 @@
   border-radius: 50%;
   background: #f65742;
   position: absolute;
-  left: -15px; top: 0px;
+  left: -15px;
+  top: 0px;
   z-index: -1;
-  transition: all .65s ease-out;
+  transition: all 1.5s ease-out;
 }
-#content .content_area .intro2:hover .intro2__title h3 .accent::after {
-  transform: translate(10px, 5px) scale(5);
+#content .content_area .intro2.slideEvent .intro2__title h3 .accent::after {
+  transform: translate(10px, 5px) scale(7.5);
 }
 #content .content_area .intro2 .more_btn {
   position: absolute;
   left: 0;
   bottom: -100px;
 }
-#content .content_area .intro2__container:hover li {
-   animation: slideup 1.5s ease-out;
+#content .content_area .intro2 .intro2__container li {
+  opacity: 0;
+}
+#content .content_area .intro2.slideEvent .intro2__container li {
+  animation: slideup 0.75s ease-out forwards;
 }
 #content .content_area .intro2__container {
   float: right;
@@ -360,11 +364,14 @@
     transform: translateX(0);
   }
 }
-#content .content_area .intro3:hover :is(.intro3_txt, .intro3_content) {
-  animation: slideLeft 1.5s ease-out;
+#content .content_area .intro3 :is(.intro3_txt, .intro3_content) {
+  opacity: 0;
+}
+#content .content_area .intro3.slideEvent :is(.intro3_txt, .intro3_content) {
+  animation: slideLeft 1.5s ease-out forwards;
 }
 #content .content_area .intro3:hover .intro3_content {
-  animation-delay: .2s;
+  animation-delay: 0.2s;
 }
 #content .content_area .intro3_txt {
   width: 726px;
@@ -406,7 +413,7 @@
 }
 #content .content_area .intro3_content dl {
   font-size: 1.25rem;
-  text-shadow: 1px 1px 3px rgba(0,0,0,.6);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column-reverse;
 }
