@@ -353,6 +353,8 @@
   box-sizing: border-box;
   display: flex;
   gap: 116px;
+
+  position: relative;
 }
 @keyframes slideLeft {
   from {
@@ -370,9 +372,7 @@
 #content .content_area .intro3.slideEvent :is(.intro3_txt, .intro3_content) {
   animation: slideLeft 1.5s ease-out forwards;
 }
-#content .content_area .intro3:hover .intro3_content {
-  animation-delay: 0.2s;
-}
+
 #content .content_area .intro3_txt {
   width: 726px;
 }
@@ -396,6 +396,10 @@
   display: flex;
   align-items: center;
   gap: 40px;
+
+  position: relative;
+  left: 0;
+  transition: all 0.5s ease-out;
 }
 #content .content_area .intro3_content li {
   width: 400px;
