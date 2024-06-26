@@ -484,12 +484,12 @@
     <script src="./js/fPosition.js"></script>
     <script src="./js/fIncome.js"></script>
     <script>
-      // TODO: index 링크 파라미터 기능
+      // DONE: index 링크 파라미터 기능
 
       // 현재 페이지의 url에서 쿼리 문자열(?num=2)을 파싱해 'URLSearchParams' 객체 생성
       const urlParams = new URLSearchParams(window.location.search);
       // num 키에 해당하는 값 추출 (특정 탭을 나타냄)
-      const tabNum = urlParams.get("num");
+      let tabNum = urlParams.get("num");
 
       // DONE: 파라미터로 들어왔을 때, 각 탭메뉴 .current
       const tabs = document.querySelectorAll(".tab");
@@ -511,6 +511,12 @@
           contlist.style.display = "none";
         }
       });
+
+      // DONE: 파라미터가 없을 때에도 잘 동작하도록
+      if (!tabNum) {
+        $(".contlist:first").show();
+        $(".tab:first").addClass("on");
+      }
     </script>
   </body>
 </html>
