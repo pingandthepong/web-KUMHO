@@ -118,8 +118,8 @@
             <li class="m6 menu">
               <h3><a class="depth1" href="../../sub6/sub6_1.html">홍보센터</a></h3>
               <ul>
-                <li><a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=free">금호뉴스</a></li>
-                <li><a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=gallery">분양뉴스</a></li>
+                <li><a href="/gnuboard5/bbs/board.php?bo_table=free">금호뉴스</a></li>
+                <li><a href="/gnuboard5/bbs/board.php?bo_table=gallery">분양뉴스</a></li>
               </ul>
             </li>
           </ul>
@@ -141,8 +141,8 @@
     <!-- .sub_nav -->
     <div class="sub_nav">
       <ul>
-        <li><a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=free">금호뉴스</a></li>
-        <li><a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=gallery" class="current">분양뉴스</a></li>
+        <li><a href="/gnuboard5/bbs/board.php?bo_table=free">금호뉴스</a></li>
+        <li><a href="/gnuboard5/bbs/board.php?bo_table=gallery" class="current">분양뉴스</a></li>
       </ul>
     </div>
 
