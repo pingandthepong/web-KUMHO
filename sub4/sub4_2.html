@@ -14,7 +14,14 @@
     <script
       src="https://kit.fontawesome.com/5c48cfd0d4.js"
       crossorigin="anonymous"></script>
-    <!-- <script src="../common/js/prefixfree.min.js"></script> -->
+    <script src="../common/js/prefixfree.min.js"></script>
+    <!-- highcharts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/sankey.js"></script>
+    <script src="https://code.highcharts.com/modules/organization.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
   </head>
   <body>
       <? include '../common/sub_header.html' ?>
@@ -55,10 +62,159 @@
               <i class="fa-solid fa-quote-left"></i><strong class="sm">품질</strong>을 최우선 가치로,<br> <mark>사회적 책임과 역할</mark>을 다하는 <strong class="lg">아름다운 기업</strong>이 되겠습니다.<i class="fa-solid fa-quote-right"></i>
             </p>
           </section>
+          <section class="quality">
+            <!-- 탭메뉴 -->
+            <div class="tabs">
+              <h3><a href="#" class="tab tab1">품질경영방침</a></h3>
+              <div class="contlist">
+                <ul>
+                  <li>원칙과 기본 준수로 최고의 품질 확보</li>
+                  <li>품질경영시스템의 효과성을 위한<br> 지속적 개선관리</li>
+                  <li>법규 및 제반규정 준수</li>
+                  <li>체계적 공정관리를 통한 손실 방지</li>
+                  <li>협력회사와 상생협력을 통한 동반성장</li>
+                </ul>
+                <div class="sign">
+                  <p class="pos">금호건설 대표이사(CEO)</p>
+                  <p class="name">
+                    <span>서재환</span>
+                    <img src="./images/content2/sign.png" alt="금호건설 대표이사 서재환 서명">
+                  </p>
+                </div>
+              </div>
+        
+              <h3><a href="#" class="tab tab2">품질경영시스템</a></h3>
+              <div class="contlist">
+                <figure class="highcharts-figure">
+                  <div id="system"></div>
+                </figure>
+                
+                <div class="system_list">
+                  <dl>
+                    <dt>주택(H)</dt>
+                    <dd>국내자체개발</dd>
+                    <dd>국내민간개발형도급</dd>
+                    <dd>국내조합주택</dd>
+                    <dd>국내지주공동사업</dd>
+                  </dl>
+                  <dl>
+                    <dt>건축(A)</dt>
+                    <dd>국내관급일반도급</dd>
+                    <dd>국내관급턴기/대안</dd>
+                    <dd>국내민간일반도급</dd>
+                    <dd>리모델링</dd>
+                  </dl>
+                  <dl>
+                    <dt>토목(C)</dt>
+                    <dd>SOC사업</dd>
+                    <dd>환경사업</dd>
+                    <dd>위탁사업</dd>
+                    <dd>해외도급총괄</dd>
+                  </dl>
+                  <dl>
+                    <dt>플랜트(P)</dt>
+                    <dd>국내도급총괄</dd>
+                    <dd>CM사업</dd>
+                    <dd>사후관리 및 용역사업</dd>
+                    <dd>기술개발사업</dd>
+                  </dl>
+                  <dl>
+                    <dt>특수사업(H)</dt>
+                    <dd>국내투자운영사업</dd>
+                    <dd>해외투자개발</dd>
+                    <dd>임대운영사업</dd>
+                    <dd>위탁사업</dd>
+                  </dl>
+                </div>
+              </div>
+        
+              <h3><a href="#" class="tab tab3">품질경영활동</a></h3>
+              <div class="contlist">
+                <div class="activity">
+                  <a href="#" class="all">전체 보기<i class="fa-solid fa-caret-up"></i></a>
+                  <ul>
+                    <li class="show">
+                      <p class="title">
+                        <a href="#" class="trigger">설계V.E</a>
+                        <span></span>
+                      </p>
+                      <p class="des">착공 전 도면 및 시방서등 설계도서를 사전 검토하여 공사 중 발생되는 문제점 제거등 품질 향상 활동 정착</p>
+                    </li>
+                    <li class="hide">
+                      <p class="title">
+                        <a href="#" class="trigger">I.S.O 지도/심사</a>
+                        <span></span>
+                      </p>
+                      <p class="des">품질관리계획서 및 관련 절차서 작성 요령과 실행 지도 교육을 통한 품질관리 체계 구축</p>
+                    </li>
+                    <li class="hide">
+                      <p class="title">
+                        <a href="#" class="trigger">전문가그룹 활동<span class="sm">Senior Professional Staffs Group</span></a>
+                        <span></span>
+                      </p>
+                      <p class="des">각 공종별 전문 기술자로 이루어진 집단으로, 해당 공종 사전 검토시점에 도면 및 공법 적정성 검토, 최적안 및 대안 도출을 통한 품질 향상 활동 구축</p>
+                    </li>
+                    <li class="hide">
+                      <p class="title">
+                        <a href="#" class="trigger">어울림조 활동</a>
+                        <span></span>
+                      </p>
+                      <p class="des">각 현장에서 개발하거나 B.M을 통해 체계화한 기술 및 운영기법을 공유하여 우수사례 발굴 및 전파하는 품질 향상 활동</p>
+                    </li>
+                    <li class="hide">
+                      <p class="title">
+                        <a href="#" class="trigger">Q.C 점검 활동</a>
+                        <span></span>
+                      </p>
+                      <p class="des">당사 현장들의 우수 시공사례 및 부적합 시공 사례들의 FEED BACK으로 품질 향상과 전파을 추진하며 신기술,자재 개선을 통한 선진 기술 공유 문화 정착</p>
+                    </li>
+                    <li class="hide">
+                      <p class="title">
+                        <a href="#" class="trigger">B.S 점검 활동</a>
+                        <span></span>
+                      </p>
+                      <p class="des">반복적인 하자 발생 사례 위주로 현장 시공 현안을 점검하여 하자발생을 방지하기 위한 고객 만족 향상 활동</p>
+                    </li>
+                    <li class="hide">
+                      <p class="title">
+                        <a href="#" class="trigger">준공검사</a>
+                        <span></span>
+                      </p>
+                      <p class="des">준공 2개월 전 현장 소장 및 팀장들에 의한 고객 입장에서의 점검을 통한 고객만족도 향상 활동 정착</p>
+                    </li>
+                    <li class="hide">
+                      <p class="title">
+                        <a href="#" class="trigger">어울림서비스</a>
+                        <span></span>
+                      </p>
+                      <p class="des">입주 일년 경과 후 입주자들께 직접 방문하여 불편사항과 하자를 접수 및 즉시 보수함으로써 고객 만족 향상을 위한 서비스</p>
+                    </li>
+                    <li class="hide">
+                      <p class="title">
+                        <a href="#" class="trigger">계절별 특화 서비스</a>
+                        <span></span>
+                      </p>
+                      <p class="des">
+                        입주자들에게 계절별로 단지 환경 정비를 통한 환경 지킴이로의 홍보활동 강화
+                        <span class="des_details">
+                          <span>봄 : 지하주차장 바닥 청소</span>
+                          <span>여름 : 우기철 대비 아파트 관로 청소</span>
+                          <span>가을 : 어린이 놀이터 시설 점검 및 모래 채우기</span>
+                          <span>겨울 : 동파 예방 점검 보수</span>
+                        </span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </article>
 
       <? include '../common/sub_footer.html' ?>
+      <script src="./js/tab_accessibility.js"></script>
+      <script src="./js/tab3_qanda.js"></script>
 
   </body>
 </html>

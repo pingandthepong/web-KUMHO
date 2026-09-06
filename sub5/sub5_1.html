@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인재채용-직무소개</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <link rel="stylesheet" href="./css/sub5_content1.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script
+      src="https://kit.fontawesome.com/5c48cfd0d4.js"
+      crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <? include '../common/sub_header.html' ?>
+
+    <!-- .visual -->
+    <div class="visual">
+      <span>인재채용</span>
+    </div>
+
+    <!-- .sub_nav -->
+    <div class="sub_nav">
+      <ul>
+        <li><a href="./sub5_1.html" class="current">직무소개</a></li>
+        <li><a href="./sub5_2.html">인사제도</a></li>
+        <li><a href="./sub5_3.html">채용정보</a></li>
+      </ul>
+    </div>
+
+    <!-- article -->
+    <article id="content">
+      <!-- .title_area -->
+      <div class="title_area">
+        <div class="line_map">
+          <span class="home">Home</span> &gt; 인재채용 &gt;
+          <strong>직무소개</strong>
+        </div>
+        <h2>직무소개</h2>
+        <p>Think of the people and nature</p>
+      </div>
+
+      <!-- .content_area -->
+      <div class="content_area">
+        <section>
+          <ul class="tabs">
+            <li class="tab_menu">
+              <a href="#" class="tab">금호건설 직장인 브이로그</a>
+            </li>
+            <li class="tab_menu">
+              <a href="#" class="tab">직무소개</a>
+            </li>
+          </ul>
+
+          <div class="contlist cont1">
+            <h3 class="hidden">금호건설 직장인 브이로그</h3>
+            <ul></ul>
+            <div class="modal_box"></div>
+            <!-- 팝업창 -->
+            <div class="popup_youtube modal1">
+              <!-- 데이터 -->
+              <div class="youtube_init">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/yWFW-Zu4yvg?si=FIMfOg8sxFCXNW6A"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="contlist cont2">
+            <h3 class="hidden">직무소개</h3>
+            <ul class="job_info_box">
+              <li>
+                  <h4>엔지니어링</h4>
+                  <ul class="job_info_list">
+                    <li><a href="#">건축</a></li>
+                    <li><a href="#">토목</a></li>
+                    <li><a href="#">플랜트</a></li>
+                    <li><a href="#">안전환경(HSE)</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <h4>영업/마케팅</h4>
+                  <ul class="job_info_list">
+                    <li><a href="#">국내영업</a></li>
+                    <li><a href="#">해외영업</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <h4>경영지원</h4>
+                  <ul class="job_info_list">
+                    <li><a href="#">외주/계약관리</a></li>
+                    <li><a href="#">구매/자재</a></li>
+                    <li><a href="#">재무</a></li>
+                    <li><a href="#">기획</a></li>
+                    <li><a href="#">법무</a></li>
+                    <li><a href="#">인사</a></li>
+                    <li><a href="#">지원</a></li>
+                    <li><a href="#">홍보</a></li>
+                  </ul>
+              </li>
+            </ul>
+            <div class="modal_box2"></div>
+            <div class="popup_job modal2">
+              <div class="popup_job_container">
+                <div class="popup_job_wrap">
+                  <!-- json -->
+                </div>
+                <div class="popupjob_close">
+                  <a href="#">닫기</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <? include '../common/sub_footer.html' ?>
+    <script src="./js/tabMenu.js"></script>
+    <script src="./js/youtube.js"></script>
+    <script src="./js/youtubePopup.js"></script>
+    <script src="./js/popupJob.js"></script>
+    <script src="./js/linkParam.js"></script>
+  </body>
+</html>

@@ -45,8 +45,7 @@
   line-height: 66px;
   transition: all 0.2s ease-out;
 }
-.sub_nav li a.current,
-.sub_nav li a:hover {
+.sub_nav li a:is(:hover, .current) {
   color: #f65742;
   font-weight: 500;
 }

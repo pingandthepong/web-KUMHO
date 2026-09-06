@@ -1,0 +1,227 @@
+/* .visual */
+.visual {
+  width: 2000px;
+  height: 400px;
+  background: url("../../common/images/visual.jpg");
+  position: relative;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.visual span {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 200px;
+}
+
+/* .sub_nav */
+.sub_nav {
+  width: 100%;
+  border-bottom: 1px solid #f5f5f5;
+}
+.sub_nav ul {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub_nav li {
+  width: calc(1400px / 4);
+  text-align: center;
+  position: relative;
+}
+.sub_nav li a {
+  font-size: 1.25rem;
+  color: #666;
+  line-height: 66px;
+  transition: all 0.2s ease-out;
+}
+.sub_nav li a.current,
+.sub_nav li a:hover {
+  color: #f65742;
+  font-weight: 500;
+}
+.sub_nav li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #f65742;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}
+.sub_nav li a.current::after,
+.sub_nav li a:hover::after {
+  opacity: 1;
+}
+
+/* #content */
+#content {
+  width: 100%;
+  margin: 0 auto;
+}
+#content .title_area {
+  width: 1400px;
+  margin: 0 auto;
+  height: 532px;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+}
+#content .title_area::before,
+#content .title_area::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 1px;
+  background: #bfb1a3;
+  position: absolute;
+  left: 50%;
+  bottom: 126px;
+}
+#content .title_area::before {
+  transform: translateX(-120%);
+}
+#content .title_area::after {
+  transform: translateX(20%);
+}
+#content .title_area .line_map {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  color: #999;
+}
+#content .title_area .line_map .home {
+  background: url("../images/home.svg") no-repeat center;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  text-indent: -9999px;
+}
+#content .title_area .line_map strong {
+  font-weight: 600;
+  color: #666;
+}
+#content .title_area h2 {
+  display: inline-block;
+  margin: 191px auto 0;
+  font-size: 3.75rem;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+#content .title_area h2::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: -90px;
+  bottom: 0;
+  opacity: 0.2;
+  z-index: -100;
+  background: #bfb1a3;
+}
+#content .title_area p {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+  position: relative;
+}
+#content .title_area p::before {
+  content: "KUMHO E&C";
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #f65742;
+}
+#content .title_area p::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #bfb1a3;
+  position: absolute;
+  left: 50%;
+  top: 123px;
+  transform: translateX(-50%);
+}
+
+#content .content_area .more_btn {
+  width: 175px;
+  background: #fff;
+  border: 1px solid #2C44F2;
+  color: #2C44F2;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-size: 1.13rem;
+  transition: all .25s ease-out;
+}
+#content .content_area .more_btn:hover {
+  background: #2C44F2;
+  color: #fff;
+}
+
+/* .intro */
+#content .content_area .intro {
+  text-align: center;
+  height: 400px;
+  margin-bottom: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#content .content_area p {
+  margin: 0 auto;
+  font-size: 1.65rem;
+  font-weight: 300;
+  line-height: 1.75;
+  position: relative;
+}
+#content .content_area p .fa-solid {
+  font-size: 3rem;
+  color: #efefef;
+  position: absolute;
+}
+#content .content_area p .fa-solid[class*="left"] {
+  left: 50%;
+  top: -80px;
+  transform: translateX(-50%);
+}
+#content .content_area p .fa-solid[class*="right"] {
+  left: 50%;
+  bottom: -90px;
+  transform: translateX(-50%);
+}
+#content .content_area p mark {
+  background-color: #f65742;
+  color: #fff;
+  padding: 0 8px;
+  font-weight: 400;
+}
+#content .content_area p strong.sm {
+  font-weight: 400;
+  font-size: 2rem;
+}
+#content .content_area p strong.lg {
+  font-weight: 500;
+  font-size: 2.3rem;
+}

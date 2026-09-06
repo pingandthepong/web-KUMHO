@@ -101,9 +101,9 @@
 }
 /* .all */
 /* .search */
-#content .content_area .search form {
+#content .content_area .search {
   max-width: 700px;
-  margin: 0 auto 120px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -125,7 +125,7 @@
   outline: none;
   border: 1px solid #f65742;
 }
-#content .content_area input[type="submit"] {
+#content .content_area #searchBtn {
   width: 90px;
   height: 50px;
   color: #fff;
@@ -133,12 +133,23 @@
   border-radius: 12px;
   border: none;
   background: #f65742;
+  cursor: pointer;
+}
+#content .content_area #searchBtn:focus {
+  outline: 2px solid #000;
 }
 #content .content_area .all {
   background: #f8f8f8;
   background: url("../images/content5/bg.svg") no-repeat;
   background-size: cover;
   padding-bottom: 200px;
+}
+#content .content_area .all .suggestion {
+  margin: 30px 0 120px;
+  text-align: center;
+}
+#content .content_area .all .suggestion a {
+  display: inline-block;
 }
 #content .content_area .all ul {
   flex-wrap: wrap;
@@ -148,6 +159,7 @@
   width: calc((100% - 40px) / 3);
 }
 #content .content_area .all li .all_img_container {
+  width: 100%;
   height: 262px;
   border-radius: 20px;
   background: #000 url("../../common/images/header-logo-pb20.png") no-repeat
@@ -160,14 +172,16 @@
   gap: 8px;
   margin-top: 32px;
 }
-#content .content_area .all .badge_list span[class*="state"] {
+
+
+#content .content_area .all :is(.suggestion, .badge_list) span[class*="state"] {
   background: #fff;
   border: 1px solid #e9e9e9;
   color: #f65742;
   padding: 5px 16px;
   border-radius: 8px;
 }
-#content .content_area .all .badge_list span.state01 {
+#content .content_area .all :is(.suggestion, .badge_list) span.state01 {
   background: #ffe6e3;
 }
 #content .content_area .all li .name {
@@ -175,4 +189,10 @@
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
+}
+
+#content .content_area .performance_list > p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 80px;
 }

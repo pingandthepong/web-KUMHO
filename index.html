@@ -8,6 +8,7 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="./common/css/aos.css">
     <link rel="stylesheet" href="./common/css/common.css">
     <link rel="stylesheet" href="./maincss/mainlayout.css">
     <script src="./common/js/prefixfree.min.js"></script>
@@ -15,53 +16,58 @@
       src="https://kit.fontawesome.com/5c48cfd0d4.js"
       crossorigin="anonymous"></script>
     <script src="./mainjs/mainpopup.js"></script>
+    <!-- chartjs -->
+    <script src="./mainjs/chart.js"></script>
   </head>
   <body>
     <? include './common/main_header.html' ?>
-
 
     <!-- visual -->
     <div class="visual">
       <div class="gallery">
         <ul>
-          <li class="link1"><img src="./mainimages/visual_01.jpg" alt="">
+          <li class="link1">
+            <img src="./mainimages/visual_01.jpg" alt="">
             <div class="slogan">
               <p class="slogan__lg">Building a <span class="up">Dream</span></p>
               <p class="slogan__sm">for the Global Village</p>
             </div>
           </li>
-          <li class="link2"><img src="./mainimages/visual_02.jpg" alt="">
+          <li class="link2">
+            <img src="./mainimages/visual_02.jpg" alt="">
             <div class="slogan">
-              <p class="slogan__lg">Building a <span class="up">Future</span></p>
+              <p class="slogan__lg">
+                Building a <span class="up">Future</span>
+              </p>
               <p class="slogan__sm">for Humanity</p>
             </div>
           </li>
-          <li class="link3"><img src="./mainimages/visual_03.jpg" alt="">
+          <li class="link3">
+            <img src="./mainimages/visual_03.jpg" alt="">
             <div class="slogan">
               <p class="slogan__lg">Building a <span class="up">Dream</span></p>
               <p class="slogan__sm">for the Global Village</p>
             </div>
           </li>
-          <li class="link4"><img src="./mainimages/visual_04.jpg" alt="">
+          <li class="link4">
+            <img src="./mainimages/visual_04.jpg" alt="">
             <div class="slogan">
-              <p class="slogan__lg">Building a <span class="up">Future</span></p>
+              <p class="slogan__lg">
+                Building a <span class="up">Future</span>
+              </p>
               <p class="slogan__sm">for Humanity</p>
             </div>
           </li>
         </ul>
       </div>
-      <!-- <div class="slogan">
-        <p class="slogan__lg">Building a Dream</p>
-        <p class="slogan__sm">for the Global Village</p>
-      </div> -->
-      
+
       <div class="dock">
-        <span class="mbutton  btn1"></span>
-        <span class="mbutton  btn2"></span>
-        <span class="mbutton  btn3"></span>
-        <span class="mbutton  btn4"></span>
+        <span class="mbutton btn1"></span>
+        <span class="mbutton btn2"></span>
+        <span class="mbutton btn3"></span>
+        <span class="mbutton btn4"></span>
       </div>
-      
+
       <div class="dock_btn">
         <span class="ps"><span class="hidden">stop</span></span>
         <div class="btn_wrap">
@@ -75,23 +81,9 @@
           <span class="btn btnRight"><span class="hidden">right</span></span>
         </div>
       </div>
-      
+
       <div class="scroll_btn">
-        <svg
-          width="34"
-          height="44"
-          viewBox="0 0 34 44"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M16.9297 0L16.9997 41.8781"
-            stroke="white"
-            stroke-width="3">
-          <path
-            d="M32.9375 25.9636L17 41.8781L1.0625 25.9636"
-            stroke="white"
-            stroke-width="3">
-        </svg>
+        <img src="./mainimages/scroll_btn.svg" alt="">
       </div>
     </div>
 
@@ -100,11 +92,16 @@
       <h2 class="hidden">본문 콘텐츠 영역</h2>
       <!-- section.business -->
       <section class="business">
-        <h3>사업분야</h3>
-        <span class="section_title_en">Business sector</span>
+        <div data-aos="fade-up" class="section_title_wrap">
+          <h3>사업분야</h3>
+          <span class="section_title_en">Business sector</span>
+        </div>
         <ul>
           <li>
-            <a href="./sub2/sub2_1.html">
+            <a
+              href="./sub2/sub2_1.html"
+              data-aos="fade-up"
+              data-aos-delay="200">
               <img src="./mainimages/business_01.jpg" alt="">
               <div class="sector_txt">
                 <h4>건축</h4>
@@ -114,7 +111,10 @@
             </a>
           </li>
           <li>
-            <a href="./sub2/sub2_2.html">
+            <a
+              href="./sub2/sub2_2.html"
+              data-aos="fade-up"
+              data-aos-delay="300">
               <img src="./mainimages/business_02.jpg" alt="">
               <div class="sector_txt">
                 <h4>토목</h4>
@@ -124,7 +124,10 @@
             </a>
           </li>
           <li>
-            <a href="./sub2/sub2_3.html">
+            <a
+              href="./sub2/sub2_3.html"
+              data-aos="fade-up"
+              data-aos-delay="400">
               <img src="./mainimages/business_03.jpg" alt="">
               <div class="sector_txt">
                 <h4>주택</h4>
@@ -134,7 +137,10 @@
             </a>
           </li>
           <li>
-            <a href="./sub2/sub2_4.html">
+            <a
+              href="./sub2/sub2_4.html"
+              data-aos="fade-up"
+              data-aos-delay="500">
               <img src="./mainimages/business_04.jpg" alt="">
               <div class="sector_txt">
                 <h4>플랜트/환경</h4>
@@ -151,7 +157,10 @@
 
       <!-- section.master -->
       <section class="master">
-        <div class="master__container">
+        <div
+          class="master__container"
+          data-aos="zoom-in"
+          data-aos-duration="850">
           <div class="master__inner">
             <div class="master_main_txt">
               <h3>대표실적</h3>
@@ -168,88 +177,52 @@
           </div>
 
           <div class="master_tab_conlist">
-            <h4 class="tab_title"></h4>
-            <p class="tab_desc"></p>
+            <h4 class="tab_title">Title</h4>
+            <p class="tab_desc">Description</p>
           </div>
 
           <!-- .master_tab -->
           <ul class="master_tab_menu">
-            <li><a class="tab" href="./sub2/sub2_1.html">아부다비 관제탑</a></li>
-            <li><a class="tab" href="./sub2/sub2_1.html">두바이 신공항</a></li>
-            <li><a class="tab" href="./sub2/sub2_2.html">인천국제공항</a></li>
-            <li><a class="tab" href="./sub2/sub2_2.html">신공항 관제탑</a></li>
-            <li><a class="tab" href="./sub2/sub2_3.html">어울림</a></li>
+            <li>
+              <a class="tab" href="./sub2/sub2_5.html">아부다비 관제탑</a>
+            </li>
+            <li><a class="tab" href="./sub2/sub2_5.html">두바이 신공항</a></li>
+            <li><a class="tab" href="./sub2/sub2_5.html">인천국제공항</a></li>
+            <li><a class="tab" href="./sub2/sub2_5.html">신공항 관제탑</a></li>
+            <li><a class="tab" href="./sub2/sub2_5.html">어울림</a></li>
           </ul>
         </div>
       </section>
       <!-- section.award -->
       <section class="award">
-        <h3>수상실적</h3>
-        <span class="section_title_en">Award</span>
-        <p>앞으로도 최선을 다하는 금호건설이 되겠습니다.</p>
-        <div class="award__container">
-          <ul class="award_list">
-            <li>
-              <a href="javascript:void(0)">
-                <div class="img_wrap">
-                  <img src="./mainimages/award_01.jpg" alt="">
-                </div>
-                <dl class="award_txt">
-                  <dt>'제21회 한국 색채대상' 블루(BLUE)상</dt>
-                  <dd class="award_institution">한국색채학회</dd>
-                  <dd class="date">2023-10-30</dd>
-                </dl>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <div class="img_wrap">
-                  <img src="./mainimages/award_02.jpg" alt="">
-                </div>
-                <dl class="award_txt">
-                  <dt>'살고 싶은 집 2023' 조경 부문 대상</dt>
-                  <dd class="award_institution">헤럴드경제</dd>
-                  <dd class="date">2023-12-08</dd>
-                </dl>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <div class="img_wrap">
-                  <img src="./mainimages/award_03.jpg" alt="">
-                </div>
-                <dl class="award_txt">
-                  <dt>'제 14회 대한민국 그린건설대상' 주거문화대상</dt>
-                  <dd class="award_institution">서울신문사/국토교통부</dd>
-                  <dd class="date">2023-12-06</dd>
-                </dl>
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">
-                <div class="img_wrap">
-                  <img src="./mainimages/award_04.jpg" alt="">
-                </div>
-                <dl class="award_txt">
-                  <dt>'2023년도 하반기' 주거복지대상</dt>
-                  <dd class="award_institution">한국경제/국토교통부</dd>
-                  <dd class="date">2023-12-05</dd>
-                </dl>
-              </a>
-            </li>
-          </ul>
+        <div data-aos="fade-up" data-aos-delay="100" class="section_title_wrap">
+          <h3>수상실적</h3>
+          <span class="section_title_en">Award</span>
+        </div>
+        <p data-aos="fade-up" data-aos-delay="300">
+          앞으로도 최선을 다하는 금호건설이 되겠습니다.
+        </p>
+
+        <div
+          class="award__container"
+          data-aos="fade-left"
+          data-aos-delay="500"
+          data-aos-duration="700">
+          <div class="award_list">
+            <ul id="award-data"></ul>
+          </div>
         </div>
         <!-- .award .btn_box -->
         <div class="btn_box">
-          <a href="javascript:void(0)"
+          <a href="#" class="leftBtn btn"
             ><i class="fa-solid fa-angles-left" aria-hidden="true"></i
             ><span class="hidden">이전 콘텐츠 보기</span></a
           >
-          <a href="javascript:void(0)"
+          <a href="#" class="rightBtn btn"
             ><i class="fa-solid fa-angles-right" aria-hidden="true"></i
             ><span class="hidden">다음 콘텐츠 보기</span></a
           >
-          <a href="javascript:void(0)" class="more_btn"
+          <a href="./sub3/sub3_3.html" class="more_btn"
             ><i class="fa-solid fa-plus" aria-hidden="true"></i
             ><span class="hidden">수상실적 페이지로 이동</span></a
           >
@@ -258,9 +231,14 @@
       <!-- section.news -->
       <section class="news">
         <div class="news__container">
-          <h3>금호뉴스</h3>
-          <span class="section_title_en">News</span>
-          <p>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="700"
+            class="section_title_wrap">
+            <h3>금호뉴스</h3>
+            <span class="section_title_en">News</span>
+          </div>
+          <p data-aos="fade-up" data-aos-delay="900">
             고객과 함께 아름다운 미래로 비상하는 아름다운 기업이 되겠습니다.
           </p>
 
@@ -268,7 +246,7 @@
           <div class="news__inner">
             <ul>
               <li class="news_long">
-                <a href="javascript:void(0)">
+                <a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=free">
                   <div class="img_wrap">
                     <img src="./mainimages/news_01.jpg" alt="">
                   </div>
@@ -283,7 +261,7 @@
                 </a>
               </li>
               <li class="news_short">
-                <a href="javascript:void(0)">
+                <a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=free">
                   <div class="img_wrap">
                     <img src="./mainimages/news_02.jpg" alt="">
                   </div>
@@ -295,7 +273,7 @@
                 </a>
               </li>
               <li class="news_short">
-                <a href="javascript:void(0)">
+                <a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=free">
                   <div class="img_wrap">
                     <img src="./mainimages/news_03.jpg" alt="">
                   </div>
@@ -307,7 +285,7 @@
                 </a>
               </li>
               <li class="news_short">
-                <a href="javascript:void(0)">
+                <a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=free">
                   <div class="img_wrap">
                     <img src="./mainimages/news_04.jpg" alt="">
                   </div>
@@ -319,7 +297,7 @@
                 </a>
               </li>
               <li class="news_long">
-                <a href="javascript:void(0)">
+                <a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=free">
                   <div class="img_wrap">
                     <img src="./mainimages/news_05.jpg" alt="">
                   </div>
@@ -331,7 +309,7 @@
                 </a>
               </li>
               <li class="news_short">
-                <a href="javascript:void(0)">
+                <a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=free">
                   <div class="img_wrap">
                     <img src="./mainimages/news_06.jpg" alt="">
                   </div>
@@ -346,7 +324,7 @@
               </li>
             </ul>
           </div>
-          <a href="javascript:void(0)" class="more_btn">
+          <a href="https://pingandthepong.mycafe24.com/gb/bbs/board.php?bo_table=free" class="more_btn">
             <i class="fa-solid fa-plus" aria-hidden="true"></i>
             <span class="hidden">뉴스 페이지로 이동</span>
           </a>
@@ -354,12 +332,16 @@
       </section>
       <!-- section.investment -->
       <section class="investment">
-        <h3>주가정보</h3>
-        <span class="section_title_en">Investment information</span>
-        <p>소중한 자산, 투명경영으로 보답하겠습니다.</p>
+        <div data-aos="fade-up" data-aos-delay="300" class="section_title_wrap">
+          <h3>주가정보</h3>
+          <span class="section_title_en">Investment information</span>
+        </div>
+        <p data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
+          소중한 자산, 투명경영으로 보답하겠습니다.
+        </p>
         <div class="investment__container">
           <!-- .iframe_box -->
-          <div class="iframe_box">
+          <div class="iframe_box" data-aos="fade-right" data-aos-delay="600">
             <div class="iframe_head">금호건설<span>002990</span></div>
             <!-- .middle-->
             <div class="middle">
@@ -407,7 +389,11 @@
             </table>
           </div>
           <!-- .earning-rate -->
-          <div class="earning-rate">
+          <div
+            class="earning-rate"
+            data-aos="flip-right"
+            data-aos-delay="800"
+            data-aos-duration="1000">
             <h4>수익률</h4>
             <div class="earning-rate_inner">
               <div class="tab_list_wrapper">
@@ -425,7 +411,9 @@
               </div>
               <div class="notice_date">기준일: 24. 2. 23</div>
               <div class="graph">
-                <div class="chart">(차트영역)</div>
+                <div class="canvas_wrap">
+                  <canvas class="chart" id="earningRate">(차트영역)</canvas>
+                </div>
                 <ul class="button_bar">
                   <li class="checkbox">
                     <input type="checkbox" checked id="ci2">
@@ -458,14 +446,14 @@
         <!-- .more_link -->
         <ul class="more_link">
           <li>
-            <a href="./sub1/sub1_3.html"
+            <a href="./sub1/sub1_3.html?num=2"
               >경영정보<i
                 class="fa-solid fa-arrow-up-right-from-square"
                 aria-hidden="true"></i
             ></a>
           </li>
           <li>
-            <a href="./sub1/sub1_3.html"
+            <a href="./sub1/sub1_3.html?num=3"
               >재무정보<i
                 class="fa-solid fa-arrow-up-right-from-square"
                 aria-hidden="true"></i
@@ -481,30 +469,28 @@
       <section class="recruit">
         <div class="recruit__bg"></div>
         <div class="recruit__container">
-          <h3>인재채용</h3>
-          <span class="section_title_en">Recruit</span>
-          <p>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            class="section_title_wrap">
+            <h3>인재채용</h3>
+            <span class="section_title_en">Recruit</span>
+          </div>
+          <p data-aos="fade-right" data-aos-delay="500">
             패기와 열정, 역량으로 똘똘 뭉친 젊은이에게 금호건설의 문은 활짝
             열려있습니다.
           </p>
         </div>
         <div class="recruit_list__container">
           <ul class="recruit_list">
-            <li><a href="javascript:void(0)">직무가이드</a></li>
-            <li><a href="javascript:void(0)">자세히보기</a></li>
+            <li><a href="./sub5/sub5_1.html?num=2">직무가이드</a></li>
+            <li><a href="./sub5/sub5_2.html">자세히보기</a></li>
             <li>
-              <a
-                href="javascript:void(0)"
-                target="_blank"
-                title="채용공고 새 창 열림"
-                >채용공고<i
-                  class="fa-solid fa-arrow-up-right-from-square"
-                  aria-hidden="true"></i
-              ></a>
+              <a href="./sub5/sub5_3.html">채용정보</a>
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                href="https://kumhoenc.recruiter.co.kr/appsite/company/index"
                 target="_blank"
                 title="입사지원 새 창 열림"
                 >입사지원<i
@@ -518,10 +504,11 @@
     </article>
 
     <? include './common/main_footer.html' ?>
-    
-  <script src="./mainjs/main.js"></script>
-  <script src="./mainjs/move.js"></script>
 
+    <script src="./mainjs/master.js"></script>
+    <script src="./mainjs/move.js"></script>
+    <script type="module" src="./mainjs/award-data-json.js"></script>
+    <script src="./mainjs/earningRate.js"></script>
 
     <!-- 메인 팝업(광고/이벤트/공지) -->
     <div id="showimage">
@@ -529,21 +516,28 @@
         function closeWin() {
           var chk = document.getElementById("Notice");
           if (chk.checked) {
-            setCookie("Notice", "done", 0); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+            setCookie("Notice", "done", 1); // 1일간 안보임
           }
         }
         if (getCookie("Notice") == "done") {
           hidebox();
         }
       </script>
-      <img src="./common/images/KUMHO_Logo_KJH_txtblack_pb20.png" alt="">
+      <img
+        class="popup_img"
+        src="./common/images/header-logo-pb20.png"
+        alt="">
       <p>
         본 사이트는 상업적 목적이 아닌<br><span class="accent"
           >개인 포트폴리오</span
-        >용도로 만들어졌습니다.<br>홈페이지의 일부 내용과 기타 이미지 등은<br>그
+        >
+        용도로 만들어졌습니다.<br>홈페이지의 일부 내용과 기타 이미지 등은<br>그
         출처가 따로 있음을 밝힙니다.
       </p>
-      <div class="qrcode">MSF Mobile</div>
+      <div class="qrcode">
+        <span>MSF Mobile</span>
+        <img src="./mainimages/KUMHO_qr_357.png" alt="">
+      </div>
       <div class="close_box">
         <label for="Notice">
           <input
@@ -553,8 +547,12 @@
             value=""
             title="오늘 하루 열지 않기 선택상자">오늘 하루 열지 않기</label
         >
-        <!-- <a href="#" onclick="closeWin();hidebox();return false;">닫기</a> -->
-        <a href="#" onclick="closeWin(); hidebox(); return false;">[닫기]</a>
+        <a
+          href="#"
+          onclick="closeWin(); hidebox(); return false;"
+          class="popup_close"
+          >[닫기]</a
+        >
       </div>
     </div>
   </body>

@@ -1,0 +1,55 @@
+#content .content_area section .txt_box_wrap {
+  margin: 0 auto 75px;
+}
+#content .content_area section .txt_box_wrap .txt_box p.strong {
+  margin-bottom: 5px;
+}
+
+#content .content_area section.career {
+  padding: 100px 0;
+  box-sizing: border-box;
+  background: #f6f6f6;
+}
+
+/* .newcomer */
+#content .content_area .newcomer {
+  width: 1200px;
+  margin: 0 auto; 
+}
+#content .content_area .newcomer .list_circle ol::before {
+  background: #ffcec7;
+}
+#content .content_area .newcomer .list_circle ol li {
+  width: 235px;
+  height: 235px;
+}
+#content .content_area .newcomer .link_banner {
+  background: url('../../mainimages/visual_04.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/* .career */
+#content .content_area .career {
+  
+}
+#content .content_area .career .list_circle {}
+#content .content_area .career .list_circle ol {
+  gap: 60px;
+}
+#content .content_area .career .list_circle ol::before {
+  background: #ee7e86;
+}
+#content .content_area .career .list_circle ol li {
+  width: 180px;
+  height: 180px;
+  background: #f6f6f6;
+}
+
+#content .content_area :is(.list_step, .link_banner) {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .content_area .career .link_banner {
+  background: url('../../mainimages/visual_02.jpg') no-repeat center;
+  background-size: cover;
+}

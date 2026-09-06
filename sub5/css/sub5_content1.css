@@ -1,0 +1,309 @@
+#content .content_area section {
+  width: 1200px;
+  margin: auto;
+  padding-bottom: 150px;
+}
+#content .content_area section .tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+#content .content_area section .tabs .tab_menu {
+}
+#content .content_area section .tabs .tab_menu .tab {
+  width: 600px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #666;
+  text-align: center;
+  line-height: 60px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+#content .content_area section .tabs .tab_menu .tab.current {
+  background: #f65742;
+  color: #fff;
+  border: 1px solid #f65742;
+}
+
+#content .content_area section .contlist {
+  display: none;
+}
+#content .content_area section .contlist :is(.modal_box, .modal_box2) {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 10;
+}
+
+/* .cont1 */
+#content .content_area section .cont1 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#content .content_area section .cont1 li a {
+  width: 585px;
+  height: 410px;
+  margin-bottom: 80px;
+}
+#content .content_area section .cont1 li a .img_box {
+  margin-bottom: 20px;
+  position: relative;
+}
+#content .content_area section .cont1 li a .img_box::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+}
+#content .content_area section .cont1 li a .img_box .img::before {
+  content: "\f04b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.25rem;
+  transition: all 0.15s ease-out;
+}
+#content .content_area section .cont1 li:hover a .img_box .img::before {
+  background: #f65742;
+  border: 1px solid #f65742;
+}
+#content .content_area section .cont1 li a .img_box .img {
+  overflow: hidden;
+}
+#content .content_area section .cont1 li a .img_box .img img {
+  width: 100%;
+  transition: all 0.25s ease-out;
+}
+#content .content_area section .cont1 li:hover a .img_box .img img {
+  transform: scale(1.05);
+}
+#content .content_area section .cont1 li a .txt_box .tit {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1c1c1c;
+  line-height: 30px;
+  letter-spacing: -0.05rem;
+}
+#content .content_area section .cont1 li a .txt_box .txt {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: #666;
+}
+#content .content_area section .cont1 .popup_youtube {
+  width: 1200px;
+  height: 675px;
+  background: #fff;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: none;
+}
+#content .content_area section .cont1 .popup_youtube .youtube_init {
+  width: 1200px;
+  height: 675px;
+  
+}
+#content .content_area section .cont1 .popup_youtube .youtube_init iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* .cont2 */
+#content .content_area section .cont2 {
+  padding-top: 25px;
+}
+#content .content_area section .cont2 .job_info_box {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+#content .content_area section .cont2 .job_info_box > li {
+  width: 300px;
+}
+#content .content_area section .cont2 .job_info_box h4 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#content .content_area section .cont2 .job_info_box h4::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 24px;
+}
+#content .content_area section .cont2 .job_info_box li:nth-of-type(1) h4::before {
+  background: url('../images/content1/engineering.png');
+  background-size: cover;
+}
+#content .content_area section .cont2 .job_info_box li:nth-of-type(2) h4::before {
+  background: url('../images/content1/marketing.png');
+  background-size: cover;
+}
+#content .content_area section .cont2 .job_info_box li:nth-of-type(3) h4::before {
+  background: url('../images/content1/management.png');
+  background-size: cover;
+}
+
+#content .content_area section .cont2 .job_info_list {
+  border-top: 2px solid #eee;
+}
+#content .content_area section .cont2 .job_info_list li {}
+#content .content_area section .cont2 .job_info_list li a {
+  font-size: 22px;
+  font-weight: 300;
+  color: #1c1c1c;
+  padding: 13px 20px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  transition: all .25s ease-out;
+}
+#content .content_area section .cont2 .job_info_list li a:hover {
+  color: #f65742;
+}
+#content .content_area section .cont2 .job_info_list li a::before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  background: #f65742;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#content .content_area section .cont2 .job_info_list li a::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #f65642;
+  border-bottom: 2px solid #f65642;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-135deg);
+}
+#content .content_area section .cont2 .popup_job {
+  width: 1200px;
+  height: 800px;
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: none;
+}
+#content .content_area section .cont2 .popup_job_container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+}
+#content .content_area section .cont2 .popup_job_wrap {
+  width: 100%;
+  height: 100%;
+  padding: 100px 90px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: #fff;
+  position: relative;
+}
+#content .content_area section .cont2 .popup_job_wrap h5 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #1c1c1c;
+  float: left;
+}
+#content .content_area section .cont2 .popup_job_wrap h5 span {
+  display: block;
+  font-size: 18px;
+  letter-spacing: -.03rem;
+  position: relative;
+  padding-top: 22px;
+  margin-top: 15px;
+}
+#content .content_area section .cont2 .popup_job_wrap h5 span::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #d2d2d2;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#content .content_area section .cont2 .popup_job_wrap dl {
+  width: 730px;
+  float: right;
+}
+#content .content_area section .cont2 .popup_job_wrap dl:not(:first-of-type) {
+  margin-top: 80px;
+}
+#content .content_area section .cont2 .popup_job_wrap dt {
+  font-size: 22px;
+  font-weight: 600;
+  color: #f65742;
+  margin-bottom: 30px;
+}
+#content .content_area section .cont2 .popup_job_wrap dd {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #1c1c1c;
+  letter-spacing: -.05rem;
+}
+#content .content_area section .cont2 .popup_job_wrap dd.strong {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#content .content_area section .cont2 .popup_job_wrap dd .category {
+  font-weight: 600;
+}
+#content .content_area section .cont2 .popupjob_close a {
+  width: 23px;
+  height: 23px;
+  background: url('../images/content1/popup_close.png') no-repeat center;
+  text-indent: -9999px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.modal-open {
+  /* 스크롤 비활성화 */
+  overflow: hidden;
+}

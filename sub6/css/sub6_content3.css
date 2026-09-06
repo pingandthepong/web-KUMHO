@@ -1,0 +1,89 @@
+/* .policy */
+#content .content_area .policy {
+  
+}
+#content .content_area .policy .tabs {
+  width: 1400px;
+  margin: 0 auto 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .tab */
+#content .content_area .policy .tabs .tab {
+  width: 300px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 3;
+  text-align: center;
+  color: #999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all .25s ease-out;
+}
+#content .content_area .policy .tabs .tab.tab1 {
+  margin-left: 400px;
+}
+#content .content_area .policy .tabs .tab.tab2 {
+  margin-left: 700px;
+}
+#content .content_area .policy .tabs .tab:is(.on, :hover) {
+  color: #f65742;
+}
+#content .content_area .policy .tabs .tab::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #f65742;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: all .25s ease-out;
+}
+#content .content_area .policy .tabs .tab.on::before {
+  width: 100%;
+}
+#content .content_area .policy .tabs .tab::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #f65742;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  opacity: 0;
+  transition: all .35s ease-out;
+}
+#content .content_area .policy .tabs .tab.on::after {
+  opacity: 1;
+}
+
+/* .contlist */
+#content .content_area .policy .tabs .contlist {
+  margin-top: 72px;
+  padding-top: 100px;
+}
+
+/* .contlist1 */
+#content .content_area .policy .tabs .contlist:nth-of-type(1) {}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) ul {}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) li {}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign {}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign .pos {}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign .name {}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign .name span {}
+#content .content_area .policy .tabs .contlist:nth-of-type(1) .sign .name img {}
+
+/* .contlist2 */
+#content .content_area .policy .tabs .contlist:nth-of-type(2) {}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .highcharts-figure {}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .highcharts-figure #system {}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system_list {}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system_list dl {}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system_list dt {}
+#content .content_area .policy .tabs .contlist:nth-of-type(2) .system_list dd {}

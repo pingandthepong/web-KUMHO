@@ -30,9 +30,8 @@ $(".landmark li:first .img_badge").css({
 });
 
 
-$('.landmark li').each(function(eachLiIdx, eachLi) {
-  // console.log(eachLidx); // 0 1 2
-  $(this).find('.img_badge').css('background', `url(./images/content5/${landmarks[eachLiIdx].imgsrc})`);
+$('.landmark li').each(function(ind, list) {
+  $(this).find('.img_badge').css('background', `url(./images/content5/${landmarks[ind].imgsrc}) no-repeat center`);
 });
 
 
@@ -43,10 +42,6 @@ $(".landmark li").hover(
 
     $(".landmark li").animate({ width: min_width }, 300).clearQueue();
     $(this).animate({ width: max_width }, 300).clearQueue();
-
-    $(this).find('.img_badge').css({
-      background: `url(./images/content5/${landmarks[landInd].imgsrc}) no-repeat center`,
-    });
 
     $(".landmark li").find('.badge').hide();
     $(this).find('.badge').show();
