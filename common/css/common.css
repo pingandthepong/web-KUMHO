@@ -271,6 +271,9 @@ img {
   text-indent: -9999px;
   overflow: hidden;
 }
+#headerArea.white .logo a {
+  background-image: url("../images/KUMHO_Logo_KJH_txtblack_pb20.png");
+}
 /* header #gnb */
 #headerArea #gnb {
   /* 1152px */
