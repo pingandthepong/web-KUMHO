@@ -75,10 +75,10 @@
   font-weight: 400;
   margin-left: 15px;
 }
-#content .contlist.tab1 .iframe_box .positive {
+#content .contlist.tab1 .iframe_box .state.positive {
   color: #ef0010;
 }
-#content .contlist.tab1 .iframe_box .negative {
+#content .contlist.tab1 .iframe_box .state.negative {
   color: #2c44fe;
 }
 /* .iframe_box .middle */
@@ -91,33 +91,38 @@
   margin-bottom: 75px;
 }
 #content .contlist.tab1 .iframe_box .middle .last {
-  font-size: 4.38rem;
+  font-size: 4.6rem;
   font-weight: 700;
   line-height: 1;
 }
 #content .contlist.tab1 .iframe_box .middle .changerate {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 12px;
 }
-#content .contlist.tab1 .iframe_box .middle .changerate li:first-of-type {
-  margin-right: 5px;
-}
+
 #content .contlist.tab1 .iframe_box .middle .changerate li dl {
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: space-between;
+  gap: 6px;
 }
 #content .contlist.tab1 .iframe_box .middle .changerate li dt {
-  font-size: 1.56rem;
+  font-size: 1.46rem;
   font-weight: 600;
 }
-#content .contlist.tab1 .iframe_box .middle .changerate li dd {
-  font-size: 1.25rem;
+#content .contlist.tab1 .iframe_box .middle .changerate li dd span {
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 4px;
 }
-#content .contlist.tab1 .iframe_box .middle .changerate .positive::before {
+#content
+  .contlist.tab1
+  .iframe_box
+  .middle
+  .changerate
+  .state.positive::before {
   content: "";
   display: inline-block;
   background: url("../../mainimages/investment_positive.png");
@@ -125,7 +130,12 @@
   width: 10px;
   height: 10px;
 }
-#content .contlist.tab1 .iframe_box .middle .changerate .negative::before {
+#content
+  .contlist.tab1
+  .iframe_box
+  .middle
+  .changerate
+  .state.negative::before {
   content: "";
   display: inline-block;
   background: url("../../mainimages/investment_negative.png");
@@ -142,10 +152,10 @@
 #content .contlist.tab1 .iframe_box .bottom th {
   font-weight: 700;
 }
-#content .contlist.tab1 .iframe_box .bottom td.open {
+#content .contlist.tab1 .iframe_box .bottom td.high {
   color: #ef0010;
 }
-#content .contlist.tab1 .iframe_box .bottom td.high {
+#content .contlist.tab1 .iframe_box .bottom td.low {
   color: #2c44fe;
 }
 /* .invest1 .earning-rate */
@@ -269,9 +279,6 @@
 }
 #content .tabs table tbody th {
   font-weight: 400;
-}
-#content .tabs table tbody td {
-  font-weight: 300;
 }
 #content .contlist.tab1 :is(.invest2, .invest4) tr {
   border-bottom: 1px solid #e5e5e5;

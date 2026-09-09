@@ -640,10 +640,10 @@
   margin-left: 15px;
   font-weight: 400;
 }
-#content .iframe_box .positive {
+#content .iframe_box .state.positive {
   color: #ef0010;
 }
-#content .iframe_box .negative {
+#content .iframe_box .state.negative {
   color: #2c44fe;
 }
 /* .iframe_box .middle */
@@ -656,32 +656,35 @@
   margin-bottom: 75px;
 }
 #content .iframe_box .middle .last {
-  font-size: 4.38rem;
+  font-size: 4.6rem;
   font-weight: 700;
   line-height: 1;
 }
 #content .iframe_box .middle .changerate-box {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 12px;
 }
 #content .iframe_box .middle .changerate-box li {
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: space-between;
+  gap: 6px;
 }
 #content .iframe_box .middle .changerate-box li h4 {
-  font-size: 1.56rem;
+  font-size: 1.46rem;
   font-weight: 600;
 }
 #content .iframe_box .middle .changerate-box li div {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
+  text-align: right;
 }
-#content .iframe_box .middle .changerate-box .positive {
+#content .iframe_box .middle .changerate-box .state {
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 4px;
 }
-#content .iframe_box .middle .changerate-box .positive::before {
+#content .iframe_box .middle .changerate-box .state.positive::before {
   content: "";
   display: inline-block;
   background: url("../mainimages/investment_positive.png");
@@ -689,10 +692,10 @@
   width: 10px;
   height: 10px;
 }
-#content .iframe_box .middle .changerate-box .negative::before {
+#content .iframe_box .middle .changerate-box .state.negative::before {
   content: "";
   display: inline-block;
-  background: url("../mainimages/investment_negaitive.png");
+  background: url("../mainimages/investment_negative.png");
   background-size: cover;
   width: 10px;
   height: 10px;
@@ -706,10 +709,10 @@
 #content .iframe_box .bottom th {
   font-weight: 700;
 }
-#content .iframe_box .bottom td.open {
+#content .iframe_box .bottom td.high {
   color: #ef0010;
 }
-#content .iframe_box .bottom td.high {
+#content .iframe_box .bottom td.low {
   color: #2c44fe;
 }
 /* .investment .earning-rate */

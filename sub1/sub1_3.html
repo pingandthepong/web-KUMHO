@@ -99,19 +99,19 @@
                   <div class="middle">
                     <dl class="last">
                       <dt class="hidden">종가</dt>
-                      <dd class="positive">4,330</dd>
+                      <dd class="stock-price"></dd>
                     </dl>
                     <ul class="changerate">
                       <li>
                         <dl>
                           <dt class="change-phrase">전일대비</dt>
-                          <dd class="change negative">55</dd>
+                          <dd class="change"><span></span></dd>
                         </dl>
                       </li>
                       <li>
                         <dl>
                           <dt class="change-phrase">등락률</dt>
-                          <dd class="change-per negative">1.2</dd>
+                          <dd class="change-per"><span></span></dd>
                         </dl>
                       </li>
                     </ul>
@@ -119,8 +119,7 @@
                   <table class="bottom">
                     <thead>
                       <tr>
-                        <th scope="col" class="label">전날 종가</th>
-                        <th scope="col" class="label">현재가</th>
+                        <th scope="col" class="label">전일 종가</th>
                         <th scope="col" class="label">고가</th>
                         <th scope="col" class="label">저가</th>
                         <th scope="col" class="label">거래량</th>
@@ -128,11 +127,10 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="data prev-close">4,330</td>
-                        <td class="data open">4,330</td>
-                        <td class="data high">6,730</td>
-                        <td class="data low">4,315</td>
-                        <td class="data volume">46,383</td>
+                        <td class="data prev-close"></td>
+                        <td class="data high"></td>
+                        <td class="data low"></td>
+                        <td class="data volume"></td>
                       </tr>
                     </tbody>
                   </table>
@@ -495,6 +493,7 @@
 
     <?php include '../common/sub_footer.html' ?>
     <script src="../common/js/tab.js"></script>
+    <script src="../mainjs/stock.js"></script>
     <script src="../mainjs/earningRate.js"></script>
     <script src="./js/invest3Graph.js"></script>
     <script src="./js/fPosition.js"></script>
