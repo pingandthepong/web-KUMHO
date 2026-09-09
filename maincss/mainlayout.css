@@ -618,7 +618,11 @@
   padding: 55px 75px 85px;
   box-sizing: border-box;
 }
-#content .iframe_box .iframe__head::before {
+
+#content .iframe_box .iframe__head {
+  margin-bottom: 40px;
+}
+#content .iframe_box .iframe__head .main-head::before {
   content: "";
   display: inline-block;
   width: 50px;
@@ -630,16 +634,21 @@
   vertical-align: bottom;
   margin-right: 10px;
 }
-#content .iframe_box .iframe__head {
+#content .iframe_box .iframe__head .main-head {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 70px;
 }
-#content .iframe_box .iframe__head span {
+#content .iframe_box .iframe__head .main-head span {
   font-size: 1.25rem;
   margin-left: 15px;
   font-weight: 400;
 }
+#content .iframe_box .iframe__head .main-desc {
+  font-size: 1.35rem;
+  margin-top: 16px;
+  opacity: 0.65;
+}
+
 #content .iframe_box .state.positive {
   color: #ef0010;
 }
