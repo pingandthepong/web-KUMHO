@@ -10,7 +10,7 @@
 #content .award .award__container h3 {
   font-size: 1.5rem;
   font-weight: 500;
-  color: #2C44F2;
+  color: #2c44f2;
   margin-bottom: 30px;
 }
 #content .award .award__container h3 + p {
@@ -19,7 +19,7 @@
   margin-bottom: 106px;
 }
 #content .award .award__container h3 + p strong {
-font-weight: 500;
+  font-weight: 500;
 }
 
 /* .search */
@@ -34,7 +34,9 @@ font-weight: 500;
   align-items: center;
   gap: 24px;
   padding: 0 24px;
-  box-shadow: -5px -5px 15px #fff, 0 0 5px 0 rgba(0,0,0,.3);
+  box-shadow:
+    -5px -5px 15px #fff,
+    0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 #content .award__container .search input {
   width: 100%;
@@ -52,7 +54,7 @@ font-weight: 500;
 }
 #content .award__container .search #searchBtn {
   font-size: 1.5rem;
-  color: #2C44F2;
+  color: #2c44f2;
   background: none;
   border: none;
   cursor: pointer;
@@ -81,12 +83,12 @@ font-weight: 500;
   overflow: hidden;
   transition: all 0.55s ease;
 }
-#content .award__container .img_wrap {
+#content .award__container .img__wrap {
   width: 507px;
   height: 215px;
   overflow: hidden;
 }
-#content .award__container .img_wrap img {
+#content .award__container .img__wrap img {
   transition: all 0.5s ease;
 }
 #content .award__container .award_list li:hover img {
@@ -116,26 +118,26 @@ font-weight: 500;
   color: #999;
   order: 2;
 }
-#content .award .btn_box {
+#content .award .btn-box {
   position: absolute;
   right: 0;
   top: 320px;
   display: flex;
   gap: 5px;
 }
-#content .award .btn_box a {
+#content .award .btn-box a {
   padding: 5px 10px;
   font-size: 1.2rem;
   color: #999;
   border-radius: 50%;
 }
-#content .award .btn_box a:hover {
+#content .award .btn-box a:hover {
   color: #ef0010;
 }
-#content .award .btn_box .more_btn {
+#content .award .btn-box .more-btn {
   transition: all 0.25s ease-out;
 }
-#content .award .btn_box .more_btn:hover {
+#content .award .btn-box .more-btn:hover {
   transform: rotate(180deg);
   background: #ef0010;
   color: #fff;

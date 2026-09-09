@@ -8,47 +8,49 @@ export function awardSlide() {
   const movesize = listOuterWidth;
   let position = 0;
 
-  // leftBtn
+  // left-btn
   function awardMoveL() {
     position -= movesize;
 
-    $(".award_list").stop().animate({ left: position }, { duration: 200, easing: "easeInOutQuad" });
+    $(".award_list")
+      .stop()
+      .animate({ left: position }, { duration: 200, easing: "easeInOutQuad" });
 
     if (position <= -remaining) {
-      $(".btn_box .leftBtn").addClass("disabled");
+      $(".btn-box .left-btn").addClass("disabled");
     } else {
-      $(".btn_box .leftBtn").removeClass("disabled");
+      $(".btn-box .left-btn").removeClass("disabled");
     }
   }
 
-  // rightBtn
+  // right-btn
   function awardMoveR() {
     position += movesize;
-    $(".award_list").stop().animate({ left: position }, { duration: 200, easing: "easeInOutQuad" });
+    $(".award_list")
+      .stop()
+      .animate({ left: position }, { duration: 200, easing: "easeInOutQuad" });
 
     if (position >= 0) {
-      $(".btn_box .rightBtn").addClass("disabled");
+      $(".btn-box .right-btn").addClass("disabled");
     } else {
-      $(".btn_box .rightBtn").removeClass("disabled");
+      $(".btn-box .right-btn").removeClass("disabled");
     }
   }
 
-  
   // 최초 우측 버튼 비활성화
   $(document).ready(function () {
-    $(".btn_box .rightBtn").addClass("disabled");
+    $(".btn-box .right-btn").addClass("disabled");
   });
 
-
-  $(".btn_box .btn").on("click", function (e) {
+  $(".btn-box .btn").on("click", function (e) {
     e.preventDefault();
 
-    if ($(this).hasClass("leftBtn")) {
+    if ($(this).hasClass("left-btn")) {
       awardMoveL();
-      $(".btn_box .rightBtn").removeClass("disabled");
-    } else if ($(this).hasClass("rightBtn")) {
+      $(".btn-box .right-btn").removeClass("disabled");
+    } else if ($(this).hasClass("right-btn")) {
       awardMoveR();
-      $(".btn_box .leftBtn").removeClass("disabled");
+      $(".btn-box .left-btn").removeClass("disabled");
     }
   });
 }

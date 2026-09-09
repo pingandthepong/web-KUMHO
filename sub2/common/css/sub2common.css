@@ -163,7 +163,7 @@
   transform: translateX(-50%);
 }
 
-#content .content_area .more_btn {
+#content .content_area .more-btn {
   width: 175px;
   background: #fff;
   border: 1px solid #2c44f2;
@@ -174,7 +174,7 @@
   font-size: 1.13rem;
   transition: all 0.25s ease-out;
 }
-#content .content_area .more_btn:hover {
+#content .content_area .more-btn:hover {
   background: #2c44f2;
   color: #fff;
 }
@@ -298,7 +298,7 @@
 #content .content_area .intro2.slideEvent .intro2__title h3 .accent::after {
   transform: translate(10px, 5px) scale(7.5);
 }
-#content .content_area .intro2 .more_btn {
+#content .content_area .intro2 .more-btn {
   position: absolute;
   left: 0;
   bottom: -100px;
@@ -387,7 +387,7 @@
 #content .content_area .intro3_txt p:not(:last-of-type) {
   margin-bottom: 2rem;
 }
-#content .content_area .intro3 .more_btn {
+#content .content_area .intro3 .more-btn {
   width: 200px;
   padding: 12px 28px;
   margin-top: 50px;

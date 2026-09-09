@@ -1,12 +1,11 @@
 $(function () {
-
-  
-  $(window).scroll(function() {
-    
-    var contentTop = $('#content').offset().top;
+  $(window).scroll(function () {
+    var contentTop = $("#content").offset().top;
     var scrollTop = $(window).scrollTop();
 
-    if (scrollTop >= contentTop) {$('#award').focus();}
+    if (scrollTop >= contentTop) {
+      $("#award").focus();
+    }
   });
 
   $.ajax({
@@ -25,10 +24,9 @@ $(function () {
         var txt = `<ul class="award_list">`;
 
         for (var i in arr) {
-
           txt += "<li>";
           txt += `<a href="${arr[i].href}">`;
-          txt += `<div class="img_wrap"><img src="${arr[i].imgsrc}" alt=""></div>`;
+          txt += `<div class="img__wrap"><img src="${arr[i].imgsrc}" alt=""></div>`;
           txt += `<dl class="award_txt">`;
           txt += `<dt>${arr[i].title}</dt>`;
           txt += `<dd class="award_institution">${arr[i].institution}</dd>`;
@@ -46,33 +44,32 @@ $(function () {
       // 초기실행 함수 호출
       dataPrint(useData);
 
-
       // 검색 버튼 클릭 시
-      $('#searchBtn').click(function() {
-        var value = $('#award').val();
+      $("#searchBtn").click(function () {
+        var value = $("#award").val();
 
-        var newArray = useData.filter(function(element) {
-          
-          return element.title.includes(value) || element.institution.includes(value) || element.date.includes(value);
-            
+        var newArray = useData.filter(function (element) {
+          return (
+            element.title.includes(value) ||
+            element.institution.includes(value) ||
+            element.date.includes(value)
+          );
         });
-      
+
         // 없는 값 검색 시 에러 문구
         if (newArray.length === 0) {
-          $('.award__contents').html('<p>검색 결과가 없습니다.</p>');
+          $(".award__contents").html("<p>검색 결과가 없습니다.</p>");
         } else {
           dataPrint(newArray);
-        };
-      });
-
-
-      // 검색어 입력 후 엔터를 누르면 검색 버튼이 클릭되도록
-      $('#award').keypress(function(e) {
-        if (e.keyCode === 13) {
-          $('#searchBtn').click();
         }
       });
 
+      // 검색어 입력 후 엔터를 누르면 검색 버튼이 클릭되도록
+      $("#award").keypress(function (e) {
+        if (e.keyCode === 13) {
+          $("#searchBtn").click();
+        }
+      });
     },
   });
 });

@@ -23,7 +23,7 @@ xhr.onload = function () {
     responseObject.li.forEach(function (item) {
       newContent += "<li>";
       newContent += `<a href="./sub3/sub3_3.html">`;
-      newContent += `<div class="img_wrap"><img src="${item.imgsrc}" alt=""></div>`;
+      newContent += `<div class="img__wrap"><img src="${item.imgsrc}" alt=""></div>`;
       newContent += `<dl class="award_txt">`;
       newContent += `<dt>${item.title}</dt>`;
       newContent += `<dd class="award_institution">${item.institution}</dd>`;

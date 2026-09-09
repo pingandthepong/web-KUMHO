@@ -163,19 +163,19 @@
   transform: translateX(-50%);
 }
 
-#content .content_area .more_btn {
+#content .content_area .more-btn {
   width: 175px;
   background: #fff;
-  border: 1px solid #2C44F2;
-  color: #2C44F2;
+  border: 1px solid #2c44f2;
+  color: #2c44f2;
   text-align: center;
   border-radius: 10px;
   padding: 10px 0;
   font-size: 1.13rem;
-  transition: all .25s ease-out;
+  transition: all 0.25s ease-out;
 }
-#content .content_area .more_btn:hover {
-  background: #2C44F2;
+#content .content_area .more-btn:hover {
+  background: #2c44f2;
   color: #fff;
 }
 
@@ -187,7 +187,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 #content .content_area p {
   margin: 0 auto;
