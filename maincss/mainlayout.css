@@ -363,8 +363,8 @@
   font-weight: 300;
   line-height: 1.5;
 }
-/* .master_tab_conlist*/
-#content .master_tab_conlist{
+/* .master__tab__conlist*/
+#content .master__tab__conlist {
   position: absolute;
   left: 250px;
   left: 0;
@@ -409,7 +409,7 @@
   border-style: inset;
 }
 #content .master_tab_menu li:not(:last-of-type) .tab {
-  border-right: 2px solid rgba(255,255,255,.1);
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
 }
 #content .master_tab_menu .tab.active {
   background: #ef0010;
@@ -431,7 +431,7 @@
   left: 0;
   top: 0;
   display: flex;
-  transition: all .1s;
+  transition: all 0.1s;
 }
 #content .award__container .award_list ul {
   display: flex;
@@ -498,17 +498,17 @@
 }
 #content .award .btn_box a.disabled {
   pointer-events: none;
-  opacity: .5;
+  opacity: 0.5;
 }
 #content .award .btn_box .more_btn {
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
   perspective: 100px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#content .award .btn_box .more_btn:hover{
+#content .award .btn_box .more_btn:hover {
   transform: rotate(180deg);
   background: #ef0010;
   color: #fff;
@@ -538,7 +538,9 @@
   width: 100%;
   height: 215px;
   border-radius: 16px;
-  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2), 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow:
+    2px 2px 2px 0 rgba(0, 0, 0, 0.2),
+    5px 5px 5px 0 rgba(0, 0, 0, 0.2);
   border: 1px solid #999;
   overflow: hidden;
 }
@@ -948,16 +950,16 @@
   overflow: hidden;
 }
 #showimage::before {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 155px;
   background: #ef0010;
   position: relative;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 #showimage::after {
-  content: '';
+  content: "";
   display: block;
   width: 40px;
   height: 40px;
@@ -986,7 +988,7 @@
   color: #ef0010;
 }
 #showimage .qrcode {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #666;
   position: relative;
 }
@@ -1013,7 +1015,7 @@
   bottom: 0;
 }
 #showimage .close_box::before {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 1px;
@@ -1036,7 +1038,7 @@
 #showimage .close_box .popup_close {
   width: 14px;
   height: 14px;
-  background: url('../mainimages/popup_close.png') no-repeat center;
+  background: url("../mainimages/popup_close.png") no-repeat center;
   overflow: hidden;
   text-indent: -9999px;
   padding: 16px;

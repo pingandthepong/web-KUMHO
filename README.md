@@ -54,6 +54,7 @@ http://localhost:8000
 ![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=google-fonts&logoColor=white)
 ![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=for-the-badge&logo=swiper&logoColor=white)
 ![AOS](https://img.shields.io/badge/AOS-2D3748?style=for-the-badge&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-2D3748?style=for-the-badge&logoColor=white)
 
 <br>
 
@@ -61,11 +62,11 @@ http://localhost:8000
 
 > 프로젝트의 CSS 클래스명은 명확한 구조 파악과 유지보수를 위해 BEM(Block Element Modifier) 방법론을 기반으로 작성했습니다.
 
-|   구분   |       표기        |              의미              |          예시          |
-| :------: | :---------------: | :----------------------------: | :--------------------: |
-|  Block   |      `block`      |       독립적인 구성 요소       |       `.header`        |
-| Element  | `block__element`  |     Block을 구성하는 요소      | `.section\_\_business` |
-| Modifier | `block--modifier` | Block 또는 Element의 변형 상태 |    `.btn--primary`     |
+|   구분   |       표기        |              의미              |
+| :------: | :---------------: | :----------------------------: |
+|  Block   |   `kebab-case`    |       독립적인 구성 요소       |
+| Element  | `block__element`  |     Block을 구성하는 요소      |
+| Modifier | `block--modifier` | Block 또는 Element의 변형 상태 |
 
 <br>
 
