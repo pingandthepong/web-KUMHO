@@ -295,16 +295,24 @@
 }
 #content .content_area .contlist {
   width: 1400px;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding: 100px 0;
   display: none;
-  overflow-x: scroll;
+  overflow-x: auto;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE, Edge */
-
-  &::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-  }
+  cursor: grab;
+  user-select: none;
 }
+
+#content .content_area .contlist::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+#content .content_area .contlist:active {
+  cursor: grabbing;
+}
+
 #content .content_area .contlist ul {
   display: flex;
   justify-content: center;
